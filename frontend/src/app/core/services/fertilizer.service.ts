@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { FertilizerRecommendationRequest, FertilizerRecommendationResponse } from '../models/models';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FertilizerService {
-  private apiUrl = 'http://localhost:8080/api/fertilizer';
+  private apiUrl = `${environment.apiUrl}/fertilizer`;
 
   constructor(private http: HttpClient) {}
 
