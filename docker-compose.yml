@@ -1,0 +1,97 @@
+services:
+  # --------------------------------------------------
+  # MySQL Database Service
+  # --------------------------------------------------
+  mysql:
+    image: mysql:8.0
+    container_name: agridisha-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: agridisha_db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - agridisha_mysql_data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - agridisha-net
+
+  # --------------------------------------------------
+  # Python FastAPI Machine Learning Microservice
+  # --------------------------------------------------
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: agridisha-ml-service
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - agridisha-net
+
+  # --------------------------------------------------
+  # Java Spring Boot Backend Service
+  # --------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: agridisha-backend
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agridisha_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - ML_SERVICE_URL=http://ml-service:8000
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY:-}
+      - SPRING_MAIL_HOST=${SPRING_MAIL_HOST:-smtp.gmail.com}
+      - SPRING_MAIL_PORT=${SPRING_MAIL_PORT:-587}
+      - SPRING_MAIL_USERNAME=${SPRING_MAIL_USERNAME:-}
+      - SPRING_MAIL_PASSWORD=${SPRING_MAIL_PASSWORD:-}
+    depends_on:
+      mysql:
+        condition: service_healthy
+      ml-service:
+        condition: service_healthy
+    networks:
+      - agridisha-net
+
+  # --------------------------------------------------
+  # Angular Frontend UI Service
+  # --------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: agridisha-frontend
+    restart: always
+    ports:
+      - "4200:80"
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - agridisha-net
+
+volumes:
+  agridisha_mysql_data:
+
+networks:
+  agridisha-net:
+    driver: bridge

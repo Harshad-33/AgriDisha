@@ -1,0 +1,76 @@
+{
+  "zones": {
+    "South Konkan": {
+      "districts": ["Ratnagiri", "Sindhudurg"],
+      "soil_type": "Lateritic & Red Sandy Clay (Acidic, pH 5.2 - 6.5)",
+      "rainfall_mm": [2500, 3800],
+      "temp_c": [22, 33],
+      "humidity": [75, 92],
+      "primary_crops": ["Mango (Alphonso / Hapus)", "Cashew (Kaju)", "Rice (Paddy / Bhat)", "Coconut (Naral)", "Finger Millet (Nachani / Ragi)"]
+    },
+    "North Konkan": {
+      "districts": ["Thane", "Raigad", "Palghar", "Mumbai Suburban", "Mumbai"],
+      "soil_type": "Non-lateritic Alluvial Clay Loam & Coastal Saline (pH 6.0 - 7.2)",
+      "rainfall_mm": [2000, 3200],
+      "temp_c": [23, 34],
+      "humidity": [70, 90],
+      "primary_crops": ["Rice (Paddy / Bhat - Wada Kolam)", "Finger Millet (Nachani / Ragi)", "Vegetables", "Coconut (Naral)"]
+    },
+    "Western Ghat & Sub-Montane": {
+      "districts": ["Satara (Western)", "Kolhapur (Western)", "Pune (Western)"],
+      "soil_type": "Reddish Brown Loam & Lateritic (pH 5.8 - 6.8)",
+      "rainfall_mm": [2000, 5000],
+      "temp_c": [18, 30],
+      "humidity": [65, 88],
+      "primary_crops": ["Rice (Paddy / Bhat)", "Sugarcane (Oos)", "Finger Millet (Nachani / Ragi)", "Ginger", "Turmeric"]
+    },
+    "Western Maharashtra Plain": {
+      "districts": ["Kolhapur", "Sangli", "Satara", "Pune", "Nashik"],
+      "soil_type": "Medium to Deep Black Vertisols & River Alluvial (pH 6.8 - 8.2)",
+      "rainfall_mm": [700, 1250],
+      "temp_c": [18, 36],
+      "humidity": [45, 75],
+      "primary_crops": ["Sugarcane (Oos)", "Grapes (Draksha)", "Onion (Kanda)", "Soybean", "Wheat (Gahu)", "Tomato", "Pomegranate (Dalimb)"]
+    },
+    "Scarcity & Rain Shadow Zone": {
+      "districts": ["Solapur", "Ahmednagar", "Beed (Western)", "Dharashiv / Osmanabad (Western)", "Sangli (Eastern)"],
+      "soil_type": "Medium Black & Shallow Calcareous Soils (Alkaline, pH 7.5 - 8.6)",
+      "rainfall_mm": [450, 750],
+      "temp_c": [20, 39],
+      "humidity": [35, 65],
+      "primary_crops": ["Sorghum (Rabi Jowar - Maldandi)", "Pomegranate (Dalimb - Bhagwa)", "Pearl Millet (Bajra)", "Pigeon Pea (Tur)", "Chickpea (Gram / Harbara)", "Onion (Kanda)"]
+    },
+    "Khandesh & Tapi Basin": {
+      "districts": ["Jalgaon", "Dhule", "Nandurbar"],
+      "soil_type": "Deep Black Vertisols & Alluvial Deep Loam (pH 7.0 - 8.4)",
+      "rainfall_mm": [650, 950],
+      "temp_c": [22, 41],
+      "humidity": [40, 72],
+      "primary_crops": ["Banana (Keli - Grand Naine)", "Cotton (Bt Cotton)", "Maize (Makka)", "Sorghum (Jowar)", "Soybean", "Wheat (Gahu)"]
+    },
+    "Central Maharashtra (Marathwada)": {
+      "districts": ["Chhatrapati Sambhajinagar / Aurangabad", "Jalna", "Beed", "Latur", "Dharashiv / Osmanabad", "Parbhani", "Nanded", "Hingoli"],
+      "soil_type": "Medium to Deep Black Vertisols (pH 7.2 - 8.4)",
+      "rainfall_mm": [650, 900],
+      "temp_c": [20, 39],
+      "humidity": [40, 70],
+      "primary_crops": ["Soybean", "Cotton (Bt Cotton)", "Pigeon Pea (Tur / Arhar)", "Sorghum (Jowar)", "Sweet Lime (Mosambi)", "Chickpea (Gram / Harbara)", "Sugarcane (Oos)"]
+    },
+    "Central Vidarbha Zone": {
+      "districts": ["Yavatmal", "Wardha", "Nagpur", "Amravati", "Akola", "Buldhana", "Washim"],
+      "soil_type": "Deep Black Cotton Soils (Vertisols, High Moisture Retention, pH 7.0 - 8.4)",
+      "rainfall_mm": [750, 1100],
+      "temp_c": [20, 42],
+      "humidity": [42, 72],
+      "primary_crops": ["Cotton (Bt Cotton / Kapas)", "Soybean", "Pigeon Pea (Tur / Arhar)", "Sorghum (Jowar)", "Chickpea (Gram / Harbara)", "Orange (Nagpur Mandarin / Santra)", "Wheat (Gahu)"]
+    },
+    "Eastern Vidarbha (Wainganga Basin)": {
+      "districts": ["Chandrapur", "Bhandara", "Gondia", "Gadchiroli"],
+      "soil_type": "Red-Yellow Mixed Alluvial & Sandy Clay Loam (pH 6.2 - 7.5)",
+      "rainfall_mm": [1100, 1500],
+      "temp_c": [21, 41],
+      "humidity": [50, 80],
+      "primary_crops": ["Rice (Paddy / Bhat - Chinnor, HMT)", "Soybean", "Cotton (Bt Cotton)", "Pigeon Pea (Tur)", "Chickpea (Gram / Harbara)", "Sugarcane (Oos)"]
+    }
+  }
+}

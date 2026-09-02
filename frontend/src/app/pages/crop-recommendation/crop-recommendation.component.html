@@ -1,0 +1,284 @@
+<div class="container py-5">
+  <!-- Page Header -->
+  <div class="text-center max-w-700 mx-auto mb-5">
+    <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold mb-2">Module 1</span>
+    <h1 class="display-6 fw-bold">Smart Crop Recommendation</h1>
+    <p class="text-muted">
+      Discover the most suitable crop to cultivate on your farmland based on soil macronutrients (N, P, K), soil pH, annual rainfall, and live local meteorological conditions.
+    </p>
+  </div>
+
+  <div class="row justify-content-center g-4">
+    <!-- Form Card -->
+    <div class="col-lg-8" *ngIf="!result">
+      <div class="card card-harvest border-0 p-4 p-md-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+          <h4 class="fw-bold mb-0">Enter Farm Parameters</h4>
+          <div class="btn-group btn-group-sm">
+            <button type="button" (click)="loadPreset('cotton')" class="btn btn-outline-success">
+              🌱 Bt Cotton Preset
+            </button>
+            <button type="button" (click)="loadPreset('soybean')" class="btn btn-outline-success">
+              🌾 Soybean / Tur Preset
+            </button>
+            <button type="button" (click)="loadPreset('sorghum')" class="btn btn-outline-success">
+              🌽 Jowar Preset
+            </button>
+            <button type="button" (click)="loadPreset('rice')" class="btn btn-outline-secondary">
+              🌊 Rice Preset
+            </button>
+          </div>
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <div>{{ errorMessage }}</div>
+        </div>
+
+        <form [formGroup]="cropForm" (ngSubmit)="onSubmit()" novalidate>
+          <!-- Soil Nutrients N-P-K -->
+          <h6 class="fw-bold text-success border-bottom pb-2 mb-3">
+            <i class="bi bi-layers-half me-1"></i> 1. Soil Nutrients (mg/kg or ratio)
+          </h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="form-label" for="nitrogen">Nitrogen (N) *</label>
+              <input
+                id="nitrogen"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 110"
+                formControlName="nitrogen"
+                [class.is-invalid]="cropForm.get('nitrogen')?.touched && cropForm.get('nitrogen')?.invalid">
+              <div *ngIf="cropForm.get('nitrogen')?.touched && cropForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
+                Enter valid N (0-300).
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="phosphorous">Phosphorous (P) *</label>
+              <input
+                id="phosphorous"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 45"
+                formControlName="phosphorous"
+                [class.is-invalid]="cropForm.get('phosphorous')?.touched && cropForm.get('phosphorous')?.invalid">
+              <div *ngIf="cropForm.get('phosphorous')?.touched && cropForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
+                Enter valid P (0-300).
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="potassium">Potassium (K) *</label>
+              <input
+                id="potassium"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 25"
+                formControlName="potassium"
+                [class.is-invalid]="cropForm.get('potassium')?.touched && cropForm.get('potassium')?.invalid">
+              <div *ngIf="cropForm.get('potassium')?.touched && cropForm.get('potassium')?.invalid" class="text-danger small mt-1">
+                Enter valid K (0-300).
+              </div>
+            </div>
+          </div>
+
+          <!-- Soil pH & Rainfall -->
+          <h6 class="fw-bold text-success border-bottom pb-2 mb-3">
+            <i class="bi bi-moisture me-1"></i> 2. Soil & Hydrology Parameters
+          </h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="form-label" for="ph">Soil pH Level (0 - 14) *</label>
+              <input
+                id="ph"
+                type="number"
+                step="0.1"
+                class="form-control"
+                placeholder="e.g. 7.2"
+                formControlName="ph"
+                [class.is-invalid]="cropForm.get('ph')?.touched && cropForm.get('ph')?.invalid">
+              <div *ngIf="cropForm.get('ph')?.touched && cropForm.get('ph')?.invalid" class="text-danger small mt-1">
+                Enter pH between 3.0 and 10.0.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="rainfall">Rainfall (in mm) *</label>
+              <input
+                id="rainfall"
+                type="number"
+                step="0.1"
+                class="form-control"
+                placeholder="e.g. 850"
+                formControlName="rainfall"
+                [class.is-invalid]="cropForm.get('rainfall')?.touched && cropForm.get('rainfall')?.invalid">
+              <div *ngIf="cropForm.get('rainfall')?.touched && cropForm.get('rainfall')?.invalid" class="text-danger small mt-1">
+                Enter rainfall in mm (0-3000).
+              </div>
+            </div>
+          </div>
+
+          <!-- Location & Weather Auto-Fetch -->
+          <h6 class="fw-bold text-success border-bottom pb-2 mb-3">
+            <i class="bi bi-cloud-sun me-1"></i> 3. Climate & Location
+          </h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-12">
+              <label class="form-label" for="city">City / District *</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="bi bi-geo-alt"></i></span>
+                <input
+                  id="city"
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. Yavatmal, Nagpur, Pune, Mumbai"
+                  formControlName="city"
+                  [class.is-invalid]="cropForm.get('city')?.touched && cropForm.get('city')?.invalid">
+                <button
+                  type="button"
+                  (click)="fetchWeather()"
+                  [disabled]="isWeatherLoading"
+                  class="btn btn-outline-success">
+                  <span *ngIf="isWeatherLoading" class="spinner-border spinner-border-sm me-1" role="status"></span>
+                  <i *ngIf="!isWeatherLoading" class="bi bi-cloud-arrow-down me-1"></i>
+                  Fetch Live Weather
+                </button>
+              </div>
+              <div *ngIf="weatherMessage" class="small text-muted mt-1">
+                <i class="bi bi-info-circle me-1"></i> {{ weatherMessage }}
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="temperature">Temperature (°C)</label>
+              <input
+                id="temperature"
+                type="number"
+                step="0.1"
+                class="form-control bg-light"
+                placeholder="Auto-fetched or enter"
+                formControlName="temperature">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="humidity">Humidity (%)</label>
+              <input
+                id="humidity"
+                type="number"
+                step="0.1"
+                class="form-control bg-light"
+                placeholder="Auto-fetched or enter"
+                formControlName="humidity">
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            [disabled]="isLoading"
+            class="btn btn-harvest-primary w-100 py-3 fw-bold fs-5 shadow-sm d-flex align-items-center justify-content-center gap-2">
+            <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+            <span>{{ isLoading ? 'Analyzing Soil & Climate...' : 'Recommend Best Crop' }}</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Recommendation Result Card -->
+    <div class="col-lg-8" *ngIf="result">
+      <div class="card card-harvest border-0 p-0 overflow-hidden fade-in shadow-lg">
+        <div class="card-header-harvest p-4 text-center">
+          <span class="badge bg-success text-white px-3 py-1 rounded-pill mb-2">Optimal Agricultural Match</span>
+          <h2 class="display-5 fw-extrabold text-success mb-1">
+            <i class="bi bi-check2-circle me-2"></i> {{ result.recommendedCrop }}
+          </h2>
+          <p class="text-muted mb-0">Recommended Crop for your Farmland Conditions</p>
+        </div>
+
+        <div class="p-4 p-md-5">
+          <div class="row g-4 mb-4">
+            <div class="col-md-6">
+              <div class="p-3 rounded-4 bg-light h-100">
+                <h6 class="fw-bold text-dark mb-3"><i class="bi bi-sliders me-1 text-success"></i> Submitted Parameters</h6>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Nitrogen (N):</span>
+                  <span class="fw-semibold">{{ result.nitrogen }}</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Phosphorous (P):</span>
+                  <span class="fw-semibold">{{ result.phosphorous }}</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Potassium (K):</span>
+                  <span class="fw-semibold">{{ result.potassium }}</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Soil pH:</span>
+                  <span class="fw-semibold">{{ result.ph }}</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 small">
+                  <span class="text-muted">Rainfall:</span>
+                  <span class="fw-semibold">{{ result.rainfall }} mm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="p-3 rounded-4 bg-light h-100">
+                <h6 class="fw-bold text-dark mb-3"><i class="bi bi-cloud-sun me-1 text-primary"></i> Meteorological Telemetry</h6>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">City / Region:</span>
+                  <span class="fw-semibold">{{ result.city || 'Standard Climate' }}</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Temperature:</span>
+                  <span class="fw-semibold">{{ result.temperature }} °C</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Humidity:</span>
+                  <span class="fw-semibold">{{ result.humidity }} %</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom small">
+                  <span class="text-muted">Model Confidence:</span>
+                  <span class="fw-semibold text-success">{{ (result.confidence * 100).toFixed(1) }}%</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 small">
+                  <span class="text-muted">Inference Model:</span>
+                  <span class="badge bg-secondary-subtle text-secondary">{{ result.modelUsed }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alternative Candidates -->
+          <div *ngIf="result.topAlternatives && result.topAlternatives.length > 0" class="mb-4">
+            <h6 class="fw-bold mb-3"><i class="bi bi-list-check me-1 text-success"></i> Secondary Crop Alternatives</h6>
+            <div class="row g-2">
+              <div class="col-md-4" *ngFor="let alt of result.topAlternatives">
+                <div class="p-3 rounded bg-light d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">{{ alt.crop }}</span>
+                  <span class="badge bg-success-subtle text-success">{{ (alt.probability * 100).toFixed(1) }}% Match</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-3 bg-success-subtle text-success-emphasis small mb-4">
+            <i class="bi bi-info-circle-fill me-2"></i>
+            {{ result.description }}
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button (click)="reset()" class="btn btn-harvest-secondary px-4">
+              <i class="bi bi-arrow-left me-1"></i> New Recommendation
+            </button>
+            <a routerLink="/fertilizer-recommendation" class="btn btn-harvest-primary px-4">
+              Check Fertilizer for {{ result.recommendedCrop }} <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

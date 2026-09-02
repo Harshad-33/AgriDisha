@@ -1,0 +1,214 @@
+<div class="container py-5">
+  <!-- Header Banner -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5 border-bottom pb-4">
+    <div>
+      <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold mb-2">Farmer Portal</span>
+      <h1 class="display-6 fw-bold mb-1">Welcome, {{ authService.currentUserValue?.fullName || authService.currentUserValue?.username }}!</h1>
+      <p class="text-muted mb-0">Here is a real-time overview of your agricultural diagnostics and farm recommendations.</p>
+    </div>
+    <div class="d-flex gap-2">
+      <a routerLink="/crop-recommendation" class="btn btn-harvest-primary shadow-sm d-flex align-items-center gap-2">
+        <i class="bi bi-plus-circle"></i> New Prediction
+      </a>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-warning d-flex align-items-center gap-2 py-2 mb-4" role="alert">
+    <i class="bi bi-exclamation-triangle-fill"></i>
+    <div>{{ errorMessage }}</div>
+  </div>
+
+  <!-- 3 Analytics Counters -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card card-harvest border-0 p-4 border-start border-4 border-success">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <div class="text-muted small fw-semibold text-uppercase">Crop Predictions</div>
+            <h2 class="display-5 fw-bold text-success mb-0">
+              <span *ngIf="!isLoading">{{ summary?.totalCropPredictions ?? 0 }}</span>
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm text-success"></span>
+            </h2>
+          </div>
+          <div class="stat-icon bg-success-subtle text-success rounded-circle p-3 fs-3">
+            <i class="bi bi-tree"></i>
+          </div>
+        </div>
+        <div class="mt-3 small text-muted">
+          <i class="bi bi-arrow-up-right text-success me-1"></i> Optimizing crop yield
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-harvest border-0 p-4 border-start border-4 border-primary">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <div class="text-muted small fw-semibold text-uppercase">Fertilizer Plans</div>
+            <h2 class="display-5 fw-bold text-primary mb-0">
+              <span *ngIf="!isLoading">{{ summary?.totalFertilizerRecommendations ?? 0 }}</span>
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm text-primary"></span>
+            </h2>
+          </div>
+          <div class="stat-icon bg-primary-subtle text-primary rounded-circle p-3 fs-3">
+            <i class="bi bi-droplet-half"></i>
+          </div>
+        </div>
+        <div class="mt-3 small text-muted">
+          <i class="bi bi-arrow-up-right text-primary me-1"></i> Soil NPK balance
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-harvest border-0 p-4 border-start border-4 border-danger">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <div class="text-muted small fw-semibold text-uppercase">Disease Scans</div>
+            <h2 class="display-5 fw-bold text-danger mb-0">
+              <span *ngIf="!isLoading">{{ summary?.totalDiseasePredictions ?? 0 }}</span>
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm text-danger"></span>
+            </h2>
+          </div>
+          <div class="stat-icon bg-danger-subtle text-danger rounded-circle p-3 fs-3">
+            <i class="bi bi-virus"></i>
+          </div>
+        </div>
+        <div class="mt-3 small text-muted">
+          <i class="bi bi-arrow-up-right text-danger me-1"></i> PyTorch leaf diagnostics
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Action Navigation Cards -->
+  <div class="mb-5">
+    <h4 class="fw-bold mb-3">Quick Actions</h4>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-harvest border-0 p-4 h-100 d-flex flex-column">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="bg-success-subtle text-success p-2 rounded-3 fs-4">
+              <i class="bi bi-tree"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-0">Recommend Crop</h5>
+              <small class="text-muted">Weather + Soil NPK ML</small>
+            </div>
+          </div>
+          <p class="text-muted small flex-grow-1">
+            Determine the highest-yielding crop for your specific field based on soil nutrients and climatic telemetry.
+          </p>
+          <a routerLink="/crop-recommendation" class="btn btn-harvest-secondary btn-sm w-100 fw-semibold">
+            Start Crop Analysis
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-harvest border-0 p-4 h-100 d-flex flex-column">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="bg-primary-subtle text-primary p-2 rounded-3 fs-4">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-0">Fertilizer Advice</h5>
+              <small class="text-muted">Nutrient Deficiency Engine</small>
+            </div>
+          </div>
+          <p class="text-muted small flex-grow-1">
+            Evaluate Nitrogen, Phosphorus, and Potassium requirements and get chemical & organic treatment instructions.
+          </p>
+          <a routerLink="/fertilizer-recommendation" class="btn btn-harvest-secondary btn-sm w-100 fw-semibold">
+            Evaluate Fertilizer
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-harvest border-0 p-4 h-100 d-flex flex-column">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="bg-danger-subtle text-danger p-2 rounded-3 fs-4">
+              <i class="bi bi-virus"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-0">Scan Plant Leaf</h5>
+              <small class="text-muted">ResNet9 Disease Detection</small>
+            </div>
+          </div>
+          <p class="text-muted small flex-grow-1">
+            Upload leaf photo to detect disease symptoms, pathogen causes, and organic/chemical fungicide cures.
+          </p>
+          <a routerLink="/disease-detection" class="btn btn-harvest-secondary btn-sm w-100 fw-semibold">
+            Upload Leaf Image
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Prediction Activity -->
+  <div>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4 class="fw-bold mb-0">Recent Farm Activity</h4>
+      <a routerLink="/history" class="text-success fw-semibold text-decoration-none small">
+        View All History <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="card card-harvest border-0 p-0 overflow-hidden">
+      <div *ngIf="isLoading" class="p-5 text-center text-muted">
+        <div class="spinner-border text-success mb-2" role="status"></div>
+        <div>Loading farm logs...</div>
+      </div>
+
+      <div *ngIf="!isLoading && (!summary?.recentActivities || summary?.recentActivities?.length === 0)" class="p-5 text-center text-muted">
+        <i class="bi bi-inbox fs-1 d-block mb-2 text-secondary"></i>
+        <h6 class="fw-semibold">No predictions yet</h6>
+        <p class="small mb-3">Run your first crop recommendation or leaf scan to see activity here.</p>
+        <a routerLink="/crop-recommendation" class="btn btn-harvest-primary btn-sm">Recommend a Crop</a>
+      </div>
+
+      <div *ngIf="!isLoading && summary?.recentActivities && (summary?.recentActivities?.length ?? 0) > 0" class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th class="ps-4">Type</th>
+              <th>Details</th>
+              <th>Status / Confidence</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of summary?.recentActivities">
+              <td class="ps-4">
+                <span *ngIf="item.type === 'CROP'" class="badge bg-success-subtle text-success">
+                  <i class="bi bi-tree me-1"></i> Crop
+                </span>
+                <span *ngIf="item.type === 'FERTILIZER'" class="badge bg-primary-subtle text-primary">
+                  <i class="bi bi-droplet-half me-1"></i> Fertilizer
+                </span>
+                <span *ngIf="item.type === 'DISEASE'" class="badge bg-danger-subtle text-danger">
+                  <i class="bi bi-virus me-1"></i> Disease
+                </span>
+              </td>
+              <td>
+                <div class="fw-bold text-dark">{{ item.title }}</div>
+                <div class="small text-muted text-truncate" style="max-width: 400px;">{{ item.subtitle }}</div>
+              </td>
+              <td>
+                <span class="badge" [ngClass]="item.status === 'Healthy' ? 'bg-success' : (item.status === 'Diseased' ? 'bg-danger' : 'bg-secondary')">
+                  {{ item.status }}
+                </span>
+                <span *ngIf="item.confidence" class="small text-muted ms-2">{{ (item.confidence * 100).toFixed(1) }}%</span>
+              </td>
+              <td class="small text-muted">
+                {{ item.createdAt | date:'medium' }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-flower1 fs-3 text-success"></i>
+          <span class="fs-4 fw-bold text-white">AgriDisha</span>
+        </div>
+        <p class="text-secondary small leading-relaxed">
+          Smart Agriculture Recommendation System combining Machine Learning (XGBoost, Random Forest, PyTorch ResNet9), Real-time Weather Intelligence, and Soil Science for high crop yields and plant protection.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Modules</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li><a routerLink="/crop-recommendation" class="text-secondary text-decoration-none hover-white">Crop Recommendation</a></li>
+          <li><a routerLink="/fertilizer-recommendation" class="text-secondary text-decoration-none hover-white">Fertilizer Advice</a></li>
+          <li><a routerLink="/disease-detection" class="text-secondary text-decoration-none hover-white">Disease Detection</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Architecture</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary">
+          <li><i class="bi bi-layers me-1 text-success"></i> Angular 19+ (Standalone)</li>
+          <li><i class="bi bi-cpu me-1 text-success"></i> Java 21 Spring Boot 3.3</li>
+          <li><i class="bi bi-robot me-1 text-success"></i> Python FastAPI ML Engine</li>
+          <li><i class="bi bi-database me-1 text-success"></i> MySQL 8.0 Database</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-white fw-bold mb-3">Weather Integration</h6>
+        <p class="text-secondary small mb-2">
+          Powered by OpenWeatherMap API with automatic city geocoding and fallback climate heuristics.
+        </p>
+        <span class="badge bg-success-subtle text-success border border-success-subtle">
+          <i class="bi bi-check-circle me-1"></i> Live Weather Active
+        </span>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4 opacity-25">
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small text-secondary">
+      <div>© {{ currentYear }} AgriDisha - Smart Agriculture Recommendation System. All rights reserved.</div>
+      <div>Designed for modern precision farming and agricultural research.</div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AgriDisha - Smart Agriculture Recommendation System</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Translation Banner Suppression Styles -->
+  <style>
+    html, body {
+      top: 0px !important;
+      position: static !important;
+      margin-top: 0px !important;
+      padding-top: 0px !important;
+    }
+    /* Hide top banner frame and wrapper without killing translation engine */
+    body > .skiptranslate:not(#google_translate_element),
+    body > .skiptranslate iframe,
+    .goog-te-banner-frame,
+    iframe.goog-te-banner-frame,
+    iframe[id*=":1.container"],
+    iframe[name*=":1.container"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0px !important;
+      max-height: 0px !important;
+      width: 0px !important;
+      opacity: 0 !important;
+      position: absolute !important;
+      left: -9999px !important;
+      top: -9999px !important;
+      pointer-events: none !important;
+      z-index: -9999 !important;
+    }
+    .goog-text-highlight {
+      background: none !important;
+      box-shadow: none !important;
+    }
+    font {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+    #goog-gt-tt, .goog-te-balloon-frame {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Offscreen Google Translate Anchor (allows .goog-te-combo to initialize) -->
+  <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden;"></div>
+
+  <app-root></app-root>
+
+  <!-- Google Translate Engine Loader & Top Banner Suppressor -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,mr,hi,gu,bn,te,ta,kn,pa,ml,or,as,ur,kok,mai,sa,ne,sd,doi,mni-Mtei,brx,sat,ks',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    // Continuously hide banner wrapper & frames and clamp body to top: 0
+    setInterval(function() {
+      if (document.body) {
+        document.body.style.setProperty('top', '0px', 'important');
+        document.body.style.setProperty('position', 'static', 'important');
+        document.body.style.setProperty('margin-top', '0px', 'important');
+        document.body.style.setProperty('padding-top', '0px', 'important');
+      }
+      if (document.documentElement) {
+        document.documentElement.style.setProperty('top', '0px', 'important');
+        document.documentElement.style.setProperty('margin-top', '0px', 'important');
+        document.documentElement.style.setProperty('padding-top', '0px', 'important');
+      }
+
+      var banners = document.querySelectorAll('iframe.goog-te-banner-frame, iframe[id*=":1.container"], iframe[name*=":1.container"], .goog-te-banner-frame');
+      for (var i = 0; i < banners.length; i++) {
+        var f = banners[i];
+        f.style.setProperty('display', 'none', 'important');
+        f.style.setProperty('visibility', 'hidden', 'important');
+        f.style.setProperty('height', '0px', 'important');
+        f.style.setProperty('width', '0px', 'important');
+        f.style.setProperty('position', 'absolute', 'important');
+        f.style.setProperty('top', '-9999px', 'important');
+        f.style.setProperty('left', '-9999px', 'important');
+        f.style.setProperty('pointer-events', 'none', 'important');
+      }
+
+      var skipDivs = document.querySelectorAll('body > .skiptranslate');
+      for (var j = 0; j < skipDivs.length; j++) {
+        var d = skipDivs[j];
+        if (d.id !== 'google_translate_element' && !d.contains(document.querySelector('.goog-te-combo'))) {
+          d.style.setProperty('display', 'none', 'important');
+          d.style.setProperty('visibility', 'hidden', 'important');
+          d.style.setProperty('height', '0px', 'important');
+          d.style.setProperty('position', 'absolute', 'important');
+          d.style.setProperty('top', '-9999px', 'important');
+          d.style.setProperty('pointer-events', 'none', 'important');
+        }
+      }
+    }, 25);
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

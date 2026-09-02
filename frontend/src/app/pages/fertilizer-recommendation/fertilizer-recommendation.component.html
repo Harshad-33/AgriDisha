@@ -1,0 +1,208 @@
+<div class="container py-5">
+  <!-- Page Header -->
+  <div class="text-center max-w-700 mx-auto mb-5">
+    <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Module 2</span>
+    <h1 class="display-6 fw-bold">Fertilizer Recommendation & Soil Advisory</h1>
+    <p class="text-muted">
+      Identify soil nutrient imbalances (Nitrogen, Phosphorous, Potassium) for your chosen crop and receive precise chemical dosages, organic amendments, and cultural soil management practices.
+    </p>
+  </div>
+
+  <div class="row justify-content-center g-4">
+    <!-- Form Card -->
+    <div class="col-lg-7" *ngIf="!result">
+      <div class="card card-harvest border-0 p-4 p-md-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
+          <h4 class="fw-bold mb-0">Crop & Soil Nutrients</h4>
+          <div class="btn-group btn-group-sm">
+            <button type="button" (click)="loadSample('N')" class="btn btn-outline-secondary">Low N</button>
+            <button type="button" (click)="loadSample('P')" class="btn btn-outline-secondary">Low P</button>
+            <button type="button" (click)="loadSample('K')" class="btn btn-outline-secondary">Low K</button>
+            <button type="button" (click)="loadSample('Balanced')" class="btn btn-outline-secondary">Optimal</button>
+          </div>
+        </div>
+
+        <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <div>{{ errorMessage }}</div>
+        </div>
+
+        <form [formGroup]="fertilizerForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="mb-4">
+            <label class="form-label" for="cropName">Select Target Crop *</label>
+            <select
+              id="cropName"
+              class="form-select"
+              formControlName="cropName"
+              [class.is-invalid]="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid">
+              <option *ngFor="let crop of availableCrops" [value]="crop">{{ crop }}</option>
+            </select>
+            <div *ngIf="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid" class="text-danger small mt-1">
+              Please select a crop.
+            </div>
+          </div>
+
+          <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
+            <i class="bi bi-speedometer2 me-1"></i> Current Soil Nutrient Values (mg/kg or ratio)
+          </h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="form-label" for="fert-n">Nitrogen (N) *</label>
+              <input
+                id="fert-n"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 40"
+                formControlName="nitrogen"
+                [class.is-invalid]="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid">
+              <div *ngIf="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
+                Enter N value.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="fert-p">Phosphorous (P) *</label>
+              <input
+                id="fert-p"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 60"
+                formControlName="phosphorous"
+                [class.is-invalid]="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid">
+              <div *ngIf="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
+                Enter P value.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="fert-k">Potassium (K) *</label>
+              <input
+                id="fert-k"
+                type="number"
+                class="form-control"
+                placeholder="e.g. 30"
+                formControlName="potassium"
+                [class.is-invalid]="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid">
+              <div *ngIf="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid" class="text-danger small mt-1">
+                Enter K value.
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            [disabled]="isLoading"
+            class="btn btn-harvest-primary w-100 py-3 fw-bold fs-5 shadow-sm d-flex align-items-center justify-content-center gap-2">
+            <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+            <span>{{ isLoading ? 'Evaluating Nutrient Needs...' : 'Get Fertilizer Recommendation' }}</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Fertilizer Result Card -->
+    <div class="col-lg-8" *ngIf="result">
+      <div class="card card-harvest border-0 p-0 overflow-hidden fade-in shadow-lg">
+        <div class="card-header-harvest p-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div>
+              <span class="badge bg-primary text-white px-3 py-1 rounded-pill mb-1">Target Crop</span>
+              <h2 class="display-6 fw-bold text-dark mb-0">{{ result.crop }}</h2>
+            </div>
+            <div class="text-end">
+              <span class="badge bg-light text-dark border px-3 py-2 fs-6">
+                <i class="bi bi-activity me-1 text-primary"></i> {{ result.soilStatus }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 p-md-5">
+          <!-- Nutrient Comparison Dashboard -->
+          <h5 class="fw-bold mb-3"><i class="bi bi-bar-chart-steps me-2 text-primary"></i> Soil Nutrient Status</h5>
+          <div class="row g-3 mb-4" *ngIf="result.nutrientLevels">
+            <!-- Nitrogen Card -->
+            <div class="col-md-4">
+              <div class="p-3 rounded-4 bg-light border h-100">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Nitrogen (N)</span>
+                  <span class="badge" [ngClass]="result.nutrientLevels.nitrogen.status === 'Optimal' ? 'bg-success' : 'bg-warning text-dark'">
+                    {{ result.nutrientLevels.nitrogen.status }}
+                  </span>
+                </div>
+                <div class="small text-muted">Current: <strong class="text-dark">{{ result.nutrientLevels.nitrogen.current }}</strong></div>
+                <div class="small text-muted">Target: <strong class="text-dark">{{ result.nutrientLevels.nitrogen.ideal }}</strong></div>
+              </div>
+            </div>
+
+            <!-- Phosphorus Card -->
+            <div class="col-md-4">
+              <div class="p-3 rounded-4 bg-light border h-100">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Phosphorus (P)</span>
+                  <span class="badge" [ngClass]="result.nutrientLevels.phosphorus.status === 'Optimal' ? 'bg-success' : 'bg-warning text-dark'">
+                    {{ result.nutrientLevels.phosphorus.status }}
+                  </span>
+                </div>
+                <div class="small text-muted">Current: <strong class="text-dark">{{ result.nutrientLevels.phosphorus.current }}</strong></div>
+                <div class="small text-muted">Target: <strong class="text-dark">{{ result.nutrientLevels.phosphorus.ideal }}</strong></div>
+              </div>
+            </div>
+
+            <!-- Potassium Card -->
+            <div class="col-md-4">
+              <div class="p-3 rounded-4 bg-light border h-100">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold">Potassium (K)</span>
+                  <span class="badge" [ngClass]="result.nutrientLevels.potassium.status === 'Optimal' ? 'bg-success' : 'bg-warning text-dark'">
+                    {{ result.nutrientLevels.potassium.status }}
+                  </span>
+                </div>
+                <div class="small text-muted">Current: <strong class="text-dark">{{ result.nutrientLevels.potassium.current }}</strong></div>
+                <div class="small text-muted">Target: <strong class="text-dark">{{ result.nutrientLevels.potassium.ideal }}</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Primary Recommendation Advice -->
+          <div class="p-3 rounded-3 bg-primary-subtle text-primary-emphasis mb-4">
+            <h6 class="fw-bold mb-1"><i class="bi bi-lightbulb-fill me-1"></i> Core Agronomic Advice</h6>
+            <p class="mb-0 small">{{ result.primaryRecommendation }}</p>
+          </div>
+
+          <!-- Recommendations Grid -->
+          <div class="row g-4 mb-4">
+            <!-- Chemical Fertilizers -->
+            <div class="col-md-6" *ngIf="result.chemicalFertilizers && result.chemicalFertilizers.length > 0">
+              <div class="p-3 rounded-4 bg-light h-100 border-start border-4 border-primary">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-capsule me-1"></i> Chemical Fertilizers</h6>
+                <ul class="mb-0 ps-3 small text-muted">
+                  <li *ngFor="let item of result.chemicalFertilizers" class="mb-1">{{ item }}</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Organic Alternatives -->
+            <div class="col-md-6" *ngIf="result.organicAlternatives && result.organicAlternatives.length > 0">
+              <div class="p-3 rounded-4 bg-light h-100 border-start border-4 border-success">
+                <h6 class="fw-bold text-success mb-2"><i class="bi bi-recycle me-1"></i> Organic Alternatives</h6>
+                <ul class="mb-0 ps-3 small text-muted">
+                  <li *ngFor="let item of result.organicAlternatives" class="mb-1">{{ item }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button (click)="reset()" class="btn btn-harvest-secondary px-4">
+              <i class="bi bi-arrow-left me-1"></i> Check Another Crop
+            </button>
+            <a routerLink="/disease-detection" class="btn btn-harvest-primary px-4">
+              Scan Leaves for Diseases <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

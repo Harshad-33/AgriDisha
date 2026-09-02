@@ -1,0 +1,77 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card card-harvest border-0 p-0 overflow-hidden shadow-sm mb-4">
+        <!-- Profile Banner -->
+        <div class="p-4 bg-dark-harvest text-white d-flex align-items-center justify-content-between flex-wrap gap-3">
+          <div class="d-flex align-items-center gap-3">
+            <div class="avatar-circle bg-emerald text-white fs-2 fw-bold d-flex align-items-center justify-content-center">
+              {{ getUserInitial() }}
+            </div>
+            <div>
+              <h3 class="fw-bold mb-0 text-white">{{ profile?.fullName || profile?.username }}</h3>
+              <small class="text-emerald-light">&#64;{{ profile?.username }} • {{ profile?.role }}</small>
+            </div>
+          </div>
+          <button (click)="logout()" class="btn btn-outline-light btn-sm px-3 rounded-pill">
+            <i class="bi bi-box-arrow-right me-1"></i> Logout
+          </button>
+        </div>
+
+        <div class="p-4 p-md-5">
+          <div *ngIf="errorMessage" class="alert alert-warning py-2 mb-4" role="alert">
+            {{ errorMessage }}
+          </div>
+
+          <div *ngIf="isLoading" class="text-center py-4">
+            <div class="spinner-border text-success" role="status"></div>
+          </div>
+
+          <div *ngIf="!isLoading && profile">
+            <h5 class="fw-bold mb-3 border-bottom pb-2">Account Details</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <span class="text-muted small d-block">Email Address</span>
+                <span class="fw-semibold">{{ profile.email }}</span>
+              </div>
+              <div class="col-sm-6">
+                <span class="text-muted small d-block">Location / Farm Base</span>
+                <span class="fw-semibold">{{ profile.location || 'Not Specified' }}</span>
+              </div>
+              <div class="col-sm-6">
+                <span class="text-muted small d-block">Role</span>
+                <span class="badge bg-success-subtle text-success">{{ profile.role }}</span>
+              </div>
+              <div class="col-sm-6">
+                <span class="text-muted small d-block">Member Since</span>
+                <span class="fw-semibold">{{ profile.createdAt | date:'longDate' }}</span>
+              </div>
+            </div>
+
+            <h5 class="fw-bold mb-3 border-bottom pb-2">Usage & Prediction Statistics</h5>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="p-3 rounded-3 bg-light text-center">
+                  <div class="fs-3 fw-bold text-success">{{ profile.totalCropPredictions }}</div>
+                  <small class="text-muted">Crop Predictions</small>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 rounded-3 bg-light text-center">
+                  <div class="fs-3 fw-bold text-primary">{{ profile.totalFertilizerRecommendations }}</div>
+                  <small class="text-muted">Fertilizer Plans</small>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 rounded-3 bg-light text-center">
+                  <div class="fs-3 fw-bold text-danger">{{ profile.totalDiseasePredictions }}</div>
+                  <small class="text-muted">Disease Scans</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

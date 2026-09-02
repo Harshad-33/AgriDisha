@@ -1,0 +1,158 @@
+<!-- Hero Section -->
+<section class="hero-gradient py-5 text-white">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="badge bg-emerald-subtle text-emerald-badge mb-3 px-3 py-2 rounded-pill fw-semibold">
+          <i class="bi bi-stars me-1"></i> AI-Powered Agricultural Advisory
+        </span>
+        <h1 class="display-4 fw-extrabold mb-3 lh-sm">
+          AgriDisha: Smart Agriculture Recommendation System
+        </h1>
+        <p class="lead text-emerald-light mb-4 fs-5">
+          Empowering farmers and agronomists with precision data. Predict optimal crops, diagnose plant leaf diseases using deep learning, and optimize soil fertility using intelligent rule engines.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a routerLink="/crop-recommendation" class="btn btn-emerald-cta btn-lg px-4 py-2 fw-bold text-white shadow">
+            <i class="bi bi-tree me-2"></i> Recommend Crop
+          </a>
+          <a routerLink="/disease-detection" class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold">
+            <i class="bi bi-virus me-2"></i> Detect Disease
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card bg-white text-dark rounded-4 shadow-lg p-4 border-0">
+          <div class="d-flex align-items-center gap-3 mb-3 border-bottom pb-3">
+            <div class="feature-icon bg-success-subtle text-success p-3 rounded-circle fs-3">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-0">High-Accuracy Decision Support</h5>
+              <small class="text-muted">Trained on agronomic & PlantVillage datasets</small>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
+              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Crop Recommendation</span>
+              <span class="badge bg-success">Random Forest / XGB</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
+              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Fertilizer Advisory</span>
+              <span class="badge bg-primary">NPK Ratio Engine</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
+              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Disease Detection</span>
+              <span class="badge bg-danger">PyTorch ResNet-9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Three Feature Modules -->
+<section class="py-5 bg-light">
+  <div class="container py-4">
+    <div class="text-center max-w-700 mx-auto mb-5">
+      <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold">Core Modules</span>
+      <h2 class="display-6 fw-bold mt-2">Comprehensive Farm Advisory Solutions</h2>
+      <p class="text-muted">Three specialized tools designed to maximize agricultural productivity and crop health.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1: Crop Recommendation -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
+          <div class="feature-card-icon bg-success-subtle text-success mb-4 rounded-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-tree fs-1"></i>
+          </div>
+          <h4 class="fw-bold mb-2">1. Crop Recommendation</h4>
+          <p class="text-muted mb-4 flex-grow-1">
+            Input soil nutrients (Nitrogen, Phosphorous, Potassium, pH, Rainfall) and your city. The system fetches live weather metrics to predict the most profitable and high-yielding crop.
+          </p>
+          <a routerLink="/crop-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+            <span>Explore Crop ML</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Fertilizer Recommendation -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
+          <div class="feature-card-icon bg-primary-subtle text-primary mb-4 rounded-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-droplet-half fs-1"></i>
+          </div>
+          <h4 class="fw-bold mb-2">2. Fertilizer Recommendation</h4>
+          <p class="text-muted mb-4 flex-grow-1">
+            Analyze soil nutrient deficiencies or excesses (Low/High N, P, or K) tailored specifically to your chosen crop, receiving chemical dosages and organic manure alternatives.
+          </p>
+          <a routerLink="/fertilizer-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+            <span>Get Fertilizer Advice</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: Plant Disease Detection -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
+          <div class="feature-card-icon bg-danger-subtle text-danger mb-4 rounded-4 d-flex align-items-center justify-content-center">
+            <i class="bi bi-virus fs-1"></i>
+          </div>
+          <h4 class="fw-bold mb-2">3. Plant Disease Detection</h4>
+          <p class="text-muted mb-4 flex-grow-1">
+            Upload an image of an affected leaf. The PyTorch ResNet9 neural network identifies plant diseases across 38 categories with immediate treatment steps and prevention tips.
+          </p>
+          <a routerLink="/disease-detection" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+            <span>Detect Plant Disease</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-5">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold">How AgriDisha Operates</h2>
+      <p class="text-muted">A modern, resilient decoupled microservice architecture</p>
+    </div>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="p-3">
+          <div class="step-badge mx-auto mb-3">1</div>
+          <h5 class="fw-bold">Input Data</h5>
+          <p class="text-muted small">Enter soil N-P-K parameters or upload a leaf photo in the Angular frontend.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3">
+          <div class="step-badge mx-auto mb-3">2</div>
+          <h5 class="fw-bold">Spring Boot Gateway</h5>
+          <p class="text-muted small">Spring Boot validates inputs, integrates OpenWeatherMap, and secures requests.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3">
+          <div class="step-badge mx-auto mb-3">3</div>
+          <h5 class="fw-bold">FastAPI Inference</h5>
+          <p class="text-muted small">Python ML service evaluates XGBoost/Random Forest and PyTorch ResNet9 models.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3">
+          <div class="step-badge mx-auto mb-3">4</div>
+          <h5 class="fw-bold">Actionable Output</h5>
+          <p class="text-muted small">Get crystal-clear crop selections, fertilizer dosages, and plant treatment guides.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

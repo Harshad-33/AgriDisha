@@ -1,0 +1,36 @@
+# Environment variables and secrets
+.env
+*.env
+
+# Dependencies & Build artifacts
+node_modules/
+dist/
+.angular/
+target/
+*.jar
+*.war
+*.original
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS & System
+.DS_Store
+Thumbs.db
+*.log
+mysql_data/

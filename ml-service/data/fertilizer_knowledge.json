@@ -1,0 +1,90 @@
+{
+  "crop_requirements": {
+    "cotton": { "n": 120, "p": 45, "k": 25, "name": "Cotton (Bt Cotton)" },
+    "soybean": { "n": 30, "p": 60, "k": 40, "name": "Soybean" },
+    "pigeonpeas": { "n": 25, "p": 65, "k": 25, "name": "Pigeon Peas (Tur)" },
+    "sorghum": { "n": 80, "p": 40, "k": 40, "name": "Sorghum (Jowar)" },
+    "chickpea": { "n": 30, "p": 65, "k": 75, "name": "Chickpea (Gram)" },
+    "rice": { "n": 80, "p": 40, "k": 40, "name": "Rice" },
+    "maize": { "n": 100, "p": 50, "k": 40, "name": "Maize" },
+    "kidneybeans": { "n": 20, "p": 60, "k": 20, "name": "Kidney Beans" },
+    "mothbeans": { "n": 20, "p": 40, "k": 20, "name": "Moth Beans" },
+    "mungbean": { "n": 20, "p": 40, "k": 20, "name": "Mung Bean" },
+    "blackgram": { "n": 40, "p": 60, "k": 20, "name": "Black Gram" },
+    "lentil": { "n": 20, "p": 60, "k": 20, "name": "Lentil" },
+    "pomegranate": { "n": 20, "p": 10, "k": 40, "name": "Pomegranate" },
+    "banana": { "n": 100, "p": 75, "k": 50, "name": "Banana" },
+    "mango": { "n": 20, "p": 20, "k": 30, "name": "Mango" },
+    "grapes": { "n": 20, "p": 125, "k": 200, "name": "Grapes" },
+    "watermelon": { "n": 100, "p": 10, "k": 50, "name": "Watermelon" },
+    "muskmelon": { "n": 100, "p": 10, "k": 50, "name": "Muskmelon" },
+    "apple": { "n": 20, "p": 125, "k": 200, "name": "Apple" },
+    "orange": { "n": 20, "p": 10, "k": 10, "name": "Orange" },
+    "papaya": { "n": 50, "p": 50, "k": 50, "name": "Papaya" },
+    "coconut": { "n": 20, "p": 10, "k": 30, "name": "Coconut" },
+    "jute": { "n": 80, "p": 40, "k": 40, "name": "Jute" },
+    "coffee": { "n": 100, "p": 20, "k": 30, "name": "Coffee" },
+    "wheat": { "n": 100, "p": 50, "k": 40, "name": "Wheat" },
+    "sugarcane": { "n": 150, "p": 60, "k": 80, "name": "Sugarcane" },
+    "potato": { "n": 120, "p": 60, "k": 120, "name": "Potato" },
+    "tomato": { "n": 100, "p": 60, "k": 80, "name": "Tomato" }
+  },
+  "rules": {
+    "NLow": {
+      "nutrient": "Nitrogen",
+      "status": "Low",
+      "symptoms": "Pale yellowing of older leaves (chlorosis), stunted vegetative growth, low protein content.",
+      "chemical_fertilizer": "Urea (46% N) at 50-75 kg/hectare or Ammonium Nitrate.",
+      "organic_alternative": "Apply well-decomposed Farmyard Manure (FYM), Neem cake, blood meal, or composted poultry manure.",
+      "action_advice": "Split nitrogen application into basal dose and top dressing during active vegetative growth phase for maximum uptake."
+    },
+    "NHigh": {
+      "nutrient": "Nitrogen",
+      "status": "High",
+      "symptoms": "Excessive dark green leafy growth, delayed flowering and fruiting, weak stems susceptible to lodging and pests.",
+      "chemical_fertilizer": "Avoid adding any nitrogenous fertilizers. Apply single superphosphate (SSP) or potash to balance nutrient ratio.",
+      "organic_alternative": "Incorporate sawdust, dried straw, or high-carbon mulches to immobilize excess soluble nitrogen.",
+      "action_advice": "Flush soil with measured irrigation if well-draining, and delay top-dressing until vegetative excess balances out."
+    },
+    "PLow": {
+      "nutrient": "Phosphorus",
+      "status": "Low",
+      "symptoms": "Purplish or reddish discoloration on leaves and stems, poor root development, delayed maturity.",
+      "chemical_fertilizer": "Diammonium Phosphate (DAP 18:46:0) or Single Super Phosphate (SSP 16% P2O5).",
+      "organic_alternative": "Apply Bone meal, rock phosphate, or mycorrhizal biofertilizers to improve phosphorus solubility.",
+      "action_advice": "Incorporate phosphorus near the root zone during sowing/transplanting as phosphorus is relatively immobile in soil."
+    },
+    "PHigh": {
+      "nutrient": "Phosphorus",
+      "status": "High",
+      "symptoms": "Interferes with the uptake of micronutrients like Zinc and Iron, causing secondary deficiencies.",
+      "chemical_fertilizer": "Discontinue all phosphorus and DAP fertilizers. Apply Zinc Sulphate (ZnSO4) foliar spray to counteract Zinc lockout.",
+      "organic_alternative": "Apply humic acid and plain organic compost to buffer high phosphorus toxicity.",
+      "action_advice": "Ensure soil pH is maintained between 6.0 and 7.0 to prevent micronutrient lockups."
+    },
+    "KLow": {
+      "nutrient": "Potassium",
+      "status": "Low",
+      "symptoms": "Marginal scorching and curling of leaf tips, weak stems, decreased disease resistance, poor fruit size.",
+      "chemical_fertilizer": "Muriate of Potash (MOP 60% K2O) or Potassium Sulphate (SOP 50% K2O).",
+      "organic_alternative": "Wood ash, kelp meal, greensand, or banana peel compost.",
+      "action_advice": "Apply potassium in two split applications: at planting and during fruit/grain filling stage."
+    },
+    "KHigh": {
+      "nutrient": "Potassium",
+      "status": "High",
+      "symptoms": "Inhibits uptake of Magnesium and Calcium, leading to blossom end rot or interveinal chlorosis.",
+      "chemical_fertilizer": "Withhold potash fertilizers. Apply Magnesium Sulphate (Epsom salt) or gypsum (Calcium Sulphate).",
+      "organic_alternative": "Irrigate deeply to leach excess potassium salts from root zone.",
+      "action_advice": "Check soil electrical conductivity (EC) and balance with balanced calcium/magnesium soil amendments."
+    },
+    "Balanced": {
+      "nutrient": "All",
+      "status": "Optimal",
+      "symptoms": "Vibrant healthy green foliage, vigorous root system, optimal flowering and yield potential.",
+      "chemical_fertilizer": "Maintain maintenance dose with balanced N-P-K (19:19:19 or 20:20:20) water-soluble fertilizer.",
+      "organic_alternative": "Apply well-aged vermicompost (2-3 tonnes/hectare) annually.",
+      "action_advice": "Continue regular soil health monitoring and follow recommended crop rotation practices."
+    }
+  }
+}

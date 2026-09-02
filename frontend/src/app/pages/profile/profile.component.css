@@ -1,0 +1,18 @@
+.bg-dark-harvest {
+  background-color: #064e3b;
+}
+
+.text-emerald-light {
+  color: #d1fae5;
+}
+
+.bg-emerald {
+  background-color: #10b981;
+}
+
+.avatar-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}

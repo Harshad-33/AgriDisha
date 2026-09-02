@@ -1,0 +1,174 @@
+<div class="container py-5">
+  <!-- Page Header -->
+  <div class="text-center max-w-700 mx-auto mb-5">
+    <span class="badge bg-danger-subtle text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Module 3</span>
+    <h1 class="display-6 fw-bold">Plant Leaf Disease Detection</h1>
+    <p class="text-muted">
+      Upload or drag & drop a high-resolution photo of a suspected leaf. Our PyTorch ResNet9 neural network diagnoses diseases across 38 crop categories and provides treatment and prevention protocols.
+    </p>
+  </div>
+
+  <div class="row justify-content-center g-4">
+    <!-- Uploader Card -->
+    <div class="col-lg-7" *ngIf="!result">
+      <div class="card card-harvest border-0 p-4 p-md-5">
+        <h4 class="fw-bold mb-4">Upload Plant Leaf Photo</h4>
+
+        <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <div>{{ errorMessage }}</div>
+        </div>
+
+        <!-- Drag & Drop Zone -->
+        <div
+          class="dropzone mb-4"
+          [class.dragover]="isDragging"
+          (dragover)="onDragOver($event)"
+          (dragleave)="onDragLeave($event)"
+          (drop)="onDrop($event)"
+          (click)="fileInput.click()">
+          <input
+            #fileInput
+            type="file"
+            accept="image/jpeg,image/png,image/webp,image/jpg"
+            (change)="onFileSelected($event)"
+            style="display: none;">
+
+          <div *ngIf="!imagePreview">
+            <div class="mb-3 text-success fs-1">
+              <i class="bi bi-cloud-arrow-up"></i>
+            </div>
+            <h5 class="fw-bold mb-1">Click to browse or drag & drop leaf photo</h5>
+            <p class="text-muted small mb-0">Supported formats: JPG, PNG, WebP (Max 10MB)</p>
+          </div>
+
+          <div *ngIf="imagePreview" class="text-center">
+            <img [src]="imagePreview" alt="Leaf preview" class="img-fluid rounded-4 shadow-sm mb-3 preview-image">
+            <div>
+              <span class="badge bg-success-subtle text-success me-2">{{ selectedFile?.name }}</span>
+              <span class="badge bg-light text-dark border">{{ ((selectedFile?.size || 0) / 1024 / 1024).toFixed(2) }} MB</span>
+            </div>
+            <div class="small text-primary mt-2">Click to choose another photo</div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          (click)="onSubmit()"
+          [disabled]="isLoading || !selectedFile"
+          class="btn btn-harvest-primary w-100 py-3 fw-bold fs-5 shadow-sm d-flex align-items-center justify-content-center gap-2">
+          <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+          <span>{{ isLoading ? 'Diagnosing Leaf Image...' : 'Detect Plant Disease' }}</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Diagnostic Result Card -->
+    <div class="col-lg-9" *ngIf="result">
+      <div class="card card-harvest border-0 p-0 overflow-hidden fade-in shadow-lg">
+        <!-- Diagnosis Banner -->
+        <div class="p-4" [ngClass]="result.status === 'Healthy' ? 'bg-success text-white' : 'bg-danger text-white'">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div>
+              <span class="badge bg-white text-dark px-3 py-1 rounded-pill mb-2 fw-semibold">
+                {{ result.crop }}
+              </span>
+              <h2 class="display-6 fw-bold mb-0">
+                <i class="bi" [ngClass]="result.status === 'Healthy' ? 'bi-shield-check' : 'bi-exclamation-octagon'"></i>
+                {{ result.disease }}
+              </h2>
+            </div>
+            <div class="text-end">
+              <span class="badge bg-white text-dark px-3 py-2 fs-6 fw-bold shadow-sm">
+                Confidence: {{ (result.confidence * 100).toFixed(1) }}%
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 p-md-5">
+          <div class="row g-4 mb-4">
+            <!-- Leaf Image Preview -->
+            <div class="col-md-4" *ngIf="imagePreview">
+              <div class="p-2 rounded-4 bg-light text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                <img [src]="imagePreview" alt="Diagnosed leaf" class="img-fluid rounded-3 shadow-sm mb-2" style="max-height: 220px; object-fit: cover;">
+                <small class="text-muted text-truncate w-100">{{ result.imageFilename || 'leaf.jpg' }}</small>
+              </div>
+            </div>
+
+            <!-- Disease Details / Pathogen Info -->
+            <div [ngClass]="imagePreview ? 'col-md-8' : 'col-md-12'">
+              <div class="p-4 rounded-4 bg-light h-100">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <span class="text-muted small d-block">Health Status</span>
+                    <span class="badge fs-6" [ngClass]="result.status === 'Healthy' ? 'bg-success' : 'bg-danger'">
+                      {{ result.status }}
+                    </span>
+                  </div>
+                  <div class="col-sm-6" *ngIf="result.severity && result.severity !== 'None'">
+                    <span class="text-muted small d-block">Severity Level</span>
+                    <span class="badge bg-warning text-dark fs-6">{{ result.severity }}</span>
+                  </div>
+                  <div class="col-12" *ngIf="result.cause && result.cause !== 'N/A'">
+                    <span class="text-muted small d-block">Biological Cause / Pathogen</span>
+                    <strong class="text-dark">{{ result.cause }}</strong>
+                  </div>
+                  <div class="col-12" *ngIf="result.symptoms">
+                    <span class="text-muted small d-block">Identified Symptoms</span>
+                    <p class="small mb-0 text-dark">{{ result.symptoms }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment, Prevention & Care Guidance -->
+          <div class="row g-4 mb-4" *ngIf="result.status !== 'Healthy'">
+            <!-- Prevention Card -->
+            <div class="col-md-6" *ngIf="result.prevention">
+              <div class="p-3 rounded-4 bg-light border-start border-4 border-warning h-100">
+                <h6 class="fw-bold text-dark mb-2"><i class="bi bi-shield-shaded text-warning me-1"></i> Prevention Protocol</h6>
+                <p class="small text-muted mb-0">{{ result.prevention }}</p>
+              </div>
+            </div>
+
+            <!-- Treatment Card -->
+            <div class="col-md-6" *ngIf="result.treatment">
+              <div class="p-3 rounded-4 bg-light border-start border-4 border-danger h-100">
+                <h6 class="fw-bold text-dark mb-2"><i class="bi bi-prescription2 text-danger me-1"></i> Recommended Fungicide / Treatment</h6>
+                <p class="small text-muted mb-0">{{ result.treatment }}</p>
+              </div>
+            </div>
+
+            <!-- Supplements -->
+            <div class="col-12" *ngIf="result.supplement">
+              <div class="p-3 rounded-3 bg-success-subtle text-success-emphasis small">
+                <strong><i class="bi bi-flower2 me-1"></i> Soil & Plant Supplements:</strong>
+                {{ result.supplement }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Healthy Leaf Success Message -->
+          <div *ngIf="result.status === 'Healthy'" class="alert alert-success d-flex align-items-center gap-3 p-4 mb-4 rounded-4" role="alert">
+            <i class="bi bi-check-circle-fill fs-2"></i>
+            <div>
+              <h5 class="fw-bold mb-1">Excellent Plant Health!</h5>
+              <p class="mb-0 small">No pathogenic lesions or foliar infections detected. Continue standard crop rotation and nutrient management.</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <button (click)="reset()" class="btn btn-harvest-secondary px-4">
+              <i class="bi bi-arrow-left me-1"></i> Scan Another Leaf
+            </button>
+            <a routerLink="/dashboard" class="btn btn-harvest-primary px-4">
+              Return to Dashboard <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

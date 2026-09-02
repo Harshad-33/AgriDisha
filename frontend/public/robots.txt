@@ -1,0 +1,3 @@
+# AgriDisha Frontend Assets
+User-agent: *
+Allow: /

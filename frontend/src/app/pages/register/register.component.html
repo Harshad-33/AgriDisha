@@ -1,0 +1,235 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-7 col-lg-6">
+      <div class="card card-harvest border-0 p-4 p-md-5 shadow-sm rounded-4">
+
+        <!-- Progress Steps -->
+        <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+          <div class="d-flex align-items-center gap-2">
+            <span class="step-circle" [class.step-active]="step === 'DETAILS'" [class.step-completed]="step === 'OTP'">
+              <i *ngIf="step === 'OTP'" class="bi bi-check-lg"></i>
+              <span *ngIf="step === 'DETAILS'">1</span>
+            </span>
+            <span class="small fw-semibold" [class.text-success]="step === 'DETAILS' || step === 'OTP'">Farm Details</span>
+          </div>
+          <div class="step-divider" [class.divider-active]="step === 'OTP'"></div>
+          <div class="d-flex align-items-center gap-2">
+            <span class="step-circle" [class.step-active]="step === 'OTP'">2</span>
+            <span class="small fw-semibold" [class.text-success]="step === 'OTP'" [class.text-muted]="step !== 'OTP'">Email OTP</span>
+          </div>
+        </div>
+
+        <!-- Global Error Alert -->
+        <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-3 rounded-3" role="alert">
+          <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+          <div>{{ errorMessage }}</div>
+        </div>
+
+        <!-- Global Success Alert -->
+        <div *ngIf="successMessage && !otpPreview" class="alert alert-success d-flex align-items-center gap-2 py-2 small mb-3 rounded-3" role="alert">
+          <i class="bi bi-check-circle-fill fs-5"></i>
+          <div>{{ successMessage }}</div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 1: Registration Details Form              -->
+        <!-- ============================================== -->
+        <div *ngIf="step === 'DETAILS'">
+          <div class="text-center mb-4">
+            <div class="d-inline-flex p-3 bg-success-subtle text-success rounded-circle mb-3 fs-3">
+              <i class="bi bi-person-plus"></i>
+            </div>
+            <h2 class="fw-bold">Create an Account</h2>
+            <p class="text-muted small">Join AgriDisha to track your farm predictions and soil recommendations.</p>
+          </div>
+
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmitDetails()" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="reg-username">Username *</label>
+                <input
+                  id="reg-username"
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. green_farmer"
+                  formControlName="username"
+                  [class.is-invalid]="registerForm.get('username')?.touched && registerForm.get('username')?.invalid">
+                <div *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.invalid" class="text-danger small mt-1">
+                  Min 3 characters required.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="reg-email">Email Address *</label>
+                <input
+                  id="reg-email"
+                  type="email"
+                  class="form-control"
+                  placeholder="farmer@example.com"
+                  formControlName="email"
+                  [class.is-invalid]="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">
+                <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid" class="text-danger small mt-1">
+                  Valid email is required for OTP.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="reg-fullname">Full Name *</label>
+                <input
+                  id="reg-fullname"
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. Ramesh Patil"
+                  formControlName="fullName"
+                  [class.is-invalid]="registerForm.get('fullName')?.touched && registerForm.get('fullName')?.invalid">
+                <div *ngIf="registerForm.get('fullName')?.touched && registerForm.get('fullName')?.invalid" class="text-danger small mt-1">
+                  Full name is required.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="reg-location">District / State *</label>
+                <input
+                  id="reg-location"
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. Yavatmal, Maharashtra"
+                  formControlName="location"
+                  [class.is-invalid]="registerForm.get('location')?.touched && registerForm.get('location')?.invalid">
+                <div *ngIf="registerForm.get('location')?.touched && registerForm.get('location')?.invalid" class="text-danger small mt-1">
+                  Location is required.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="reg-password">Password *</label>
+                <input
+                  id="reg-password"
+                  type="password"
+                  class="form-control"
+                  placeholder="At least 6 characters"
+                  formControlName="password"
+                  [class.is-invalid]="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+                <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid" class="text-danger small mt-1">
+                  Password must be at least 6 characters.
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              [disabled]="isLoading"
+              class="btn btn-harvest-primary w-100 py-2 mt-4 fw-semibold d-flex align-items-center justify-content-center gap-2">
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+              <span>{{ isLoading ? 'Sending Verification Code...' : 'Continue to Email Verification' }}</span>
+              <i *ngIf="!isLoading" class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+
+          <div class="text-center mt-4 pt-3 border-top small text-muted">
+            Already have an account?
+            <a routerLink="/login" class="text-success fw-bold text-decoration-none ms-1">Sign In</a>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- STEP 2: Email OTP Verification                 -->
+        <!-- ============================================== -->
+        <div *ngIf="step === 'OTP'" class="text-center">
+          <div class="d-inline-flex p-3 bg-success-subtle text-success rounded-circle mb-3 fs-3">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <h3 class="fw-bold mb-2">Verify Your Email</h3>
+          <p class="text-muted small mb-1">
+            We sent a 6-digit one-time code to:
+          </p>
+          <div class="d-inline-flex align-items-center gap-2 bg-light px-3 py-1 rounded-pill mb-3 border">
+            <i class="bi bi-envelope-check text-success"></i>
+            <span class="fw-semibold text-dark small">{{ userEmail }}</span>
+            <button (click)="onBackToDetails()" class="btn btn-link btn-sm text-muted p-0 text-decoration-none" title="Change email">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+          </div>
+
+          <!-- Dev Mode / Fallback Preview Banner when live SMTP not configured -->
+          <div *ngIf="!smtpDelivered && otpPreview" class="alert alert-warning border-warning text-start p-3 mb-4 rounded-3 shadow-sm">
+            <div class="d-flex align-items-center gap-2 fw-bold text-dark small mb-1">
+              <i class="bi bi-info-circle-fill text-warning fs-5"></i>
+              <span>Local Dev Mode (Live SMTP Not Configured)</span>
+            </div>
+            <div class="small text-muted mb-2">
+              Since no external SMTP server is linked in Docker, your 6-digit verification code is:
+            </div>
+            <div class="d-flex align-items-center justify-content-between bg-white border border-warning rounded p-2">
+              <span class="fs-4 fw-bold text-dark font-monospace px-2">{{ otpPreview }}</span>
+              <button type="button" (click)="fillPreviewOtp()" class="btn btn-warning btn-sm fw-bold">
+                <i class="bi bi-magic me-1"></i> Auto-fill OTP
+              </button>
+            </div>
+            <div class="extra-small text-muted mt-2" style="font-size: 0.75rem;">
+              💡 To deliver real emails directly to your Gmail inbox, see instructions in README / docker-compose.
+            </div>
+          </div>
+
+          <!-- Live SMTP Delivery Alert -->
+          <div *ngIf="smtpDelivered" class="alert alert-success d-flex align-items-center gap-2 py-2 small mb-4 rounded-3 text-start">
+            <i class="bi bi-check-circle-fill fs-5"></i>
+            <div>A verification code has been dispatched to <b>{{ userEmail }}</b>. Please check your inbox or spam folder.</div>
+          </div>
+
+          <form [formGroup]="otpForm" (ngSubmit)="onVerifyOtp()" novalidate>
+            <div class="mb-4">
+              <label class="form-label text-muted small fw-semibold d-block mb-2" for="otp-input">
+                Enter 6-Digit Verification Code
+              </label>
+              <input
+                id="otp-input"
+                type="text"
+                maxlength="6"
+                autocomplete="one-time-code"
+                class="form-control form-control-lg text-center fw-bold otp-input"
+                placeholder="123456"
+                formControlName="otp"
+                [class.is-invalid]="otpForm.get('otp')?.touched && otpForm.get('otp')?.invalid">
+              <div *ngIf="otpForm.get('otp')?.touched && otpForm.get('otp')?.invalid" class="text-danger small mt-2">
+                Please enter a valid 6-digit numeric verification code.
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              [disabled]="isLoading || otpForm.invalid"
+              class="btn btn-harvest-primary w-100 py-2 fw-semibold d-flex align-items-center justify-content-center gap-2 mb-3">
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+              <span>{{ isLoading ? 'Verifying...' : 'Verify & Complete Registration' }}</span>
+              <i *ngIf="!isLoading" class="bi bi-check-circle-fill"></i>
+            </button>
+
+            <!-- Resend Timer -->
+            <div class="small text-muted mb-4">
+              <span *ngIf="resendCountdown > 0">
+                Resend code in <b class="text-success">{{ resendCountdown }}s</b>
+              </span>
+              <button
+                *ngIf="resendCountdown <= 0"
+                type="button"
+                (click)="onResendOtp()"
+                [disabled]="isLoading"
+                class="btn btn-link btn-sm text-success text-decoration-none fw-semibold p-0">
+                <i class="bi bi-arrow-clockwise me-1"></i> Resend Verification Code
+              </button>
+            </div>
+
+            <button
+              type="button"
+              (click)="onBackToDetails()"
+              class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+              <i class="bi bi-arrow-left me-1"></i> Edit Registration Details
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+<div class="container py-5">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5 border-bottom pb-4">
+    <div>
+      <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold mb-2">Saved Records</span>
+      <h1 class="display-6 fw-bold mb-1">Your Farm Prediction History</h1>
+      <p class="text-muted mb-0">Review past crop recommendations, soil nutrient assessments, and plant disease diagnoses.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="btn-group shadow-sm">
+      <button
+        type="button"
+        (click)="applyFilter('ALL')"
+        class="btn btn-sm"
+        [ngClass]="activeFilter === 'ALL' ? 'btn-harvest-primary' : 'btn-outline-secondary'">
+        All ({{ historyList.length }})
+      </button>
+      <button
+        type="button"
+        (click)="applyFilter('CROP')"
+        class="btn btn-sm"
+        [ngClass]="activeFilter === 'CROP' ? 'btn-harvest-primary' : 'btn-outline-secondary'">
+        Crops
+      </button>
+      <button
+        type="button"
+        (click)="applyFilter('FERTILIZER')"
+        class="btn btn-sm"
+        [ngClass]="activeFilter === 'FERTILIZER' ? 'btn-harvest-primary' : 'btn-outline-secondary'">
+        Fertilizer
+      </button>
+      <button
+        type="button"
+        (click)="applyFilter('DISEASE')"
+        class="btn btn-sm"
+        [ngClass]="activeFilter === 'DISEASE' ? 'btn-harvest-primary' : 'btn-outline-secondary'">
+        Diseases
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-warning d-flex align-items-center gap-2 py-2 mb-4" role="alert">
+    <i class="bi bi-exclamation-triangle-fill"></i>
+    <div>{{ errorMessage }}</div>
+  </div>
+
+  <div class="card card-harvest border-0 p-0 overflow-hidden shadow-sm">
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="p-5 text-center text-muted">
+      <div class="spinner-border text-success mb-2" role="status"></div>
+      <div>Loading prediction history...</div>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!isLoading && filteredList.length === 0" class="p-5 text-center text-muted">
+      <i class="bi bi-journal-x fs-1 d-block mb-2 text-secondary"></i>
+      <h5 class="fw-bold">No history records found</h5>
+      <p class="small mb-3">Try generating a recommendation or scanning a plant leaf.</p>
+      <a routerLink="/crop-recommendation" class="btn btn-harvest-primary btn-sm">Get Crop Recommendation</a>
+    </div>
+
+    <!-- Records Table -->
+    <div *ngIf="!isLoading && filteredList.length > 0" class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th class="ps-4">Category</th>
+            <th>Prediction / Title</th>
+            <th>Nutrients / Symptoms / Details</th>
+            <th>Status / Match</th>
+            <th>Logged Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of filteredList">
+            <td class="ps-4">
+              <span *ngIf="item.type === 'CROP'" class="badge bg-success-subtle text-success">
+                <i class="bi bi-tree me-1"></i> Crop
+              </span>
+              <span *ngIf="item.type === 'FERTILIZER'" class="badge bg-primary-subtle text-primary">
+                <i class="bi bi-droplet-half me-1"></i> Fertilizer
+              </span>
+              <span *ngIf="item.type === 'DISEASE'" class="badge bg-danger-subtle text-danger">
+                <i class="bi bi-virus me-1"></i> Disease
+              </span>
+            </td>
+            <td>
+              <div class="fw-bold text-dark">{{ item.title }}</div>
+              <div class="small text-muted">{{ item.subtitle }}</div>
+            </td>
+            <td>
+              <div class="small text-dark text-truncate" style="max-width: 380px;">{{ item.detail }}</div>
+            </td>
+            <td>
+              <span class="badge" [ngClass]="item.status === 'Healthy' ? 'bg-success' : (item.status === 'Diseased' ? 'bg-danger' : 'bg-secondary')">
+                {{ item.status }}
+              </span>
+              <span *ngIf="item.confidence" class="small text-muted ms-2">
+                {{ (item.confidence * 100).toFixed(1) }}%
+              </span>
+            </td>
+            <td class="small text-muted">
+              {{ item.createdAt | date:'medium' }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
