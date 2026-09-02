@@ -12,10 +12,8 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-            "outputPath": {
-              "base": "dist/agridisha-frontend",
-              "browser": ""
-            },
+          "options": {
+            "outputPath": "dist/agridisha-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
