@@ -19,8 +19,6 @@ export class RegisterComponent implements OnDestroy {
   isLoading = false;
   errorMessage = '';
   successMessage = '';
-  otpPreview = '';
-  smtpDelivered = false;
   resendCountdown = 0;
   private timerInterval: any = null;
 
@@ -46,12 +44,6 @@ export class RegisterComponent implements OnDestroy {
     return this.registerForm.get('email')?.value || '';
   }
 
-  fillPreviewOtp(): void {
-    if (this.otpPreview) {
-      this.otpForm.get('otp')?.setValue(this.otpPreview);
-    }
-  }
-
   // Step 1: Submit Details and Request OTP
   onSubmitDetails(): void {
     if (this.registerForm.invalid) {
@@ -67,8 +59,6 @@ export class RegisterComponent implements OnDestroy {
       next: (res) => {
         this.isLoading = false;
         this.step = 'OTP';
-        this.otpPreview = res.otpPreview || '';
-        this.smtpDelivered = res.smtpDelivered || false;
         this.successMessage = res.message || `Verification code sent to ${this.userEmail}`;
         this.startResendTimer(60);
       },
@@ -118,8 +108,6 @@ export class RegisterComponent implements OnDestroy {
     this.authService.resendOtp(this.userEmail).subscribe({
       next: (res) => {
         this.isLoading = false;
-        this.otpPreview = res.otpPreview || '';
-        this.smtpDelivered = res.smtpDelivered || false;
         this.successMessage = res.message || 'A new verification code has been dispatched.';
         this.startResendTimer(60);
       },
@@ -135,7 +123,6 @@ export class RegisterComponent implements OnDestroy {
     this.step = 'DETAILS';
     this.errorMessage = '';
     this.successMessage = '';
-    this.otpPreview = '';
     this.otpForm.reset();
     this.clearIntervalTimer();
   }

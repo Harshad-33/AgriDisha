@@ -56,17 +56,16 @@ public class AuthService {
         }
 
         String otp = otpService.storeOtp(request);
-        boolean sentViaSmtp = emailService.sendVerificationOtpEmail(email, request.getFullName(), otp);
+        boolean sentViaEmail = emailService.sendVerificationOtpEmail(email, request.getFullName(), otp);
+
+        if (!sentViaEmail) {
+            throw new BadRequestException("Unable to send verification OTP to '" + email + "'. Please check your email address and try again.");
+        }
 
         java.util.Map<String, Object> response = new java.util.HashMap<>();
         response.put("email", email);
-        response.put("smtpDelivered", sentViaSmtp);
-        if (sentViaSmtp) {
-            response.put("message", "Verification code sent to " + email);
-        } else {
-            response.put("message", "Verification code generated! (SMTP not configured, use preview code)");
-            response.put("otpPreview", otp);
-        }
+        response.put("smtpDelivered", true);
+        response.put("message", "Verification code sent to " + email);
         return response;
     }
 
@@ -80,17 +79,16 @@ public class AuthService {
         }
 
         String newOtp = otpService.resendOtp(cleanEmail);
-        boolean sentViaSmtp = emailService.sendVerificationOtpEmail(cleanEmail, "Farmer", newOtp);
+        boolean sentViaEmail = emailService.sendVerificationOtpEmail(cleanEmail, "Farmer", newOtp);
+
+        if (!sentViaEmail) {
+            throw new BadRequestException("Unable to resend verification OTP to '" + cleanEmail + "'. Please try again.");
+        }
 
         java.util.Map<String, Object> response = new java.util.HashMap<>();
         response.put("email", cleanEmail);
-        response.put("smtpDelivered", sentViaSmtp);
-        if (sentViaSmtp) {
-            response.put("message", "New verification code sent to " + cleanEmail);
-        } else {
-            response.put("message", "New code generated! (SMTP not configured, use preview code)");
-            response.put("otpPreview", newOtp);
-        }
+        response.put("smtpDelivered", true);
+        response.put("message", "New verification code sent to " + cleanEmail);
         return response;
     }
 

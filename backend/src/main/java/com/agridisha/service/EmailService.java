@@ -5,9 +5,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class EmailService {
@@ -17,18 +25,56 @@ public class EmailService {
     @Autowired(required = false)
     private JavaMailSender mailSender;
 
+    @Autowired
+    private RestTemplate restTemplate;
+
     @Value("${spring.mail.username:}")
     private String senderEmail;
 
+    @Value("${BREVO_API_KEY:${agridisha.mail.brevo-api-key:}}")
+    private String brevoApiKey;
+
     /**
-     * Send 6-digit OTP verification email with HTML styling and fallback simulator.
+     * Send 6-digit OTP verification email with HTML styling.
+     * Supports:
+     * 1. Brevo HTTP API (Port 443 HTTPS - guaranteed to work in cloud environments like Render that block SMTP port 587)
+     * 2. Spring JavaMailSender SMTP (Port 587 - works locally and in unblocked environments)
      */
     public boolean sendVerificationOtpEmail(String recipientEmail, String recipientName, String otp) {
         String subject = "AgriDisha - Your Email Verification Code: " + otp;
         String htmlContent = buildOtpHtmlTemplate(recipientName, otp);
 
-        boolean emailSent = false;
+        // 1. First priority in cloud: If Brevo HTTP API key is configured, send via HTTPS Port 443
+        if (brevoApiKey != null && !brevoApiKey.isBlank()) {
+            try {
+                HttpHeaders headers = new HttpHeaders();
+                headers.setContentType(MediaType.APPLICATION_JSON);
+                headers.set("api-key", brevoApiKey.trim());
 
+                String fromEmail = (senderEmail != null && !senderEmail.isBlank()) ? senderEmail.trim() : "harshadporajwar21@gmail.com";
+                Map<String, Object> sender = Map.of("name", "AgriDisha Smart Agriculture", "email", fromEmail);
+                Map<String, Object> recipient = Map.of("email", recipientEmail, "name", recipientName != null ? recipientName : "Farmer");
+
+                Map<String, Object> body = Map.of(
+                        "sender", sender,
+                        "to", List.of(recipient),
+                        "subject", subject,
+                        "htmlContent", htmlContent
+                );
+
+                HttpEntity<Map<String, Object>> entity = new HttpEntity<>(body, headers);
+                ResponseEntity<String> response = restTemplate.postForEntity("https://api.brevo.com/v3/smtp/email", entity, String.class);
+
+                if (response.getStatusCode().is2xxSuccessful()) {
+                    logger.info("Successfully dispatched verification OTP to {} via Brevo HTTPS API (Port 443)", recipientEmail);
+                    return true;
+                }
+            } catch (Exception ex) {
+                logger.error("Brevo HTTPS mail delivery failed: {}", ex.getMessage());
+            }
+        }
+
+        // 2. Second priority: Standard JavaMailSender SMTP (Gmail port 587)
         if (mailSender != null && senderEmail != null && !senderEmail.isBlank()) {
             try {
                 MimeMessage message = mailSender.createMimeMessage();
@@ -40,32 +86,19 @@ public class EmailService {
                 helper.setText(htmlContent, true);
 
                 mailSender.send(message);
-                emailSent = true;
-                logger.info("Successfully dispatched verification OTP email to {}", recipientEmail);
+                logger.info("Successfully dispatched verification OTP email to {} via SMTP", recipientEmail);
+                return true;
             } catch (Exception e) {
-                logger.warn("SMTP mail delivery failed (will use dev logger): {}", e.getMessage());
+                logger.warn("SMTP mail delivery failed (host may block outbound SMTP port 587): {}", e.getMessage());
             }
         }
 
-        // Always print simulation banner to server logs for immediate dev visibility
-        logOtpSimulationBanner(recipientEmail, recipientName, otp, emailSent);
-        return emailSent;
-    }
-
-    private void logOtpSimulationBanner(String email, String name, String otp, boolean sentViaSmtp) {
-        String border = "====================================================================";
-        logger.info("\n{}\n" +
-                "🌿 AGRIDISHA SECURE REGISTRATION VERIFICATION\n" +
-                "{}\n" +
-                "Recipient: {} ({})\n" +
-                "6-Digit OTP: >>> {} <<<\n" +
-                "Validity: 10 minutes\n" +
-                "SMTP Delivered: {}\n" +
-                "{}\n",
-                border, border, name, email, otp, sentViaSmtp, border);
+        logger.error("No active email channel succeeded for recipient: {}", recipientEmail);
+        return false;
     }
 
     private String buildOtpHtmlTemplate(String name, String otp) {
+        String displayName = (name != null && !name.isBlank()) ? name : "Farmer";
         return "<!DOCTYPE html>" +
                 "<html>" +
                 "<head><meta charset='UTF-8'></head>" +
@@ -80,7 +113,7 @@ public class EmailService {
                 "    <tr>" +
                 "      <td style='padding:35px 30px; color:#2d3748;'>" +
                 "        <h2 style='margin:0 0 16px 0; font-size:20px; color:#1a202c;'>Email Verification Code</h2>" +
-                "        <p style='font-size:15px; line-height:1.6; color:#4a5568;'>Hello <b>" + name + "</b>,</p>" +
+                "        <p style='font-size:15px; line-height:1.6; color:#4a5568;'>Hello <b>" + displayName + "</b>,</p>" +
                 "        <p style='font-size:15px; line-height:1.6; color:#4a5568;'>Thank you for registering with <b>AgriDisha</b>. To complete your account registration and secure your farm profile, please enter the one-time verification code below:</p>" +
                 "        <div style='text-align:center; margin:30px 0;'>" +
                 "          <span style='display:inline-block; background:#e8f5e9; border:2px dashed #107c41; color:#107c41; font-size:32px; font-weight:bold; letter-spacing:8px; padding:15px 30px; border-radius:8px; font-family:monospace;'>" + otp + "</span>" +

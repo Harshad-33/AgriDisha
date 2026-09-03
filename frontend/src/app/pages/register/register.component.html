@@ -151,30 +151,10 @@
             </button>
           </div>
 
-          <!-- Dev Mode / Fallback Preview Banner when live SMTP not configured -->
-          <div *ngIf="!smtpDelivered && otpPreview" class="alert alert-warning border-warning text-start p-3 mb-4 rounded-3 shadow-sm">
-            <div class="d-flex align-items-center gap-2 fw-bold text-dark small mb-1">
-              <i class="bi bi-info-circle-fill text-warning fs-5"></i>
-              <span>Local Dev Mode (Live SMTP Not Configured)</span>
-            </div>
-            <div class="small text-muted mb-2">
-              Since no external SMTP server is linked in Docker, your 6-digit verification code is:
-            </div>
-            <div class="d-flex align-items-center justify-content-between bg-white border border-warning rounded p-2">
-              <span class="fs-4 fw-bold text-dark font-monospace px-2">{{ otpPreview }}</span>
-              <button type="button" (click)="fillPreviewOtp()" class="btn btn-warning btn-sm fw-bold">
-                <i class="bi bi-magic me-1"></i> Auto-fill OTP
-              </button>
-            </div>
-            <div class="extra-small text-muted mt-2" style="font-size: 0.75rem;">
-              💡 To deliver real emails directly to your Gmail inbox, see instructions in README / docker-compose.
-            </div>
-          </div>
-
-          <!-- Live SMTP Delivery Alert -->
-          <div *ngIf="smtpDelivered" class="alert alert-success d-flex align-items-center gap-2 py-2 small mb-4 rounded-3 text-start">
-            <i class="bi bi-check-circle-fill fs-5"></i>
-            <div>A verification code has been dispatched to <b>{{ userEmail }}</b>. Please check your inbox or spam folder.</div>
+          <!-- Verification Code Dispatched Alert -->
+          <div class="alert alert-success d-flex align-items-center gap-2 py-2 small mb-4 rounded-3 text-start">
+            <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+            <div>A 6-digit verification code has been dispatched to <b>{{ userEmail }}</b>. Please check your inbox or spam folder.</div>
           </div>
 
           <form [formGroup]="otpForm" (ngSubmit)="onVerifyOtp()" novalidate>
