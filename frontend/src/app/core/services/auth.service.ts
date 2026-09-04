@@ -83,6 +83,10 @@ export class AuthService {
     }
   }
 
+  pingHealth(): Observable<any> {
+    return this.http.get(`${environment.apiUrl}/health`);
+  }
+
   logout(): void {
     localStorage.removeItem('agridisha_token');
     localStorage.removeItem('agridisha_user');

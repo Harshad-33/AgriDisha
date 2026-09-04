@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
@@ -11,7 +11,7 @@ import { AuthService } from '../../core/services/auth.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnDestroy {
+export class RegisterComponent implements OnInit, OnDestroy {
   step: 'DETAILS' | 'OTP' = 'DETAILS';
   registerForm: FormGroup;
   otpForm: FormGroup;
@@ -37,6 +37,14 @@ export class RegisterComponent implements OnDestroy {
 
     this.otpForm = this.fb.group({
       otp: ['', [Validators.required, Validators.pattern('^[0-9]{6}$')]]
+    });
+  }
+
+  ngOnInit(): void {
+    // Pre-warm backend while user is filling out registration details
+    this.authService.pingHealth().subscribe({
+      next: () => {},
+      error: () => {}
     });
   }
 

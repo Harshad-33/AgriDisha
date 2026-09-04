@@ -23,6 +23,8 @@ import java.util.Optional;
 @Service
 public class AuthService {
 
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(AuthService.class);
+
     @Autowired
     private UserRepository userRepository;
 
@@ -56,11 +58,16 @@ public class AuthService {
         }
 
         String otp = otpService.storeOtp(request);
-        boolean sentViaEmail = emailService.sendVerificationOtpEmail(email, request.getFullName(), otp);
+        String fullName = request.getFullName();
 
-        if (!sentViaEmail) {
-            throw new BadRequestException("Unable to send verification OTP to '" + email + "'. Please check your email address and try again.");
-        }
+        // Dispatch email asynchronously in background thread so user gets instant response without waiting
+        java.util.concurrent.CompletableFuture.runAsync(() -> {
+            try {
+                emailService.sendVerificationOtpEmail(email, fullName, otp);
+            } catch (Exception ex) {
+                logger.error("Async email dispatch failed for {}: {}", email, ex.getMessage());
+            }
+        });
 
         java.util.Map<String, Object> response = new java.util.HashMap<>();
         response.put("email", email);
@@ -79,11 +86,15 @@ public class AuthService {
         }
 
         String newOtp = otpService.resendOtp(cleanEmail);
-        boolean sentViaEmail = emailService.sendVerificationOtpEmail(cleanEmail, "Farmer", newOtp);
 
-        if (!sentViaEmail) {
-            throw new BadRequestException("Unable to resend verification OTP to '" + cleanEmail + "'. Please try again.");
-        }
+        // Dispatch email asynchronously in background thread
+        java.util.concurrent.CompletableFuture.runAsync(() -> {
+            try {
+                emailService.sendVerificationOtpEmail(cleanEmail, "Farmer", newOtp);
+            } catch (Exception ex) {
+                logger.error("Async resend email dispatch failed for {}: {}", cleanEmail, ex.getMessage());
+            }
+        });
 
         java.util.Map<String, Object> response = new java.util.HashMap<>();
         response.put("email", cleanEmail);
