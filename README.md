@@ -399,14 +399,6 @@ curl -X POST http://localhost:8080/api/disease/predict \
 
 ---
 
-## 🛡️ 8. Default Demo User Credentials
-
-For testing the authenticated dashboard and history features immediately:
-- **Username:** `farmer_john`
-- **Password:** `password123`
-
----
-
 ## 🔧 9. Troubleshooting & FAQ
 
 1. **Weather API fails with 401 Unauthorized:**
