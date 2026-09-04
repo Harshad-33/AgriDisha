@@ -84,7 +84,7 @@ export class AuthService {
   }
 
   pingHealth(): Observable<any> {
-    return this.http.get(`${environment.apiUrl}/health`);
+    return this.http.get(`${this.apiUrl}/health`);
   }
 
   logout(): void {

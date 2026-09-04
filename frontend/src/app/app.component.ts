@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     // Silent pre-warming ping to wake up cloud backend immediately so all subsequent user actions are instant
-    this.http.get(`${environment.apiUrl}/health`).subscribe({
+    this.http.get(`${environment.apiUrl}/auth/health`).subscribe({
       next: () => {},
       error: () => {}
     });

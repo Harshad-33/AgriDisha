@@ -22,6 +22,11 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
+    @GetMapping("/health")
+    public ResponseEntity<Map<String, String>> health() {
+        return ResponseEntity.ok(Map.of("status", "UP"));
+    }
+
     /**
      * Step 1: Validate registration info and send 6-digit verification OTP.
      */
