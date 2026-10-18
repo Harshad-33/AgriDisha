@@ -18,6 +18,24 @@ public class FertilizerRecommendation {
     @Column(name = "crop_name", nullable = false, length = 100)
     private String cropName;
 
+    @Column(length = 100)
+    private String state;
+
+    @Column(length = 100)
+    private String district;
+
+    @Column(name = "soil_color", length = 100)
+    private String soilColor;
+
+    @Column(name = "is_district_verified")
+    private Boolean isDistrictVerified = false;
+
+    @Column(name = "dataset_used", length = 150)
+    private String datasetUsed;
+
+    @Column(name = "reference_link", columnDefinition = "TEXT")
+    private String referenceLink;
+
     @Column(nullable = false)
     private Double nitrogen;
 
@@ -123,6 +141,54 @@ public class FertilizerRecommendation {
 
     public void setOrganicAlternatives(String organicAlternatives) {
         this.organicAlternatives = organicAlternatives;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getSoilColor() {
+        return soilColor;
+    }
+
+    public void setSoilColor(String soilColor) {
+        this.soilColor = soilColor;
+    }
+
+    public Boolean getIsDistrictVerified() {
+        return isDistrictVerified;
+    }
+
+    public void setIsDistrictVerified(Boolean isDistrictVerified) {
+        this.isDistrictVerified = isDistrictVerified;
+    }
+
+    public String getDatasetUsed() {
+        return datasetUsed;
+    }
+
+    public void setDatasetUsed(String datasetUsed) {
+        this.datasetUsed = datasetUsed;
+    }
+
+    public String getReferenceLink() {
+        return referenceLink;
+    }
+
+    public void setReferenceLink(String referenceLink) {
+        this.referenceLink = referenceLink;
     }
 
     public LocalDateTime getCreatedAt() {

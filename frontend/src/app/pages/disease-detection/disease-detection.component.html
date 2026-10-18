@@ -14,6 +14,24 @@
       <div class="card card-harvest border-0 p-4 p-md-5">
         <h4 class="fw-bold mb-4">Upload Plant Leaf Photo</h4>
 
+        <!-- Regional Location Selection -->
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <label class="form-label" for="disease-state">State *</label>
+            <select id="disease-state" class="form-select" [(ngModel)]="selectedState" (ngModelChange)="onStateChange()">
+              <option *ngFor="let s of states" [value]="s">{{ s }}</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="disease-district">District *</label>
+            <select id="disease-district" class="form-select" [(ngModel)]="selectedDistrict">
+              <option *ngFor="let d of districts" [value]="d">
+                {{ d }} {{ locationService.isVerifiedDistrict(selectedState, d) ? '🟢 (Regional Advisory)' : '' }}
+              </option>
+            </select>
+          </div>
+        </div>
+
         <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
           <i class="bi bi-exclamation-triangle-fill"></i>
           <div>{{ errorMessage }}</div>
@@ -87,6 +105,15 @@
         </div>
 
         <div class="p-4 p-md-5">
+          <!-- Regional Advisory Banner -->
+          <div *ngIf="result.regionalAdvisory" class="alert alert-info border-info d-flex align-items-center gap-3 p-3 rounded-4 mb-4 shadow-sm">
+            <i class="bi bi-geo-alt-fill fs-3 text-info"></i>
+            <div>
+              <div class="fw-bold fs-6">Regional Plant Pathology Advisory ({{ result.district || selectedDistrict }})</div>
+              <div class="small">{{ result.regionalAdvisory }}</div>
+            </div>
+          </div>
+
           <div class="row g-4 mb-4">
             <!-- Leaf Image Preview -->
             <div class="col-md-4" *ngIf="imagePreview">

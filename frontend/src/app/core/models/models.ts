@@ -38,6 +38,8 @@ export interface CropRecommendationRequest {
   ph: number;
   rainfall: number;
   city?: string;
+  state?: string;
+  district?: string;
   temperature?: number;
   humidity?: number;
 }
@@ -48,6 +50,11 @@ export interface CropRecommendationResponse {
   confidence: number;
   modelUsed: string;
   city: string;
+  state?: string;
+  district?: string;
+  isDistrictVerified?: boolean;
+  datasetUsed?: string;
+  regionalNotes?: string;
   temperature: number;
   humidity: number;
   nitrogen: number;
@@ -64,6 +71,9 @@ export interface FertilizerRecommendationRequest {
   nitrogen: number;
   phosphorous: number;
   potassium: number;
+  state?: string;
+  district?: string;
+  soilColor?: string;
 }
 
 export interface NutrientDetail {
@@ -81,6 +91,12 @@ export interface NutrientLevels {
 export interface FertilizerRecommendationResponse {
   id: number;
   crop: string;
+  state?: string;
+  district?: string;
+  soilColor?: string;
+  isDistrictVerified?: boolean;
+  datasetUsed?: string;
+  referenceLink?: string;
   soilStatus: string;
   nitrogen: number;
   phosphorous: number;
@@ -98,6 +114,9 @@ export interface DiseasePredictionResponse {
   rawClass: string;
   crop: string;
   disease: string;
+  state?: string;
+  district?: string;
+  regionalAdvisory?: string;
   status: string;
   confidence: number;
   severity: string;

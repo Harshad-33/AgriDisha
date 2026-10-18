@@ -15,6 +15,7 @@
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
           <h4 class="fw-bold mb-0">Crop & Soil Nutrients</h4>
           <div class="btn-group btn-group-sm">
+            <button type="button" (click)="loadSample('Solapur')" class="btn btn-outline-success">🟢 Solapur Sugarcane</button>
             <button type="button" (click)="loadSample('N')" class="btn btn-outline-secondary">Low N</button>
             <button type="button" (click)="loadSample('P')" class="btn btn-outline-secondary">Low P</button>
             <button type="button" (click)="loadSample('K')" class="btn btn-outline-secondary">Low K</button>
@@ -39,6 +40,56 @@
             </select>
             <div *ngIf="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid" class="text-danger small mt-1">
               Please select a crop.
+            </div>
+          </div>
+
+          <!-- Regional & Soil Parameters -->
+          <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
+            <i class="bi bi-geo-alt me-1"></i> Regional Location & Soil Type
+          </h6>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="form-label" for="state">State *</label>
+              <select
+                id="state"
+                class="form-select"
+                formControlName="state"
+                (change)="onStateChange()">
+                <option *ngFor="let s of states" [value]="s">{{ s }}</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="district">District *</label>
+              <select
+                id="district"
+                class="form-select"
+                formControlName="district">
+                <option *ngFor="let d of districts" [value]="d">
+                  {{ d }} {{ locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, d) ? '🟢' : '' }}
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="soilColor">Soil Type / Color *</label>
+              <select
+                id="soilColor"
+                class="form-select"
+                formControlName="soilColor">
+                <option *ngFor="let color of soilColors" [value]="color">{{ color }}</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <div class="d-flex align-items-center gap-2">
+                <span *ngIf="locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
+                  <i class="bi bi-shield-check me-1"></i> Western Maharashtra Regional Dataset Indexed
+                </span>
+                <span *ngIf="!locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-light text-secondary border px-2 py-1">
+                  <i class="bi bi-layers me-1"></i> Standard ICAR / MPKV Fertilizer Guidelines
+                </span>
+              </div>
             </div>
           </div>
 
@@ -118,6 +169,34 @@
         </div>
 
         <div class="p-4 p-md-5">
+          <!-- Regional Dataset Verification Banner -->
+          <div *ngIf="result.isDistrictVerified" class="alert alert-success d-flex align-items-center justify-content-between flex-wrap gap-3 p-3 rounded-4 mb-4 border-2 border-success shadow-sm">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-patch-check-fill fs-2 text-success"></i>
+              <div>
+                <div class="fw-bold fs-6">🟢 Verified Regional Fertilizer Guidelines</div>
+                <div class="small">
+                  Optimized for <strong>{{ result.district }}{{ result.state ? ', ' + result.state : '' }}</strong> (Soil: {{ result.soilColor || 'Black Soil' }})
+                </div>
+                <div class="small text-muted mt-1"><i class="bi bi-database me-1"></i> Dataset: {{ result.datasetUsed }}</div>
+              </div>
+            </div>
+            <div *ngIf="result.referenceLink">
+              <a [href]="result.referenceLink" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-sm d-inline-flex align-items-center gap-1 shadow-sm">
+                <i class="bi bi-youtube"></i> Watch Crop Care Video
+              </a>
+            </div>
+          </div>
+
+          <div *ngIf="!result.isDistrictVerified" class="alert alert-light border d-flex align-items-center gap-3 p-3 rounded-4 mb-4 shadow-sm">
+            <i class="bi bi-info-circle fs-2 text-secondary"></i>
+            <div>
+              <div class="fw-semibold">⚪ Standard Agronomic Nutrient Guidelines</div>
+              <div class="small text-muted">Recommendation derived from national ICAR & agricultural university benchmarks.</div>
+              <div class="small text-muted mt-1"><i class="bi bi-database me-1"></i> Baseline: {{ result.datasetUsed || 'ICAR Standard Guidelines' }}</div>
+            </div>
+          </div>
+
           <!-- Nutrient Comparison Dashboard -->
           <h5 class="fw-bold mb-3"><i class="bi bi-bar-chart-steps me-2 text-primary"></i> Soil Nutrient Status</h5>
           <div class="row g-3 mb-4" *ngIf="result.nutrientLevels">

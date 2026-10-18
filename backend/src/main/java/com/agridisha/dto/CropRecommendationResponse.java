@@ -10,6 +10,11 @@ public class CropRecommendationResponse {
     private Double confidence;
     private String modelUsed;
     private String city;
+    private String state;
+    private String district;
+    private Boolean isDistrictVerified;
+    private String datasetUsed;
+    private String regionalNotes;
     private Double temperature;
     private Double humidity;
     private Double nitrogen;
@@ -133,5 +138,45 @@ public class CropRecommendationResponse {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public Boolean getIsDistrictVerified() {
+        return isDistrictVerified;
+    }
+
+    public void setIsDistrictVerified(Boolean isDistrictVerified) {
+        this.isDistrictVerified = isDistrictVerified;
+    }
+
+    public String getDatasetUsed() {
+        return datasetUsed;
+    }
+
+    public void setDatasetUsed(String datasetUsed) {
+        this.datasetUsed = datasetUsed;
+    }
+
+    public String getRegionalNotes() {
+        return regionalNotes;
+    }
+
+    public void setRegionalNotes(String regionalNotes) {
+        this.regionalNotes = regionalNotes;
     }
 }

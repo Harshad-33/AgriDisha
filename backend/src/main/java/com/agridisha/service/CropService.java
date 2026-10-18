@@ -54,6 +54,12 @@ public class CropService {
         if (StringUtils.hasText(city)) {
             mlPayload.put("city", city.trim());
         }
+        if (StringUtils.hasText(request.getState())) {
+            mlPayload.put("state", request.getState().trim());
+        }
+        if (StringUtils.hasText(request.getDistrict())) {
+            mlPayload.put("district", request.getDistrict().trim());
+        }
 
         Map<String, Object> mlResult = mlClientService.callCropPredict(mlPayload);
 
@@ -62,6 +68,12 @@ public class CropService {
         String modelUsed = (String) mlResult.getOrDefault("model_used", "RandomForestClassifier (Maharashtra Agricultural Benchmark)");
         String description = (String) mlResult.getOrDefault("description",
                 "Based on soil macronutrients (N-P-K), soil pH, rainfall, and Maharashtra agro-climatic conditions, " + predictedCrop + " is recommended for optimal yield.");
+
+        Boolean isDistrictVerified = Boolean.TRUE.equals(mlResult.get("is_district_verified"));
+        String datasetUsed = (String) mlResult.get("dataset_used");
+        String regionalNotes = (String) mlResult.get("regional_notes");
+        String state = request.getState();
+        String district = request.getDistrict();
 
         List<CropAlternativeDto> alternatives = new ArrayList<>();
         if (mlResult.get("top_alternatives") instanceof List) {
@@ -86,6 +98,11 @@ public class CropService {
         prediction.setPh(request.getPh());
         prediction.setRainfall(request.getRainfall());
         prediction.setCity(city);
+        prediction.setState(state);
+        prediction.setDistrict(district);
+        prediction.setIsDistrictVerified(isDistrictVerified);
+        prediction.setDatasetUsed(datasetUsed);
+        prediction.setRegionalNotes(regionalNotes);
         prediction.setPredictedCrop(predictedCrop);
         prediction.setConfidenceScore(confidence);
         prediction.setModelUsed(modelUsed);
@@ -98,6 +115,11 @@ public class CropService {
         response.setConfidence(confidence);
         response.setModelUsed(modelUsed);
         response.setCity(city);
+        response.setState(state);
+        response.setDistrict(district);
+        response.setIsDistrictVerified(isDistrictVerified);
+        response.setDatasetUsed(datasetUsed);
+        response.setRegionalNotes(regionalNotes);
         response.setTemperature(temp);
         response.setHumidity(hum);
         response.setNitrogen(request.getNitrogen());

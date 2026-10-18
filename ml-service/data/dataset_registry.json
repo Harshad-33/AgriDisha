@@ -1,0 +1,37 @@
+{
+  "datasets": [
+    {
+      "id": "western_maharashtra",
+      "name": "Western Maharashtra Agricultural Dataset",
+      "source": "Kaggle (Sanchita Gholap) / Western Maharashtra Agricultural Benchmark",
+      "file": "regional_datasets/western_maharashtra.csv",
+      "state": "Maharashtra",
+      "region": "Western Maharashtra",
+      "covered_districts": [
+        "Kolhapur",
+        "Satara",
+        "Sangli",
+        "Solapur",
+        "Pune"
+      ],
+      "supported_services": [
+        "crop",
+        "fertilizer"
+      ],
+      "column_mapping": {
+        "district": "District_Name",
+        "soil_color": "Soil_color",
+        "nitrogen": "Nitrogen",
+        "phosphorus": "Phosphorus",
+        "potassium": "Potassium",
+        "ph": "pH",
+        "rainfall": "Rainfall",
+        "temperature": "Temperature",
+        "crop": "Crop",
+        "fertilizer": "Fertilizer",
+        "link": "Link"
+      },
+      "description": "Empirical district-wise soil macronutrient, crop suitability, and fertilizer trial records for Western Maharashtra (Solapur, Kolhapur, Satara, Sangli, Pune)."
+    }
+  ]
+}

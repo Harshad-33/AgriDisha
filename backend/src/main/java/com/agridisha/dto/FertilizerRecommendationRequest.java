@@ -9,6 +9,10 @@ public class FertilizerRecommendationRequest {
     @NotBlank(message = "Crop name is required")
     private String cropName;
 
+    private String state;
+    private String district;
+    private String soilColor;
+
     @NotNull(message = "Nitrogen value is required")
     @DecimalMin(value = "0.0", message = "Nitrogen must be positive")
     private Double nitrogen;
@@ -54,5 +58,29 @@ public class FertilizerRecommendationRequest {
 
     public void setPotassium(Double potassium) {
         this.potassium = potassium;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getSoilColor() {
+        return soilColor;
+    }
+
+    public void setSoilColor(String soilColor) {
+        this.soilColor = soilColor;
     }
 }

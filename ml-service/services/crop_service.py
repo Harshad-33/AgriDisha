@@ -9,6 +9,7 @@ import logging
 from typing import Dict, Any, List, Optional
 import numpy as np
 import joblib
+from services.dataset_manager import DatasetManager
 
 logger = logging.getLogger("ml_service.crop")
 
@@ -132,23 +133,50 @@ class CropService:
         humidity: float,
         ph: float,
         rainfall: float,
-        city: Optional[str] = None
+        city: Optional[str] = None,
+        state: Optional[str] = None,
+        district: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Predict best crop tailored to Maharashtra's soil, rainfall, and agro-climatic conditions.
+        Integrates verified district-wise empirical datasets when available.
         """
         eff_rainfall = rainfall if rainfall >= 300.0 else (rainfall * 4.5)
         features = np.array([[n, p, k, temp, humidity, ph, eff_rainfall]])
 
+        target_dist = district or city or ""
         zone_name = None
-        if city:
-            c_key = city.lower().strip()
+        if target_dist:
+            c_key = target_dist.lower().strip()
             zone_name = DISTRICT_ZONE_MAP.get(c_key)
             if not zone_name:
                 for k_map, v_map in DISTRICT_ZONE_MAP.items():
                     if k_map in c_key or c_key in k_map:
                         zone_name = v_map
                         break
+
+        # Query regional dataset registry
+        dataset_match = DatasetManager.get_instance().find_crop_matches(
+            target_dist, n, p, k, ph, rainfall, temp
+        ) if target_dist else {"matched": False}
+        is_verified = dataset_match.get("matched", False)
+        dataset_used = dataset_match.get("dataset_name", "General Agricultural Benchmark (Maharashtra Benchmark)") if is_verified else "General Agricultural Benchmark (Maharashtra Benchmark)"
+        regional_notes = dataset_match.get("regional_notes") if is_verified else None
+
+        # Alias map for dataset crops to model classes
+        crop_alias_to_model = {
+            "tur": "pigeonpeas",
+            "gram": "chickpea",
+            "jowar": "sorghum",
+            "cotton": "cotton",
+            "sugarcane": "sugarcane",
+            "soybean": "soybean",
+            "wheat": "wheat",
+            "rice": "rice",
+            "maize": "maize",
+            "grapes": "grapes",
+            "groundnut": "groundnut"
+        }
 
         if self.model_payload and 'model' in self.model_payload:
             model = self.model_payload['model']
@@ -158,6 +186,17 @@ class CropService:
             
             if hasattr(model, "predict_proba"):
                 probs = model.predict_proba(features)[0].copy()
+
+                # If district dataset matched, apply empirical frequency boosting
+                if is_verified and "crop_probabilities" in dataset_match:
+                    crop_probs_data = dataset_match["crop_probabilities"]
+                    for i, cls in enumerate(classes):
+                        c_lower = cls.lower()
+                        # Check direct or alias match in verified dataset
+                        for ds_crop, weight in crop_probs_data.items():
+                            ds_norm = crop_alias_to_model.get(ds_crop.lower(), ds_crop.lower())
+                            if ds_norm == c_lower or c_lower in ds_norm:
+                                probs[i] *= (1.0 + 2.5 * weight)
 
                 # Apply Maharashtra Agro-Climatic Zone Prior Weighting
                 if zone_name == 'Central Vidarbha Zone':
@@ -253,33 +292,58 @@ class CropService:
                             'probability': round(float(probs[idx]), 4)
                         })
 
-                desc = self._generate_description(pred_class, zone_name or "Maharashtra Agricultural Zone")
+                desc = self._generate_description(pred_class, target_dist.title() if target_dist else (zone_name or "Maharashtra Agricultural Zone"), is_verified, dataset_used)
 
                 return {
                     'crop': self._format_crop_name(str(pred_class)),
                     'confidence': confidence,
                     'top_alternatives': top_alternatives,
-                    'model_used': 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
+                    'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
-                    'description': desc
+                    'description': desc,
+                    'state': state or "Maharashtra",
+                    'district': target_dist.strip().title() if target_dist else None,
+                    'dataset_used': dataset_used,
+                    'is_district_verified': is_verified,
+                    'regional_notes': regional_notes
                 }
 
         # Fallback
-        return self._heuristic_fallback(n, p, k, temp, humidity, ph, eff_rainfall, zone_name)
+        return self._heuristic_fallback(n, p, k, temp, humidity, ph, eff_rainfall, zone_name, target_dist, state, is_verified, dataset_used, regional_notes)
 
     def _format_crop_name(self, crop: str) -> str:
         """Friendly names with regional/Marathi names."""
         c = crop.lower().strip()
         return CROP_DISPLAY_NAMES.get(c, crop.capitalize())
 
-    def _generate_description(self, crop: str, zone: str) -> str:
+    def _generate_description(self, crop: str, zone: str, is_verified: bool = False, dataset_name: Optional[str] = None) -> str:
         name = self._format_crop_name(crop)
+        if is_verified and dataset_name:
+            return (
+                f"Verified Recommendation ({dataset_name}): Based on empirical field trials in {zone}, "
+                f"soil macronutrients (N-P-K), soil pH, and rainfall, {name} demonstrates highest suitability and yield resilience."
+            )
         return (
             f"Based on soil macronutrients (N-P-K), soil pH, rainfall, and agro-climatic conditions of {zone}, "
             f"{name} is highly recommended for optimal yield and economic profitability in Maharashtra."
         )
 
-    def _heuristic_fallback(self, n: float, p: float, k: float, temp: float, humidity: float, ph: float, rainfall: float, zone: Optional[str]) -> Dict[str, Any]:
+    def _heuristic_fallback(
+        self,
+        n: float,
+        p: float,
+        k: float,
+        temp: float,
+        humidity: float,
+        ph: float,
+        rainfall: float,
+        zone: Optional[str],
+        target_dist: Optional[str] = None,
+        state: Optional[str] = None,
+        is_verified: bool = False,
+        dataset_used: Optional[str] = None,
+        regional_notes: Optional[str] = None
+    ) -> Dict[str, Any]:
         """Agronomic fallback specifically for Maharashtra."""
         if zone == 'Central Vidarbha Zone' or (550 <= rainfall <= 1250 and 22 <= temp <= 38 and ph >= 6.5):
             if n >= 80:
@@ -307,7 +371,12 @@ class CropService:
                 {'crop': 'Soybean (Soya)', 'probability': 0.35},
                 {'crop': 'Pigeon Pea (Tur / Arhar)', 'probability': 0.25}
             ],
-            'model_used': 'AgronomicRuleEngine (Maharashtra Fallback)',
+            'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
-            'description': f"Recommended for Maharashtra based on state agricultural university parameters."
+            'description': f"Recommended for Maharashtra based on state agricultural university parameters.",
+            'state': state or "Maharashtra",
+            'district': target_dist.strip().title() if target_dist else None,
+            'dataset_used': dataset_used or 'General Agricultural Benchmark',
+            'is_district_verified': is_verified,
+            'regional_notes': regional_notes
         }

@@ -15,13 +15,14 @@ import logging
 from contextlib import asynccontextmanager
 from typing import Optional, List
 
-from fastapi import FastAPI, UploadFile, File, HTTPException, status
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from services.crop_service import CropService
 from services.fertilizer_service import FertilizerService
 from services.disease_service import DiseaseService
+from services.dataset_manager import DatasetManager
 
 # Logging configuration
 logging.basicConfig(
@@ -34,25 +35,27 @@ logger = logging.getLogger("ml_service")
 crop_service: Optional[CropService] = None
 fertilizer_service: Optional[FertilizerService] = None
 disease_service: Optional[DiseaseService] = None
+dataset_manager: Optional[DatasetManager] = None
 
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
     """Pre-load models on application startup."""
-    global crop_service, fertilizer_service, disease_service
-    logger.info("Initializing Maharashtra ML models and services...")
+    global crop_service, fertilizer_service, disease_service, dataset_manager
+    logger.info("Initializing Maharashtra ML models and regional dataset services...")
+    dataset_manager = DatasetManager.get_instance()
     crop_service = CropService()
     fertilizer_service = FertilizerService()
     disease_service = DiseaseService()
-    logger.info("ML Services successfully initialized.")
+    logger.info("ML Services and Regional Datasets successfully initialized.")
     yield
     logger.info("Shutting down ML services...")
 
 
 app = FastAPI(
     title="AgriDisha Maharashtra ML Service",
-    description="Dedicated FastAPI Machine Learning Inference Service for AgriDisha Smart Agriculture (Maharashtra & Pan-India)",
-    version="2.1.0",
+    description="Dedicated FastAPI Machine Learning Inference Service for AgriDisha Smart Agriculture with Regional Dataset Registry",
+    version="2.2.0",
     lifespan=lifespan
 )
 
@@ -78,6 +81,8 @@ class CropPredictRequest(BaseModel):
     ph: float = Field(..., ge=0, le=14, description="Soil pH value")
     rainfall: float = Field(..., ge=0, le=5000, description="Rainfall in mm (annual or seasonal)")
     city: Optional[str] = Field(default=None, description="City or District name")
+    state: Optional[str] = Field(default=None, description="State name (e.g. Maharashtra)")
+    district: Optional[str] = Field(default=None, description="District name (e.g. Solapur, Kolhapur)")
 
 
 class CropAlternative(BaseModel):
@@ -92,6 +97,11 @@ class CropPredictResponse(BaseModel):
     model_used: str
     agro_climatic_zone: Optional[str] = None
     description: Optional[str] = None
+    state: Optional[str] = None
+    district: Optional[str] = None
+    dataset_used: Optional[str] = None
+    is_district_verified: bool = False
+    regional_notes: Optional[str] = None
 
 
 class FertilizerRecommendRequest(BaseModel):
@@ -99,6 +109,12 @@ class FertilizerRecommendRequest(BaseModel):
     nitrogen: float = Field(..., ge=0, description="Current soil Nitrogen value")
     phosphorous: float = Field(..., ge=0, description="Current soil Phosphorous value")
     potassium: float = Field(..., ge=0, description="Current soil Potassium value")
+    state: Optional[str] = Field(default=None, description="State name")
+    district: Optional[str] = Field(default=None, description="District name")
+    soil_color: Optional[str] = Field(default=None, description="Observed soil color")
+    ph: Optional[float] = Field(default=None, description="Soil pH value")
+    rainfall: Optional[float] = Field(default=None, description="Rainfall in mm")
+    temperature: Optional[float] = Field(default=None, description="Temperature in Celsius")
 
 
 class NutrientDetail(BaseModel):
@@ -122,6 +138,13 @@ class FertilizerRecommendResponse(BaseModel):
     organic_alternatives: List[str] = Field(default_factory=list)
     recommendations: List[str] = Field(default_factory=list)
     primary_recommendation: str
+    state: Optional[str] = None
+    district: Optional[str] = None
+    soil_color: Optional[str] = None
+    dataset_used: Optional[str] = None
+    is_district_verified: bool = False
+    reference_link: Optional[str] = None
+    regional_notes: Optional[str] = None
 
 
 class DiseasePredictResponse(BaseModel):
@@ -136,6 +159,11 @@ class DiseasePredictResponse(BaseModel):
     prevention: str
     treatment: str
     supplement: str
+    state: Optional[str] = None
+    district: Optional[str] = None
+    is_district_verified: bool = False
+    dataset_used: Optional[str] = None
+    regional_advisory: Optional[str] = None
 
 
 # -------------------------------------------------------------
@@ -149,7 +177,9 @@ async def health_check():
         "service": "agridisha-ml-service",
         "crop_model_ready": crop_service is not None and crop_service.model_payload is not None,
         "disease_model_ready": disease_service is not None,
-        "dataset": "Maharashtra Agricultural Benchmark (MPKV / PDKV / VNMKV / BSKKV)"
+        "dataset": "Maharashtra Agricultural Benchmark (MPKV / PDKV / VNMKV / BSKKV)",
+        "regional_datasets_loaded": len(dataset_manager.datasets) if dataset_manager else 0,
+        "covered_districts": [d for ds in (dataset_manager.datasets if dataset_manager else []) for d in ds.get("actual_districts", [])]
     }
 
 
@@ -157,6 +187,7 @@ async def health_check():
 async def predict_crop(request: CropPredictRequest):
     """
     Predict best-suited crop based on N-P-K, temperature, humidity, pH, and rainfall.
+    Queries verified regional dataset if available for selected district.
     """
     svc = crop_service
     if svc is None:
@@ -174,7 +205,9 @@ async def predict_crop(request: CropPredictRequest):
             humidity=request.humidity,
             ph=request.ph,
             rainfall=request.rainfall,
-            city=request.city
+            city=request.city,
+            state=request.state,
+            district=request.district
         )
         return CropPredictResponse(**result)
     except Exception as e:
@@ -188,7 +221,7 @@ async def predict_crop(request: CropPredictRequest):
 @app.post("/api/ml/fertilizer-recommend", response_model=FertilizerRecommendResponse, tags=["Fertilizer Recommendation"])
 async def recommend_fertilizer(request: FertilizerRecommendRequest):
     """
-    Recommend fertilizer and nutrient management based on crop requirements and soil status.
+    Recommend fertilizer and nutrient management based on crop requirements, soil status, and verified district trials.
     """
     svc = fertilizer_service
     if svc is None:
@@ -202,7 +235,13 @@ async def recommend_fertilizer(request: FertilizerRecommendRequest):
             crop_name=request.crop_name,
             n=request.nitrogen,
             p=request.phosphorous,
-            k=request.potassium
+            k=request.potassium,
+            state=request.state,
+            district=request.district,
+            soil_color=request.soil_color,
+            ph=request.ph,
+            rainfall=request.rainfall,
+            temperature=request.temperature
         )
         return FertilizerRecommendResponse(**result)
     except Exception as e:
@@ -214,9 +253,13 @@ async def recommend_fertilizer(request: FertilizerRecommendRequest):
 
 
 @app.post("/api/ml/disease-predict", response_model=DiseasePredictResponse, tags=["Plant Disease Detection"])
-async def predict_disease(image: UploadFile = File(...)):
+async def predict_disease(
+    image: UploadFile = File(...),
+    state: Optional[str] = Form(None),
+    district: Optional[str] = Form(None)
+):
     """
-    Classify plant disease from uploaded leaf image and return treatment advice.
+    Classify plant disease from uploaded leaf image and return treatment advice with regional advisory.
     """
     svc = disease_service
     if svc is None:
@@ -240,7 +283,7 @@ async def predict_disease(image: UploadFile = File(...)):
                 detail="Uploaded file is empty."
             )
         
-        result = svc.predict(image_bytes)
+        result = svc.predict(image_bytes, state=state, district=district)
         return DiseasePredictResponse(**result)
     except HTTPException:
         raise

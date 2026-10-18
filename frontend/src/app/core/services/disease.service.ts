@@ -12,9 +12,15 @@ export class DiseaseService {
 
   constructor(private http: HttpClient) {}
 
-  predictDisease(imageFile: File): Observable<DiseasePredictionResponse> {
+  predictDisease(imageFile: File, state?: string, district?: string): Observable<DiseasePredictionResponse> {
     const formData = new FormData();
     formData.append('image', imageFile, imageFile.name);
+    if (state) {
+      formData.append('state', state);
+    }
+    if (district) {
+      formData.append('district', district);
+    }
     return this.http.post<DiseasePredictionResponse>(`${this.apiUrl}/predict`, formData);
   }
 }

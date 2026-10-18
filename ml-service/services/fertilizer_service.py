@@ -1,11 +1,8 @@
-"""
-Fertilizer Recommendation Service.
-Evaluates crop-specific nutrient requirements against current soil N-P-K levels.
-"""
 import os
 import json
 import logging
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
+from services.dataset_manager import DatasetManager
 
 logger = logging.getLogger("ml_service.fertilizer")
 
@@ -27,9 +24,22 @@ class FertilizerService:
                 logger.error(f"Error reading fertilizer knowledge: {e}")
         return {"crop_requirements": {}, "rules": {}}
 
-    def recommend(self, crop_name: str, n: float, p: float, k: float) -> Dict[str, Any]:
+    def recommend(
+        self,
+        crop_name: str,
+        n: float,
+        p: float,
+        k: float,
+        state: Optional[str] = None,
+        district: Optional[str] = None,
+        soil_color: Optional[str] = None,
+        ph: Optional[float] = None,
+        rainfall: Optional[float] = None,
+        temperature: Optional[float] = None
+    ) -> Dict[str, Any]:
         """
         Generate comprehensive fertilizer recommendation for given crop and soil nutrients.
+        Integrates verified district-level empirical datasets when available.
         """
         crop_key = crop_name.lower().strip()
         crop_reqs = self.knowledge.get("crop_requirements", {})
@@ -118,6 +128,28 @@ class FertilizerService:
 
         summary_status = f"N: {n_status}, P: {p_status}, K: {k_status}"
 
+        # Check DatasetManager for verified district dataset
+        fert_match = DatasetManager.get_instance().find_fertilizer_matches(
+            district, crop_name, soil_color, n, p, k
+        ) if district else {"matched": False}
+
+        is_verified = fert_match.get("matched", False)
+        dataset_used = fert_match.get("dataset_name", "General Fertilizer Knowledge Base (ICAR / MPKV Benchmark)") if is_verified else "General Fertilizer Knowledge Base (ICAR / MPKV Benchmark)"
+        ref_link = fert_match.get("reference_link")
+        matched_soil = fert_match.get("soil_color") or soil_color
+        regional_notes = fert_match.get("regional_notes")
+
+        if is_verified:
+            # Prepend verified commercial fertilizers from dataset
+            verified_ferts = fert_match.get("verified_fertilizers", [])
+            for vf in reversed(verified_ferts):
+                labelled = f"{vf} (Empirically verified in {fert_match['district']})"
+                if labelled not in chemical_suggestions:
+                    chemical_suggestions.insert(0, labelled)
+
+            if regional_notes:
+                actionable_recommendations.insert(0, regional_notes)
+
         # Clean list of unique non-empty suggestions
         chemical_suggestions = [c for c in chemical_suggestions if c]
         organic_suggestions = [o for o in organic_suggestions if o]
@@ -135,5 +167,12 @@ class FertilizerService:
             "chemical_fertilizers": chemical_suggestions,
             "organic_alternatives": organic_suggestions,
             "recommendations": actionable_recommendations,
-            "primary_recommendation": actionable_recommendations[0] if actionable_recommendations else "Soil nutrients are in optimal proportion."
+            "primary_recommendation": actionable_recommendations[0] if actionable_recommendations else "Soil nutrients are in optimal proportion.",
+            "state": state or "Maharashtra",
+            "district": district.strip().title() if district else None,
+            "soil_color": matched_soil,
+            "dataset_used": dataset_used,
+            "is_district_verified": is_verified,
+            "reference_link": ref_link,
+            "regional_notes": regional_notes
         }

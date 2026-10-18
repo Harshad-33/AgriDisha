@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { FertilizerService } from '../../core/services/fertilizer.service';
+import { LocationService } from '../../core/services/location.service';
 import { FertilizerRecommendationResponse } from '../../core/models/models';
 
 @Component({
   selector: 'app-fertilizer-recommendation',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './fertilizer-recommendation.component.html',
   styleUrls: ['./fertilizer-recommendation.component.css']
 })
@@ -17,28 +19,59 @@ export class FertilizerRecommendationComponent {
   result: FertilizerRecommendationResponse | null = null;
   errorMessage = '';
 
+  states: string[] = [];
+  districts: string[] = [];
+  soilColors: string[] = [];
+
   availableCrops = [
     'Rice', 'Maize', 'Chickpea', 'Kidney Beans', 'Pigeon Peas',
     'Moth Beans', 'Mung Bean', 'Black Gram', 'Lentil', 'Pomegranate',
     'Banana', 'Mango', 'Grapes', 'Watermelon', 'Muskmelon',
     'Apple', 'Orange', 'Papaya', 'Coconut', 'Cotton',
-    'Jute', 'Coffee', 'Wheat', 'Potato', 'Tomato'
+    'Jute', 'Coffee', 'Wheat', 'Potato', 'Tomato', 'Sugarcane', 'Jowar'
   ];
 
   constructor(
     private fb: FormBuilder,
-    private fertilizerService: FertilizerService
+    private fertilizerService: FertilizerService,
+    public locationService: LocationService
   ) {
+    this.states = this.locationService.getStates();
+    this.districts = this.locationService.getDistricts('Maharashtra');
+    this.soilColors = this.locationService.getSoilColors();
+
     this.fertilizerForm = this.fb.group({
-      cropName: ['Rice', [Validators.required]],
-      nitrogen: [40, [Validators.required, Validators.min(0)]],
-      phosphorous: [60, [Validators.required, Validators.min(0)]],
-      potassium: [30, [Validators.required, Validators.min(0)]]
+      cropName: ['Cotton', [Validators.required]],
+      state: ['Maharashtra', [Validators.required]],
+      district: ['Solapur', [Validators.required]],
+      soilColor: ['Black Soil (Regur)', [Validators.required]],
+      nitrogen: [80, [Validators.required, Validators.min(0)]],
+      phosphorous: [40, [Validators.required, Validators.min(0)]],
+      potassium: [40, [Validators.required, Validators.min(0)]]
     });
   }
 
-  loadSample(deficiency: 'N' | 'P' | 'K' | 'Balanced'): void {
-    if (deficiency === 'N') {
+  onStateChange(): void {
+    const state = this.fertilizerForm.get('state')?.value;
+    this.districts = this.locationService.getDistricts(state);
+    const defaultDistrict = this.districts.length > 0 ? this.districts[0] : '';
+    this.fertilizerForm.patchValue({
+      district: defaultDistrict
+    });
+  }
+
+  loadSample(deficiency: 'N' | 'P' | 'K' | 'Balanced' | 'Solapur'): void {
+    if (deficiency === 'Solapur') {
+      this.fertilizerForm.patchValue({
+        cropName: 'Sugarcane',
+        state: 'Maharashtra',
+        district: 'Solapur',
+        soilColor: 'Black Soil (Regur)',
+        nitrogen: 150,
+        phosphorous: 60,
+        potassium: 80
+      });
+    } else if (deficiency === 'N') {
       this.fertilizerForm.patchValue({ cropName: 'Rice', nitrogen: 25, phosphorous: 40, potassium: 40 });
     } else if (deficiency === 'P') {
       this.fertilizerForm.patchValue({ cropName: 'Chickpea', nitrogen: 40, phosphorous: 20, potassium: 80 });

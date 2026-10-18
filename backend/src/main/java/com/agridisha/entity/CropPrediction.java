@@ -39,6 +39,21 @@ public class CropPrediction {
     @Column(length = 100)
     private String city;
 
+    @Column(length = 100)
+    private String state;
+
+    @Column(length = 100)
+    private String district;
+
+    @Column(name = "is_district_verified")
+    private Boolean isDistrictVerified = false;
+
+    @Column(name = "dataset_used", length = 150)
+    private String datasetUsed;
+
+    @Column(name = "regional_notes", columnDefinition = "TEXT")
+    private String regionalNotes;
+
     @Column(name = "predicted_crop", nullable = false, length = 100)
     private String predictedCrop;
 
@@ -156,6 +171,46 @@ public class CropPrediction {
 
     public void setModelUsed(String modelUsed) {
         this.modelUsed = modelUsed;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public Boolean getIsDistrictVerified() {
+        return isDistrictVerified;
+    }
+
+    public void setIsDistrictVerified(Boolean isDistrictVerified) {
+        this.isDistrictVerified = isDistrictVerified;
+    }
+
+    public String getDatasetUsed() {
+        return datasetUsed;
+    }
+
+    public void setDatasetUsed(String datasetUsed) {
+        this.datasetUsed = datasetUsed;
+    }
+
+    public String getRegionalNotes() {
+        return regionalNotes;
+    }
+
+    public void setRegionalNotes(String regionalNotes) {
+        this.regionalNotes = regionalNotes;
     }
 
     public LocalDateTime getCreatedAt() {

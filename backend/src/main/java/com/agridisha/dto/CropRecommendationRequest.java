@@ -32,6 +32,8 @@ public class CropRecommendationRequest {
     private Double rainfall;
 
     private String city;
+    private String state;
+    private String district;
     private Double temperature;
     private Double humidity;
 
@@ -84,6 +86,22 @@ public class CropRecommendationRequest {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
     public Double getTemperature() {

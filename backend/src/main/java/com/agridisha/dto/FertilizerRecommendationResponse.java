@@ -7,6 +7,12 @@ public class FertilizerRecommendationResponse {
 
     private Long id;
     private String crop;
+    private String state;
+    private String district;
+    private String soilColor;
+    private Boolean isDistrictVerified;
+    private String datasetUsed;
+    private String referenceLink;
     private String soilStatus;
     private Double nitrogen;
     private Double phosphorous;
@@ -115,5 +121,53 @@ public class FertilizerRecommendationResponse {
 
     public void setPrimaryRecommendation(String primaryRecommendation) {
         this.primaryRecommendation = primaryRecommendation;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getSoilColor() {
+        return soilColor;
+    }
+
+    public void setSoilColor(String soilColor) {
+        this.soilColor = soilColor;
+    }
+
+    public Boolean getIsDistrictVerified() {
+        return isDistrictVerified;
+    }
+
+    public void setIsDistrictVerified(Boolean isDistrictVerified) {
+        this.isDistrictVerified = isDistrictVerified;
+    }
+
+    public String getDatasetUsed() {
+        return datasetUsed;
+    }
+
+    public void setDatasetUsed(String datasetUsed) {
+        this.datasetUsed = datasetUsed;
+    }
+
+    public String getReferenceLink() {
+        return referenceLink;
+    }
+
+    public void setReferenceLink(String referenceLink) {
+        this.referenceLink = referenceLink;
     }
 }

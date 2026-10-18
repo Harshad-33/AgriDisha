@@ -16,8 +16,11 @@ public class DiseaseController {
     private DiseaseService diseaseService;
 
     @PostMapping(value = "/predict", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<DiseasePredictionResponse> predictDisease(@RequestParam("image") MultipartFile image) {
-        DiseasePredictionResponse response = diseaseService.predictDisease(image);
+    public ResponseEntity<DiseasePredictionResponse> predictDisease(
+            @RequestParam("image") MultipartFile image,
+            @RequestParam(value = "state", required = false) String state,
+            @RequestParam(value = "district", required = false) String district) {
+        DiseasePredictionResponse response = diseaseService.predictDisease(image, state, district);
         return ResponseEntity.ok(response);
     }
 }

@@ -25,6 +25,10 @@ public class DiseaseService {
     private AuthService authService;
 
     public DiseasePredictionResponse predictDisease(MultipartFile imageFile) {
+        return predictDisease(imageFile, null, null);
+    }
+
+    public DiseasePredictionResponse predictDisease(MultipartFile imageFile, String state, String district) {
         if (imageFile == null || imageFile.isEmpty()) {
             throw new BadRequestException("Please upload a valid plant leaf image.");
         }
@@ -34,7 +38,7 @@ public class DiseaseService {
             throw new BadRequestException("Please upload a valid plant leaf image file (JPEG, PNG, WebP).");
         }
 
-        Map<String, Object> mlResult = mlClientService.callDiseasePredict(imageFile);
+        Map<String, Object> mlResult = mlClientService.callDiseasePredict(imageFile, state, district);
 
         String rawClass = (String) mlResult.getOrDefault("raw_class", "Tomato___healthy");
         String crop = (String) mlResult.getOrDefault("crop", "Tomato");
@@ -47,6 +51,7 @@ public class DiseaseService {
         String prevention = (String) mlResult.getOrDefault("prevention", "");
         String treatment = (String) mlResult.getOrDefault("treatment", "");
         String supplement = (String) mlResult.getOrDefault("supplement", "");
+        String regionalAdvisory = (String) mlResult.getOrDefault("regional_advisory", null);
 
         // Save to Database
         DiseasePrediction entity = new DiseasePrediction();
@@ -54,6 +59,9 @@ public class DiseaseService {
         currentUser.ifPresent(entity::setUser);
 
         entity.setImageFilename(imageFile.getOriginalFilename());
+        entity.setState(state);
+        entity.setDistrict(district);
+        entity.setRegionalAdvisory(regionalAdvisory);
         entity.setCropName(crop);
         entity.setDiseaseName(disease);
         entity.setHealthStatus(status);
@@ -72,6 +80,9 @@ public class DiseaseService {
         response.setRawClass(rawClass);
         response.setCrop(crop);
         response.setDisease(disease);
+        response.setState(state);
+        response.setDistrict(district);
+        response.setRegionalAdvisory(regionalAdvisory);
         response.setStatus(status);
         response.setConfidence(confidence);
         response.setSeverity(severity);

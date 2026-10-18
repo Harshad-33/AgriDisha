@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { DiseaseService } from '../../core/services/disease.service';
+import { LocationService } from '../../core/services/location.service';
 import { DiseasePredictionResponse } from '../../core/models/models';
 
 @Component({
   selector: 'app-disease-detection',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './disease-detection.component.html',
   styleUrls: ['./disease-detection.component.css']
 })
@@ -18,7 +20,25 @@ export class DiseaseDetectionComponent {
   result: DiseasePredictionResponse | null = null;
   errorMessage = '';
 
-  constructor(private diseaseService: DiseaseService) {}
+  selectedState = 'Maharashtra';
+  selectedDistrict = 'Solapur';
+  states: string[] = [];
+  districts: string[] = [];
+
+  constructor(
+    private diseaseService: DiseaseService,
+    public locationService: LocationService
+  ) {
+    this.states = this.locationService.getStates();
+    this.districts = this.locationService.getDistricts('Maharashtra');
+  }
+
+  onStateChange(): void {
+    this.districts = this.locationService.getDistricts(this.selectedState);
+    if (this.districts.length > 0) {
+      this.selectedDistrict = this.districts[0];
+    }
+  }
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
@@ -81,7 +101,7 @@ export class DiseaseDetectionComponent {
     this.errorMessage = '';
     this.result = null;
 
-    this.diseaseService.predictDisease(this.selectedFile).subscribe({
+    this.diseaseService.predictDisease(this.selectedFile, this.selectedState, this.selectedDistrict).subscribe({
       next: (response) => {
         this.isLoading = false;
         this.result = response;

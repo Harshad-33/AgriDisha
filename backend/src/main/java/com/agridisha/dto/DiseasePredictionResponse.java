@@ -6,6 +6,9 @@ public class DiseasePredictionResponse {
     private String rawClass;
     private String crop;
     private String disease;
+    private String state;
+    private String district;
+    private String regionalAdvisory;
     private String status;
     private Double confidence;
     private String severity;
@@ -121,5 +124,29 @@ public class DiseasePredictionResponse {
 
     public void setImageFilename(String imageFilename) {
         this.imageFilename = imageFilename;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getRegionalAdvisory() {
+        return regionalAdvisory;
+    }
+
+    public void setRegionalAdvisory(String regionalAdvisory) {
+        this.regionalAdvisory = regionalAdvisory;
     }
 }

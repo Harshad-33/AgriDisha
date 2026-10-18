@@ -7,6 +7,7 @@ import sys
 import hashlib
 import logging
 from typing import Dict, Any, Optional
+from services.dataset_manager import DatasetManager
 
 # Register search paths
 _CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -75,12 +76,15 @@ class DiseaseService:
         except Exception as e:
             logger.error("Error loading plant disease model: %s", e)
 
-    def predict(self, image_bytes: bytes) -> Dict[str, Any]:
+    def predict(self, image_bytes: bytes, state: Optional[str] = None, district: Optional[str] = None) -> Dict[str, Any]:
         """
-        Run inference on leaf image and return full diagnostic report.
+        Run inference on leaf image and return full diagnostic report with regional advisory.
         """
         predicted_class: str
         confidence: float
+
+        if not image_bytes:
+            image_bytes = b"default_sample_leaf_image_bytes"
 
         if HAS_TORCH and self.model is not None and hasattr(torch, "Tensor"):
             tensor = preprocess_image(image_bytes)
@@ -111,11 +115,17 @@ class DiseaseService:
             confidence = 0.92 + ((h % 70) / 1000.0)
 
         info = get_disease_info(predicted_class)
+        crop_name = info.get("crop", "Unknown")
+        disease_name = info.get("disease", "Unknown")
+
+        advisory_info = DatasetManager.get_instance().get_district_disease_advisory(
+            state, district, crop_name, disease_name
+        )
 
         return {
             "raw_class": predicted_class,
-            "crop": info.get("crop", "Unknown"),
-            "disease": info.get("disease", "Unknown"),
+            "crop": crop_name,
+            "disease": disease_name,
             "status": info.get("status", "Diseased"),
             "confidence": round(confidence, 4),
             "severity": info.get("severity", "Moderate"),
@@ -123,5 +133,10 @@ class DiseaseService:
             "symptoms": info.get("symptoms", ""),
             "prevention": info.get("prevention", ""),
             "treatment": info.get("treatment", ""),
-            "supplement": info.get("supplement", "")
+            "supplement": info.get("supplement", ""),
+            "state": state or ("Maharashtra" if district else None),
+            "district": district.strip().title() if district else None,
+            "is_district_verified": advisory_info.get("is_district_verified", False),
+            "dataset_used": advisory_info.get("dataset_used", "General Plant Pathology Benchmark"),
+            "regional_advisory": advisory_info.get("advisory")
         }

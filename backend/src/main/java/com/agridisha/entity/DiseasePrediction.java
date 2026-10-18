@@ -18,6 +18,12 @@ public class DiseasePrediction {
     @Column(name = "image_filename", length = 255)
     private String imageFilename;
 
+    @Column(length = 100)
+    private String state;
+
+    @Column(length = 100)
+    private String district;
+
     @Column(name = "crop_name", nullable = false, length = 100)
     private String cropName;
 
@@ -47,6 +53,9 @@ public class DiseasePrediction {
 
     @Column(name = "supplement_advice", columnDefinition = "TEXT")
     private String supplementAdvice;
+
+    @Column(name = "regional_advisory", columnDefinition = "TEXT")
+    private String regionalAdvisory;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
@@ -156,6 +165,30 @@ public class DiseasePrediction {
 
     public void setSupplementAdvice(String supplementAdvice) {
         this.supplementAdvice = supplementAdvice;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getRegionalAdvisory() {
+        return regionalAdvisory;
+    }
+
+    public void setRegionalAdvisory(String regionalAdvisory) {
+        this.regionalAdvisory = regionalAdvisory;
     }
 
     public LocalDateTime getCreatedAt() {

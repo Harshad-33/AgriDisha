@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { RouterModule } from '@angular/router';
 import { CropService } from '../../core/services/crop.service';
 import { WeatherService } from '../../core/services/weather.service';
+import { LocationService } from '../../core/services/location.service';
 import { CropRecommendationResponse, WeatherResponse } from '../../core/models/models';
 
 @Component({
@@ -22,21 +23,49 @@ export class CropRecommendationComponent {
   errorMessage = '';
   weatherMessage = '';
 
+  states: string[] = [];
+  districts: string[] = [];
+
   constructor(
     private fb: FormBuilder,
     private cropService: CropService,
-    private weatherService: WeatherService
+    private weatherService: WeatherService,
+    public locationService: LocationService
   ) {
+    this.states = this.locationService.getStates();
+    this.districts = this.locationService.getDistricts('Maharashtra');
+
     this.cropForm = this.fb.group({
-      nitrogen: [110, [Validators.required, Validators.min(0), Validators.max(300)]],
-      phosphorous: [45, [Validators.required, Validators.min(0), Validators.max(300)]],
-      potassium: [25, [Validators.required, Validators.min(0), Validators.max(300)]],
+      state: ['Maharashtra', [Validators.required]],
+      district: ['Solapur', [Validators.required]],
+      nitrogen: [80, [Validators.required, Validators.min(0), Validators.max(300)]],
+      phosphorous: [40, [Validators.required, Validators.min(0), Validators.max(300)]],
+      potassium: [40, [Validators.required, Validators.min(0), Validators.max(300)]],
       ph: [7.2, [Validators.required, Validators.min(3), Validators.max(10)]],
-      rainfall: [850, [Validators.required, Validators.min(0), Validators.max(3000)]],
-      city: ['Yavatmal', [Validators.required]],
-      temperature: [29.5],
-      humidity: [65.0]
+      rainfall: [600, [Validators.required, Validators.min(0), Validators.max(3000)]],
+      city: ['Solapur', [Validators.required]],
+      temperature: [29.0],
+      humidity: [55.0]
     });
+  }
+
+  onStateChange(): void {
+    const state = this.cropForm.get('state')?.value;
+    this.districts = this.locationService.getDistricts(state);
+    const defaultDistrict = this.districts.length > 0 ? this.districts[0] : '';
+    this.cropForm.patchValue({
+      district: defaultDistrict,
+      city: defaultDistrict
+    });
+  }
+
+  onDistrictChange(): void {
+    const district = this.cropForm.get('district')?.value;
+    if (district) {
+      this.cropForm.patchValue({
+        city: district
+      });
+    }
   }
 
   fetchWeather(): void {
@@ -67,8 +96,36 @@ export class CropRecommendationComponent {
   }
 
   loadPreset(type: string): void {
-    if (type === 'cotton') {
+    if (type === 'solapur') {
       this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Solapur',
+        nitrogen: 80,
+        phosphorous: 40,
+        potassium: 40,
+        ph: 7.2,
+        rainfall: 600,
+        city: 'Solapur',
+        temperature: 29.0,
+        humidity: 55.0
+      });
+    } else if (type === 'pune') {
+      this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Pune',
+        nitrogen: 100,
+        phosphorous: 50,
+        potassium: 40,
+        ph: 7.0,
+        rainfall: 700,
+        city: 'Pune',
+        temperature: 25.0,
+        humidity: 65.0
+      });
+    } else if (type === 'cotton') {
+      this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Yavatmal',
         nitrogen: 115,
         phosphorous: 45,
         potassium: 25,
@@ -80,34 +137,27 @@ export class CropRecommendationComponent {
       });
     } else if (type === 'soybean') {
       this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Latur',
         nitrogen: 30,
         phosphorous: 65,
         potassium: 35,
         ph: 6.8,
         rainfall: 850,
-        city: 'Yavatmal',
+        city: 'Latur',
         temperature: 28.0,
         humidity: 68.0
       });
-    } else if (type === 'sorghum') {
-      this.cropForm.setValue({
-        nitrogen: 85,
-        phosphorous: 40,
-        potassium: 40,
-        ph: 7.0,
-        rainfall: 750,
-        city: 'Yavatmal',
-        temperature: 29.0,
-        humidity: 60.0
-      });
     } else if (type === 'rice') {
       this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Ratnagiri',
         nitrogen: 80,
         phosphorous: 40,
         potassium: 40,
         ph: 6.5,
         rainfall: 2200,
-        city: 'Mumbai',
+        city: 'Ratnagiri',
         temperature: 28.5,
         humidity: 82.0
       });

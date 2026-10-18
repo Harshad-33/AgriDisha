@@ -30,12 +30,28 @@ public class FertilizerService {
         mlPayload.put("nitrogen", request.getNitrogen());
         mlPayload.put("phosphorous", request.getPhosphorous());
         mlPayload.put("potassium", request.getPotassium());
+        if (request.getState() != null) {
+            mlPayload.put("state", request.getState().trim());
+        }
+        if (request.getDistrict() != null) {
+            mlPayload.put("district", request.getDistrict().trim());
+        }
+        if (request.getSoilColor() != null) {
+            mlPayload.put("soil_color", request.getSoilColor().trim());
+        }
 
         Map<String, Object> mlResult = mlClientService.callFertilizerRecommend(mlPayload);
 
         String crop = (String) mlResult.getOrDefault("crop", request.getCropName());
         String soilStatus = (String) mlResult.getOrDefault("soil_status", "N: Optimal, P: Optimal, K: Optimal");
         String primaryRec = (String) mlResult.getOrDefault("primary_recommendation", "Soil nutrients are balanced.");
+
+        Boolean isDistrictVerified = Boolean.TRUE.equals(mlResult.get("is_district_verified"));
+        String datasetUsed = (String) mlResult.get("dataset_used");
+        String referenceLink = (String) mlResult.get("reference_link");
+        String state = request.getState();
+        String district = request.getDistrict();
+        String soilColor = request.getSoilColor();
 
         List<String> evaluations = (List<String>) mlResult.getOrDefault("evaluations", new ArrayList<>());
         List<String> chemicalFertilizers = (List<String>) mlResult.getOrDefault("chemical_fertilizers", new ArrayList<>());
@@ -57,6 +73,12 @@ public class FertilizerService {
         currentUser.ifPresent(entity::setUser);
 
         entity.setCropName(crop);
+        entity.setState(state);
+        entity.setDistrict(district);
+        entity.setSoilColor(soilColor);
+        entity.setIsDistrictVerified(isDistrictVerified);
+        entity.setDatasetUsed(datasetUsed);
+        entity.setReferenceLink(referenceLink);
         entity.setNitrogen(request.getNitrogen());
         entity.setPhosphorous(request.getPhosphorous());
         entity.setPotassium(request.getPotassium());
@@ -70,6 +92,12 @@ public class FertilizerService {
         FertilizerRecommendationResponse response = new FertilizerRecommendationResponse();
         response.setId(saved.getId());
         response.setCrop(crop);
+        response.setState(state);
+        response.setDistrict(district);
+        response.setSoilColor(soilColor);
+        response.setIsDistrictVerified(isDistrictVerified);
+        response.setDatasetUsed(datasetUsed);
+        response.setReferenceLink(referenceLink);
         response.setSoilStatus(soilStatus);
         response.setNitrogen(request.getNitrogen());
         response.setPhosphorous(request.getPhosphorous());
