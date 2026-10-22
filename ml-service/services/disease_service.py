@@ -79,6 +79,7 @@ class DiseaseService:
     def predict(self, image_bytes: bytes, state: Optional[str] = None, district: Optional[str] = None) -> Dict[str, Any]:
         """
         Run inference on leaf image and return full diagnostic report with regional advisory.
+        Preserves existing plant pathology ResNet9 architecture and weights.
         """
         predicted_class: str
         confidence: float
@@ -137,6 +138,7 @@ class DiseaseService:
             "state": state or ("Maharashtra" if district else None),
             "district": district.strip().title() if district else None,
             "is_district_verified": advisory_info.get("is_district_verified", False),
+            "dataset_level": advisory_info.get("dataset_level", "fallback"),
             "dataset_used": advisory_info.get("dataset_used", "General Plant Pathology Benchmark"),
             "regional_advisory": advisory_info.get("advisory")
         }

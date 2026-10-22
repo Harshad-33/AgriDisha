@@ -60,7 +60,7 @@ export class FertilizerRecommendationComponent {
     });
   }
 
-  loadSample(deficiency: 'N' | 'P' | 'K' | 'Balanced' | 'Solapur'): void {
+  loadSample(deficiency: 'N' | 'P' | 'K' | 'Balanced' | 'Solapur' | 'Nagpur'): void {
     if (deficiency === 'Solapur') {
       this.fertilizerForm.patchValue({
         cropName: 'Sugarcane',
@@ -71,6 +71,16 @@ export class FertilizerRecommendationComponent {
         phosphorous: 60,
         potassium: 80
       });
+    } else if (deficiency === 'Nagpur') {
+      this.fertilizerForm.patchValue({
+        cropName: 'Cotton',
+        state: 'Maharashtra',
+        district: 'Nagpur',
+        soilColor: 'Black Soil (Regur)',
+        nitrogen: 60,
+        phosphorous: 30,
+        potassium: 25
+      });
     } else if (deficiency === 'N') {
       this.fertilizerForm.patchValue({ cropName: 'Rice', nitrogen: 25, phosphorous: 40, potassium: 40 });
     } else if (deficiency === 'P') {
@@ -78,7 +88,7 @@ export class FertilizerRecommendationComponent {
     } else if (deficiency === 'K') {
       this.fertilizerForm.patchValue({ cropName: 'Banana', nitrogen: 100, phosphorous: 75, potassium: 20 });
     } else {
-      this.fertilizerForm.patchValue({ cropName: 'Maize', nitrogen: 100, phosphorous: 50, potassium: 40 });
+      this.fertilizerForm.patchValue({ cropName: 'Wheat', nitrogen: 100, phosphorous: 50, potassium: 40 });
     }
   }
 
@@ -90,16 +100,26 @@ export class FertilizerRecommendationComponent {
 
     this.isLoading = true;
     this.errorMessage = '';
-    this.result = null;
 
-    this.fertilizerService.recommendFertilizer(this.fertilizerForm.value).subscribe({
+    const formValues = this.fertilizerForm.value;
+    const requestData = {
+      cropName: formValues.cropName,
+      nitrogen: Number(formValues.nitrogen),
+      phosphorous: Number(formValues.phosphorous),
+      potassium: Number(formValues.potassium),
+      state: formValues.state ? String(formValues.state).trim() : undefined,
+      district: formValues.district ? String(formValues.district).trim() : undefined,
+      soilColor: formValues.soilColor ? String(formValues.soilColor).trim() : undefined
+    };
+
+    this.fertilizerService.recommendFertilizer(requestData).subscribe({
       next: (response) => {
         this.isLoading = false;
         this.result = response;
       },
-      error: (err) => {
+      error: (error) => {
         this.isLoading = false;
-        this.errorMessage = err.error?.message || 'Failed to evaluate fertilizer requirements.';
+        this.errorMessage = error.error?.message || 'Failed to evaluate fertilizer recommendation. Please try again.';
       }
     });
   }

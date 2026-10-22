@@ -1,0 +1,102 @@
+{
+  "datasets": [
+    {
+      "id": "western_maharashtra",
+      "priority": 1,
+      "level": "verified_primary",
+      "name": "Western Maharashtra Agricultural Dataset",
+      "source": "Kaggle (Sanchita Gholap) / Western Maharashtra Agricultural Benchmark",
+      "file": "regional_datasets/western_maharashtra.csv",
+      "state": "Maharashtra",
+      "region": "Western Maharashtra",
+      "covered_districts": [
+        "Kolhapur",
+        "Satara",
+        "Sangli",
+        "Solapur",
+        "Pune"
+      ],
+      "supported_services": [
+        "crop",
+        "fertilizer"
+      ],
+      "column_mapping": {
+        "district": "District_Name",
+        "soil_color": "Soil_color",
+        "nitrogen": "Nitrogen",
+        "phosphorus": "Phosphorus",
+        "potassium": "Potassium",
+        "ph": "pH",
+        "rainfall": "Rainfall",
+        "temperature": "Temperature",
+        "crop": "Crop",
+        "fertilizer": "Fertilizer",
+        "link": "Link"
+      },
+      "description": "Empirical district-wise soil macronutrient, crop suitability, and fertilizer trial records for Western Maharashtra (Solapur, Kolhapur, Satara, Sangli, Pune)."
+    },
+    {
+      "id": "maharashtra_expanded",
+      "priority": 2,
+      "level": "regional_reference",
+      "name": "Maharashtra State Agricultural Dataset (Expanded Reference)",
+      "source": "Maharashtra Agricultural Consortium / GitHub (yogirajbshinde21)",
+      "file": "regional_datasets/maharashtra_expanded_consistent.csv",
+      "state": "Maharashtra",
+      "region": "Maharashtra State-Wide (Expanded Districts)",
+      "covered_districts": [
+        "Ahmednagar",
+        "Akola",
+        "Amravati",
+        "Aurangabad",
+        "Beed",
+        "Bhandara",
+        "Buldhana",
+        "Chandrapur",
+        "Dhule",
+        "Gadchiroli",
+        "Gondia",
+        "Hingoli",
+        "Jalgaon",
+        "Jalna",
+        "Latur",
+        "Mumbai City",
+        "Mumbai Suburban",
+        "Nagpur",
+        "Nanded",
+        "Nandurbar",
+        "Nashik",
+        "Osmanabad",
+        "Palghar",
+        "Parbhani",
+        "Raigad",
+        "Ratnagiri",
+        "Sindhudurg",
+        "Thane",
+        "Wardha",
+        "Washim",
+        "Yavatmal"
+      ],
+      "supported_services": [
+        "crop",
+        "fertilizer"
+      ],
+      "column_mapping": {
+        "district": "District",
+        "soil_type": "Soil_Type",
+        "crop": "Crop_Name",
+        "nitrogen": "N_kg_ha",
+        "phosphorus": "P2O5_kg_ha",
+        "potassium": "K2O_kg_ha",
+        "zinc": "Zn_kg_ha",
+        "sulphur": "S_kg_ha",
+        "ph": "Recommended_pH",
+        "turbidity": "Turbidity_NTU",
+        "water_temp": "Water_Temp_C",
+        "weather": "Weather",
+        "fertilizer": "Fertilizer"
+      },
+      "description": "Agronomic nutrient targets (N, P2O5, K2O), micronutrients (Zinc, Sulphur), and recommended commercial fertilizers across 31 additional Maharashtra districts."
+    }
+  ]
+}

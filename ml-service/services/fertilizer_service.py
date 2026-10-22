@@ -39,7 +39,7 @@ class FertilizerService:
     ) -> Dict[str, Any]:
         """
         Generate comprehensive fertilizer recommendation for given crop and soil nutrients.
-        Integrates verified district-level empirical datasets when available.
+        Integrates verified district-level empirical datasets and state reference datasets when available.
         """
         crop_key = crop_name.lower().strip()
         crop_reqs = self.knowledge.get("crop_requirements", {})
@@ -128,13 +128,14 @@ class FertilizerService:
 
         summary_status = f"N: {n_status}, P: {p_status}, K: {k_status}"
 
-        # Check DatasetManager for verified district dataset
+        # Check DatasetManager for regional dataset
         fert_match = DatasetManager.get_instance().find_fertilizer_matches(
             district, crop_name, soil_color, n, p, k
         ) if district else {"matched": False}
 
         is_verified = fert_match.get("matched", False)
         dataset_used = fert_match.get("dataset_name", "General Fertilizer Knowledge Base (ICAR / MPKV Benchmark)") if is_verified else "General Fertilizer Knowledge Base (ICAR / MPKV Benchmark)"
+        dataset_level = fert_match.get("dataset_level", "verified_primary") if is_verified else "fallback"
         ref_link = fert_match.get("reference_link")
         matched_soil = fert_match.get("soil_color") or soil_color
         regional_notes = fert_match.get("regional_notes")
@@ -142,12 +143,25 @@ class FertilizerService:
         if is_verified:
             # Prepend verified commercial fertilizers from dataset
             verified_ferts = fert_match.get("verified_fertilizers", [])
+            prefix = "Empirically verified in" if dataset_level == "verified_primary" else "Regional reference for"
             for vf in reversed(verified_ferts):
-                labelled = f"{vf} (Empirically verified in {fert_match['district']})"
+                labelled = f"{vf} ({prefix} {fert_match['district']})"
                 if labelled not in chemical_suggestions:
                     chemical_suggestions.insert(0, labelled)
 
-            if regional_notes:
+            zn = fert_match.get("zinc_target")
+            s = fert_match.get("sulphur_target")
+            if zn or s:
+                micronutrient_parts = []
+                if zn:
+                    micronutrient_parts.append(f"Zinc (ZnSO4) target ~{zn} kg/ha")
+                if s:
+                    micronutrient_parts.append(f"Sulphur (S / Gypsum) target ~{s} kg/ha")
+                micro_advice = f"Regional Micronutrient Benchmark ({fert_match['district']}): " + ", ".join(micronutrient_parts) + "."
+                if micro_advice not in actionable_recommendations:
+                    actionable_recommendations.insert(0, micro_advice)
+
+            if regional_notes and regional_notes not in actionable_recommendations:
                 actionable_recommendations.insert(0, regional_notes)
 
         # Clean list of unique non-empty suggestions
@@ -172,7 +186,10 @@ class FertilizerService:
             "district": district.strip().title() if district else None,
             "soil_color": matched_soil,
             "dataset_used": dataset_used,
+            "dataset_level": dataset_level,
             "is_district_verified": is_verified,
             "reference_link": ref_link,
+            "zinc_target": fert_match.get("zinc_target"),
+            "sulphur_target": fert_match.get("sulphur_target"),
             "regional_notes": regional_notes
         }

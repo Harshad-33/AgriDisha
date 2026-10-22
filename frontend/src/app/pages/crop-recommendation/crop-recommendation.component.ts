@@ -122,6 +122,19 @@ export class CropRecommendationComponent {
         temperature: 25.0,
         humidity: 65.0
       });
+    } else if (type === 'nagpur') {
+      this.cropForm.setValue({
+        state: 'Maharashtra',
+        district: 'Nagpur',
+        nitrogen: 85,
+        phosphorous: 45,
+        potassium: 40,
+        ph: 6.8,
+        rainfall: 950,
+        city: 'Nagpur',
+        temperature: 28.0,
+        humidity: 68.0
+      });
     } else if (type === 'cotton') {
       this.cropForm.setValue({
         state: 'Maharashtra',

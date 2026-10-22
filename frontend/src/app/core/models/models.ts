@@ -54,6 +54,9 @@ export interface CropRecommendationResponse {
   district?: string;
   isDistrictVerified?: boolean;
   datasetUsed?: string;
+  datasetLevel?: string;
+  zincTarget?: number;
+  sulphurTarget?: number;
   regionalNotes?: string;
   temperature: number;
   humidity: number;
@@ -96,6 +99,10 @@ export interface FertilizerRecommendationResponse {
   soilColor?: string;
   isDistrictVerified?: boolean;
   datasetUsed?: string;
+  datasetLevel?: string;
+  zincTarget?: number;
+  sulphurTarget?: number;
+  regionalNotes?: string;
   referenceLink?: string;
   soilStatus: string;
   nitrogen: number;
@@ -116,6 +123,9 @@ export interface DiseasePredictionResponse {
   disease: string;
   state?: string;
   district?: string;
+  isDistrictVerified?: boolean;
+  datasetLevel?: string;
+  datasetUsed?: string;
   regionalAdvisory?: string;
   status: string;
   confidence: number;

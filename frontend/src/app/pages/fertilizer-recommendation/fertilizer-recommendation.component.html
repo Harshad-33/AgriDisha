@@ -4,7 +4,7 @@
     <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Module 2</span>
     <h1 class="display-6 fw-bold">Fertilizer Recommendation & Soil Advisory</h1>
     <p class="text-muted">
-      Identify soil nutrient imbalances (Nitrogen, Phosphorous, Potassium) for your chosen crop and receive precise chemical dosages, organic amendments, and cultural soil management practices.
+      Identify soil nutrient imbalances (Nitrogen, Phosphorous, Potassium) for your chosen crop and receive precise chemical dosages, micronutrient guidance (Zinc & Sulphur), organic amendments, and cultural soil management practices.
     </p>
   </div>
 
@@ -14,8 +14,9 @@
       <div class="card card-harvest border-0 p-4 p-md-5">
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
           <h4 class="fw-bold mb-0">Crop & Soil Nutrients</h4>
-          <div class="btn-group btn-group-sm">
+          <div class="btn-group btn-group-sm flex-wrap">
             <button type="button" (click)="loadSample('Solapur')" class="btn btn-outline-success">🟢 Solapur Sugarcane</button>
+            <button type="button" (click)="loadSample('Nagpur')" class="btn btn-outline-primary">🔵 Nagpur Cotton</button>
             <button type="button" (click)="loadSample('N')" class="btn btn-outline-secondary">Low N</button>
             <button type="button" (click)="loadSample('P')" class="btn btn-outline-secondary">Low P</button>
             <button type="button" (click)="loadSample('K')" class="btn btn-outline-secondary">Low K</button>
@@ -66,7 +67,7 @@
                 class="form-select"
                 formControlName="district">
                 <option *ngFor="let d of districts" [value]="d">
-                  {{ d }} {{ locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, d) ? '🟢' : '' }}
+                  {{ d }} {{ locationService.getDistrictBadgeLabel(fertilizerForm.get('state')?.value, d) }}
                 </option>
               </select>
             </div>
@@ -82,11 +83,14 @@
             </div>
 
             <div class="col-12">
-              <div class="d-flex align-items-center gap-2">
-                <span *ngIf="locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span *ngIf="locationService.isPrimaryVerified(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
                   <i class="bi bi-shield-check me-1"></i> Western Maharashtra Regional Dataset Indexed
                 </span>
-                <span *ngIf="!locationService.isVerifiedDistrict(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-light text-secondary border px-2 py-1">
+                <span *ngIf="locationService.isRegionalReference(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">
+                  <i class="bi bi-journal-bookmark-fill me-1"></i> Maharashtra Regional Reference Dataset (with Zn & S Micronutrients)
+                </span>
+                <span *ngIf="locationService.getDistrictDatasetStatus(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value) === 'fallback'" class="badge bg-light text-secondary border px-2 py-1">
                   <i class="bi bi-layers me-1"></i> Standard ICAR / MPKV Fertilizer Guidelines
                 </span>
               </div>
@@ -170,7 +174,7 @@
 
         <div class="p-4 p-md-5">
           <!-- Regional Dataset Verification Banner -->
-          <div *ngIf="result.isDistrictVerified" class="alert alert-success d-flex align-items-center justify-content-between flex-wrap gap-3 p-3 rounded-4 mb-4 border-2 border-success shadow-sm">
+          <div *ngIf="result.isDistrictVerified && !result.datasetUsed?.includes('Expanded') && !result.datasetUsed?.includes('Reference')" class="alert alert-success d-flex align-items-center justify-content-between flex-wrap gap-3 p-3 rounded-4 mb-4 border-2 border-success shadow-sm">
             <div class="d-flex align-items-center gap-3">
               <i class="bi bi-patch-check-fill fs-2 text-success"></i>
               <div>
@@ -185,6 +189,19 @@
               <a [href]="result.referenceLink" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-sm d-inline-flex align-items-center gap-1 shadow-sm">
                 <i class="bi bi-youtube"></i> Watch Crop Care Video
               </a>
+            </div>
+          </div>
+
+          <div *ngIf="result.isDistrictVerified && (result.datasetUsed?.includes('Expanded') || result.datasetUsed?.includes('Reference'))" class="alert alert-primary d-flex align-items-center justify-content-between flex-wrap gap-3 p-3 rounded-4 mb-4 border-2 border-primary shadow-sm">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-bookmark-check-fill fs-2 text-primary"></i>
+              <div>
+                <div class="fw-bold fs-6">🔵 Regional Reference Fertilizer & Micronutrient Guidelines</div>
+                <div class="small">
+                  Agronomic targets for <strong>{{ result.district }}{{ result.state ? ', ' + result.state : '' }}</strong> (Soil: {{ result.soilColor || 'Black Soil' }})
+                </div>
+                <div class="small text-muted mt-1"><i class="bi bi-database me-1"></i> Reference Dataset: {{ result.datasetUsed }}</div>
+              </div>
             </div>
           </div>
 

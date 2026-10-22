@@ -26,7 +26,7 @@
             <label class="form-label" for="disease-district">District *</label>
             <select id="disease-district" class="form-select" [(ngModel)]="selectedDistrict">
               <option *ngFor="let d of districts" [value]="d">
-                {{ d }} {{ locationService.isVerifiedDistrict(selectedState, d) ? '🟢 (Regional Advisory)' : '' }}
+                {{ d }} {{ locationService.isPrimaryVerified(selectedState, d) ? '🟢 (Western MH Advisory)' : (locationService.isRegionalReference(selectedState, d) ? '🔵 (Regional SAU Advisory)' : '') }}
               </option>
             </select>
           </div>
