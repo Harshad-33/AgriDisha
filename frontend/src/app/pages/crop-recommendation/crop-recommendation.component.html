@@ -12,29 +12,7 @@
     <!-- Form Card -->
     <div class="col-lg-8" *ngIf="!result">
       <div class="card card-harvest border-0 p-4 p-md-5">
-        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
-          <h4 class="fw-bold mb-0">Enter Farm Parameters</h4>
-          <div class="btn-group btn-group-sm flex-wrap">
-            <button type="button" (click)="loadPreset('solapur')" class="btn btn-outline-success">
-              🟢 Solapur (Verified)
-            </button>
-            <button type="button" (click)="loadPreset('pune')" class="btn btn-outline-success">
-              🟢 Pune (Verified)
-            </button>
-            <button type="button" (click)="loadPreset('nagpur')" class="btn btn-outline-primary">
-              🔵 Nagpur (Reference)
-            </button>
-            <button type="button" (click)="loadPreset('cotton')" class="btn btn-outline-secondary">
-              🌱 Bt Cotton
-            </button>
-            <button type="button" (click)="loadPreset('soybean')" class="btn btn-outline-secondary">
-              🌾 Soybean
-            </button>
-            <button type="button" (click)="loadPreset('rice')" class="btn btn-outline-secondary">
-              🌊 Rice
-            </button>
-          </div>
-        </div>
+        <h4 class="fw-bold mb-4">Enter Farm Parameters</h4>
 
         <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
           <i class="bi bi-exclamation-triangle-fill"></i>

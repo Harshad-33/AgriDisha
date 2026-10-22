@@ -12,17 +12,7 @@
     <!-- Form Card -->
     <div class="col-lg-7" *ngIf="!result">
       <div class="card card-harvest border-0 p-4 p-md-5">
-        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-2">
-          <h4 class="fw-bold mb-0">Crop & Soil Nutrients</h4>
-          <div class="btn-group btn-group-sm flex-wrap">
-            <button type="button" (click)="loadSample('Solapur')" class="btn btn-outline-success">🟢 Solapur Sugarcane</button>
-            <button type="button" (click)="loadSample('Nagpur')" class="btn btn-outline-primary">🔵 Nagpur Cotton</button>
-            <button type="button" (click)="loadSample('N')" class="btn btn-outline-secondary">Low N</button>
-            <button type="button" (click)="loadSample('P')" class="btn btn-outline-secondary">Low P</button>
-            <button type="button" (click)="loadSample('K')" class="btn btn-outline-secondary">Low K</button>
-            <button type="button" (click)="loadSample('Balanced')" class="btn btn-outline-secondary">Optimal</button>
-          </div>
-        </div>
+        <h4 class="fw-bold mb-4">Crop & Soil Nutrients</h4>
 
         <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
           <i class="bi bi-exclamation-triangle-fill"></i>
