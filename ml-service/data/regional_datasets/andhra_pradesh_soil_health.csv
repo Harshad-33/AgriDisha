@@ -1,0 +1,376 @@
+District,Soil_Type,Crop_Name,N_kg_ha,P2O5_kg_ha,K2O_kg_ha,Zn_kg_ha,S_kg_ha,Recommended_pH,Weather,Fertilizer
+Srikakulam,Red Sandy Loam,Rice,153.4,67.2,70.8,1.3,14.3,6.6,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Rice,155.0,58.1,70.8,1.3,15.4,6.6,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Rice,132.4,52.5,58.8,1.7,15.0,7.0,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Cashewnut,127.2,59.8,67.9,1.6,12.8,7.0,Humid,Urea + Rock Phosphate + MOP
+Srikakulam,Red Sandy Loam,Cashewnut,147.6,59.8,59.4,1.4,14.7,6.8,Humid,Urea + Rock Phosphate + MOP
+Srikakulam,Red Sandy Loam,Cashewnut,138.5,63.3,61.7,1.6,11.9,6.8,Humid,Urea + Rock Phosphate + MOP
+Srikakulam,Red Sandy Loam,Groundnut,138.0,52.7,67.2,1.4,14.1,6.9,Humid,SSP + Gypsum + MOP
+Srikakulam,Red Sandy Loam,Groundnut,116.4,66.7,59.8,1.3,13.4,6.6,Humid,SSP + Gypsum + MOP
+Srikakulam,Red Sandy Loam,Groundnut,115.0,63.9,57.4,1.5,15.2,6.8,Humid,SSP + Gypsum + MOP
+Srikakulam,Red Sandy Loam,Sugarcane,186.8,75.0,73.5,1.3,14.8,7.0,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Sugarcane,188.2,73.2,79.2,1.7,14.6,6.9,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Sugarcane,190.4,63.3,83.0,1.5,11.7,6.7,Humid,Urea + DAP + MOP
+Srikakulam,Red Sandy Loam,Maize,159.1,62.4,66.0,1.4,13.9,7.0,Humid,Urea + DAP
+Srikakulam,Red Sandy Loam,Maize,169.0,62.8,68.8,1.3,12.2,6.8,Humid,Urea + DAP
+Srikakulam,Red Sandy Loam,Maize,163.2,56.3,59.2,1.5,12.9,6.6,Humid,Urea + DAP
+Vizianagaram,Red Soil,Rice,138.9,60.8,73.1,1.4,15.4,6.7,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Rice,142.4,64.6,59.4,1.5,12.8,6.8,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Rice,166.9,56.7,71.8,1.8,13.1,7.1,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Sugarcane,171.1,76.3,83.4,1.5,15.7,7.0,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Sugarcane,171.1,73.1,78.4,1.5,16.0,7.1,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Sugarcane,164.9,78.5,85.7,1.4,12.6,6.9,Humid,Urea + DAP + MOP
+Vizianagaram,Red Soil,Groundnut,147.9,67.8,62.7,1.6,15.9,6.8,Humid,SSP + Gypsum + MOP
+Vizianagaram,Red Soil,Groundnut,117.8,60.7,70.1,1.7,15.7,6.7,Humid,SSP + Gypsum + MOP
+Vizianagaram,Red Soil,Groundnut,120.5,56.2,68.7,1.5,15.9,7.0,Humid,SSP + Gypsum + MOP
+Vizianagaram,Red Soil,Maize,158.4,66.9,62.9,1.8,15.6,7.1,Humid,Urea + DAP
+Vizianagaram,Red Soil,Maize,164.8,58.9,60.2,1.5,15.1,6.8,Humid,Urea + DAP
+Vizianagaram,Red Soil,Maize,168.2,69.6,71.4,1.6,12.8,7.1,Humid,Urea + DAP
+Vizianagaram,Red Soil,Arhar(Tur),120.4,61.9,67.5,1.6,13.1,7.1,Humid,SSP + DAP
+Vizianagaram,Red Soil,Arhar(Tur),126.1,60.8,61.9,1.7,12.3,7.0,Humid,SSP + DAP
+Vizianagaram,Red Soil,Arhar(Tur),132.5,66.7,60.7,1.6,16.1,6.7,Humid,SSP + DAP
+Parvathipuram Manyam,Red Soil,Rice,154.5,57.5,58.9,1.3,12.1,6.9,Humid,Urea + DAP + MOP
+Parvathipuram Manyam,Red Soil,Rice,133.3,64.7,62.3,1.3,14.2,6.7,Humid,Urea + DAP + MOP
+Parvathipuram Manyam,Red Soil,Rice,157.8,52.9,65.0,1.2,11.9,6.7,Humid,Urea + DAP + MOP
+Parvathipuram Manyam,Red Soil,Cashewnut,127.3,51.9,61.1,1.5,12.8,6.7,Humid,Urea + Rock Phosphate + MOP
+Parvathipuram Manyam,Red Soil,Cashewnut,144.1,51.1,67.8,1.2,12.6,6.9,Humid,Urea + Rock Phosphate + MOP
+Parvathipuram Manyam,Red Soil,Cashewnut,124.5,52.6,54.9,1.5,14.5,6.5,Humid,Urea + Rock Phosphate + MOP
+Parvathipuram Manyam,Red Soil,Maize,147.4,55.0,54.5,1.3,13.9,6.7,Humid,Urea + DAP
+Parvathipuram Manyam,Red Soil,Maize,138.3,61.2,55.5,1.3,11.6,6.9,Humid,Urea + DAP
+Parvathipuram Manyam,Red Soil,Maize,141.8,63.1,59.4,1.3,13.4,6.6,Humid,Urea + DAP
+Parvathipuram Manyam,Red Soil,Arhar(Tur),126.7,61.9,50.4,1.2,11.3,6.7,Humid,SSP + DAP
+Parvathipuram Manyam,Red Soil,Arhar(Tur),111.0,58.3,51.7,1.4,12.3,6.8,Humid,SSP + DAP
+Parvathipuram Manyam,Red Soil,Arhar(Tur),136.4,64.6,56.4,1.5,14.5,6.6,Humid,SSP + DAP
+Visakhapatnam,Red Sandy Loam,Rice,163.6,66.9,58.4,1.6,14.6,7.1,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Rice,153.7,56.7,69.4,1.6,12.6,7.2,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Rice,154.5,53.3,56.4,1.3,14.5,7.1,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Sugarcane,187.8,75.8,73.2,1.3,12.2,6.9,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Sugarcane,169.2,68.2,83.2,1.5,15.1,7.2,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Sugarcane,181.7,70.2,76.5,1.5,13.7,7.1,Humid,Urea + DAP + MOP
+Visakhapatnam,Red Sandy Loam,Vegetables,154.9,62.6,62.0,1.5,13.7,6.8,Humid,NPK 19:19:19 + Vermicompost
+Visakhapatnam,Red Sandy Loam,Vegetables,127.6,59.3,73.1,1.6,12.1,7.2,Humid,NPK 19:19:19 + Vermicompost
+Visakhapatnam,Red Sandy Loam,Vegetables,150.2,61.6,58.0,1.4,13.2,7.0,Humid,NPK 19:19:19 + Vermicompost
+Visakhapatnam,Red Sandy Loam,Mango,124.2,59.9,71.8,1.5,13.8,7.0,Humid,Organic Manure + NPK 19:19:19
+Visakhapatnam,Red Sandy Loam,Mango,123.8,62.9,76.0,1.6,14.9,6.9,Humid,Organic Manure + NPK 19:19:19
+Visakhapatnam,Red Sandy Loam,Mango,130.5,51.3,74.6,1.6,15.6,7.1,Humid,Organic Manure + NPK 19:19:19
+Anakapalli,Alluvial Soil,Sugarcane,197.1,81.8,78.9,1.5,16.9,7.3,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Sugarcane,193.8,78.0,84.1,1.9,14.3,6.9,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Sugarcane,197.3,68.6,90.0,1.8,13.5,7.1,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Rice,149.8,71.2,77.2,1.6,13.7,7.0,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Rice,156.6,67.8,80.3,1.6,13.7,7.2,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Rice,156.0,70.0,75.0,1.7,16.6,6.9,Humid,Urea + DAP + MOP
+Anakapalli,Alluvial Soil,Groundnut,151.5,60.7,70.6,1.7,15.4,6.9,Humid,SSP + Gypsum + MOP
+Anakapalli,Alluvial Soil,Groundnut,138.3,62.3,66.8,1.6,14.8,7.0,Humid,SSP + Gypsum + MOP
+Anakapalli,Alluvial Soil,Groundnut,147.5,73.2,79.3,1.5,14.1,7.1,Humid,SSP + Gypsum + MOP
+Anakapalli,Alluvial Soil,Sesamum,146.8,65.2,67.7,1.7,17.4,7.3,Humid,Urea + SSP
+Anakapalli,Alluvial Soil,Sesamum,155.3,57.8,71.0,1.5,17.2,7.2,Humid,Urea + SSP
+Anakapalli,Alluvial Soil,Sesamum,160.2,60.7,69.9,1.6,17.1,6.9,Humid,Urea + SSP
+Alluri Sitharama Raju,Red Soil,Rice,124.6,53.0,62.5,1.3,13.7,6.6,Humid,Urea + DAP + MOP
+Alluri Sitharama Raju,Red Soil,Rice,151.9,62.1,53.5,1.1,11.8,6.3,Humid,Urea + DAP + MOP
+Alluri Sitharama Raju,Red Soil,Rice,143.8,59.0,55.2,1.3,11.7,6.3,Humid,Urea + DAP + MOP
+Alluri Sitharama Raju,Red Soil,Coffee,125.7,51.8,64.8,1.4,11.0,6.5,Humid,NPK 17:17:17 + Organic Compost
+Alluri Sitharama Raju,Red Soil,Coffee,132.7,56.8,56.7,1.4,11.8,6.5,Humid,NPK 17:17:17 + Organic Compost
+Alluri Sitharama Raju,Red Soil,Coffee,130.8,55.9,67.7,1.3,12.0,6.7,Humid,NPK 17:17:17 + Organic Compost
+Alluri Sitharama Raju,Red Soil,Pepper,118.5,58.3,62.6,1.2,14.3,6.7,Humid,FYM + NPK 10:10:10
+Alluri Sitharama Raju,Red Soil,Pepper,130.3,56.3,53.9,1.2,12.5,6.7,Humid,FYM + NPK 10:10:10
+Alluri Sitharama Raju,Red Soil,Pepper,125.4,58.8,61.2,1.3,13.6,6.3,Humid,FYM + NPK 10:10:10
+Alluri Sitharama Raju,Red Soil,Ginger,152.8,57.3,60.3,1.1,13.7,6.5,Humid,FYM + Neem Cake + NPK 19:19:19
+Alluri Sitharama Raju,Red Soil,Ginger,153.1,61.0,66.7,1.2,13.5,6.7,Humid,FYM + Neem Cake + NPK 19:19:19
+Alluri Sitharama Raju,Red Soil,Ginger,131.2,56.3,60.3,1.1,11.0,6.4,Humid,FYM + Neem Cake + NPK 19:19:19
+Alluri Sitharama Raju,Red Soil,Turmeric,146.2,63.0,77.8,1.4,11.7,6.7,Humid,NPK 19:19:19 + MOP
+Alluri Sitharama Raju,Red Soil,Turmeric,135.7,56.3,74.7,1.4,12.5,6.3,Humid,NPK 19:19:19 + MOP
+Alluri Sitharama Raju,Red Soil,Turmeric,137.3,58.9,76.7,1.1,11.8,6.3,Humid,NPK 19:19:19 + MOP
+East Godavari,Alluvial Soil,Rice,169.6,70.0,76.2,1.9,18.6,7.4,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Rice,179.2,70.2,88.9,1.7,15.2,7.1,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Rice,168.2,68.7,73.7,1.6,18.7,7.1,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Banana,180.7,85.7,88.8,1.9,19.2,7.3,Sub-Humid,Urea + SSP + MOP
+East Godavari,Alluvial Soil,Banana,193.2,68.3,95.5,2.0,17.3,7.5,Sub-Humid,Urea + SSP + MOP
+East Godavari,Alluvial Soil,Banana,195.9,83.3,93.6,2.0,19.2,7.4,Sub-Humid,Urea + SSP + MOP
+East Godavari,Alluvial Soil,Sugarcane,175.3,76.5,96.3,1.7,15.6,7.5,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Sugarcane,195.1,91.1,101.1,2.0,16.9,7.2,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Sugarcane,176.1,76.8,93.9,1.9,15.6,7.3,Sub-Humid,Urea + DAP + MOP
+East Godavari,Alluvial Soil,Black Gram,143.3,78.0,69.8,2.1,18.0,7.5,Sub-Humid,DAP + Rhizobium
+East Godavari,Alluvial Soil,Black Gram,139.4,66.8,73.7,1.8,17.8,7.5,Sub-Humid,DAP + Rhizobium
+East Godavari,Alluvial Soil,Black Gram,150.4,65.3,64.6,2.0,17.1,7.1,Sub-Humid,DAP + Rhizobium
+East Godavari,Alluvial Soil,Oil Palm,163.3,79.5,96.7,1.8,19.6,7.5,Sub-Humid,Urea + DAP + MOP + Borax
+East Godavari,Alluvial Soil,Oil Palm,148.4,68.9,96.3,1.8,15.9,7.5,Sub-Humid,Urea + DAP + MOP + Borax
+East Godavari,Alluvial Soil,Oil Palm,186.5,73.9,103.7,1.9,18.0,7.3,Sub-Humid,Urea + DAP + MOP + Borax
+Kakinada,Alluvial Soil,Rice,178.6,77.2,78.0,1.8,18.2,7.4,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Rice,172.7,63.9,70.4,1.7,14.6,7.1,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Rice,160.1,63.2,70.7,1.9,18.7,7.1,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Coconut,171.5,68.4,78.0,2.0,14.9,7.2,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Kakinada,Alluvial Soil,Coconut,141.4,66.1,85.0,1.7,16.9,7.4,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Kakinada,Alluvial Soil,Coconut,166.8,69.1,94.8,1.8,17.8,7.2,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Kakinada,Alluvial Soil,Banana,182.6,67.7,85.3,1.9,18.0,7.1,Sub-Humid,Urea + SSP + MOP
+Kakinada,Alluvial Soil,Banana,152.5,77.0,83.9,1.7,18.3,7.4,Sub-Humid,Urea + SSP + MOP
+Kakinada,Alluvial Soil,Banana,185.7,67.9,96.7,1.5,19.1,7.3,Sub-Humid,Urea + SSP + MOP
+Kakinada,Alluvial Soil,Sugarcane,203.6,86.5,98.5,1.9,18.9,7.0,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Sugarcane,174.1,83.7,84.2,1.9,16.4,7.3,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Sugarcane,175.2,80.9,96.5,1.9,15.3,7.1,Sub-Humid,Urea + DAP + MOP
+Kakinada,Alluvial Soil,Black Gram,160.8,74.2,72.2,1.5,17.8,7.3,Sub-Humid,DAP + Rhizobium
+Kakinada,Alluvial Soil,Black Gram,152.3,77.5,74.7,1.9,15.6,7.1,Sub-Humid,DAP + Rhizobium
+Kakinada,Alluvial Soil,Black Gram,166.4,78.0,64.0,1.8,17.7,7.3,Sub-Humid,DAP + Rhizobium
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Rice,167.0,72.1,94.5,1.8,16.2,7.2,Sub-Humid,Urea + DAP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Rice,150.4,72.8,86.3,2.1,17.1,7.2,Sub-Humid,Urea + DAP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Rice,179.0,81.2,84.4,2.2,18.1,7.3,Sub-Humid,Urea + DAP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Coconut,163.4,79.4,90.3,2.1,19.7,6.9,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Coconut,180.2,66.9,101.5,1.8,17.0,7.0,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Coconut,157.5,77.1,91.6,2.2,17.7,7.2,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Banana,169.8,80.6,101.0,1.9,19.9,7.2,Sub-Humid,Urea + SSP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Banana,180.4,83.2,92.9,1.9,20.3,7.2,Sub-Humid,Urea + SSP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Banana,176.4,89.7,109.0,2.1,16.4,7.0,Sub-Humid,Urea + SSP + MOP
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Black Gram,147.3,75.2,74.4,2.0,20.4,6.9,Sub-Humid,DAP + Rhizobium
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Black Gram,133.7,74.6,68.1,1.9,17.1,7.2,Sub-Humid,DAP + Rhizobium
+Dr. B.R. Ambedkar Konaseema,Alluvial Soil,Black Gram,138.0,74.5,87.3,2.1,17.8,6.9,Sub-Humid,DAP + Rhizobium
+West Godavari,Black Soil (Regur),Rice,189.5,79.2,86.1,1.8,16.5,7.6,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Rice,184.5,80.4,77.8,2.0,19.5,7.6,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Rice,179.3,65.7,72.3,1.8,19.4,7.3,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Sugarcane,176.3,83.4,88.7,1.8,18.9,7.4,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Sugarcane,197.8,84.2,106.0,2.1,17.9,7.2,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Sugarcane,204.6,77.2,85.4,1.7,17.5,7.6,Sub-Humid,Urea + DAP + MOP
+West Godavari,Black Soil (Regur),Maize,171.9,81.4,82.7,2.0,17.9,7.5,Sub-Humid,Urea + DAP
+West Godavari,Black Soil (Regur),Maize,165.7,71.6,88.4,2.0,19.3,7.5,Sub-Humid,Urea + DAP
+West Godavari,Black Soil (Regur),Maize,184.9,77.4,85.5,2.0,17.3,7.2,Sub-Humid,Urea + DAP
+West Godavari,Black Soil (Regur),Coconut,182.1,81.4,88.2,1.9,15.9,7.6,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+West Godavari,Black Soil (Regur),Coconut,147.5,72.7,81.8,2.1,18.9,7.5,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+West Godavari,Black Soil (Regur),Coconut,169.4,77.6,100.8,1.7,16.7,7.2,Sub-Humid,Urea + Superphosphate + MOP + MgSO4
+West Godavari,Black Soil (Regur),Fish/Paddy,156.8,61.8,81.0,1.9,19.0,7.6,Sub-Humid,Organic Manure + Low chemical NPK
+West Godavari,Black Soil (Regur),Fish/Paddy,139.0,61.2,76.8,1.9,18.9,7.3,Sub-Humid,Organic Manure + Low chemical NPK
+West Godavari,Black Soil (Regur),Fish/Paddy,177.1,70.6,77.8,2.0,19.9,7.5,Sub-Humid,Organic Manure + Low chemical NPK
+Eluru,Black Soil (Regur),Rice,180.4,64.3,68.2,1.5,16.7,7.6,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Rice,151.2,71.9,70.2,1.8,18.5,7.7,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Rice,154.6,62.1,70.9,1.8,15.5,7.5,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Sugarcane,190.7,87.4,87.1,1.7,15.4,7.5,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Sugarcane,175.7,80.3,90.3,1.9,16.5,7.7,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Sugarcane,183.1,79.6,87.1,1.5,17.3,7.6,Sub-Humid,Urea + DAP + MOP
+Eluru,Black Soil (Regur),Tobacco,175.5,61.9,89.1,1.9,18.1,7.3,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Eluru,Black Soil (Regur),Tobacco,146.0,74.2,85.5,1.6,14.1,7.7,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Eluru,Black Soil (Regur),Tobacco,165.3,67.8,81.4,1.6,15.3,7.7,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Eluru,Black Soil (Regur),Maize,148.9,79.9,81.5,1.7,17.5,7.5,Sub-Humid,Urea + DAP
+Eluru,Black Soil (Regur),Maize,171.8,73.3,74.4,2.0,17.5,7.5,Sub-Humid,Urea + DAP
+Eluru,Black Soil (Regur),Maize,167.6,68.0,68.7,1.7,17.9,7.4,Sub-Humid,Urea + DAP
+Eluru,Black Soil (Regur),Oil Palm,154.3,63.7,99.5,1.7,14.8,7.6,Sub-Humid,Urea + DAP + MOP + Borax
+Eluru,Black Soil (Regur),Oil Palm,146.9,77.5,94.3,1.5,17.6,7.4,Sub-Humid,Urea + DAP + MOP + Borax
+Eluru,Black Soil (Regur),Oil Palm,147.0,76.5,98.5,1.7,15.3,7.5,Sub-Humid,Urea + DAP + MOP + Borax
+Krishna,Alluvial Soil,Rice,180.3,80.8,83.8,1.8,17.2,7.6,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Rice,158.0,69.7,73.5,2.2,18.8,7.3,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Rice,180.0,80.3,75.9,1.8,16.2,7.6,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Black Gram,145.9,77.6,71.7,2.0,19.6,7.4,Sub-Humid,DAP + Rhizobium
+Krishna,Alluvial Soil,Black Gram,134.2,78.1,83.7,1.8,19.2,7.6,Sub-Humid,DAP + Rhizobium
+Krishna,Alluvial Soil,Black Gram,168.2,78.3,73.1,1.8,16.0,7.3,Sub-Humid,DAP + Rhizobium
+Krishna,Alluvial Soil,Sugarcane,184.3,75.7,83.5,1.8,15.4,7.5,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Sugarcane,190.0,91.0,97.9,1.8,18.3,7.5,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Sugarcane,214.4,85.9,89.2,1.7,16.9,7.3,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Cotton,160.2,79.5,78.8,1.9,16.6,7.5,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Cotton,158.0,71.4,78.3,1.9,17.7,7.6,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Cotton,179.1,64.8,88.3,2.1,19.4,7.3,Sub-Humid,Urea + DAP + MOP
+Krishna,Alluvial Soil,Mango,163.7,64.1,88.6,2.0,19.1,7.4,Sub-Humid,Organic Manure + NPK 19:19:19
+Krishna,Alluvial Soil,Mango,162.7,66.2,77.5,1.8,15.7,7.5,Sub-Humid,Organic Manure + NPK 19:19:19
+Krishna,Alluvial Soil,Mango,148.7,67.8,75.8,1.8,19.0,7.2,Sub-Humid,Organic Manure + NPK 19:19:19
+NTR,Alluvial Soil,Rice,162.2,72.2,83.6,1.9,14.4,7.4,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Rice,176.5,74.0,80.6,1.9,17.8,7.3,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Rice,143.7,63.1,74.4,1.8,18.9,7.2,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Cotton,163.3,74.5,73.9,1.7,15.1,7.3,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Cotton,151.4,72.0,77.0,1.6,15.5,7.3,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Cotton,158.6,78.3,87.1,1.7,17.5,7.2,Sub-Humid,Urea + DAP + MOP
+NTR,Alluvial Soil,Dry chillies,156.5,76.9,90.5,1.7,15.7,7.4,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+NTR,Alluvial Soil,Dry chillies,155.6,66.9,81.8,1.8,15.5,7.3,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+NTR,Alluvial Soil,Dry chillies,160.8,70.4,87.5,1.8,16.3,7.3,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+NTR,Alluvial Soil,Maize,183.3,78.2,82.3,1.9,16.3,7.3,Sub-Humid,Urea + DAP
+NTR,Alluvial Soil,Maize,148.6,77.9,68.7,1.6,17.2,7.1,Sub-Humid,Urea + DAP
+NTR,Alluvial Soil,Maize,174.1,66.6,79.7,1.8,14.9,7.3,Sub-Humid,Urea + DAP
+NTR,Alluvial Soil,Vegetables,164.9,59.3,69.8,1.7,17.0,7.3,Sub-Humid,NPK 19:19:19 + Vermicompost
+NTR,Alluvial Soil,Vegetables,154.0,70.9,72.0,1.7,16.4,7.5,Sub-Humid,NPK 19:19:19 + Vermicompost
+NTR,Alluvial Soil,Vegetables,154.0,60.6,71.7,1.8,18.8,7.4,Sub-Humid,NPK 19:19:19 + Vermicompost
+Guntur,Black Soil (Regur),Dry chillies,181.5,80.3,93.0,2.3,23.3,7.6,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Guntur,Black Soil (Regur),Dry chillies,186.4,90.2,102.4,2.0,18.9,7.6,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Guntur,Black Soil (Regur),Dry chillies,179.3,80.1,85.8,2.4,19.6,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Guntur,Black Soil (Regur),Cotton,166.7,93.6,96.7,2.3,18.9,7.8,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Cotton,173.2,78.5,96.5,1.9,23.1,7.5,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Cotton,189.6,82.7,84.4,2.3,18.0,7.9,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Rice,159.8,77.1,78.8,1.8,22.6,7.8,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Rice,169.6,89.1,84.7,2.1,19.9,7.6,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Rice,172.8,81.6,95.2,2.3,19.7,7.7,Sub-Humid,Urea + DAP + MOP
+Guntur,Black Soil (Regur),Tobacco,166.6,74.5,85.7,1.8,22.0,7.5,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Guntur,Black Soil (Regur),Tobacco,146.6,87.4,100.1,2.1,18.3,7.9,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Guntur,Black Soil (Regur),Tobacco,152.3,73.9,101.7,1.9,23.2,7.9,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Guntur,Black Soil (Regur),Black Gram,149.3,86.8,75.7,2.2,19.4,7.5,Sub-Humid,DAP + Rhizobium
+Guntur,Black Soil (Regur),Black Gram,161.8,90.5,85.1,2.3,19.8,7.6,Sub-Humid,DAP + Rhizobium
+Guntur,Black Soil (Regur),Black Gram,161.2,84.7,72.3,1.9,21.5,7.7,Sub-Humid,DAP + Rhizobium
+Bapatla,Alluvial Soil,Rice,145.5,63.6,79.9,1.5,13.3,7.0,Sub-Humid,Urea + DAP + MOP
+Bapatla,Alluvial Soil,Rice,162.3,73.7,80.6,1.7,14.0,7.0,Sub-Humid,Urea + DAP + MOP
+Bapatla,Alluvial Soil,Rice,175.4,70.6,74.3,1.9,15.8,7.3,Sub-Humid,Urea + DAP + MOP
+Bapatla,Alluvial Soil,Groundnut,136.9,57.6,78.5,1.7,13.6,7.4,Sub-Humid,SSP + Gypsum + MOP
+Bapatla,Alluvial Soil,Groundnut,125.8,62.1,77.0,1.8,17.5,7.4,Sub-Humid,SSP + Gypsum + MOP
+Bapatla,Alluvial Soil,Groundnut,134.6,63.9,64.6,1.8,17.1,7.2,Sub-Humid,SSP + Gypsum + MOP
+Bapatla,Alluvial Soil,Dry chillies,180.4,78.3,81.7,1.7,16.3,7.2,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Bapatla,Alluvial Soil,Dry chillies,162.4,70.0,85.5,1.6,13.7,7.4,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Bapatla,Alluvial Soil,Dry chillies,154.5,64.8,75.1,1.9,15.8,7.4,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Bapatla,Alluvial Soil,Vegetables,164.8,71.3,65.0,1.5,16.2,7.3,Sub-Humid,NPK 19:19:19 + Vermicompost
+Bapatla,Alluvial Soil,Vegetables,167.5,64.0,71.7,1.9,16.8,7.1,Sub-Humid,NPK 19:19:19 + Vermicompost
+Bapatla,Alluvial Soil,Vegetables,164.7,58.9,79.1,1.6,13.9,7.2,Sub-Humid,NPK 19:19:19 + Vermicompost
+Palnadu,Black Soil (Regur),Cotton,171.7,81.8,80.9,2.2,19.7,7.6,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Cotton,190.4,74.9,77.8,2.1,19.3,7.6,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Cotton,157.8,77.5,94.9,1.8,17.3,7.6,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Dry chillies,167.7,73.4,90.0,2.0,17.4,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Palnadu,Black Soil (Regur),Dry chillies,176.2,86.1,100.2,1.8,21.0,7.8,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Palnadu,Black Soil (Regur),Dry chillies,159.2,78.5,85.4,2.2,16.3,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Palnadu,Black Soil (Regur),Rice,167.7,72.3,92.0,1.8,21.2,7.9,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Rice,181.4,77.9,74.1,2.2,18.3,7.8,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Rice,176.6,70.5,78.2,1.9,17.1,8.0,Sub-Humid,Urea + DAP + MOP
+Palnadu,Black Soil (Regur),Arhar(Tur),153.4,74.5,84.4,2.1,17.9,7.9,Sub-Humid,SSP + DAP
+Palnadu,Black Soil (Regur),Arhar(Tur),157.4,83.8,85.9,1.7,18.4,7.8,Sub-Humid,SSP + DAP
+Palnadu,Black Soil (Regur),Arhar(Tur),144.2,87.7,81.1,2.2,18.4,7.8,Sub-Humid,SSP + DAP
+Palnadu,Black Soil (Regur),Maize,158.8,82.9,91.1,2.1,16.3,7.7,Sub-Humid,Urea + DAP
+Palnadu,Black Soil (Regur),Maize,147.0,75.6,77.5,1.8,17.0,7.6,Sub-Humid,Urea + DAP
+Palnadu,Black Soil (Regur),Maize,186.8,70.9,90.5,2.2,20.5,7.6,Sub-Humid,Urea + DAP
+Prakasam,Medium Black Soil,Dry chillies,186.0,89.5,95.6,2.1,17.4,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Prakasam,Medium Black Soil,Dry chillies,167.5,70.5,90.2,1.7,20.4,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Prakasam,Medium Black Soil,Dry chillies,170.9,87.1,98.2,1.8,18.8,7.7,Sub-Humid,NPK 17:17:17 + Urea + ZnSO4
+Prakasam,Medium Black Soil,Tobacco,135.2,70.6,97.9,1.9,20.6,7.6,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Prakasam,Medium Black Soil,Tobacco,170.8,84.2,92.8,2.1,20.3,7.6,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Prakasam,Medium Black Soil,Tobacco,146.5,81.3,96.9,2.1,18.9,7.5,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Prakasam,Medium Black Soil,Cotton,175.9,70.8,77.3,2.0,17.2,7.7,Sub-Humid,Urea + DAP + MOP
+Prakasam,Medium Black Soil,Cotton,175.7,74.1,95.4,1.7,18.0,7.7,Sub-Humid,Urea + DAP + MOP
+Prakasam,Medium Black Soil,Cotton,147.1,77.3,86.3,2.1,20.5,7.4,Sub-Humid,Urea + DAP + MOP
+Prakasam,Medium Black Soil,Bengal Gram,132.4,72.7,71.2,1.7,18.9,7.7,Sub-Humid,DAP + SSP
+Prakasam,Medium Black Soil,Bengal Gram,123.9,84.2,79.9,2.0,17.9,7.8,Sub-Humid,DAP + SSP
+Prakasam,Medium Black Soil,Bengal Gram,155.3,74.0,78.1,2.1,18.9,7.4,Sub-Humid,DAP + SSP
+Prakasam,Medium Black Soil,Arhar(Tur),123.5,82.9,81.4,1.9,18.7,7.6,Sub-Humid,SSP + DAP
+Prakasam,Medium Black Soil,Arhar(Tur),124.8,79.5,67.4,1.7,18.2,7.6,Sub-Humid,SSP + DAP
+Prakasam,Medium Black Soil,Arhar(Tur),148.6,82.2,75.8,1.9,18.8,7.7,Sub-Humid,SSP + DAP
+SPSR Nellore,Coastal Alluvial,Rice,145.2,61.4,76.3,1.5,14.8,7.5,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Rice,159.0,70.7,69.6,1.5,14.7,7.3,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Rice,159.7,70.9,76.3,1.5,13.9,7.1,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Sugarcane,165.2,79.2,83.6,1.7,16.7,7.3,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Sugarcane,196.1,73.2,78.7,1.7,14.4,7.1,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Sugarcane,195.3,80.7,79.1,1.7,15.6,7.2,Sub-Humid,Urea + DAP + MOP
+SPSR Nellore,Coastal Alluvial,Groundnut,133.7,70.5,60.9,1.5,14.8,7.2,Sub-Humid,SSP + Gypsum + MOP
+SPSR Nellore,Coastal Alluvial,Groundnut,149.5,71.5,67.3,1.6,16.7,7.4,Sub-Humid,SSP + Gypsum + MOP
+SPSR Nellore,Coastal Alluvial,Groundnut,142.3,62.9,71.4,1.5,15.8,7.1,Sub-Humid,SSP + Gypsum + MOP
+SPSR Nellore,Coastal Alluvial,Black Gram,152.0,64.7,72.0,1.6,15.8,7.2,Sub-Humid,DAP + Rhizobium
+SPSR Nellore,Coastal Alluvial,Black Gram,154.7,57.6,59.6,1.8,13.2,7.1,Sub-Humid,DAP + Rhizobium
+SPSR Nellore,Coastal Alluvial,Black Gram,148.1,68.7,67.7,1.5,13.6,7.4,Sub-Humid,DAP + Rhizobium
+SPSR Nellore,Coastal Alluvial,Tobacco,164.2,58.0,74.7,1.4,16.7,7.1,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+SPSR Nellore,Coastal Alluvial,Tobacco,161.4,66.9,70.5,1.5,15.9,7.3,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+SPSR Nellore,Coastal Alluvial,Tobacco,129.5,68.8,73.8,1.4,12.7,7.3,Sub-Humid,NPK 14:35:14 + SOP (Sulphate of Potash)
+Tirupati,Red Soil,Groundnut,135.1,58.9,72.2,1.5,14.7,6.9,Sub-Humid,SSP + Gypsum + MOP
+Tirupati,Red Soil,Groundnut,147.9,67.7,67.0,1.4,15.3,7.1,Sub-Humid,SSP + Gypsum + MOP
+Tirupati,Red Soil,Groundnut,118.7,66.8,59.9,1.5,13.8,7.2,Sub-Humid,SSP + Gypsum + MOP
+Tirupati,Red Soil,Rice,157.0,67.6,73.1,1.4,14.5,6.8,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Rice,151.3,57.8,71.9,1.3,12.5,7.2,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Rice,142.1,55.5,60.6,1.6,15.9,6.9,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Sugarcane,183.3,78.3,75.2,1.5,15.7,7.2,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Sugarcane,166.1,70.6,77.8,1.5,13.4,7.2,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Sugarcane,185.0,64.6,83.5,1.5,15.0,7.0,Sub-Humid,Urea + DAP + MOP
+Tirupati,Red Soil,Mango,155.8,58.7,71.6,1.3,12.2,7.0,Sub-Humid,Organic Manure + NPK 19:19:19
+Tirupati,Red Soil,Mango,146.0,60.8,80.7,1.3,13.7,6.9,Sub-Humid,Organic Manure + NPK 19:19:19
+Tirupati,Red Soil,Mango,156.8,60.9,66.9,1.5,13.1,6.8,Sub-Humid,Organic Manure + NPK 19:19:19
+Tirupati,Red Soil,Tomato,168.1,60.1,67.5,1.6,13.6,7.0,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Tirupati,Red Soil,Tomato,160.7,67.8,81.6,1.7,15.7,6.9,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Tirupati,Red Soil,Tomato,157.4,57.2,69.3,1.4,15.2,6.8,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Chittoor,Red Sandy Loam,Mango,131.9,67.9,71.2,1.7,13.4,7.1,Sub-Humid,Organic Manure + NPK 19:19:19
+Chittoor,Red Sandy Loam,Mango,145.9,66.8,73.8,1.6,16.7,6.8,Sub-Humid,Organic Manure + NPK 19:19:19
+Chittoor,Red Sandy Loam,Mango,153.6,68.3,73.0,1.8,15.4,6.7,Sub-Humid,Organic Manure + NPK 19:19:19
+Chittoor,Red Sandy Loam,Tomato,165.7,63.4,89.4,1.6,14.0,6.8,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Chittoor,Red Sandy Loam,Tomato,149.5,69.0,89.2,1.5,13.8,6.8,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Chittoor,Red Sandy Loam,Tomato,164.5,61.1,78.8,1.4,15.7,7.0,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Chittoor,Red Sandy Loam,Sugarcane,185.8,68.5,86.4,1.4,16.8,7.0,Sub-Humid,Urea + DAP + MOP
+Chittoor,Red Sandy Loam,Sugarcane,190.9,80.5,78.8,1.7,14.1,6.7,Sub-Humid,Urea + DAP + MOP
+Chittoor,Red Sandy Loam,Sugarcane,187.2,81.1,80.4,1.8,16.6,6.7,Sub-Humid,Urea + DAP + MOP
+Chittoor,Red Sandy Loam,Groundnut,125.6,64.6,75.4,1.5,14.2,6.7,Sub-Humid,SSP + Gypsum + MOP
+Chittoor,Red Sandy Loam,Groundnut,141.4,60.1,69.3,1.7,14.4,6.7,Sub-Humid,SSP + Gypsum + MOP
+Chittoor,Red Sandy Loam,Groundnut,119.0,62.2,71.1,1.6,14.7,6.7,Sub-Humid,SSP + Gypsum + MOP
+Chittoor,Red Sandy Loam,Rice,146.3,68.6,80.9,1.6,16.5,6.7,Sub-Humid,Urea + DAP + MOP
+Chittoor,Red Sandy Loam,Rice,141.1,67.1,79.5,1.5,13.3,6.8,Sub-Humid,Urea + DAP + MOP
+Chittoor,Red Sandy Loam,Rice,133.8,60.4,74.7,1.4,14.6,6.9,Sub-Humid,Urea + DAP + MOP
+Annamayya,Red Soil,Tomato,151.6,55.0,67.5,1.4,14.3,7.2,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Annamayya,Red Soil,Tomato,135.9,57.1,65.3,1.3,15.5,6.9,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Annamayya,Red Soil,Tomato,139.4,65.4,69.9,1.3,12.6,7.0,Sub-Humid,Urea + DAP + MOP + Micronutrients
+Annamayya,Red Soil,Groundnut,139.4,62.1,72.2,1.5,15.2,6.9,Sub-Humid,SSP + Gypsum + MOP
+Annamayya,Red Soil,Groundnut,140.8,66.3,60.7,1.2,13.3,6.9,Sub-Humid,SSP + Gypsum + MOP
+Annamayya,Red Soil,Groundnut,114.0,66.5,71.8,1.2,12.8,7.1,Sub-Humid,SSP + Gypsum + MOP
+Annamayya,Red Soil,Mango,131.9,58.4,74.7,1.2,11.8,7.0,Sub-Humid,Organic Manure + NPK 19:19:19
+Annamayya,Red Soil,Mango,155.3,51.3,79.3,1.5,13.9,6.9,Sub-Humid,Organic Manure + NPK 19:19:19
+Annamayya,Red Soil,Mango,135.1,54.4,70.4,1.2,14.2,7.0,Sub-Humid,Organic Manure + NPK 19:19:19
+Annamayya,Red Soil,Rice,140.0,57.8,72.2,1.3,14.5,7.0,Sub-Humid,Urea + DAP + MOP
+Annamayya,Red Soil,Rice,130.2,64.1,68.8,1.4,15.3,7.0,Sub-Humid,Urea + DAP + MOP
+Annamayya,Red Soil,Rice,150.0,64.3,67.1,1.5,13.0,7.2,Sub-Humid,Urea + DAP + MOP
+Annamayya,Red Soil,Sweet potato,134.4,62.9,72.3,1.2,15.1,7.3,Sub-Humid,Urea + SSP + MOP
+Annamayya,Red Soil,Sweet potato,143.3,54.3,68.2,1.2,13.9,7.1,Sub-Humid,Urea + SSP + MOP
+Annamayya,Red Soil,Sweet potato,119.2,58.5,68.8,1.4,14.1,7.2,Sub-Humid,Urea + SSP + MOP
+YSR Kadapa,Medium Black Soil,Groundnut,137.1,64.9,78.3,1.5,15.3,7.8,Sub-Humid,SSP + Gypsum + MOP
+YSR Kadapa,Medium Black Soil,Groundnut,117.9,61.9,73.2,1.4,17.5,7.8,Sub-Humid,SSP + Gypsum + MOP
+YSR Kadapa,Medium Black Soil,Groundnut,142.9,69.6,72.3,1.4,16.2,7.5,Sub-Humid,SSP + Gypsum + MOP
+YSR Kadapa,Medium Black Soil,Cotton,149.2,62.9,71.0,1.7,13.4,7.6,Sub-Humid,Urea + DAP + MOP
+YSR Kadapa,Medium Black Soil,Cotton,149.8,66.9,77.8,1.8,15.6,7.4,Sub-Humid,Urea + DAP + MOP
+YSR Kadapa,Medium Black Soil,Cotton,150.7,74.4,79.2,1.6,13.8,7.4,Sub-Humid,Urea + DAP + MOP
+YSR Kadapa,Medium Black Soil,Bengal Gram,134.7,63.0,63.3,1.7,16.3,7.7,Sub-Humid,DAP + SSP
+YSR Kadapa,Medium Black Soil,Bengal Gram,130.9,71.5,63.3,1.7,13.9,7.8,Sub-Humid,DAP + SSP
+YSR Kadapa,Medium Black Soil,Bengal Gram,127.0,71.1,75.1,1.5,16.2,7.6,Sub-Humid,DAP + SSP
+YSR Kadapa,Medium Black Soil,Sunflower,134.2,72.4,69.1,1.8,16.5,7.7,Sub-Humid,Urea + DAP + Gypsum
+YSR Kadapa,Medium Black Soil,Sunflower,146.4,70.2,62.8,1.7,17.2,7.5,Sub-Humid,Urea + DAP + Gypsum
+YSR Kadapa,Medium Black Soil,Sunflower,145.1,67.9,64.6,1.8,17.4,7.7,Sub-Humid,Urea + DAP + Gypsum
+YSR Kadapa,Medium Black Soil,Banana,153.6,77.9,81.6,1.5,16.4,7.4,Sub-Humid,Urea + SSP + MOP
+YSR Kadapa,Medium Black Soil,Banana,171.5,75.3,87.5,1.8,17.1,7.5,Sub-Humid,Urea + SSP + MOP
+YSR Kadapa,Medium Black Soil,Banana,153.5,69.0,92.5,1.5,16.5,7.4,Sub-Humid,Urea + SSP + MOP
+Kurnool,Black Soil (Regur),Cotton,155.6,56.2,67.7,1.6,15.4,8.0,Semi-Arid,Urea + DAP + MOP
+Kurnool,Black Soil (Regur),Cotton,159.4,60.1,73.2,1.3,12.1,8.2,Semi-Arid,Urea + DAP + MOP
+Kurnool,Black Soil (Regur),Cotton,166.1,63.3,68.2,1.7,13.3,7.8,Semi-Arid,Urea + DAP + MOP
+Kurnool,Black Soil (Regur),Bengal Gram,129.5,57.4,58.7,1.5,14.8,7.8,Semi-Arid,DAP + SSP
+Kurnool,Black Soil (Regur),Bengal Gram,126.1,65.4,70.6,1.3,15.5,7.8,Semi-Arid,DAP + SSP
+Kurnool,Black Soil (Regur),Bengal Gram,139.1,59.5,63.0,1.6,12.4,7.8,Semi-Arid,DAP + SSP
+Kurnool,Black Soil (Regur),Groundnut,128.1,57.9,71.9,1.6,12.5,7.8,Semi-Arid,SSP + Gypsum + MOP
+Kurnool,Black Soil (Regur),Groundnut,142.2,56.9,63.0,1.6,13.8,8.0,Semi-Arid,SSP + Gypsum + MOP
+Kurnool,Black Soil (Regur),Groundnut,119.9,59.3,69.4,1.6,15.3,8.1,Semi-Arid,SSP + Gypsum + MOP
+Kurnool,Black Soil (Regur),Jowar,122.7,60.6,74.4,1.6,12.8,7.9,Semi-Arid,Urea + SSP
+Kurnool,Black Soil (Regur),Jowar,129.7,63.8,59.4,1.4,13.4,8.1,Semi-Arid,Urea + SSP
+Kurnool,Black Soil (Regur),Jowar,142.4,67.6,74.4,1.6,15.4,8.2,Semi-Arid,Urea + SSP
+Kurnool,Black Soil (Regur),Maize,165.1,62.1,64.3,1.6,12.5,7.9,Semi-Arid,Urea + DAP
+Kurnool,Black Soil (Regur),Maize,137.0,61.0,76.3,1.3,14.6,8.1,Semi-Arid,Urea + DAP
+Kurnool,Black Soil (Regur),Maize,159.3,65.6,74.4,1.3,14.3,7.9,Semi-Arid,Urea + DAP
+Nandyal,Black Soil (Regur),Bengal Gram,127.1,61.1,67.2,1.8,15.7,7.9,Semi-Arid,DAP + SSP
+Nandyal,Black Soil (Regur),Bengal Gram,130.8,60.2,60.9,1.5,15.1,7.9,Semi-Arid,DAP + SSP
+Nandyal,Black Soil (Regur),Bengal Gram,136.4,66.7,57.4,1.5,15.2,7.9,Semi-Arid,DAP + SSP
+Nandyal,Black Soil (Regur),Cotton,142.2,61.7,73.5,1.7,15.8,7.9,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Cotton,169.2,66.1,70.9,1.7,14.3,7.8,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Cotton,142.8,64.3,71.3,1.6,13.7,8.0,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Jowar,139.4,69.8,71.8,1.7,14.6,7.8,Semi-Arid,Urea + SSP
+Nandyal,Black Soil (Regur),Jowar,159.9,65.0,73.3,1.6,13.9,8.0,Semi-Arid,Urea + SSP
+Nandyal,Black Soil (Regur),Jowar,157.7,63.7,64.2,1.7,15.1,8.0,Semi-Arid,Urea + SSP
+Nandyal,Black Soil (Regur),Rice,136.6,61.4,63.8,1.5,13.8,7.9,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Rice,138.0,69.3,61.8,1.8,14.9,8.0,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Rice,137.8,58.1,71.4,1.4,13.5,7.9,Semi-Arid,Urea + DAP + MOP
+Nandyal,Black Soil (Regur),Sunflower,158.3,59.8,74.2,1.8,14.4,8.0,Semi-Arid,Urea + DAP + Gypsum
+Nandyal,Black Soil (Regur),Sunflower,137.9,62.0,71.2,1.4,13.2,8.0,Semi-Arid,Urea + DAP + Gypsum
+Nandyal,Black Soil (Regur),Sunflower,133.1,64.4,68.2,1.6,13.7,7.9,Semi-Arid,Urea + DAP + Gypsum
+Ananthapuramu,Red Sandy Loam,Groundnut,124.3,49.1,52.9,1.4,12.2,7.5,Semi-Arid,SSP + Gypsum + MOP
+Ananthapuramu,Red Sandy Loam,Groundnut,102.8,57.5,51.8,1.4,11.6,7.6,Semi-Arid,SSP + Gypsum + MOP
+Ananthapuramu,Red Sandy Loam,Groundnut,117.6,48.1,63.8,1.4,11.8,7.5,Semi-Arid,SSP + Gypsum + MOP
+Ananthapuramu,Red Sandy Loam,Arhar(Tur),103.0,55.2,45.9,1.1,12.5,7.3,Semi-Arid,SSP + DAP
+Ananthapuramu,Red Sandy Loam,Arhar(Tur),123.9,50.8,59.1,1.1,13.8,7.5,Semi-Arid,SSP + DAP
+Ananthapuramu,Red Sandy Loam,Arhar(Tur),128.0,59.1,48.0,1.3,10.9,7.6,Semi-Arid,SSP + DAP
+Ananthapuramu,Red Sandy Loam,Cotton,154.5,56.0,59.8,1.2,12.6,7.6,Semi-Arid,Urea + DAP + MOP
+Ananthapuramu,Red Sandy Loam,Cotton,137.1,60.0,65.8,1.3,12.7,7.5,Semi-Arid,Urea + DAP + MOP
+Ananthapuramu,Red Sandy Loam,Cotton,157.9,59.5,55.6,1.3,10.4,7.4,Semi-Arid,Urea + DAP + MOP
+Ananthapuramu,Red Sandy Loam,Jowar,134.6,46.5,56.2,1.3,13.3,7.3,Semi-Arid,Urea + SSP
+Ananthapuramu,Red Sandy Loam,Jowar,124.4,56.6,53.4,1.4,12.2,7.6,Semi-Arid,Urea + SSP
+Ananthapuramu,Red Sandy Loam,Jowar,122.0,48.7,50.5,1.2,12.2,7.6,Semi-Arid,Urea + SSP
+Ananthapuramu,Red Sandy Loam,Bengal Gram,116.5,60.1,47.7,1.2,11.6,7.6,Semi-Arid,DAP + SSP
+Ananthapuramu,Red Sandy Loam,Bengal Gram,117.6,58.6,47.7,1.1,12.7,7.4,Semi-Arid,DAP + SSP
+Ananthapuramu,Red Sandy Loam,Bengal Gram,116.3,50.9,54.2,1.1,11.9,7.6,Semi-Arid,DAP + SSP
+Sri Sathya Sai,Red Sandy Loam,Groundnut,107.7,50.3,51.8,1.3,13.3,7.2,Semi-Arid,SSP + Gypsum + MOP
+Sri Sathya Sai,Red Sandy Loam,Groundnut,106.2,58.1,59.3,1.4,12.0,7.3,Semi-Arid,SSP + Gypsum + MOP
+Sri Sathya Sai,Red Sandy Loam,Groundnut,110.3,61.0,52.0,1.3,10.6,7.2,Semi-Arid,SSP + Gypsum + MOP
+Sri Sathya Sai,Red Sandy Loam,Arhar(Tur),133.1,55.3,48.8,1.3,12.4,7.5,Semi-Arid,SSP + DAP
+Sri Sathya Sai,Red Sandy Loam,Arhar(Tur),119.0,56.4,58.7,1.3,11.0,7.4,Semi-Arid,SSP + DAP
+Sri Sathya Sai,Red Sandy Loam,Arhar(Tur),130.0,51.8,56.7,1.2,13.4,7.5,Semi-Arid,SSP + DAP
+Sri Sathya Sai,Red Sandy Loam,Maize,142.3,56.5,52.8,1.2,13.3,7.6,Semi-Arid,Urea + DAP
+Sri Sathya Sai,Red Sandy Loam,Maize,129.6,62.1,66.8,1.3,14.1,7.6,Semi-Arid,Urea + DAP
+Sri Sathya Sai,Red Sandy Loam,Maize,133.9,56.4,66.2,1.3,14.0,7.3,Semi-Arid,Urea + DAP
+Sri Sathya Sai,Red Sandy Loam,Cotton,128.5,57.1,62.8,1.4,12.9,7.4,Semi-Arid,Urea + DAP + MOP
+Sri Sathya Sai,Red Sandy Loam,Cotton,132.1,53.4,68.0,1.2,14.1,7.6,Semi-Arid,Urea + DAP + MOP
+Sri Sathya Sai,Red Sandy Loam,Cotton,139.2,56.8,64.0,1.3,12.4,7.6,Semi-Arid,Urea + DAP + MOP
+Sri Sathya Sai,Red Sandy Loam,Sericulture/Mulberry,148.7,56.1,53.2,1.4,13.0,7.6,Semi-Arid,FYM + Urea + SSP
+Sri Sathya Sai,Red Sandy Loam,Sericulture/Mulberry,150.1,58.5,63.5,1.1,12.6,7.5,Semi-Arid,FYM + Urea + SSP
+Sri Sathya Sai,Red Sandy Loam,Sericulture/Mulberry,126.0,56.8,58.6,1.1,13.2,7.3,Semi-Arid,FYM + Urea + SSP

@@ -136,7 +136,16 @@ class DiseaseService:
                 "ranga reddy", "sangareddy", "siddipet", "suryapet", "vikarabad",
                 "wanaparthy", "warangal", "yadadri bhuvanagiri"
             ]
-            if any(td in clean_d or clean_d in td for td in tg_districts):
+            ap_districts = [
+                "alluri", "anakapalli", "ananthapuramu", "anantapur", "annamayya", "bapatla",
+                "chittoor", "konaseema", "east godavari", "eluru", "guntur", "kakinada",
+                "krishna", "kurnool", "nandyal", "ntr", "palnadu", "parvathipuram",
+                "prakasam", "nellore", "spsr", "sathya sai", "srikakulam", "tirupati",
+                "visakhapatnam", "vizianagaram", "west godavari", "kadapa", "ysr"
+            ]
+            if any(ad in clean_d or clean_d in ad for ad in ap_districts):
+                inferred_state = "Andhra Pradesh"
+            elif any(td in clean_d or clean_d in td for td in tg_districts):
                 inferred_state = "Telangana"
             else:
                 inferred_state = "Maharashtra"

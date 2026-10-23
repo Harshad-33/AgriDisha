@@ -39,6 +39,26 @@ DISTRICT_ALIASES = {
     "sircilla": "rajanna sircilla",
     "bhongir": "yadadri bhuvanagiri",
     "bhuvanagiri": "yadadri bhuvanagiri",
+
+    # Andhra Pradesh administrative aliases
+    "kadapa": "ysr kadapa",
+    "ysr": "ysr kadapa",
+    "cuddapah": "ysr kadapa",
+    "ysr district": "ysr kadapa",
+    "anantapur": "ananthapuramu",
+    "nellore": "spsr nellore",
+    "sri potti sriramulu nellore": "spsr nellore",
+    "konaseema": "dr. b.r. ambedkar konaseema",
+    "dr. b.r. ambedkar": "dr. b.r. ambedkar konaseema",
+    "dr b r ambedkar konaseema": "dr. b.r. ambedkar konaseema",
+    "vijayawada": "ntr",
+    "ntr district": "ntr",
+    "parvathipuram": "parvathipuram manyam",
+    "manyam": "parvathipuram manyam",
+    "sathya sai": "sri sathya sai",
+    "alluri": "alluri sitharama raju",
+    "alluri sitarama raju": "alluri sitharama raju",
+    "asr district": "alluri sitharama raju",
 }
 
 
@@ -509,6 +529,11 @@ class DatasetManager:
                     f"Telangana Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & PJTSAU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
+            elif ds_state == "Andhra Pradesh":
+                regional_notes = (
+                    f"Andhra Pradesh Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & ANGRAU/Dr. YSRHU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
             else:
                 regional_notes = (
                     f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
@@ -620,6 +645,107 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (Southern Telangana Zone - PJTSAU Palem / Rajendranagar jurisdiction): "
                         f"Under red chalka soils and semi-arid conditions, monitor {crop} for moisture-stress disease complexes, wilts, and leaf spots. "
                         f"Consult your district Agricultural Officer or PJTSAU extension scientists.{rice_protocol}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # ANDHRA PRADESH STATE AGRO-CLIMATIC ZONES (ANGRAU / Dr. YSRHU)
+        # -------------------------------------------------------------
+        ap_north_coastal = [
+            "srikakulam", "vizianagaram", "parvathipuram manyam", "parvathipuram", "manyam",
+            "visakhapatnam", "anakapalli", "alluri sitharama raju", "alluri", "asr district"
+        ]
+        ap_godavari_delta = [
+            "east godavari", "kakinada", "dr. b.r. ambedkar konaseema", "konaseema",
+            "west godavari", "eluru"
+        ]
+        ap_krishna_chili = [
+            "krishna", "ntr", "vijayawada", "guntur", "bapatla", "palnadu", "prakasam"
+        ]
+        ap_southern = [
+            "spsr nellore", "nellore", "tirupati", "chittoor", "annamayya", "ysr kadapa", "kadapa", "cuddapah"
+        ]
+        ap_rayalaseema = [
+            "kurnool", "nandyal", "ananthapuramu", "anantapur", "sri sathya sai", "sathya sai"
+        ]
+
+        is_ap_north = any(d in clean_dist for d in ap_north_coastal)
+        is_ap_godavari = any(d in clean_dist for d in ap_godavari_delta)
+        is_ap_krishna = any(d in clean_dist for d in ap_krishna_chili)
+        is_ap_southern = any(d in clean_dist for d in ap_southern)
+        is_ap_rayalaseema = any(d in clean_dist for d in ap_rayalaseema)
+        is_andhra = (clean_state in ("andhra pradesh", "ap", "andhra")) or is_ap_north or is_ap_godavari or is_ap_krishna or is_ap_southern or is_ap_rayalaseema
+
+        if is_andhra:
+            is_chili = ("chili" in c_lower or "chilli" in c_lower or "mirchi" in c_lower or "pepper" in c_lower)
+            chili_protocol = ""
+            if is_chili:
+                chili_protocol = (
+                    " [Mendeley Krishna Basin Chili Pathology Protocol: For Bacterial Spot (Xanthomonas), spray Copper Oxychloride @ 30g + Streptocycline @ 1g/10L. "
+                    "For Chili Leaf Curl Virus, control whitefly/thrips vectors with Diafenthiuron 50 WP @ 1.25g/L or Fipronil 5 SC @ 2ml/L and rogue symptomatic plants. "
+                    "For Cercospora Leaf Spot, apply Mancozeb 75 WP @ 2.5g/L or Tebuconazole @ 1ml/L. "
+                    "For Nutrition Deficiency (interveinal chlorosis), apply multi-micronutrient foliar spray (Formula 4/Zn+Fe+B) @ 2.5g/L. "
+                    "For White Spot, ensure proper field drainage and apply Chlorothalonil 75 WP @ 2g/L]."
+                )
+
+            if is_ap_krishna:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Krishna Basin & Chili Belt Agro-Climatic Advisory (ANGRAU RARS Lam, Guntur)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Krishna Delta & Chili Belt Zone - ANGRAU RARS Lam jurisdiction): "
+                        f"Under deep black vertisols and Krishna basin irrigation, regularly scout {crop} for sucking pest complexes, virus transmission, and foliar blights. "
+                        f"Implement ANGRAU Lam IPM bulletins and consult the district Krishi Vigyan Kendra.{chili_protocol}"
+                    )
+                }
+            elif is_ap_godavari:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Godavari Delta Agro-Climatic Advisory (ANGRAU RARS Maruteru / Dr. YSRHU)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Godavari Delta Zone - ANGRAU RARS Maruteru & Dr. YSRHU jurisdiction): "
+                        f"Under alluvial canal irrigated tracts, monitor {crop} for sheath rot, bacterial lesions, and drainage-related root stress. "
+                        f"Follow Dr. YSR Horticultural University & ANGRAU integrated advisories.{chili_protocol}"
+                    )
+                }
+            elif is_ap_north:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "North Coastal AP Agro-Climatic Advisory (ANGRAU RARS Anakapalle / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (North Coastal Zone - ANGRAU RARS Anakapalle jurisdiction): "
+                        f"Under high precipitation and red/lateritic soils, inspect {crop} for fungal spots and root rots during monsoon spells. "
+                        f"Consult Anakapalle research station or local KVK for preventative spray schedules.{chili_protocol}"
+                    )
+                }
+            elif is_ap_southern:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Southern AP Agro-Climatic Advisory (ANGRAU RARS Tirupati / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Southern Zone - ANGRAU RARS Tirupati jurisdiction): "
+                        f"In red sandy loams and semi-arid conditions, monitor {crop} for moisture stress, vascular wilt, and leaf spot complexes. "
+                        f"Implement ANGRAU Tirupati package of practices.{chili_protocol}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Scarce Rainfall Rayalaseema Advisory (ANGRAU RARS Nandyal / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Scarce Rainfall Zone of Rayalaseema - ANGRAU RARS Nandyal jurisdiction): "
+                        f"Under drought-prone and rainfed conditions, monitor {crop} for moisture stress, dry root rot, and foliar disease complexes. "
+                        f"Consult Nandyal RARS and district KVK scientists.{chili_protocol}"
                     )
                 }
 

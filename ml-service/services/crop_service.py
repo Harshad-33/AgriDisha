@@ -149,6 +149,54 @@ TELANGANA_DISTRICT_ZONE_MAP = {
     'hyderabad': 'Southern Telangana Zone'
 }
 
+# District alias mapping for Andhra Pradesh Agro-Climatic Zones (ANGRAU / Dr. YSRHU)
+ANDHRA_PRADESH_DISTRICT_ZONE_MAP = {
+    # North Coastal Zone (Paddy, Sugarcane, Cashew, Mango, Groundnut)
+    'srikakulam': 'North Coastal Andhra Zone',
+    'vizianagaram': 'North Coastal Andhra Zone',
+    'parvathipuram manyam': 'North Coastal Andhra Zone',
+    'parvathipuram': 'North Coastal Andhra Zone',
+    'manyam': 'North Coastal Andhra Zone',
+    'visakhapatnam': 'North Coastal Andhra Zone',
+    'anakapalli': 'North Coastal Andhra Zone',
+    'alluri sitharama raju': 'North Coastal Andhra Zone',
+    'alluri': 'North Coastal Andhra Zone',
+
+    # Godavari Delta Zone (Paddy, Coconut, Banana, Sugarcane, Oil Palm)
+    'east godavari': 'Godavari Delta Zone',
+    'kakinada': 'Godavari Delta Zone',
+    'dr. b.r. ambedkar konaseema': 'Godavari Delta Zone',
+    'konaseema': 'Godavari Delta Zone',
+    'west godavari': 'Godavari Delta Zone',
+    'eluru': 'Godavari Delta Zone',
+
+    # Krishna Delta & Chili Belt Zone (Cotton, Chili, Paddy, Maize, Pulses)
+    'krishna': 'Krishna Delta & Chili Belt Zone',
+    'ntr': 'Krishna Delta & Chili Belt Zone',
+    'vijayawada': 'Krishna Delta & Chili Belt Zone',
+    'guntur': 'Krishna Delta & Chili Belt Zone',
+    'bapatla': 'Krishna Delta & Chili Belt Zone',
+    'palnadu': 'Krishna Delta & Chili Belt Zone',
+    'prakasam': 'Krishna Delta & Chili Belt Zone',
+
+    # Southern Zone (Groundnut, Tomato, Rice, Mango, Sugarcane)
+    'spsr nellore': 'Southern Andhra Zone',
+    'nellore': 'Southern Andhra Zone',
+    'tirupati': 'Southern Andhra Zone',
+    'chittoor': 'Southern Andhra Zone',
+    'annamayya': 'Southern Andhra Zone',
+    'ysr kadapa': 'Southern Andhra Zone',
+    'kadapa': 'Southern Andhra Zone',
+
+    # Scarce Rainfall Zone of Rayalaseema (Groundnut, Bengalgram/Chickpea, Cotton, Sorghum)
+    'kurnool': 'Scarce Rainfall Zone of Rayalaseema',
+    'nandyal': 'Scarce Rainfall Zone of Rayalaseema',
+    'ananthapuramu': 'Scarce Rainfall Zone of Rayalaseema',
+    'anantapur': 'Scarce Rainfall Zone of Rayalaseema',
+    'sri sathya sai': 'Scarce Rainfall Zone of Rayalaseema',
+    'sathya sai': 'Scarce Rainfall Zone of Rayalaseema'
+}
+
 
 class CropService:
     def __init__(self, model_path: str = MODEL_PATH):
@@ -199,11 +247,22 @@ class CropService:
 
         target_dist = district or city or ""
         zone_name = None
-        is_telangana_state = (state and state.strip().lower() == "telangana")
+        clean_state_input = state.strip().lower() if state and state.strip() else ""
+        is_telangana_state = (clean_state_input == "telangana")
+        is_ap_state = (clean_state_input in ("andhra pradesh", "ap", "andhra"))
         if target_dist:
             c_key = target_dist.lower().strip()
-            # Check Telangana zones first if state is Telangana or key in TG map
-            if is_telangana_state or c_key in TELANGANA_DISTRICT_ZONE_MAP:
+            # Check Andhra Pradesh zones first if state is AP or key in AP map
+            if is_ap_state or c_key in ANDHRA_PRADESH_DISTRICT_ZONE_MAP:
+                zone_name = ANDHRA_PRADESH_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in ANDHRA_PRADESH_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
+            # Check Telangana zones if state is Telangana or key in TG map
+            if not zone_name and (is_telangana_state or c_key in TELANGANA_DISTRICT_ZONE_MAP):
                 zone_name = TELANGANA_DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in TELANGANA_DISTRICT_ZONE_MAP.items():
@@ -211,8 +270,8 @@ class CropService:
                             zone_name = v_map
                             break
 
-            # Check Maharashtra zones if not found in Telangana
-            if not zone_name and not is_telangana_state:
+            # Check Maharashtra zones if not found in AP or Telangana
+            if not zone_name and not is_telangana_state and not is_ap_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -276,8 +335,75 @@ class CropService:
                             if ds_norm == c_lower or c_lower in ds_norm:
                                 probs[i] *= (1.0 + 2.5 * weight)
 
+                # Apply Andhra Pradesh Agro-Climatic Zone Prior Weighting (ANGRAU / Dr. YSRHU)
+                if zone_name == 'North Coastal Andhra Zone':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'rice':
+                            probs[i] *= 2.2
+                        elif c == 'sugarcane' and n >= 120:
+                            probs[i] *= 2.0
+                        elif c == 'cashew' and ph <= 6.5:
+                            probs[i] *= 2.0
+                        elif c == 'groundnut' and p >= 35:
+                            probs[i] *= 1.8
+                        elif c == 'maize':
+                            probs[i] *= 1.7
+                elif zone_name == 'Godavari Delta Zone':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'rice':
+                            probs[i] *= 2.4
+                        elif c == 'banana' and k >= 80:
+                            probs[i] *= 2.2
+                        elif c == 'coconut':
+                            probs[i] *= 2.1
+                        elif c == 'sugarcane' and n >= 130:
+                            probs[i] *= 2.0
+                        elif c == 'maize':
+                            probs[i] *= 1.7
+                elif zone_name == 'Krishna Delta & Chili Belt Zone':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'cotton' and n >= 70:
+                            probs[i] *= 2.3
+                        elif c == 'rice':
+                            probs[i] *= 2.1
+                        elif c == 'maize':
+                            probs[i] *= 1.9
+                        elif c in ('chickpea', 'gram'):
+                            probs[i] *= 1.8
+                        elif c in ('pigeonpeas', 'pigeon peas', 'tur'):
+                            probs[i] *= 1.8
+                elif zone_name == 'Southern Andhra Zone':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'groundnut' and p >= 35:
+                            probs[i] *= 2.3
+                        elif c == 'tomato':
+                            probs[i] *= 2.1
+                        elif c == 'rice' and eff_rainfall >= 600:
+                            probs[i] *= 2.0
+                        elif c == 'mango':
+                            probs[i] *= 1.9
+                        elif c in ('pigeonpeas', 'pigeon peas', 'tur'):
+                            probs[i] *= 1.8
+                elif zone_name == 'Scarce Rainfall Zone of Rayalaseema':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'groundnut' and p >= 35:
+                            probs[i] *= 2.4
+                        elif c in ('chickpea', 'gram'):
+                            probs[i] *= 2.2
+                        elif c == 'cotton' and n >= 70:
+                            probs[i] *= 2.0
+                        elif c in ('sorghum', 'jowar'):
+                            probs[i] *= 2.0
+                        elif c in ('pigeonpeas', 'pigeon peas', 'tur'):
+                            probs[i] *= 1.8
+
                 # Apply Telangana Agro-Climatic Zone Prior Weighting (PJTSAU)
-                if zone_name == 'Northern Telangana Zone':
+                elif zone_name == 'Northern Telangana Zone':
                     for i, cls in enumerate(classes):
                         c = cls.lower()
                         if c == 'cotton' and n >= 70:
@@ -424,7 +550,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra"),
+                    'state': state or dataset_match.get("state") or ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -517,8 +643,8 @@ class CropService:
             ],
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
-            'description': f"Recommended for {'Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters'}.",
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Telangana" if "Telangana" in (zone or "") else "Maharashtra"),
+            'description': f"Recommended for {'Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters')}.",
+            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,

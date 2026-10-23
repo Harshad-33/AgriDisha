@@ -1,0 +1,126 @@
+District,Crop,Season,Area_ha,Production_tonnes,Yield_kg_ha,Prevalence_Score,Zone,LGD_Code
+Srikakulam,Rice,Kharif & Rabi,32996,153827.35,4662,1.0,North Coastal Zone,519
+Srikakulam,Cashewnut,Annual,44573,70648.21,1585,0.5,North Coastal Zone,519
+Srikakulam,Groundnut,Kharif & Rabi,23029,49443.26,2147,0.33,North Coastal Zone,519
+Srikakulam,Sugarcane,Annual,8767,746185.67,85113,0.25,North Coastal Zone,519
+Srikakulam,Maize,Kharif & Rabi,14263,72940.98,5114,0.2,North Coastal Zone,519
+Vizianagaram,Rice,Kharif & Rabi,92775,399025.28,4301,1.0,North Coastal Zone,520
+Vizianagaram,Sugarcane,Annual,16441,1353456.0,82322,0.5,North Coastal Zone,520
+Vizianagaram,Groundnut,Kharif & Rabi,25760,50824.48,1973,0.33,North Coastal Zone,520
+Vizianagaram,Maize,Kharif & Rabi,13579,70651.54,5203,0.25,North Coastal Zone,520
+Vizianagaram,Arhar(Tur),Kharif,13416,16622.42,1239,0.2,North Coastal Zone,520
+Parvathipuram Manyam,Rice,Kharif & Rabi,34036,152787.6,4489,1.0,North Coastal Zone,744
+Parvathipuram Manyam,Cashewnut,Annual,20715,29415.3,1420,0.5,North Coastal Zone,744
+Parvathipuram Manyam,Maize,Kharif & Rabi,27133,133223.03,4910,0.33,North Coastal Zone,744
+Parvathipuram Manyam,Arhar(Tur),Kharif,17297,23126.09,1337,0.25,North Coastal Zone,744
+Visakhapatnam,Rice,Kharif & Rabi,48387,239854.36,4957,1.0,North Coastal Zone,521
+Visakhapatnam,Sugarcane,Annual,25284,2232627.77,88302,0.5,North Coastal Zone,521
+Visakhapatnam,Vegetables,All Seasons,23169,467550.42,20180,0.33,North Coastal Zone,521
+Visakhapatnam,Mango,Summer,13434,105215.09,7832,0.25,North Coastal Zone,521
+Anakapalli,Sugarcane,Annual,44604,4073192.68,91319,1.0,North Coastal Zone,745
+Anakapalli,Rice,Kharif & Rabi,36126,148658.49,4115,0.5,North Coastal Zone,745
+Anakapalli,Groundnut,Kharif & Rabi,20486,39660.9,1936,0.33,North Coastal Zone,745
+Anakapalli,Sesamum,Summer & Kharif,5165,4183.65,810,0.25,North Coastal Zone,745
+Alluri Sitharama Raju,Rice,Kharif & Rabi,23061,98493.53,4271,1.0,North Coastal Zone,746
+Alluri Sitharama Raju,Coffee,Annual,35367,32007.13,905,0.5,North Coastal Zone,746
+Alluri Sitharama Raju,Pepper,Annual,15311,18189.47,1188,0.33,North Coastal Zone,746
+Alluri Sitharama Raju,Ginger,Kharif,13646,232200.34,17016,0.25,North Coastal Zone,746
+Alluri Sitharama Raju,Turmeric,Kharif,17088,105552.58,6177,0.2,North Coastal Zone,746
+East Godavari,Rice,Kharif & Rabi,84989,373781.62,4398,1.0,Godavari Delta Zone,505
+East Godavari,Banana,Annual,35313,1703534.43,48241,0.5,Godavari Delta Zone,505
+East Godavari,Sugarcane,Annual,8157,661328.78,81075,0.33,Godavari Delta Zone,505
+East Godavari,Black Gram,Rabi,11155,11366.94,1019,0.25,Godavari Delta Zone,505
+East Godavari,Oil Palm,Annual,17085,424032.61,24819,0.2,Godavari Delta Zone,505
+Kakinada,Rice,Kharif & Rabi,27153,133429.84,4914,1.0,Godavari Delta Zone,747
+Kakinada,Coconut,Annual,38817,459088.66,11827,0.5,Godavari Delta Zone,747
+Kakinada,Banana,Annual,26334,1301189.27,49411,0.33,Godavari Delta Zone,747
+Kakinada,Sugarcane,Annual,7942,664554.79,83676,0.25,Godavari Delta Zone,747
+Kakinada,Black Gram,Rabi,14968,18006.5,1203,0.2,Godavari Delta Zone,747
+Dr. B.R. Ambedkar Konaseema,Rice,Kharif & Rabi,52378,260161.53,4967,1.0,Godavari Delta Zone,748
+Dr. B.R. Ambedkar Konaseema,Coconut,Annual,14367,176311.82,12272,0.5,Godavari Delta Zone,748
+Dr. B.R. Ambedkar Konaseema,Banana,Annual,28701,1460163.38,50875,0.33,Godavari Delta Zone,748
+Dr. B.R. Ambedkar Konaseema,Black Gram,Rabi,5800,6339.4,1093,0.25,Godavari Delta Zone,748
+West Godavari,Rice,Kharif & Rabi,71068,329115.91,4631,1.0,Godavari Delta Zone,523
+West Godavari,Sugarcane,Annual,11213,983862.26,87743,0.5,Godavari Delta Zone,523
+West Godavari,Maize,Kharif & Rabi,27162,138580.52,5102,0.33,Godavari Delta Zone,523
+West Godavari,Coconut,Annual,22542,233061.74,10339,0.25,Godavari Delta Zone,523
+West Godavari,Fish/Paddy,Kharif,6748,26317.2,3900,0.2,Godavari Delta Zone,523
+Eluru,Rice,Kharif & Rabi,93539,393144.42,4203,1.0,Godavari Delta Zone,749
+Eluru,Sugarcane,Annual,21287,2094725.95,98404,0.5,Godavari Delta Zone,749
+Eluru,Tobacco,Rabi,22768,51410.14,2258,0.33,Godavari Delta Zone,749
+Eluru,Maize,Kharif & Rabi,4733,27446.67,5799,0.25,Godavari Delta Zone,749
+Eluru,Oil Palm,Annual,16793,391327.28,23303,0.2,Godavari Delta Zone,749
+Krishna,Rice,Kharif & Rabi,61841,280943.66,4543,1.0,Krishna Delta Zone,510
+Krishna,Black Gram,Rabi,18183,21928.7,1206,0.5,Krishna Delta Zone,510
+Krishna,Sugarcane,Annual,22950,1979437.5,86250,0.33,Krishna Delta Zone,510
+Krishna,Cotton,Kharif,14805,34688.11,2343,0.25,Krishna Delta Zone,510
+Krishna,Mango,Summer,18029,152254.9,8445,0.2,Krishna Delta Zone,510
+NTR,Rice,Kharif & Rabi,70274,307519.02,4376,1.0,Krishna Delta Zone,750
+NTR,Cotton,Kharif,24430,61368.16,2512,0.5,Krishna Delta Zone,750
+NTR,Dry chillies,Kharif,11656,39105.88,3355,0.33,Krishna Delta Zone,750
+NTR,Maize,Kharif & Rabi,7351,35718.51,4859,0.25,Krishna Delta Zone,750
+NTR,Vegetables,All Seasons,8874,167975.95,18929,0.2,Krishna Delta Zone,750
+Guntur,Dry chillies,Kharif,52448,189022.59,3604,1.0,Krishna Delta Zone,506
+Guntur,Cotton,Kharif,35053,84092.15,2399,0.5,Krishna Delta Zone,506
+Guntur,Rice,Kharif & Rabi,15351,73162.87,4766,0.33,Krishna Delta Zone,506
+Guntur,Tobacco,Rabi,15083,38567.23,2557,0.25,Krishna Delta Zone,506
+Guntur,Black Gram,Rabi,12005,12509.21,1042,0.2,Krishna Delta Zone,506
+Bapatla,Rice,Kharif & Rabi,70044,308543.82,4405,1.0,Krishna Delta Zone,751
+Bapatla,Groundnut,Kharif & Rabi,18267,41484.36,2271,0.5,Krishna Delta Zone,751
+Bapatla,Dry chillies,Kharif,17675,64619.8,3656,0.33,Krishna Delta Zone,751
+Bapatla,Vegetables,All Seasons,5279,104027.97,19706,0.25,Krishna Delta Zone,751
+Palnadu,Cotton,Kharif,94447,197772.02,2094,1.0,Krishna Delta Zone,752
+Palnadu,Dry chillies,Kharif,25892,100927.02,3898,0.5,Krishna Delta Zone,752
+Palnadu,Rice,Kharif & Rabi,12903,61237.64,4746,0.33,Krishna Delta Zone,752
+Palnadu,Arhar(Tur),Kharif,22803,30670.03,1345,0.25,Krishna Delta Zone,752
+Palnadu,Maize,Kharif & Rabi,10763,61004.68,5668,0.2,Krishna Delta Zone,752
+Prakasam,Dry chillies,Kharif,89001,364014.09,4090,1.0,Krishna Delta Zone,517
+Prakasam,Tobacco,Rabi,24854,55623.25,2238,0.5,Krishna Delta Zone,517
+Prakasam,Cotton,Kharif,13036,29891.55,2293,0.33,Krishna Delta Zone,517
+Prakasam,Bengal Gram,Rabi,7261,11879.0,1636,0.25,Krishna Delta Zone,517
+Prakasam,Arhar(Tur),Kharif,16808,22774.84,1355,0.2,Krishna Delta Zone,517
+SPSR Nellore,Rice,Kharif & Rabi,71292,296146.97,4154,1.0,Southern Zone,515
+SPSR Nellore,Sugarcane,Annual,33573,2890937.46,86109,0.5,Southern Zone,515
+SPSR Nellore,Groundnut,Kharif & Rabi,31068,69934.07,2251,0.33,Southern Zone,515
+SPSR Nellore,Black Gram,Rabi,11025,13285.12,1205,0.25,Southern Zone,515
+SPSR Nellore,Tobacco,Rabi,5860,15194.98,2593,0.2,Southern Zone,515
+Tirupati,Groundnut,Kharif & Rabi,50120,113321.32,2261,1.0,Southern Zone,753
+Tirupati,Rice,Kharif & Rabi,18182,79146.25,4353,0.5,Southern Zone,753
+Tirupati,Sugarcane,Annual,26440,2251524.64,85156,0.33,Southern Zone,753
+Tirupati,Mango,Summer,8972,71767.03,7999,0.25,Southern Zone,753
+Tirupati,Tomato,Rabi & Kharif,6034,162580.1,26944,0.2,Southern Zone,753
+Chittoor,Mango,Summer,63224,580712.44,9185,1.0,Southern Zone,503
+Chittoor,Tomato,Rabi & Kharif,43659,1303439.45,29855,0.5,Southern Zone,503
+Chittoor,Sugarcane,Annual,6970,624839.59,89647,0.33,Southern Zone,503
+Chittoor,Groundnut,Kharif & Rabi,14443,29160.42,2019,0.25,Southern Zone,503
+Chittoor,Rice,Kharif & Rabi,17745,85069.53,4794,0.2,Southern Zone,503
+Annamayya,Tomato,Rabi & Kharif,35462,1025135.5,28908,1.0,Southern Zone,754
+Annamayya,Groundnut,Kharif & Rabi,44987,99196.34,2205,0.5,Southern Zone,754
+Annamayya,Mango,Summer,29897,252390.47,8442,0.33,Southern Zone,754
+Annamayya,Rice,Kharif & Rabi,15605,77681.69,4978,0.25,Southern Zone,754
+Annamayya,Sweet potato,Rabi,5585,108851.65,19490,0.2,Southern Zone,754
+YSR Kadapa,Groundnut,Kharif & Rabi,21151,41942.43,1983,1.0,Southern Zone,504
+YSR Kadapa,Cotton,Kharif,36438,86430.94,2372,0.5,Southern Zone,504
+YSR Kadapa,Bengal Gram,Rabi,21463,37860.73,1764,0.33,Southern Zone,504
+YSR Kadapa,Sunflower,Rabi,12256,23016.77,1878,0.25,Southern Zone,504
+YSR Kadapa,Banana,Annual,4517,192988.83,42725,0.2,Southern Zone,504
+Kurnool,Cotton,Kharif,58868,130216.02,2212,1.0,Scarce Rainfall Zone,511
+Kurnool,Bengal Gram,Rabi,20443,36020.57,1762,0.5,Scarce Rainfall Zone,511
+Kurnool,Groundnut,Kharif & Rabi,24563,50108.52,2040,0.33,Scarce Rainfall Zone,511
+Kurnool,Jowar,Kharif & Rabi,15248,26058.83,1709,0.25,Scarce Rainfall Zone,511
+Kurnool,Maize,Kharif & Rabi,16740,82980.18,4957,0.2,Scarce Rainfall Zone,511
+Nandyal,Bengal Gram,Rabi,76143,132412.68,1739,1.0,Scarce Rainfall Zone,755
+Nandyal,Cotton,Kharif,21802,55224.47,2533,0.5,Scarce Rainfall Zone,755
+Nandyal,Jowar,Kharif & Rabi,13825,21788.2,1576,0.33,Scarce Rainfall Zone,755
+Nandyal,Rice,Kharif & Rabi,13536,67300.99,4972,0.25,Scarce Rainfall Zone,755
+Nandyal,Sunflower,Rabi,5928,9425.52,1590,0.2,Scarce Rainfall Zone,755
+Ananthapuramu,Groundnut,Kharif & Rabi,51805,103972.63,2007,1.0,Scarce Rainfall Zone,502
+Ananthapuramu,Arhar(Tur),Kharif,43030,60414.12,1404,0.5,Scarce Rainfall Zone,502
+Ananthapuramu,Cotton,Kharif,25407,62120.11,2445,0.33,Scarce Rainfall Zone,502
+Ananthapuramu,Jowar,Kharif & Rabi,19467,31828.54,1635,0.25,Scarce Rainfall Zone,502
+Ananthapuramu,Bengal Gram,Rabi,11695,17565.89,1502,0.2,Scarce Rainfall Zone,502
+Sri Sathya Sai,Groundnut,Kharif & Rabi,86714,168832.16,1947,1.0,Scarce Rainfall Zone,756
+Sri Sathya Sai,Arhar(Tur),Kharif,31817,37703.14,1185,0.5,Scarce Rainfall Zone,756
+Sri Sathya Sai,Maize,Kharif & Rabi,22528,124827.65,5541,0.33,Scarce Rainfall Zone,756
+Sri Sathya Sai,Cotton,Kharif,11609,27942.86,2407,0.25,Scarce Rainfall Zone,756
+Sri Sathya Sai,Sericulture/Mulberry,All Seasons,18052,632126.88,35017,0.2,Scarce Rainfall Zone,756

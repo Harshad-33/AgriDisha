@@ -134,6 +134,10 @@ public class MlClientService {
             if (d.contains(tg) || tg.contains(d)) return "regional_reference";
         }
 
+        if (isAndhraPradeshDistrict(d)) {
+            return "regional_reference";
+        }
+
         return "fallback";
     }
 
@@ -224,15 +228,23 @@ public class MlClientService {
         String regionalNotes = "Prediction generated using standard agronomic model. Regional dataset not currently indexed for " + (!district.isEmpty() ? district : "this district") + ".";
 
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
-        if (state.isEmpty() && isTelangana) {
-            state = "Telangana";
+        boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
+        if (state.isEmpty()) {
+            if (isAndhra) {
+                state = "Andhra Pradesh";
+            } else if (isTelangana) {
+                state = "Telangana";
+            }
         }
 
         if ("verified_primary".equals(level)) {
             datasetUsed = "Western Maharashtra Agricultural Dataset (Kaggle - Sanchita Gholap)";
             regionalNotes = "Empirically verified against historical Western Maharashtra field trial records for " + district + ".";
         } else if ("regional_reference".equals(level)) {
-            if (isTelangana) {
+            if (isAndhra) {
+                datasetUsed = "Andhra Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / ANGRAU)";
+                regionalNotes = "Referenced against Andhra Pradesh State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES cultivation statistics).";
+            } else if (isTelangana) {
                 datasetUsed = "Telangana State Soil Health & Nutrient Reference Dataset (Dataful / PJTSAU)";
                 regionalNotes = "Referenced against Telangana State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES cultivation statistics).";
             } else {
@@ -357,15 +369,24 @@ public class MlClientService {
         String referenceLink = null;
 
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
-        if (state.isEmpty() && isTelangana) {
-            state = "Telangana";
+        boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
+        if (state.isEmpty()) {
+            if (isAndhra) {
+                state = "Andhra Pradesh";
+            } else if (isTelangana) {
+                state = "Telangana";
+            }
         }
 
         if ("verified_primary".equals(level)) {
             datasetUsed = "Western Maharashtra Crop & Fertilizer Records (Kaggle - Sanchita Gholap)";
             referenceLink = "https://youtu.be/crop-fertilizer-care";
         } else if ("regional_reference".equals(level)) {
-            if (isTelangana) {
+            if (isAndhra) {
+                datasetUsed = "Andhra Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / ANGRAU)";
+                chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - ANGRAU/Dr. YSRHU Soil Health Reference for " + district);
+                evaluations.add("Andhra Pradesh Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under ANGRAU guidelines.");
+            } else if (isTelangana) {
                 datasetUsed = "Telangana State Soil Health & Nutrient Reference Dataset (Dataful / PJTSAU)";
                 chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - PJTSAU Soil Health Reference for " + district);
                 evaluations.add("Telangana Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under PJTSAU guidelines.");
@@ -462,6 +483,38 @@ public class MlClientService {
             severity = "Moderate";
             symptoms = "Small, angular water-soaked lesions bounded by leaf veins, expanding into black lesions.";
             treatment = "Spray Copper Oxychloride 50 WP (2.5 g/L) + Streptocycline (100 ppm / 1 g per 10 L water).";
+        } else if (filename.contains("chili") || filename.contains("chilli") || filename.contains("mirchi")) {
+            crop = "Chili (Mirchi)";
+            if (filename.contains("bacterial") || filename.contains("spot")) {
+                disease = "Bacterial Leaf Spot";
+                rawClass = "Chili___Bacterial_spot";
+                cause = "Bacterium Xanthomonas campestris pv. vesicatoria";
+                severity = "High";
+                symptoms = "Small, dark, water-soaked circular spots with yellow chlorotic halos on foliage; leads to severe defoliation and blistered fruit.";
+                treatment = "Spray Copper Oxychloride 50 WP @ 30g + Streptocycline @ 1g per 10L water. Practice 2-year crop rotation with non-solanaceous crops.";
+            } else if (filename.contains("curl") || filename.contains("virus")) {
+                disease = "Chili Leaf Curl Virus";
+                rawClass = "Chili___Leaf_curl";
+                cause = "Chili Leaf Curl Begomovirus (vectored by Bemisia tabaci / whitefly / thrips)";
+                severity = "High";
+                symptoms = "Upward/downward curling of leaf margins, puckering, vein thickening, bushy stunted plant habit.";
+                treatment = "Rogue and burn infected plants early. Spray Diafenthiuron 50 WP @ 1.25g/L or Fipronil 5 SC @ 2ml/L to control vector thrips and whiteflies.";
+            } else if (filename.contains("cercospora")) {
+                disease = "Cercospora Leaf Spot (Frog-Eye Spot)";
+                rawClass = "Chili___Cercospora";
+                cause = "Fungus Cercospora capsici";
+                severity = "Moderate";
+                symptoms = "Circular spots with light grey/white centres and prominent dark brown borders; causes premature leaf drop.";
+                treatment = "Spray Mancozeb 75 WP @ 2.5g/L or Tebuconazole 25.9 EC @ 1ml/L water.";
+            } else {
+                disease = "Chili Anthracnose / Fruit Rot";
+                rawClass = "Chili___Anthracnose";
+                cause = "Fungus Colletotrichum capsici";
+                severity = "Moderate to High";
+                symptoms = "Circular sunken necrotic spots with black concentric rings of acervuli on ripe fruits and dark leaf spots.";
+                treatment = "Spray Azoxystrobin 23 SC @ 1ml/L or Difenoconazole 25 EC @ 0.5ml/L water.";
+            }
+            supplement = "Apply ANGRAU Formula 4 multi-micronutrient spray (2.5g/L) to prevent chlorosis.";
         } else if (filename.contains("healthy")) {
             crop = "Tomato";
             disease = "Healthy Plant Leaf";
@@ -483,13 +536,31 @@ public class MlClientService {
         if (district != null && !district.trim().isEmpty()) {
             String d = district.trim().toLowerCase();
             boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
+            boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
             if (state == null || state.isEmpty()) {
-                state = isTelangana ? "Telangana" : "Maharashtra";
+                state = isAndhra ? "Andhra Pradesh" : (isTelangana ? "Telangana" : "Maharashtra");
             }
 
             if ("verified_primary".equals(level)) {
                 datasetUsed = "Western Maharashtra Agro-Climatic Advisory (MPKV Rahuri / KVK)";
                 advisory = "Regional Western Maharashtra Plant Pathology Advisory: Monitored by MPKV Rahuri & Regional Agricultural Research Stations (" + district.trim() + " KVK). Consult local Krishi Vigyan Kendra for seasonal disease advisories and IPM spray schedules.";
+            } else if (isAndhra) {
+                if (d.contains("krishna") || d.contains("ntr") || d.contains("guntur") || d.contains("bapatla") || d.contains("palnadu") || d.contains("prakasam") || d.contains("vijayawada")) {
+                    datasetUsed = "Krishna Basin & Chili Belt Agro-Climatic Advisory (ANGRAU RARS Lam, Guntur)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Krishna Delta & Chili Belt Zone): Monitored by ANGRAU RARS Lam (Guntur) & district KVK. Regularly scout " + crop + " for sucking pests, leaf curl virus, and bacterial spots.";
+                } else if (d.contains("godavari") || d.contains("kakinada") || d.contains("konaseema") || d.contains("eluru")) {
+                    datasetUsed = "Godavari Delta Agro-Climatic Advisory (ANGRAU RARS Maruteru / Dr. YSRHU)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Godavari Delta Zone): Monitored by ANGRAU Maruteru and Dr. YSR Horticultural University. Under alluvial canal irrigated tracts, check " + crop + " for sheath rot and bacterial lesions.";
+                } else if (d.contains("srikakulam") || d.contains("vizianagaram") || d.contains("parvathipuram") || d.contains("visakhapatnam") || d.contains("anakapalli") || d.contains("alluri")) {
+                    datasetUsed = "North Coastal AP Agro-Climatic Advisory (ANGRAU RARS Anakapalle / KVK)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - North Coastal Zone): Monitored by ANGRAU RARS Anakapalle. Inspect " + crop + " for fungal spots and root rots during monsoon spells.";
+                } else if (d.contains("nellore") || d.contains("tirupati") || d.contains("chittoor") || d.contains("annamayya") || d.contains("kadapa") || d.contains("ysr")) {
+                    datasetUsed = "Southern AP Agro-Climatic Advisory (ANGRAU RARS Tirupati / KVK)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Southern Zone): Monitored by ANGRAU RARS Tirupati. Under red sandy loam soils, watch for vascular wilts and leaf spots on " + crop + ".";
+                } else {
+                    datasetUsed = "Scarce Rainfall Rayalaseema Advisory (ANGRAU RARS Nandyal / KVK)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Scarce Rainfall Zone of Rayalaseema): Monitored by ANGRAU RARS Nandyal. Under semi-arid rainfed conditions, monitor " + crop + " for moisture-stress disease complexes and dry root rot.";
+                }
             } else if (isTelangana) {
                 if (d.contains("adilabad") || d.contains("nirmal") || d.contains("asifabad") || d.contains("mancherial") || d.contains("nizamabad") || d.contains("kamareddy") || d.contains("jagtial") || d.contains("peddapalli") || d.contains("karimnagar") || d.contains("sircilla")) {
                     datasetUsed = "Northern Telangana Agro-Climatic Advisory (PJTSAU RARS Jagtial / KVK)";
@@ -555,6 +626,23 @@ public class MlClientService {
         };
         for (String tg : telanganaDistricts) {
             if (d.contains(tg) || tg.contains(d)) return true;
+        }
+        return false;
+    }
+
+    private boolean isAndhraPradeshDistrict(String district) {
+        if (district == null || district.trim().isEmpty()) return false;
+        String d = district.toLowerCase().trim();
+        String[] apDistricts = {
+            "alluri", "sitharama", "sitarama", "anakapalli", "ananthapuramu", "anantapur",
+            "annamayya", "bapatla", "chittoor", "konaseema", "east godavari", "eluru",
+            "guntur", "kakinada", "krishna", "kurnool", "nandyal", "ntr", "vijayawada",
+            "palnadu", "parvathipuram", "manyam", "prakasam", "nellore", "spsr",
+            "sathya sai", "srikakulam", "tirupati", "visakhapatnam", "vizianagaram",
+            "west godavari", "kadapa", "ysr", "cuddapah"
+        };
+        for (String ap : apDistricts) {
+            if (d.contains(ap) || ap.contains(d)) return true;
         }
         return false;
     }

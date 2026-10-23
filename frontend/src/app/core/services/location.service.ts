@@ -142,6 +142,77 @@ export class LocationService {
     'Yadadri Bhuvanagiri'
   ];
 
+  // Priority 4: Andhra Pradesh Regional Reference Dataset (All 26 Andhra Pradesh districts)
+  private andhraReferenceDistricts = new Set<string>([
+    'alluri sitharama raju',
+    'alluri sitarama raju',
+    'alluri',
+    'anakapalli',
+    'ananthapuramu',
+    'anantapur',
+    'annamayya',
+    'bapatla',
+    'chittoor',
+    'dr. b.r. ambedkar konaseema',
+    'dr b r ambedkar konaseema',
+    'konaseema',
+    'east godavari',
+    'eluru',
+    'guntur',
+    'kakinada',
+    'krishna',
+    'kurnool',
+    'nandyal',
+    'ntr',
+    'vijayawada',
+    'palnadu',
+    'parvathipuram manyam',
+    'parvathipuram',
+    'manyam',
+    'prakasam',
+    'spsr nellore',
+    'nellore',
+    'sri sathya sai',
+    'sathya sai',
+    'srikakulam',
+    'tirupati',
+    'visakhapatnam',
+    'vizianagaram',
+    'west godavari',
+    'ysr kadapa',
+    'kadapa',
+    'cuddapah'
+  ]);
+
+  private andhraPradeshDistricts: string[] = [
+    'Alluri Sitharama Raju',
+    'Anakapalli',
+    'Ananthapuramu',
+    'Annamayya',
+    'Bapatla',
+    'Chittoor',
+    'Dr. B.R. Ambedkar Konaseema',
+    'East Godavari',
+    'Eluru',
+    'Guntur',
+    'Kakinada',
+    'Krishna',
+    'Kurnool',
+    'Nandyal',
+    'NTR',
+    'Palnadu',
+    'Parvathipuram Manyam',
+    'Prakasam',
+    'SPSR Nellore',
+    'Sri Sathya Sai',
+    'Srikakulam',
+    'Tirupati',
+    'Visakhapatnam',
+    'Vizianagaram',
+    'West Godavari',
+    'YSR Kadapa'
+  ];
+
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
     'Akola',
@@ -216,6 +287,9 @@ export class LocationService {
     if (state === 'Telangana') {
       return this.telanganaDistricts;
     }
+    if (state === 'Andhra Pradesh') {
+      return this.andhraPradeshDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -240,6 +314,14 @@ export class LocationService {
     if (st === 'telangana') {
       for (const td of this.telanganaReferenceDistricts) {
         if (clean === td || clean.includes(td) || td.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'andhra pradesh') {
+      for (const ad of this.andhraReferenceDistricts) {
+        if (clean === ad || clean.includes(ad) || ad.includes(clean)) {
           return 'regional_reference';
         }
       }
