@@ -59,6 +59,89 @@ export class LocationService {
     'yavatmal'
   ]);
 
+  // Priority 3: Telangana Regional Reference Dataset (All 33 Telangana districts)
+  private telanganaReferenceDistricts = new Set<string>([
+    'adilabad',
+    'bhadradri kothagudem',
+    'kothagudem',
+    'hanumakonda',
+    'warangal urban',
+    'hyderabad',
+    'jagtial',
+    'jangaon',
+    'jayashankar bhupalpally',
+    'bhupalpally',
+    'jogulamba gadwal',
+    'gadwal',
+    'kamareddy',
+    'karimnagar',
+    'khammam',
+    'kumuram bheem asifabad',
+    'asifabad',
+    'mahabubabad',
+    'mahabubnagar',
+    'mancherial',
+    'medak',
+    'medchal-malkajgiri',
+    'malkajgiri',
+    'mulugu',
+    'nagarkurnool',
+    'nalgonda',
+    'narayanpet',
+    'nirmal',
+    'nizamabad',
+    'peddapalli',
+    'rajanna sircilla',
+    'sircilla',
+    'ranga reddy',
+    'sangareddy',
+    'siddipet',
+    'suryapet',
+    'vikarabad',
+    'wanaparthy',
+    'warangal',
+    'warangal rural',
+    'yadadri bhuvanagiri',
+    'bhuvanagiri',
+    'bhongir'
+  ]);
+
+  private telanganaDistricts: string[] = [
+    'Adilabad',
+    'Bhadradri Kothagudem',
+    'Hanumakonda',
+    'Hyderabad',
+    'Jagtial',
+    'Jangaon',
+    'Jayashankar Bhupalpally',
+    'Jogulamba Gadwal',
+    'Kamareddy',
+    'Karimnagar',
+    'Khammam',
+    'Kumuram Bheem Asifabad',
+    'Mahabubabad',
+    'Mahabubnagar',
+    'Mancherial',
+    'Medak',
+    'Medchal-Malkajgiri',
+    'Mulugu',
+    'Nagarkurnool',
+    'Nalgonda',
+    'Narayanpet',
+    'Nirmal',
+    'Nizamabad',
+    'Peddapalli',
+    'Rajanna Sircilla',
+    'Ranga Reddy',
+    'Sangareddy',
+    'Siddipet',
+    'Suryapet',
+    'Vikarabad',
+    'Wanaparthy',
+    'Warangal',
+    'Yadadri Bhuvanagiri'
+  ];
+
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
     'Akola',
@@ -130,24 +213,38 @@ export class LocationService {
     if (state === 'Maharashtra') {
       return this.maharashtraDistricts;
     }
+    if (state === 'Telangana') {
+      return this.telanganaDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
   getDistrictDatasetStatus(state: string, district: string): 'verified_primary' | 'regional_reference' | 'fallback' {
     if (!state || !district) return 'fallback';
-    if (state.toLowerCase().trim() !== 'maharashtra') return 'fallback';
-    
     const clean = district.toLowerCase().trim();
-    for (const vd of this.primaryVerifiedDistricts) {
-      if (clean === vd || clean.includes(vd)) {
-        return 'verified_primary';
+    const st = state.toLowerCase().trim();
+
+    if (st === 'maharashtra') {
+      for (const vd of this.primaryVerifiedDistricts) {
+        if (clean === vd || clean.includes(vd)) {
+          return 'verified_primary';
+        }
+      }
+      for (const ed of this.expandedReferenceDistricts) {
+        if (clean === ed || clean.includes(ed)) {
+          return 'regional_reference';
+        }
       }
     }
-    for (const ed of this.expandedReferenceDistricts) {
-      if (clean === ed || clean.includes(ed)) {
-        return 'regional_reference';
+
+    if (st === 'telangana') {
+      for (const td of this.telanganaReferenceDistricts) {
+        if (clean === td || clean.includes(td) || td.includes(clean)) {
+          return 'regional_reference';
+        }
       }
     }
+
     return 'fallback';
   }
 

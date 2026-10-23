@@ -1,0 +1,166 @@
+District,Crop,Season,Area_ha,Production_tonnes,Yield_kg_ha,Prevalence_Score,Zone
+Adilabad,Cotton,Kharif,16750,37268.75,2225,1.0,Northern Telangana
+Adilabad,Soybean,Kharif,15312,26688.82,1743,0.5,Northern Telangana
+Adilabad,Paddy,Kharif & Rabi,20789,94652.32,4553,0.33,Northern Telangana
+Adilabad,Redgram,Kharif,5271,7100.04,1347,0.25,Northern Telangana
+Adilabad,Bengal Gram,Rabi,3417,4807.72,1407,0.2,Northern Telangana
+Nirmal,Paddy,Kharif & Rabi,50374,201949.37,4009,1.0,Northern Telangana
+Nirmal,Cotton,Kharif,14459,27515.48,1903,0.5,Northern Telangana
+Nirmal,Soybean,Kharif,17715,33871.08,1912,0.33,Northern Telangana
+Nirmal,Maize,Kharif & Rabi,14062,64460.21,4584,0.25,Northern Telangana
+Nirmal,Redgram,Kharif,3090,4084.98,1322,0.2,Northern Telangana
+Kumuram Bheem Asifabad,Cotton,Kharif,63869,147729.0,2313,1.0,Northern Telangana
+Kumuram Bheem Asifabad,Paddy,Kharif & Rabi,12941,53536.92,4137,0.5,Northern Telangana
+Kumuram Bheem Asifabad,Soybean,Kharif,12853,26348.65,2050,0.33,Northern Telangana
+Kumuram Bheem Asifabad,Redgram,Kharif,5442,6024.29,1107,0.25,Northern Telangana
+Kumuram Bheem Asifabad,Jowar,Kharif & Rabi,11452,20361.66,1778,0.2,Northern Telangana
+Mancherial,Paddy,Kharif & Rabi,66081,305756.79,4627,1.0,Northern Telangana
+Mancherial,Cotton,Kharif,41559,90224.59,2171,0.5,Northern Telangana
+Mancherial,Maize,Kharif & Rabi,17880,85359.12,4774,0.33,Northern Telangana
+Mancherial,Redgram,Kharif,14574,19354.27,1328,0.25,Northern Telangana
+Mancherial,Soybean,Kharif,11082,22241.57,2007,0.2,Northern Telangana
+Nizamabad,Paddy,Kharif & Rabi,18207,82277.43,4519,1.0,Northern Telangana
+Nizamabad,Soybean,Kharif,17628,30355.42,1722,0.5,Northern Telangana
+Nizamabad,Turmeric,Kharif,10431,52770.43,5059,0.33,Northern Telangana
+Nizamabad,Maize,Kharif & Rabi,8614,38254.77,4441,0.25,Northern Telangana
+Nizamabad,Sugarcane,Annual,8107,729694.86,90008,0.2,Northern Telangana
+Kamareddy,Paddy,Kharif & Rabi,29665,123643.72,4168,1.0,Northern Telangana
+Kamareddy,Soybean,Kharif,40282,70090.68,1740,0.5,Northern Telangana
+Kamareddy,Maize,Kharif & Rabi,19213,97928.66,5097,0.33,Northern Telangana
+Kamareddy,Sugarcane,Annual,16509,1322965.22,80136,0.25,Northern Telangana
+Kamareddy,Redgram,Kharif,8312,9384.25,1129,0.2,Northern Telangana
+Jagtial,Paddy,Kharif & Rabi,59799,288111.58,4818,1.0,Northern Telangana
+Jagtial,Turmeric,Kharif,31461,179799.61,5715,0.5,Northern Telangana
+Jagtial,Maize,Kharif & Rabi,23106,123178.09,5331,0.33,Northern Telangana
+Jagtial,Cotton,Kharif,4311,8665.11,2010,0.25,Northern Telangana
+Jagtial,Mango,Summer,6748,52836.84,7830,0.2,Northern Telangana
+Peddapalli,Paddy,Kharif & Rabi,81003,324093.0,4001,1.0,Northern Telangana
+Peddapalli,Cotton,Kharif,18513,43505.55,2350,0.5,Northern Telangana
+Peddapalli,Maize,Kharif & Rabi,14231,72663.49,5106,0.33,Northern Telangana
+Peddapalli,Redgram,Kharif,11779,15948.77,1354,0.25,Northern Telangana
+Peddapalli,Chillies,Kharif,6452,19943.13,3091,0.2,Northern Telangana
+Karimnagar,Paddy,Kharif & Rabi,33391,145885.28,4369,1.0,Northern Telangana
+Karimnagar,Cotton,Kharif,38923,85474.91,2196,0.5,Northern Telangana
+Karimnagar,Maize,Kharif & Rabi,10117,48551.48,4799,0.33,Northern Telangana
+Karimnagar,Turmeric,Kharif,12666,80061.79,6321,0.25,Northern Telangana
+Karimnagar,Groundnut,Rabi & Kharif,3659,7427.77,2030,0.2,Northern Telangana
+Rajanna Sircilla,Paddy,Kharif & Rabi,58921,229497.3,3895,1.0,Northern Telangana
+Rajanna Sircilla,Cotton,Kharif,22275,51343.88,2305,0.5,Northern Telangana
+Rajanna Sircilla,Maize,Kharif & Rabi,13904,61121.98,4396,0.33,Northern Telangana
+Rajanna Sircilla,Redgram,Kharif,13009,17926.4,1378,0.25,Northern Telangana
+Rajanna Sircilla,Bengal Gram,Rabi,15050,24064.95,1599,0.2,Northern Telangana
+Warangal,Cotton,Kharif,65450,124093.2,1896,1.0,Central Telangana
+Warangal,Paddy,Kharif & Rabi,26293,118187.04,4495,0.5,Central Telangana
+Warangal,Chillies,Kharif,19955,61720.82,3093,0.33,Central Telangana
+Warangal,Maize,Kharif & Rabi,11358,50577.17,4453,0.25,Central Telangana
+Warangal,Redgram,Kharif,16353,19885.25,1216,0.2,Central Telangana
+Hanumakonda,Cotton,Kharif,33437,78543.51,2349,1.0,Central Telangana
+Hanumakonda,Paddy,Kharif & Rabi,13752,59202.36,4305,0.5,Central Telangana
+Hanumakonda,Maize,Kharif & Rabi,25312,137064.48,5415,0.33,Central Telangana
+Hanumakonda,Chillies,Kharif,14931,46554.86,3118,0.25,Central Telangana
+Hanumakonda,Redgram,Kharif,5139,6485.42,1262,0.2,Central Telangana
+Jangaon,Cotton,Kharif,52756,120811.24,2290,1.0,Central Telangana
+Jangaon,Paddy,Kharif & Rabi,26062,119807.01,4597,0.5,Central Telangana
+Jangaon,Maize,Kharif & Rabi,12563,54272.16,4320,0.33,Central Telangana
+Jangaon,Redgram,Kharif,20009,21709.76,1085,0.25,Central Telangana
+Jangaon,Groundnut,Rabi & Kharif,14643,36065.71,2463,0.2,Central Telangana
+Jayashankar Bhupalpally,Paddy,Kharif & Rabi,19054,78159.51,4102,1.0,Central Telangana
+Jayashankar Bhupalpally,Cotton,Kharif,40643,95511.05,2350,0.5,Central Telangana
+Jayashankar Bhupalpally,Chillies,Kharif,16339,48167.37,2948,0.33,Central Telangana
+Jayashankar Bhupalpally,Redgram,Kharif,17060,18766.0,1100,0.25,Central Telangana
+Jayashankar Bhupalpally,Maize,Kharif & Rabi,4797,25131.48,5239,0.2,Central Telangana
+Mahabubabad,Chillies,Kharif,53486,174364.36,3260,1.0,Central Telangana
+Mahabubabad,Cotton,Kharif,38035,77173.01,2029,0.5,Central Telangana
+Mahabubabad,Paddy,Kharif & Rabi,9941,41990.78,4224,0.33,Central Telangana
+Mahabubabad,Maize,Kharif & Rabi,16523,82069.74,4967,0.25,Central Telangana
+Mahabubabad,Redgram,Kharif,7364,8394.96,1140,0.2,Central Telangana
+Mulugu,Paddy,Kharif & Rabi,60491,291808.58,4824,1.0,Central Telangana
+Mulugu,Cotton,Kharif,25615,54303.8,2120,0.5,Central Telangana
+Mulugu,Chillies,Kharif,10242,30480.19,2976,0.33,Central Telangana
+Mulugu,Redgram,Kharif,14045,16587.15,1181,0.25,Central Telangana
+Mulugu,Maize,Kharif & Rabi,6083,27957.47,4596,0.2,Central Telangana
+Khammam,Paddy,Kharif & Rabi,59177,228068.16,3854,1.0,Central Telangana
+Khammam,Cotton,Kharif,39189,78769.89,2010,0.5,Central Telangana
+Khammam,Chillies,Kharif,6653,23731.25,3567,0.33,Central Telangana
+Khammam,Sugarcane,Annual,15457,1260626.55,81557,0.25,Central Telangana
+Khammam,Maize,Kharif & Rabi,4852,22207.6,4577,0.2,Central Telangana
+Bhadradri Kothagudem,Paddy,Kharif & Rabi,54973,261781.43,4762,1.0,Central Telangana
+Bhadradri Kothagudem,Cotton,Kharif,34961,74746.62,2138,0.5,Central Telangana
+Bhadradri Kothagudem,Chillies,Kharif,9442,33283.05,3525,0.33,Central Telangana
+Bhadradri Kothagudem,Maize,Kharif & Rabi,11293,50095.75,4436,0.25,Central Telangana
+Bhadradri Kothagudem,Groundnut,Rabi & Kharif,9538,21098.06,2212,0.2,Central Telangana
+Nalgonda,Paddy,Kharif & Rabi,62135,282403.58,4545,1.0,Southern Telangana
+Nalgonda,Cotton,Kharif,10944,26331.26,2406,0.5,Southern Telangana
+Nalgonda,Sweet Lime,Annual,12917,180954.25,14009,0.33,Southern Telangana
+Nalgonda,Redgram,Kharif,8101,10839.14,1338,0.25,Southern Telangana
+Nalgonda,Groundnut,Rabi & Kharif,9280,19339.52,2084,0.2,Southern Telangana
+Suryapet,Paddy,Kharif & Rabi,34498,145650.56,4222,1.0,Southern Telangana
+Suryapet,Cotton,Kharif,39814,80464.09,2021,0.5,Southern Telangana
+Suryapet,Chillies,Kharif,25098,81166.93,3234,0.33,Southern Telangana
+Suryapet,Redgram,Kharif,4635,5770.57,1245,0.25,Southern Telangana
+Suryapet,Groundnut,Rabi & Kharif,14704,37186.42,2529,0.2,Southern Telangana
+Yadadri Bhuvanagiri,Paddy,Kharif & Rabi,79845,383016.47,4797,1.0,Southern Telangana
+Yadadri Bhuvanagiri,Cotton,Kharif,13320,31102.2,2335,0.5,Southern Telangana
+Yadadri Bhuvanagiri,Maize,Kharif & Rabi,9987,48956.27,4902,0.33,Southern Telangana
+Yadadri Bhuvanagiri,Redgram,Kharif,4776,5731.2,1200,0.25,Southern Telangana
+Yadadri Bhuvanagiri,Vegetables,All Seasons,16794,300696.57,17905,0.2,Southern Telangana
+Mahabubnagar,Paddy,Kharif & Rabi,69884,283589.27,4058,1.0,Southern Telangana
+Mahabubnagar,Castor,Kharif,22305,24870.08,1115,0.5,Southern Telangana
+Mahabubnagar,Cotton,Kharif,28226,67516.59,2392,0.33,Southern Telangana
+Mahabubnagar,Groundnut,Rabi & Kharif,16322,37295.77,2285,0.25,Southern Telangana
+Mahabubnagar,Redgram,Kharif,7153,8054.28,1126,0.2,Southern Telangana
+Nagarkurnool,Cotton,Kharif,55542,133189.72,2398,1.0,Southern Telangana
+Nagarkurnool,Groundnut,Rabi & Kharif,33679,76720.76,2278,0.5,Southern Telangana
+Nagarkurnool,Paddy,Kharif & Rabi,18630,71539.2,3840,0.33,Southern Telangana
+Nagarkurnool,Castor,Kharif,18672,21062.02,1128,0.25,Southern Telangana
+Nagarkurnool,Redgram,Kharif,16450,18539.15,1127,0.2,Southern Telangana
+Wanaparthy,Groundnut,Rabi & Kharif,28007,56686.17,2024,1.0,Southern Telangana
+Wanaparthy,Paddy,Kharif & Rabi,31132,137105.33,4404,0.5,Southern Telangana
+Wanaparthy,Cotton,Kharif,7797,15695.36,2013,0.33,Southern Telangana
+Wanaparthy,Castor,Kharif,8058,9943.57,1234,0.25,Southern Telangana
+Wanaparthy,Redgram,Kharif,11671,14682.12,1258,0.2,Southern Telangana
+Jogulamba Gadwal,Cotton,Kharif,55857,117858.27,2110,1.0,Southern Telangana
+Jogulamba Gadwal,Groundnut,Rabi & Kharif,40214,91165.14,2267,0.5,Southern Telangana
+Jogulamba Gadwal,Paddy,Kharif & Rabi,21711,86713.73,3994,0.33,Southern Telangana
+Jogulamba Gadwal,Jowar,Kharif & Rabi,10676,16387.66,1535,0.25,Southern Telangana
+Jogulamba Gadwal,Redgram,Kharif,7199,9221.92,1281,0.2,Southern Telangana
+Narayanpet,Cotton,Kharif,67630,138979.65,2055,1.0,Southern Telangana
+Narayanpet,Redgram,Kharif,23539,25916.44,1101,0.5,Southern Telangana
+Narayanpet,Paddy,Kharif & Rabi,28242,136352.38,4828,0.33,Southern Telangana
+Narayanpet,Jowar,Kharif & Rabi,7480,10988.12,1469,0.25,Southern Telangana
+Narayanpet,Groundnut,Rabi & Kharif,16065,34138.12,2125,0.2,Southern Telangana
+Medak,Paddy,Kharif & Rabi,76548,360081.79,4704,1.0,Southern Telangana
+Medak,Sugarcane,Annual,13021,1098347.39,84352,0.5,Southern Telangana
+Medak,Cotton,Kharif,21415,49832.71,2327,0.33,Southern Telangana
+Medak,Maize,Kharif & Rabi,21026,106265.4,5054,0.25,Southern Telangana
+Medak,Redgram,Kharif,3109,3967.08,1276,0.2,Southern Telangana
+Sangareddy,Sugarcane,Annual,35956,3374938.03,93863,1.0,Southern Telangana
+Sangareddy,Paddy,Kharif & Rabi,40362,180660.31,4476,0.5,Southern Telangana
+Sangareddy,Cotton,Kharif,7693,15078.28,1960,0.33,Southern Telangana
+Sangareddy,Soybean,Kharif,13431,22402.91,1668,0.25,Southern Telangana
+Sangareddy,Redgram,Kharif,11467,13313.19,1161,0.2,Southern Telangana
+Siddipet,Paddy,Kharif & Rabi,29251,132594.78,4533,1.0,Southern Telangana
+Siddipet,Cotton,Kharif,16739,37194.06,2222,0.5,Southern Telangana
+Siddipet,Maize,Kharif & Rabi,26124,128164.34,4906,0.33,Southern Telangana
+Siddipet,Vegetables,All Seasons,5365,107337.55,20007,0.25,Southern Telangana
+Siddipet,Redgram,Kharif,6873,8295.71,1207,0.2,Southern Telangana
+Vikarabad,Redgram,Kharif,68978,74565.22,1081,1.0,Southern Telangana
+Vikarabad,Cotton,Kharif,16668,37069.63,2224,0.5,Southern Telangana
+Vikarabad,Paddy,Kharif & Rabi,17872,81460.58,4558,0.33,Southern Telangana
+Vikarabad,Bengal Gram,Rabi,3919,5521.87,1409,0.25,Southern Telangana
+Vikarabad,Maize,Kharif & Rabi,15363,67750.83,4410,0.2,Southern Telangana
+Ranga Reddy,Vegetables,All Seasons,53191,1078022.0,20267,1.0,Southern Telangana
+Ranga Reddy,Paddy,Kharif & Rabi,27887,129841.87,4656,0.5,Southern Telangana
+Ranga Reddy,Cotton,Kharif,7973,15682.89,1967,0.33,Southern Telangana
+Ranga Reddy,Maize,Kharif & Rabi,19482,91351.1,4689,0.25,Southern Telangana
+Ranga Reddy,Flowers,All Seasons,15049,99233.11,6594,0.2,Southern Telangana
+Medchal-Malkajgiri,Vegetables,All Seasons,29705,601377.72,20245,1.0,Southern Telangana
+Medchal-Malkajgiri,Paddy,Kharif & Rabi,11097,44854.07,4042,0.5,Southern Telangana
+Medchal-Malkajgiri,Maize,Kharif & Rabi,25629,134706.02,5256,0.33,Southern Telangana
+Medchal-Malkajgiri,Flowers,All Seasons,14611,87797.5,6009,0.25,Southern Telangana
+Medchal-Malkajgiri,Fodder,All Seasons,16018,526223.34,32852,0.2,Southern Telangana
+Hyderabad,Vegetables,All Seasons,83334,1674180.06,20090,1.0,Southern Telangana
+Hyderabad,Flowers,All Seasons,38349,253716.98,6616,0.5,Southern Telangana
+Hyderabad,Fodder,All Seasons,22186,703651.18,31716,0.33,Southern Telangana
+Hyderabad,Tomato,Rabi & Kharif,20039,492478.46,24576,0.25,Southern Telangana
+Hyderabad,Paddy,Kharif & Rabi,15096,69773.71,4622,0.2,Southern Telangana

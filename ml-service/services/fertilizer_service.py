@@ -128,9 +128,9 @@ class FertilizerService:
 
         summary_status = f"N: {n_status}, P: {p_status}, K: {k_status}"
 
-        # Check DatasetManager for regional dataset
+        # Check DatasetManager for regional dataset with state awareness
         fert_match = DatasetManager.get_instance().find_fertilizer_matches(
-            district, crop_name, soil_color, n, p, k
+            district, crop_name, soil_color, n, p, k, state=state
         ) if district else {"matched": False}
 
         is_verified = fert_match.get("matched", False)
@@ -182,7 +182,7 @@ class FertilizerService:
             "organic_alternatives": organic_suggestions,
             "recommendations": actionable_recommendations,
             "primary_recommendation": actionable_recommendations[0] if actionable_recommendations else "Soil nutrients are in optimal proportion.",
-            "state": state or "Maharashtra",
+            "state": state or fert_match.get("state") or "Maharashtra",
             "district": district.strip().title() if district else None,
             "soil_color": matched_soil,
             "dataset_used": dataset_used,

@@ -123,6 +123,24 @@ class DiseaseService:
             state, district, crop_name, disease_name
         )
 
+        # State context
+        inferred_state = state
+        if not inferred_state and district:
+            clean_d = district.strip().lower()
+            tg_districts = [
+                "adilabad", "bhadradri kothagudem", "hanumakonda", "hyderabad", "jagtial",
+                "jangaon", "jayashankar bhupalpally", "jogulamba gadwal", "kamareddy", "karimnagar",
+                "khammam", "kumuram bheem asifabad", "mahabubabad", "mahabubnagar", "mancherial",
+                "medak", "medchal-malkajgiri", "mulugu", "nagarkurnool", "nalgonda",
+                "narayanpet", "nirmal", "nizamabad", "peddapalli", "rajanna sircilla",
+                "ranga reddy", "sangareddy", "siddipet", "suryapet", "vikarabad",
+                "wanaparthy", "warangal", "yadadri bhuvanagiri"
+            ]
+            if any(td in clean_d or clean_d in td for td in tg_districts):
+                inferred_state = "Telangana"
+            else:
+                inferred_state = "Maharashtra"
+
         return {
             "raw_class": predicted_class,
             "crop": crop_name,
@@ -135,7 +153,7 @@ class DiseaseService:
             "prevention": info.get("prevention", ""),
             "treatment": info.get("treatment", ""),
             "supplement": info.get("supplement", ""),
-            "state": state or ("Maharashtra" if district else None),
+            "state": inferred_state,
             "district": district.strip().title() if district else None,
             "is_district_verified": advisory_info.get("is_district_verified", False),
             "dataset_level": advisory_info.get("dataset_level", "fallback"),

@@ -20,12 +20,25 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 REGISTRY_PATH = os.path.join(DATA_DIR, "dataset_registry.json")
 
 DISTRICT_ALIASES = {
+    # Maharashtra administrative aliases
     "chhatrapati sambhajinagar": "aurangabad",
     "sambhajinagar": "aurangabad",
     "chhatrapati sambhaji nagar": "aurangabad",
     "dharashiv": "osmanabad",
     "ahilyanagar": "ahmednagar",
     "mumbai": "mumbai city",
+
+    # Telangana administrative aliases
+    "warangal urban": "hanumakonda",
+    "warangal rural": "warangal",
+    "kothagudem": "bhadradri kothagudem",
+    "bhupalpally": "jayashankar bhupalpally",
+    "gadwal": "jogulamba gadwal",
+    "asifabad": "kumuram bheem asifabad",
+    "malkajgiri": "medchal-malkajgiri",
+    "sircilla": "rajanna sircilla",
+    "bhongir": "yadadri bhuvanagiri",
+    "bhuvanagiri": "yadadri bhuvanagiri",
 }
 
 
@@ -149,30 +162,52 @@ class DatasetManager:
     def get_dataset_for_district(self, state: Optional[str], district: Optional[str], service: str = "crop") -> Optional[Dict[str, Any]]:
         """
         Identify whether a verified or reference dataset covers the requested district.
-        Returns dataset configuration dict if found and covered, else None.
+        Supports state-aware filtering (e.g. Telangana vs Maharashtra) while respecting dataset priority.
         """
         if not district or not district.strip():
             return None
 
         clean_dist = normalize_district_name(district)
         raw_dist = district.strip().lower()
+        clean_state = state.strip().lower() if state and state.strip() else None
 
-        matched_id = self.district_index.get(clean_dist) or self.district_index.get(raw_dist)
+        # Pass 1: If state is explicitly provided, look for match in datasets belonging to that state
+        if clean_state:
+            for ds in self.datasets:
+                if ds.get("state", "").lower() == clean_state and service in ds.get("supported_services", []):
+                    covered = [normalize_district_name(d) for d in ds.get("actual_districts", [])]
+                    raw_covered = [d.lower() for d in ds.get("actual_districts", [])]
+                    if (clean_dist in covered or raw_dist in raw_covered or
+                        any(clean_dist == c or clean_dist in c or c in clean_dist for c in covered) or
+                        any(raw_dist == rc or raw_dist in rc or rc in raw_dist for rc in raw_covered)):
+                        return ds
 
-        if not matched_id:
-            # Substring scan across indexed districts
-            for d_name, ds_id in self.district_index.items():
-                if d_name in clean_dist or clean_dist in d_name or d_name in raw_dist or raw_dist in d_name:
-                    matched_id = ds_id
-                    break
-
-        if not matched_id:
-            return None
-
+        # Pass 2: Fall back across all datasets ordered by priority
         for ds in self.datasets:
-            if ds["id"] == matched_id:
-                if service in ds.get("supported_services", []):
+            if service in ds.get("supported_services", []):
+                # If state was specified, do not accidentally match a different state in Pass 2
+                if clean_state and ds.get("state", "").lower() != clean_state:
+                    continue
+                covered = [normalize_district_name(d) for d in ds.get("actual_districts", [])]
+                raw_covered = [d.lower() for d in ds.get("actual_districts", [])]
+                if (clean_dist in covered or raw_dist in raw_covered or
+                    any(clean_dist == c or clean_dist in c or c in clean_dist for c in covered) or
+                    any(raw_dist == rc or raw_dist in rc or rc in raw_dist for rc in raw_covered)):
                     return ds
+
+        # Pass 3: Global district_index fallback if state was not specified
+        if not clean_state:
+            matched_id = self.district_index.get(clean_dist) or self.district_index.get(raw_dist)
+            if not matched_id:
+                for d_name, ds_id in self.district_index.items():
+                    if d_name in clean_dist or clean_dist in d_name or d_name in raw_dist or raw_dist in d_name:
+                        matched_id = ds_id
+                        break
+            if matched_id:
+                for ds in self.datasets:
+                    if ds["id"] == matched_id and service in ds.get("supported_services", []):
+                        return ds
+
         return None
 
     def find_crop_matches(
@@ -183,12 +218,14 @@ class DatasetManager:
         k: float,
         ph: float,
         rainfall: float,
-        temperature: float
+        temperature: float,
+        state: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Query regional dataset for crop recommendations based on empirical soil/climate trials or agronomic reference targets.
+        Supports state-aware multi-dataset priority (Maharashtra vs Telangana).
         """
-        ds = self.get_dataset_for_district(None, district, service="crop")
+        ds = self.get_dataset_for_district(state, district, service="crop")
         if not ds:
             return {"matched": False}
 
@@ -327,6 +364,7 @@ class DatasetManager:
             "dataset_name": ds["name"],
             "dataset_source": ds.get("source", ""),
             "district": canonical_district,
+            "state": ds.get("state", "Maharashtra"),
             "sample_count": len(dist_rows),
             "top_crop": best_crop,
             "crop_probabilities": crop_probs,
@@ -343,13 +381,15 @@ class DatasetManager:
         soil_color: Optional[str] = None,
         n: Optional[float] = None,
         p: Optional[float] = None,
-        k: Optional[float] = None
+        k: Optional[float] = None,
+        state: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Query verified or reference district dataset for tested commercial fertilizers,
         recommended micronutrients (Zinc, Sulphur), and extension links.
+        Supports state-aware multi-dataset priority (Maharashtra vs Telangana).
         """
-        ds = self.get_dataset_for_district(None, district, service="fertilizer")
+        ds = self.get_dataset_for_district(state, district, service="fertilizer")
         if not ds:
             return {"matched": False}
 
@@ -454,19 +494,26 @@ class DatasetManager:
         avg_zn = round(sum(zinc_list) / len(zinc_list), 1) if zinc_list else None
         avg_s = round(sum(sulphur_list) / len(sulphur_list), 1) if sulphur_list else None
 
+        ds_state = ds.get("state", "Maharashtra")
         if is_primary:
             regional_notes = (
-                f"Based on {len(matched_rows)} verified trials in {canonical_district} for {crop_name.title()}. "
+                f"Based on {len(matched_rows)} verified trials in {canonical_district} ({ds_state}) for {crop_name.title()}. "
                 f"Most widely used: {primary_fert}."
             )
         else:
             micronutrient_txt = ""
             if avg_zn and avg_s:
                 micronutrient_txt = f" Recommended micronutrient baseline: Zn ~{avg_zn} kg/ha, S ~{avg_s} kg/ha."
-            regional_notes = (
-                f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district}. "
-                f"Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
-            )
+            if ds_state == "Telangana":
+                regional_notes = (
+                    f"Telangana Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & PJTSAU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
+            else:
+                regional_notes = (
+                    f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
+                    f"Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
 
         return {
             "matched": True,
@@ -475,6 +522,7 @@ class DatasetManager:
             "dataset_name": ds["name"],
             "dataset_source": ds.get("source", ""),
             "district": canonical_district,
+            "state": ds_state,
             "sample_count": len(matched_rows),
             "primary_fertilizer": primary_fert,
             "verified_fertilizers": verified_fert_names[:4],
@@ -488,7 +536,8 @@ class DatasetManager:
     def get_district_disease_advisory(self, state: Optional[str], district: Optional[str], crop: str, disease: str) -> Dict[str, Any]:
         """
         Generate location-aware pathological and agricultural extension advisory.
-        Mappable across Maharashtra agro-climatic zones and State Agricultural Universities (SAUs).
+        Mappable across Maharashtra and Telangana agro-climatic zones and State Agricultural Universities (SAUs / PJTSAU).
+        Includes specialized Rice Pathology protocols referenced from Mendeley Rice Disease Dataset (10.17632/zfwkkdj6dk.1).
         """
         if not district or not district.strip():
             return {
@@ -499,7 +548,84 @@ class DatasetManager:
 
         clean_dist = normalize_district_name(district)
         canonical = district.strip().title()
+        clean_state = state.strip().lower() if state and state.strip() else ""
+        c_lower = crop.lower().strip()
 
+        # -------------------------------------------------------------
+        # TELANGANA STATE AGRO-CLIMATIC ZONES (PJTSAU Jurisdiction)
+        # -------------------------------------------------------------
+        telangana_north = [
+            "adilabad", "nirmal", "kumuram bheem asifabad", "asifabad", "mancherial",
+            "nizamabad", "kamareddy", "jagtial", "peddapalli", "karimnagar", "rajanna sircilla", "sircilla"
+        ]
+        telangana_central = [
+            "warangal", "hanumakonda", "warangal urban", "warangal rural", "jangaon",
+            "jayashankar bhupalpally", "bhupalpally", "mahabubabad", "mulugu",
+            "khammam", "bhadradri kothagudem", "kothagudem"
+        ]
+        telangana_south = [
+            "nalgonda", "suryapet", "yadadri bhuvanagiri", "bhongir", "mahabubnagar",
+            "nagarkurnool", "wanaparthy", "jogulamba gadwal", "gadwal", "narayanpet",
+            "medak", "sangareddy", "siddipet", "vikarabad", "ranga reddy",
+            "medchal-malkajgiri", "malkajgiri", "hyderabad"
+        ]
+
+        is_tg_north = any(d in clean_dist for d in telangana_north)
+        is_tg_central = any(d in clean_dist for d in telangana_central)
+        is_tg_south = any(d in clean_dist for d in telangana_south)
+        is_telangana = (clean_state == "telangana") or is_tg_north or is_tg_central or is_tg_south
+
+        if is_telangana:
+            # Check for Mendeley Rice Leaf Disease specialization
+            is_rice = ("rice" in c_lower or "paddy" in c_lower or "bhat" in c_lower)
+            rice_protocol = ""
+            if is_rice:
+                rice_protocol = (
+                    " [Mendeley Rice Pathology Protocol: For Bacterial Leaf Blight, apply Streptocycline @ 1g/10L + Copper Oxychloride @ 30g/10L. "
+                    "For Fungal Blast/Brown Spot, spray Tricyclazole 75 WP @ 0.6g/L or Mancozeb @ 2.5g/L. "
+                    "For Viral Tungro, control green leafhopper vectors with Dinotefuran 20 SG @ 0.4g/L]."
+                )
+
+            if is_tg_north:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Northern Telangana Agro-Climatic Advisory (PJTSAU RARS Jagtial / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Northern Telangana Zone - PJTSAU RARS Jagtial jurisdiction): "
+                        f"Under local black cotton vertisols and Godavari basin irrigation, inspect {crop} for foliar lesions and root rots during monsoon humidity peaks. "
+                        f"Follow PJTSAU package of practices and consult the local Krishi Vigyan Kendra (KVK).{rice_protocol}"
+                    )
+                }
+            elif is_tg_central:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Central Telangana Agro-Climatic Advisory (PJTSAU RARS Warangal / Wyra KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Central Telangana Zone - PJTSAU RARS Warangal jurisdiction): "
+                        f"Watch for foliar blights, fruit rot complexes, and sucking pests on {crop} during warm humid intervals. "
+                        f"Implement integrated pest and disease management (IPDM) bulletins from PJTSAU Warangal.{rice_protocol}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Southern Telangana Agro-Climatic Advisory (PJTSAU RARS Palem / Rajendranagar)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Southern Telangana Zone - PJTSAU Palem / Rajendranagar jurisdiction): "
+                        f"Under red chalka soils and semi-arid conditions, monitor {crop} for moisture-stress disease complexes, wilts, and leaf spots. "
+                        f"Consult your district Agricultural Officer or PJTSAU extension scientists.{rice_protocol}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # MAHARASHTRA STATE AGRO-CLIMATIC ZONES
+        # -------------------------------------------------------------
         # Priority 1: Western Maharashtra
         western_mh = ["solapur", "kolhapur", "satara", "sangli", "pune"]
         if any(w in clean_dist for w in western_mh):
