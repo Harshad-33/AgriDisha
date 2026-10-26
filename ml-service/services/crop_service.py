@@ -254,6 +254,44 @@ GUJARAT_DISTRICT_ZONE_MAP = {
     'tapi': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)'
 }
 
+# District alias mapping for Haryana Agro-Climatic Zones (CCS HAU Hisar)
+HARYANA_DISTRICT_ZONE_MAP = {
+    # Eastern Agrozone (Yamuna Basin - CCS HAU Karnal / Kaul)
+    'ambala': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'panchkula': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'yamunanagar': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'kurukshetra': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'karnal': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'kaithal': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'panipat': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'sonipat': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+    'sonepat': 'Eastern Agrozone (Yamuna Basin - CCS HAU)',
+
+    # Western Semi-Arid Zone (CCS HAU Hisar / Sirsa)
+    'hisar': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'hissar': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'sirsa': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'fatehabad': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'bhiwani': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'charkhi dadri': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'charki dadri': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'rohtak': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'jhajjar': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+    'jind': 'Western Semi-Arid Zone (CCS HAU Hisar)',
+
+    # Southern Arid & NCR Zone (CCS HAU RRS Bawal)
+    'gurugram': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'gurgaon': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'faridabad': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'rewari': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'mahendragarh': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'narnaul': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'mohindergarh': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'palwal': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'nuh': 'Southern Arid & NCR Zone (CCS HAU Bawal)',
+    'mewat': 'Southern Arid & NCR Zone (CCS HAU Bawal)'
+}
+
 
 class CropService:
     def __init__(self, model_path: str = MODEL_PATH):
@@ -308,6 +346,7 @@ class CropService:
         is_telangana_state = (clean_state_input == "telangana")
         is_ap_state = (clean_state_input in ("andhra pradesh", "ap", "andhra"))
         is_gujarat_state = (clean_state_input in ("gujarat", "gj"))
+        is_haryana_state = (clean_state_input in ("haryana", "hr"))
         if target_dist:
             c_key = target_dist.lower().strip()
             # Check Andhra Pradesh zones first if state is AP or key in AP map
@@ -315,6 +354,15 @@ class CropService:
                 zone_name = ANDHRA_PRADESH_DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in ANDHRA_PRADESH_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
+            # Check Haryana zones if state is Haryana or key in HR map
+            if not zone_name and (is_haryana_state or c_key in HARYANA_DISTRICT_ZONE_MAP):
+                zone_name = HARYANA_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in HARYANA_DISTRICT_ZONE_MAP.items():
                         if k_map in c_key or c_key in k_map:
                             zone_name = v_map
                             break
@@ -338,7 +386,7 @@ class CropService:
                             break
 
             # Check Maharashtra zones if not found in AP, Gujarat, or Telangana
-            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state:
+            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -467,6 +515,49 @@ class CropService:
                         elif c in ('sorghum', 'jowar'):
                             probs[i] *= 2.0
                         elif c in ('pigeonpeas', 'pigeon peas', 'tur'):
+                            probs[i] *= 1.8
+
+                # Apply Haryana Agro-Climatic Zone Prior Weighting (CCS HAU Hisar)
+                elif zone_name == 'Eastern Agrozone (Yamuna Basin - CCS HAU)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'wheat' and temp < 30:
+                            probs[i] *= 2.3
+                        elif c == 'rice' and eff_rainfall >= 550:
+                            probs[i] *= 2.3
+                        elif c == 'sugarcane' and n >= 120:
+                            probs[i] *= 2.1
+                        elif c == 'mustard' and temp < 28:
+                            probs[i] *= 1.9
+                        elif c == 'potato':
+                            probs[i] *= 1.8
+                        elif c == 'maize':
+                            probs[i] *= 1.7
+                elif zone_name == 'Western Semi-Arid Zone (CCS HAU Hisar)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'cotton' and n >= 70:
+                            probs[i] *= 2.4
+                        elif c == 'wheat' and temp < 30:
+                            probs[i] *= 2.2
+                        elif c == 'bajra' and eff_rainfall < 700:
+                            probs[i] *= 2.1
+                        elif c == 'mustard':
+                            probs[i] *= 2.0
+                        elif c in ('chickpea', 'gram') and p >= 35:
+                            probs[i] *= 1.9
+                elif zone_name == 'Southern Arid & NCR Zone (CCS HAU Bawal)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'mustard' and temp < 28:
+                            probs[i] *= 2.3
+                        elif c == 'bajra':
+                            probs[i] *= 2.2
+                        elif c == 'wheat' and temp < 30:
+                            probs[i] *= 2.0
+                        elif c in ('chickpea', 'gram'):
+                            probs[i] *= 1.9
+                        elif c in ('sorghum', 'jowar'):
                             probs[i] *= 1.8
 
                 # Apply Gujarat Agro-Climatic Zone Prior Weighting (AAU / JAU / NAU / SDAU)
@@ -673,7 +764,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra"))),
+                    'state': state or dataset_match.get("state") or ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")))),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -767,7 +858,7 @@ class CropService:
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
             'description': f"Recommended for {'Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters')}.",
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra"))),
+            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")))),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,

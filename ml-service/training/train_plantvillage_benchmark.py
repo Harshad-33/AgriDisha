@@ -167,6 +167,15 @@ def generate_benchmark_report(output_path: str = None) -> Dict[str, Any]:
             "Orange / Citrus (Haunglongbing / Citrus greening)",
             "Soybean (Healthy)",
             "Squash / Cucurbits (Powdery mildew)"
+        ],
+        "haryana_sau_extension_status": "Aligned with Chaudhary Charan Singh Haryana Agricultural University (CCS HAU Hisar) Integrated Pest & Disease Management Protocols",
+        "haryana_scope_disclaimer": "PlantVillage is an open-access general plant disease benchmark (54,306 images across 14 crops) and does not originate specifically from Haryana. Model inferences on relevant crops (Potato, Tomato, Pepper, Maize, Squash) are augmented with CCS HAU Hisar regional extension advisories.",
+        "haryana_key_crops_represented": [
+            "Potato (Early blight, Late blight - Kurukshetra, Yamunanagar, Karnal)",
+            "Tomato (Bacterial spot, Early/Late blight, Septoria, Leaf curl virus)",
+            "Pepper / Chili (Bacterial spot)",
+            "Corn / Maize (Common rust, Northern leaf blight - Panchkula, Ambala)",
+            "Squash / Cucurbits (Powdery mildew - Yamuna floodplains)"
         ]
     }
 

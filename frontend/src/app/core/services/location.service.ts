@@ -301,6 +301,66 @@ export class LocationService {
     'Valsad'
   ];
 
+  // Priority 6: Haryana Regional Reference Dataset (All 22 Haryana districts)
+  private haryanaReferenceDistricts = new Set<string>([
+    'ambala',
+    'bhiwani',
+    'charkhi dadri',
+    'charki dadri',
+    'charkidadri',
+    'faridabad',
+    'fatehabad',
+    'gurugram',
+    'gurgaon',
+    'hisar',
+    'hissar',
+    'jhajjar',
+    'jind',
+    'kaithal',
+    'karnal',
+    'kurukshetra',
+    'mahendragarh',
+    'narnaul',
+    'mohindergarh',
+    'nuh',
+    'mewat',
+    'palwal',
+    'panchkula',
+    'panipat',
+    'rewari',
+    'rohtak',
+    'sirsa',
+    'sonipat',
+    'sonepat',
+    'yamunanagar'
+  ]);
+
+  private haryanaDistricts: string[] = [
+    'Ambala',
+    'Bhiwani',
+    'Charkhi Dadri',
+    'Faridabad',
+    'Fatehabad',
+    'Gurugram (Gurgaon)',
+    'Hisar (Hissar)',
+    'Jhajjar',
+    'Jind',
+    'Kaithal',
+    'Karnal',
+    'Kurukshetra',
+    'Mahendragarh (Narnaul)',
+    'Nuh (Mewat)',
+    'Palwal',
+    'Panchkula',
+    'Panipat',
+    'Rewari',
+    'Rohtak',
+    'Sirsa',
+    'Sonipat (Sonepat)',
+    'Yamunanagar'
+  ];
+
+
 
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
@@ -382,6 +442,9 @@ export class LocationService {
     if (state === 'Gujarat') {
       return this.gujaratDistricts;
     }
+    if (state === 'Haryana') {
+      return this.haryanaDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -422,6 +485,14 @@ export class LocationService {
     if (st === 'gujarat') {
       for (const gd of this.gujaratReferenceDistricts) {
         if (clean === gd || clean.includes(gd) || gd.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'haryana') {
+      for (const hd of this.haryanaReferenceDistricts) {
+        if (clean === hd || clean.includes(hd) || hd.includes(clean)) {
           return 'regional_reference';
         }
       }

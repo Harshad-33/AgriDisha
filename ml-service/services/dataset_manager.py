@@ -76,6 +76,16 @@ DISTRICT_ALIASES = {
     "dwarka": "devbhumi dwarka",
     "devbhoomi dwarka": "devbhumi dwarka",
     "somnath": "gir somnath",
+
+    # Haryana administrative aliases
+    "gurgaon": "gurugram",
+    "mewat": "nuh",
+    "sonepat": "sonipat",
+    "hissar": "hisar",
+    "charki dadri": "charkhi dadri",
+    "charkidadri": "charkhi dadri",
+    "narnaul": "mahendragarh",
+    "mohindergarh": "mahendragarh",
 }
 
 
@@ -556,6 +566,11 @@ class DatasetManager:
                     f"Gujarat Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & AAU/JAU/NAU/SDAU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
+            elif ds_state == "Haryana":
+                regional_notes = (
+                    f"Haryana Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & CCS HAU Hisar benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
             else:
                 regional_notes = (
                     f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
@@ -768,6 +783,87 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (Scarce Rainfall Zone of Rayalaseema - ANGRAU RARS Nandyal jurisdiction): "
                         f"Under drought-prone and rainfed conditions, monitor {crop} for moisture stress, dry root rot, and foliar disease complexes. "
                         f"Consult Nandyal RARS and district KVK scientists.{chili_protocol}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # HARYANA STATE AGRO-CLIMATIC ZONES (CCS HAU Hisar)
+        # -------------------------------------------------------------
+        hr_eastern = [
+            "ambala", "panchkula", "yamunanagar", "kurukshetra", "karnal",
+            "kaithal", "panipat", "sonipat", "sonepat"
+        ]
+        hr_western = [
+            "hisar", "hissar", "sirsa", "fatehabad", "bhiwani",
+            "charkhi dadri", "charki dadri", "rohtak", "jhajjar", "jind"
+        ]
+        hr_southern = [
+            "gurugram", "gurgaon", "faridabad", "rewari", "mahendragarh",
+            "narnaul", "palwal", "nuh", "mewat"
+        ]
+
+        is_hr_eastern = any(d in clean_dist for d in hr_eastern)
+        is_hr_western = any(d in clean_dist for d in hr_western)
+        is_hr_southern = any(d in clean_dist for d in hr_southern)
+        is_haryana = (clean_state in ("haryana", "hr")) or is_hr_eastern or is_hr_western or is_hr_southern
+
+        if is_haryana:
+            # Check for Wheat/Rice/Cotton/Mustard/Solanaceous specialization aligned with CCS HAU Hisar & PlantVillage
+            is_wheat_rice = any(w in c_lower for w in ["wheat", "rice", "paddy", "bhat"])
+            is_cotton_mustard = any(cm in c_lower for cm in ["cotton", "kapas", "mustard", "raya", "sarson"])
+            is_solanaceous = any(sc in c_lower for sc in ["potato", "tomato", "pepper", "chili", "corn", "maize"])
+
+            hau_note = ""
+            if is_wheat_rice:
+                hau_note = (
+                    " [CCS HAU Hisar Cereal Pathology Protocol: For Yellow Rust (Stripe Rust) in Wheat, spray Propiconazole 25 EC (Tilt) @ 1ml/L or Tebuconazole @ 1ml/L water immediately upon symptom onset. "
+                    "For Bacterial Leaf Blight in Paddy, apply Streptocycline @ 1g/10L + Copper Oxychloride @ 30g/10L. For Blast, spray Tricyclazole 75 WP @ 0.6g/L]."
+                )
+            elif is_cotton_mustard:
+                hau_note = (
+                    " [CCS HAU Hisar Cash Crop Protocol: For Cotton Leaf Curl Virus (CLCuV), strictly manage Whitefly vector using Diafenthiuron 50 WP @ 1.25g/L or Pyriproxyfen 10 EC @ 2ml/L; rogue infected plants. "
+                    "For White Rust and Alternaria blight in Mustard, spray Mancozeb 75 WP @ 2g/L or Ridomil MZ @ 2g/L at 50-60 DAS]."
+                )
+            elif is_solanaceous:
+                hau_note = (
+                    " [PlantVillage & CCS HAU Vegetable IPM Protocol: For Late Blight in Potato/Tomato, spray Metalaxyl + Mancozeb (Ridomil MZ) @ 2.5g/L or Cymoxanil + Mancozeb @ 2g/L. "
+                    "For Tomato Yellow Leaf Curl Virus, control whitefly vectors and install yellow sticky traps]."
+                )
+
+            if is_hr_eastern:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Eastern Haryana Agro-Climatic Advisory (CCS HAU RRS Karnal / Kaul)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Eastern Agrozone - Yamuna Basin - CCS HAU Karnal jurisdiction): "
+                        f"Under intensive canal and tubewell irrigated alluvial soils, monitor {crop} fields regularly during humid spells. "
+                        f"Implement Chaudhary Charan Singh Haryana Agricultural University (CCS HAU) integrated disease management advisories.{hau_note}"
+                    )
+                }
+            elif is_hr_western:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Western Haryana Semi-Arid Advisory (CCS HAU Main Campus Hisar / Sirsa)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Western Semi-Arid Cotton-Wheat Belt - CCS HAU Hisar jurisdiction): "
+                        f"Under sandy loam to calcareous soils with dry semi-arid conditions, scout {crop} for sucking pest transmission, root rot complexes, and foliar blights. "
+                        f"Consult CCS HAU Hisar Directorate of Extension Education and district KVK.{hau_note}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Southern Haryana Arid & NCR Advisory (CCS HAU RRS Bawal / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Southern Arid & NCR Zone - CCS HAU RRS Bawal jurisdiction): "
+                        f"Under light textured and Aravalli fringe soils, inspect {crop} for moisture-stress disease complexes, collar rot, and rust. "
+                        f"Follow CCS HAU Regional Research Station Bawal recommendations.{hau_note}"
                     )
                 }
 

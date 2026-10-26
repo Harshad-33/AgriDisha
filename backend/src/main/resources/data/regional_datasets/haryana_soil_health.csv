@@ -1,0 +1,331 @@
+District,Soil_Type,Crop_Name,N_kg_ha,P2O5_kg_ha,K2O_kg_ha,Zn_kg_ha,S_kg_ha,Recommended_pH,Weather,Fertilizer
+Ambala,Alluvial Loam,Wheat,157.5,58.2,30.9,1.27,19.8,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Ambala,Alluvial Loam,Rice,133.0,51.5,40.8,1.3,16.6,7.6,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Ambala,Alluvial Loam,Cotton,156.8,60.6,62.4,1.22,22.7,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Ambala,Alluvial Loam,Bajra,102.0,38.4,0.0,0.93,14.4,7.7,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Ambala,Alluvial Loam,Mustard,80.0,29.7,20.2,1.11,23.5,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Ambala,Alluvial Loam,Sugarcane,156.0,52.5,48.5,1.54,22.6,7.3,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Ambala,Alluvial Loam,Gram,20.8,40.8,0.0,0.95,15.3,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Ambala,Alluvial Loam,Maize,120.0,60.6,38.4,1.18,18.7,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Ambala,Alluvial Loam,Potato,148.5,78.4,95.0,1.29,23.2,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Ambala,Alluvial Loam,Barley,57.0,30.9,20.4,1.03,14.1,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Ambala,Alluvial Loam,Jowar,78.4,41.6,20.0,0.94,15.0,7.5,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Ambala,Alluvial Loam,Tur,19.4,49.0,20.8,1.07,20.8,7.4,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Ambala,Alluvial Loam,Onion,102.0,48.0,50.0,1.26,30.6,7.1,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Ambala,Alluvial Loam,Tomato,118.8,60.6,62.4,1.24,20.0,6.8,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Ambala,Alluvial Loam,Groundnut,25.5,48.0,29.4,0.97,26.0,7.6,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Bhiwani,Sandy Loam,Wheat,148.5,60.6,29.7,1.19,19.4,7.5,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Bhiwani,Sandy Loam,Rice,144.2,51.0,38.4,1.47,18.4,7.2,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Bhiwani,Sandy Loam,Cotton,160.0,60.6,62.4,1.34,22.4,7.8,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Bhiwani,Sandy Loam,Bajra,96.0,40.0,0.0,0.92,15.5,7.9,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Bhiwani,Sandy Loam,Mustard,76.8,30.0,20.8,1.05,23.0,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Bhiwani,Sandy Loam,Sugarcane,142.5,51.5,52.5,1.43,23.0,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Bhiwani,Sandy Loam,Gram,19.6,38.0,0.0,0.92,14.7,7.8,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Bhiwani,Sandy Loam,Maize,117.6,62.4,42.0,1.16,18.0,7.0,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Bhiwani,Sandy Loam,Potato,147.0,78.4,101.0,1.25,25.0,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Bhiwani,Sandy Loam,Barley,57.6,30.9,21.0,1.01,15.8,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Bhiwani,Sandy Loam,Jowar,76.0,38.8,19.6,0.98,15.2,7.4,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Bhiwani,Sandy Loam,Tur,19.2,49.0,19.6,1.11,20.2,7.5,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Bhiwani,Sandy Loam,Onion,104.0,50.0,50.5,1.2,29.1,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Bhiwani,Sandy Loam,Tomato,117.6,62.4,61.2,1.29,20.2,6.8,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Bhiwani,Sandy Loam,Groundnut,24.0,49.0,28.5,0.97,25.0,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Charkhi Dadri,Sandy Loam,Wheat,142.5,61.8,31.5,1.21,19.6,7.5,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Charkhi Dadri,Sandy Loam,Rice,134.4,49.0,40.4,1.4,18.2,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Charkhi Dadri,Sandy Loam,Cotton,163.2,57.6,60.0,1.3,23.1,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Charkhi Dadri,Sandy Loam,Bajra,99.0,41.6,0.0,0.94,15.0,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Charkhi Dadri,Sandy Loam,Mustard,80.0,28.8,19.6,1.05,26.0,7.6,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Charkhi Dadri,Sandy Loam,Sugarcane,145.5,50.5,48.0,1.59,25.4,7.5,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Charkhi Dadri,Sandy Loam,Gram,19.0,38.0,0.0,0.9,15.8,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Charkhi Dadri,Sandy Loam,Maize,121.2,59.4,41.6,1.24,17.6,7.3,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Charkhi Dadri,Sandy Loam,Potato,154.5,84.0,103.0,1.38,23.8,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Charkhi Dadri,Sandy Loam,Barley,58.8,30.3,19.2,1.03,14.1,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Charkhi Dadri,Sandy Loam,Jowar,81.6,38.4,19.0,0.93,15.5,7.4,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Charkhi Dadri,Sandy Loam,Tur,20.0,52.0,21.0,1.13,18.8,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Charkhi Dadri,Sandy Loam,Onion,96.0,50.0,48.0,1.14,28.8,7.1,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Charkhi Dadri,Sandy Loam,Tomato,116.4,60.6,57.6,1.29,20.2,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Charkhi Dadri,Sandy Loam,Groundnut,25.8,52.5,31.5,1.06,24.8,7.5,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Faridabad,Alluvial Loam,Wheat,157.5,60.0,29.7,1.24,19.6,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Faridabad,Alluvial Loam,Rice,138.6,52.0,42.0,1.48,19.1,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Faridabad,Alluvial Loam,Cotton,161.6,62.4,60.0,1.34,21.6,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Faridabad,Alluvial Loam,Bajra,98.0,39.2,0.0,0.95,14.4,7.6,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Faridabad,Alluvial Loam,Mustard,80.0,29.7,19.6,1.17,26.5,7.7,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Faridabad,Alluvial Loam,Sugarcane,151.5,49.5,50.5,1.44,25.0,7.6,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Faridabad,Alluvial Loam,Gram,20.6,39.6,0.0,0.86,15.0,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Faridabad,Alluvial Loam,Maize,115.2,58.8,38.0,1.26,18.4,7.3,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Faridabad,Alluvial Loam,Potato,148.5,80.8,102.0,1.26,24.3,6.8,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Faridabad,Alluvial Loam,Barley,58.2,28.5,19.4,0.97,15.0,7.9,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Faridabad,Alluvial Loam,Jowar,78.4,38.0,20.0,0.98,15.6,7.5,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Faridabad,Alluvial Loam,Tur,19.2,49.0,19.6,1.01,19.0,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Faridabad,Alluvial Loam,Onion,103.0,52.5,52.5,1.24,28.2,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Faridabad,Alluvial Loam,Tomato,121.2,61.2,59.4,1.2,19.0,6.8,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Faridabad,Alluvial Loam,Groundnut,25.2,48.0,28.5,0.92,24.8,7.4,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Fatehabad,Light Alluvial Loam,Wheat,145.5,57.0,30.0,1.21,20.2,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Fatehabad,Light Alluvial Loam,Rice,137.2,47.5,40.0,1.29,17.1,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Fatehabad,Light Alluvial Loam,Cotton,152.0,60.0,62.4,1.27,21.3,7.8,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Fatehabad,Light Alluvial Loam,Bajra,99.0,40.4,0.0,0.92,15.5,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Fatehabad,Light Alluvial Loam,Mustard,79.2,30.3,19.2,1.17,26.5,8.0,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Fatehabad,Light Alluvial Loam,Sugarcane,142.5,51.5,52.5,1.44,24.0,7.5,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Fatehabad,Light Alluvial Loam,Gram,19.8,39.2,0.0,0.83,14.3,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Fatehabad,Light Alluvial Loam,Maize,124.8,61.2,38.4,1.18,17.5,7.0,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Fatehabad,Light Alluvial Loam,Potato,151.5,81.6,99.0,1.24,25.0,7.0,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Fatehabad,Light Alluvial Loam,Barley,61.2,31.5,20.0,0.92,14.8,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Fatehabad,Light Alluvial Loam,Jowar,76.8,40.0,19.2,0.92,13.8,7.6,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Fatehabad,Light Alluvial Loam,Tur,20.6,49.5,19.2,1.06,18.6,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Fatehabad,Light Alluvial Loam,Onion,101.0,51.0,51.0,1.2,28.2,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Fatehabad,Light Alluvial Loam,Tomato,118.8,60.6,62.4,1.26,18.6,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Fatehabad,Light Alluvial Loam,Groundnut,25.0,48.0,30.0,0.99,23.2,7.4,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Gurugram,Sandy Loam,Wheat,147.0,60.6,28.8,1.12,19.8,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Gurugram,Sandy Loam,Rice,145.6,48.5,41.2,1.48,19.1,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Gurugram,Sandy Loam,Cotton,160.0,60.6,59.4,1.31,21.6,8.2,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Gurugram,Sandy Loam,Bajra,103.0,40.8,0.0,1.05,14.3,7.6,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Gurugram,Sandy Loam,Mustard,78.4,29.4,20.2,1.09,24.3,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Gurugram,Sandy Loam,Sugarcane,145.5,51.5,52.5,1.46,25.0,7.5,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Gurugram,Sandy Loam,Gram,20.0,40.4,0.0,0.95,14.3,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Gurugram,Sandy Loam,Maize,122.4,63.0,38.8,1.15,17.3,7.2,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Gurugram,Sandy Loam,Potato,144.0,82.4,102.0,1.35,24.5,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Gurugram,Sandy Loam,Barley,61.2,31.5,20.0,0.96,15.0,7.9,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Gurugram,Sandy Loam,Jowar,78.4,39.2,19.6,1.06,15.9,7.8,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Gurugram,Sandy Loam,Tur,21.0,51.5,19.4,1.1,20.2,7.7,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Gurugram,Sandy Loam,Onion,102.0,52.5,51.5,1.18,30.3,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Gurugram,Sandy Loam,Tomato,124.8,61.2,63.0,1.2,18.4,7.1,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Gurugram,Sandy Loam,Groundnut,24.0,50.0,28.8,1.01,26.2,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Hisar,Sandy Loam / Calcareous,Wheat,154.5,58.2,30.3,1.18,20.2,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Hisar,Sandy Loam / Calcareous,Rice,144.2,48.5,41.2,1.3,17.8,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Hisar,Sandy Loam / Calcareous,Cotton,155.2,60.6,59.4,1.3,22.2,8.1,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Hisar,Sandy Loam / Calcareous,Bajra,96.0,40.0,0.0,1.06,15.9,8.0,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Hisar,Sandy Loam / Calcareous,Mustard,80.8,31.2,20.0,1.11,24.5,7.6,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Hisar,Sandy Loam / Calcareous,Sugarcane,142.5,51.5,49.5,1.44,25.0,7.5,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Hisar,Sandy Loam / Calcareous,Gram,20.4,38.4,0.0,0.91,15.8,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Hisar,Sandy Loam / Calcareous,Maize,116.4,61.8,39.6,1.26,18.4,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Hisar,Sandy Loam / Calcareous,Potato,154.5,79.2,96.0,1.21,25.8,6.7,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Hisar,Sandy Loam / Calcareous,Barley,59.4,28.8,19.0,0.97,15.6,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Hisar,Sandy Loam / Calcareous,Jowar,83.2,42.0,19.4,1.04,14.7,7.7,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Hisar,Sandy Loam / Calcareous,Tur,19.6,49.0,20.8,1.06,18.6,7.7,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Hisar,Sandy Loam / Calcareous,Onion,100.0,52.0,50.0,1.26,31.8,7.1,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Hisar,Sandy Loam / Calcareous,Tomato,123.6,58.2,58.8,1.27,20.2,7.0,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Hisar,Sandy Loam / Calcareous,Groundnut,25.2,52.0,29.1,0.96,25.0,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Jhajjar,Loam to Sandy Loam,Wheat,157.5,61.8,29.7,1.1,19.0,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Jhajjar,Loam to Sandy Loam,Rice,137.2,47.5,38.0,1.43,16.9,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Jhajjar,Loam to Sandy Loam,Cotton,161.6,57.6,57.0,1.31,23.1,8.1,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Jhajjar,Loam to Sandy Loam,Bajra,97.0,40.4,0.0,1.02,15.3,8.0,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Jhajjar,Loam to Sandy Loam,Mustard,80.0,29.7,19.6,1.07,25.0,8.0,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Jhajjar,Loam to Sandy Loam,Sugarcane,156.0,50.0,50.5,1.44,25.0,7.4,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Jhajjar,Loam to Sandy Loam,Gram,19.0,38.0,0.0,0.87,15.6,7.5,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Jhajjar,Loam to Sandy Loam,Maize,115.2,60.0,39.6,1.1,16.6,7.3,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Jhajjar,Loam to Sandy Loam,Potato,144.0,80.0,99.0,1.34,24.5,6.7,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Jhajjar,Loam to Sandy Loam,Barley,59.4,28.8,20.6,1.0,14.6,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Jhajjar,Loam to Sandy Loam,Jowar,78.4,39.2,20.8,1.04,14.3,7.7,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Jhajjar,Loam to Sandy Loam,Tur,19.6,50.5,20.8,1.02,19.8,7.6,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Jhajjar,Loam to Sandy Loam,Onion,105.0,48.5,51.5,1.19,27.9,7.2,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Jhajjar,Loam to Sandy Loam,Tomato,118.8,58.8,58.8,1.37,19.0,7.0,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Jhajjar,Loam to Sandy Loam,Groundnut,25.0,52.0,31.5,0.97,23.2,7.5,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Jind,Medium Loam,Wheat,147.0,58.8,29.4,1.19,18.6,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Jind,Medium Loam,Rice,144.2,52.5,38.8,1.41,18.2,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Jind,Medium Loam,Cotton,161.6,57.6,60.0,1.38,23.3,8.1,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Jind,Medium Loam,Bajra,98.0,41.6,0.0,1.01,15.2,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Jind,Medium Loam,Mustard,76.8,30.0,19.8,1.03,23.0,8.0,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Jind,Medium Loam,Sugarcane,153.0,49.5,52.0,1.59,22.8,7.6,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Jind,Medium Loam,Gram,20.4,40.8,0.0,0.9,15.2,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Jind,Medium Loam,Maize,116.4,57.0,38.8,1.12,17.8,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Jind,Medium Loam,Potato,142.5,80.0,99.0,1.3,25.2,6.7,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Jind,Medium Loam,Barley,57.0,30.9,21.0,1.03,15.9,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Jind,Medium Loam,Jowar,81.6,39.6,19.2,0.99,15.8,7.7,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Jind,Medium Loam,Tur,21.0,48.5,20.6,1.12,21.0,7.4,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Jind,Medium Loam,Onion,101.0,52.0,52.5,1.21,28.2,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Jind,Medium Loam,Tomato,121.2,62.4,58.2,1.38,20.6,7.2,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Jind,Medium Loam,Groundnut,24.8,48.0,30.0,1.0,24.3,7.6,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Kaithal,Clay Loam / Alluvial,Wheat,151.5,57.6,30.9,1.15,19.2,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Kaithal,Clay Loam / Alluvial,Rice,145.6,50.0,40.4,1.44,18.4,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Kaithal,Clay Loam / Alluvial,Cotton,152.0,58.2,57.0,1.24,20.2,8.0,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Kaithal,Clay Loam / Alluvial,Bajra,98.0,38.0,0.0,1.02,14.1,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Kaithal,Clay Loam / Alluvial,Mustard,78.4,31.2,19.4,1.06,23.2,7.7,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Kaithal,Clay Loam / Alluvial,Sugarcane,144.0,51.5,51.0,1.52,24.2,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Kaithal,Clay Loam / Alluvial,Gram,20.2,38.4,0.0,0.93,15.3,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Kaithal,Clay Loam / Alluvial,Maize,116.4,58.8,41.6,1.12,18.5,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Kaithal,Clay Loam / Alluvial,Potato,144.0,78.4,98.0,1.27,24.3,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Kaithal,Clay Loam / Alluvial,Barley,57.6,30.9,19.4,0.99,15.8,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Kaithal,Clay Loam / Alluvial,Jowar,78.4,38.0,20.0,0.98,14.6,7.5,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Kaithal,Clay Loam / Alluvial,Tur,21.0,48.5,19.6,1.17,20.6,7.6,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Kaithal,Clay Loam / Alluvial,Onion,99.0,49.0,50.5,1.13,30.0,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Kaithal,Clay Loam / Alluvial,Tomato,120.0,59.4,57.6,1.29,19.4,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Kaithal,Clay Loam / Alluvial,Groundnut,25.2,48.0,29.4,0.94,23.0,7.6,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Karnal,Fertile Alluvial Loam,Wheat,154.5,58.2,30.9,1.13,19.2,7.3,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Karnal,Fertile Alluvial Loam,Rice,138.6,52.0,42.0,1.29,17.1,7.3,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Karnal,Fertile Alluvial Loam,Cotton,158.4,60.6,62.4,1.2,20.9,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Karnal,Fertile Alluvial Loam,Bajra,101.0,39.6,0.0,0.94,13.8,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Karnal,Fertile Alluvial Loam,Mustard,83.2,29.1,20.6,1.17,26.5,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Karnal,Fertile Alluvial Loam,Sugarcane,148.5,48.0,47.5,1.43,25.0,7.6,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Karnal,Fertile Alluvial Loam,Gram,20.4,38.4,0.0,0.85,15.0,7.8,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Karnal,Fertile Alluvial Loam,Maize,114.0,61.8,42.0,1.2,18.2,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Karnal,Fertile Alluvial Loam,Potato,145.5,80.8,104.0,1.29,25.2,6.6,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Karnal,Fertile Alluvial Loam,Barley,60.6,30.6,20.4,1.01,14.7,7.9,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Karnal,Fertile Alluvial Loam,Jowar,79.2,40.4,20.8,1.01,15.2,7.7,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Karnal,Fertile Alluvial Loam,Tur,19.8,50.5,20.4,1.17,20.6,7.7,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Karnal,Fertile Alluvial Loam,Onion,104.0,48.5,51.5,1.16,30.0,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Karnal,Fertile Alluvial Loam,Tomato,116.4,60.6,57.6,1.3,19.4,7.2,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Karnal,Fertile Alluvial Loam,Groundnut,25.8,51.0,31.5,0.96,23.2,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Kurukshetra,Fertile Alluvial Loam,Wheat,147.0,57.0,30.0,1.1,20.6,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Kurukshetra,Fertile Alluvial Loam,Rice,134.4,49.0,39.2,1.36,18.0,7.2,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Kurukshetra,Fertile Alluvial Loam,Cotton,163.2,59.4,60.6,1.24,22.0,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Kurukshetra,Fertile Alluvial Loam,Bajra,105.0,40.0,0.0,1.0,14.6,7.6,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Kurukshetra,Fertile Alluvial Loam,Mustard,80.0,29.7,19.2,1.1,23.5,8.0,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Kurukshetra,Fertile Alluvial Loam,Sugarcane,153.0,52.5,52.5,1.44,25.0,7.4,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Kurukshetra,Fertile Alluvial Loam,Gram,20.4,38.4,0.0,0.86,14.0,7.5,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Kurukshetra,Fertile Alluvial Loam,Maize,115.2,58.8,40.4,1.12,18.5,7.2,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Kurukshetra,Fertile Alluvial Loam,Potato,145.5,76.0,103.0,1.31,24.5,6.9,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Kurukshetra,Fertile Alluvial Loam,Barley,61.2,28.8,19.0,0.99,14.6,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Kurukshetra,Fertile Alluvial Loam,Jowar,77.6,38.0,19.4,1.04,15.9,7.6,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Kurukshetra,Fertile Alluvial Loam,Tur,20.6,48.5,20.6,1.02,18.4,7.5,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Kurukshetra,Fertile Alluvial Loam,Onion,101.0,51.0,51.0,1.15,30.0,7.1,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Kurukshetra,Fertile Alluvial Loam,Tomato,118.8,60.6,62.4,1.38,21.2,7.1,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Kurukshetra,Fertile Alluvial Loam,Groundnut,26.2,50.0,30.3,0.92,23.8,7.3,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Mahendragarh,Coarse Sand / Loam,Wheat,144.0,61.8,29.7,1.15,20.8,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Mahendragarh,Coarse Sand / Loam,Rice,140.0,49.5,40.4,1.44,16.9,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Mahendragarh,Coarse Sand / Loam,Cotton,161.6,57.6,61.8,1.27,22.9,7.8,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Mahendragarh,Coarse Sand / Loam,Bajra,104.0,38.8,0.0,1.02,14.7,7.6,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Mahendragarh,Coarse Sand / Loam,Mustard,76.0,29.1,19.6,1.12,23.5,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Mahendragarh,Coarse Sand / Loam,Sugarcane,147.0,50.5,52.0,1.5,25.2,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Mahendragarh,Coarse Sand / Loam,Gram,20.4,38.4,0.0,0.87,14.0,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Mahendragarh,Coarse Sand / Loam,Maize,117.6,58.8,39.2,1.26,17.1,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Mahendragarh,Coarse Sand / Loam,Potato,148.5,80.8,99.0,1.3,23.5,6.6,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Mahendragarh,Coarse Sand / Loam,Barley,60.6,29.7,20.2,0.99,14.0,8.0,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Mahendragarh,Coarse Sand / Loam,Jowar,81.6,38.4,20.6,0.93,13.8,7.5,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Mahendragarh,Coarse Sand / Loam,Tur,20.2,52.0,21.0,1.11,20.2,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Mahendragarh,Coarse Sand / Loam,Onion,100.0,50.5,48.0,1.16,30.0,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Mahendragarh,Coarse Sand / Loam,Tomato,120.0,62.4,61.2,1.21,19.8,7.2,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Mahendragarh,Coarse Sand / Loam,Groundnut,23.8,48.5,30.9,1.03,23.5,7.3,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Nuh,Sandy Loam,Wheat,142.5,61.8,29.7,1.12,18.4,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Nuh,Sandy Loam,Rice,138.6,48.0,40.0,1.39,18.2,7.2,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Nuh,Sandy Loam,Cotton,153.6,58.8,62.4,1.21,22.7,8.1,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Nuh,Sandy Loam,Bajra,100.0,39.6,0.0,1.04,14.7,7.7,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Nuh,Sandy Loam,Mustard,76.8,30.9,19.4,1.03,23.0,7.9,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Nuh,Sandy Loam,Sugarcane,156.0,48.5,50.5,1.47,24.2,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Nuh,Sandy Loam,Gram,20.2,39.6,0.0,0.95,15.3,7.5,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Nuh,Sandy Loam,Maize,120.0,62.4,38.8,1.18,18.2,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Nuh,Sandy Loam,Potato,157.5,80.0,96.0,1.35,25.5,6.7,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Nuh,Sandy Loam,Barley,61.8,29.1,19.0,0.98,14.6,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Nuh,Sandy Loam,Jowar,76.8,39.2,19.6,0.92,15.5,7.4,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Nuh,Sandy Loam,Tur,19.8,52.0,20.0,1.01,19.8,7.4,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Nuh,Sandy Loam,Onion,97.0,49.0,52.0,1.26,29.7,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Nuh,Sandy Loam,Tomato,120.0,60.6,62.4,1.38,21.2,7.2,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Nuh,Sandy Loam,Groundnut,25.2,52.0,31.5,0.94,24.0,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Palwal,Alluvial Loam,Wheat,151.5,57.6,28.5,1.26,21.2,7.3,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Palwal,Alluvial Loam,Rice,141.4,48.0,38.0,1.48,17.1,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Palwal,Alluvial Loam,Cotton,163.2,63.0,58.2,1.3,21.3,8.2,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Palwal,Alluvial Loam,Bajra,102.0,38.4,0.0,1.01,14.1,7.6,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Palwal,Alluvial Loam,Mustard,76.8,29.4,20.8,1.06,23.2,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Palwal,Alluvial Loam,Sugarcane,154.5,49.5,48.0,1.56,22.8,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Palwal,Alluvial Loam,Gram,19.8,39.2,0.0,0.85,14.4,7.8,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Palwal,Alluvial Loam,Maize,121.2,59.4,39.2,1.18,17.5,7.3,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Palwal,Alluvial Loam,Potato,147.0,80.8,104.0,1.25,26.0,6.8,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Palwal,Alluvial Loam,Barley,57.0,30.0,20.2,1.0,15.8,7.8,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Palwal,Alluvial Loam,Jowar,79.2,41.6,19.4,0.97,14.6,7.4,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Palwal,Alluvial Loam,Tur,20.0,49.5,19.2,1.06,20.0,7.5,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Palwal,Alluvial Loam,Onion,95.0,47.5,50.0,1.1,28.5,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Palwal,Alluvial Loam,Tomato,124.8,61.2,59.4,1.25,20.8,6.8,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Palwal,Alluvial Loam,Groundnut,24.2,47.5,28.5,0.94,23.0,7.6,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Panchkula,Gravelly Loam / Alluvial,Wheat,148.5,57.6,29.4,1.12,20.6,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Panchkula,Gravelly Loam / Alluvial,Rice,135.8,50.5,41.6,1.37,17.5,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Panchkula,Gravelly Loam / Alluvial,Cotton,166.4,61.2,63.0,1.21,22.7,7.9,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Panchkula,Gravelly Loam / Alluvial,Bajra,97.0,40.4,0.0,1.06,15.5,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Panchkula,Gravelly Loam / Alluvial,Mustard,76.0,28.5,19.4,1.02,24.8,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Panchkula,Gravelly Loam / Alluvial,Sugarcane,148.5,49.0,47.5,1.59,23.8,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Panchkula,Gravelly Loam / Alluvial,Gram,20.2,41.6,0.0,0.85,13.8,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Panchkula,Gravelly Loam / Alluvial,Maize,126.0,58.2,39.2,1.16,18.7,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Panchkula,Gravelly Loam / Alluvial,Potato,142.5,82.4,105.0,1.37,24.8,7.0,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Panchkula,Gravelly Loam / Alluvial,Barley,59.4,30.3,20.4,0.92,13.8,8.0,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Panchkula,Gravelly Loam / Alluvial,Jowar,80.8,40.8,21.0,0.95,15.6,7.8,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Panchkula,Gravelly Loam / Alluvial,Tur,20.6,48.5,19.6,1.14,20.4,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Panchkula,Gravelly Loam / Alluvial,Onion,97.0,47.5,50.0,1.22,29.4,7.2,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Panchkula,Gravelly Loam / Alluvial,Tomato,124.8,60.0,59.4,1.29,21.0,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Panchkula,Gravelly Loam / Alluvial,Groundnut,25.8,51.0,31.5,0.92,24.8,7.5,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Panipat,Alluvial Loam,Wheat,150.0,60.6,30.6,1.24,21.2,7.4,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Panipat,Alluvial Loam,Rice,142.8,48.0,38.0,1.41,18.9,7.6,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Panipat,Alluvial Loam,Cotton,153.6,61.8,58.2,1.2,21.8,8.0,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Panipat,Alluvial Loam,Bajra,104.0,42.0,0.0,1.01,15.8,8.0,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Panipat,Alluvial Loam,Mustard,76.0,29.1,20.2,1.05,26.0,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Panipat,Alluvial Loam,Sugarcane,148.5,52.0,48.5,1.5,22.6,7.7,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Panipat,Alluvial Loam,Gram,19.4,39.2,0.0,0.92,14.7,7.6,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Panipat,Alluvial Loam,Maize,123.6,63.0,42.0,1.26,17.1,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Panipat,Alluvial Loam,Potato,157.5,77.6,95.0,1.21,24.8,6.6,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Panipat,Alluvial Loam,Barley,61.8,29.1,20.2,0.98,15.2,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Panipat,Alluvial Loam,Jowar,82.4,39.6,20.2,0.92,14.3,7.7,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Panipat,Alluvial Loam,Tur,19.4,51.5,19.8,1.07,18.6,7.5,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Panipat,Alluvial Loam,Onion,95.0,48.5,50.5,1.16,29.1,7.3,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Panipat,Alluvial Loam,Tomato,123.6,63.0,63.0,1.38,21.2,7.0,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Panipat,Alluvial Loam,Groundnut,26.2,51.5,31.5,0.97,26.0,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Rewari,Sandy Loam,Wheat,148.5,57.6,28.5,1.1,18.4,7.7,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Rewari,Sandy Loam,Rice,141.4,52.0,40.8,1.46,19.1,7.5,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Rewari,Sandy Loam,Cotton,160.0,60.6,57.6,1.24,22.0,8.0,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Rewari,Sandy Loam,Bajra,105.0,41.2,0.0,0.96,14.4,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Rewari,Sandy Loam,Mustard,76.0,30.9,19.4,1.12,23.5,7.7,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Rewari,Sandy Loam,Sugarcane,157.5,52.5,50.0,1.4,24.7,7.3,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Rewari,Sandy Loam,Gram,20.2,40.8,0.0,0.83,13.8,7.9,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Rewari,Sandy Loam,Maize,124.8,58.2,38.0,1.22,18.9,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Rewari,Sandy Loam,Potato,157.5,82.4,99.0,1.27,26.0,6.8,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Rewari,Sandy Loam,Barley,62.4,29.1,19.6,1.01,14.7,8.0,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Rewari,Sandy Loam,Jowar,78.4,38.0,20.6,1.06,14.3,7.8,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Rewari,Sandy Loam,Tur,19.2,50.0,20.2,1.06,20.8,7.7,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Rewari,Sandy Loam,Onion,105.0,52.5,50.0,1.12,28.8,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Rewari,Sandy Loam,Tomato,120.0,59.4,57.6,1.27,20.2,7.1,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Rewari,Sandy Loam,Groundnut,25.2,48.0,29.4,1.0,23.5,7.4,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Rohtak,Medium Loam,Wheat,153.0,59.4,31.2,1.14,20.8,7.3,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Rohtak,Medium Loam,Rice,137.2,47.5,41.2,1.48,18.5,7.6,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Rohtak,Medium Loam,Cotton,153.6,57.0,58.2,1.26,22.0,7.8,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Rohtak,Medium Loam,Bajra,101.0,40.8,0.0,1.06,15.5,7.8,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Rohtak,Medium Loam,Mustard,76.8,28.5,19.4,1.17,26.5,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Rohtak,Medium Loam,Sugarcane,150.0,49.5,52.0,1.48,23.3,7.3,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Rohtak,Medium Loam,Gram,20.2,38.4,0.0,0.84,14.4,7.5,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Rohtak,Medium Loam,Maize,114.0,60.0,40.4,1.22,17.6,7.1,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Rohtak,Medium Loam,Potato,142.5,82.4,97.0,1.3,25.2,6.6,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Rohtak,Medium Loam,Barley,63.0,30.9,21.0,1.06,15.5,7.9,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Rohtak,Medium Loam,Jowar,84.0,38.8,20.2,0.92,13.8,7.6,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Rohtak,Medium Loam,Tur,19.2,51.5,19.4,1.13,21.2,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Rohtak,Medium Loam,Onion,102.0,51.0,52.5,1.13,30.0,7.2,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Rohtak,Medium Loam,Tomato,117.6,57.0,57.0,1.35,19.0,7.2,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Rohtak,Medium Loam,Groundnut,24.5,47.5,30.9,1.05,26.5,7.4,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Sirsa,Light Alluvial / Calcareous,Wheat,156.0,61.2,29.7,1.1,20.6,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Sirsa,Light Alluvial / Calcareous,Rice,142.8,52.5,41.2,1.41,17.6,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Sirsa,Light Alluvial / Calcareous,Cotton,161.6,61.2,59.4,1.2,22.7,7.8,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Sirsa,Light Alluvial / Calcareous,Bajra,104.0,40.8,0.0,0.94,14.4,8.0,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Sirsa,Light Alluvial / Calcareous,Mustard,81.6,28.8,19.0,1.13,26.5,7.6,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Sirsa,Light Alluvial / Calcareous,Sugarcane,150.0,48.0,51.5,1.56,25.4,7.5,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Sirsa,Light Alluvial / Calcareous,Gram,20.6,38.8,0.0,0.83,13.8,7.5,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Sirsa,Light Alluvial / Calcareous,Maize,120.0,62.4,42.0,1.21,16.9,7.4,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Sirsa,Light Alluvial / Calcareous,Potato,145.5,76.0,100.0,1.3,26.2,6.7,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Sirsa,Light Alluvial / Calcareous,Barley,61.2,30.6,19.2,1.0,15.8,8.2,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Sirsa,Light Alluvial / Calcareous,Jowar,77.6,41.2,20.4,1.0,15.8,7.6,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Sirsa,Light Alluvial / Calcareous,Tur,21.0,50.0,20.8,1.01,19.0,7.4,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Sirsa,Light Alluvial / Calcareous,Onion,97.0,47.5,51.5,1.14,31.2,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Sirsa,Light Alluvial / Calcareous,Tomato,124.8,61.2,59.4,1.27,19.4,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Sirsa,Light Alluvial / Calcareous,Groundnut,26.0,52.5,30.9,0.96,23.2,7.7,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Sonipat,Alluvial Loam,Wheat,147.0,57.0,28.5,1.22,18.8,7.6,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Sonipat,Alluvial Loam,Rice,145.6,48.5,39.2,1.46,18.4,7.3,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Sonipat,Alluvial Loam,Cotton,161.6,62.4,61.2,1.2,20.9,8.0,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Sonipat,Alluvial Loam,Bajra,104.0,42.0,0.0,0.94,15.5,7.9,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Sonipat,Alluvial Loam,Mustard,84.0,29.1,20.6,1.09,23.2,7.8,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Sonipat,Alluvial Loam,Sugarcane,156.0,50.0,49.5,1.41,22.1,7.4,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Sonipat,Alluvial Loam,Gram,20.6,38.8,0.0,0.86,15.6,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Sonipat,Alluvial Loam,Maize,117.6,58.8,40.4,1.19,18.9,7.2,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Sonipat,Alluvial Loam,Potato,144.0,76.0,95.0,1.21,25.8,7.0,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Sonipat,Alluvial Loam,Barley,60.6,29.7,19.6,1.06,15.9,8.0,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Sonipat,Alluvial Loam,Jowar,76.8,38.0,20.0,0.98,14.6,7.8,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Sonipat,Alluvial Loam,Tur,19.8,50.5,20.8,1.16,19.0,7.3,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Sonipat,Alluvial Loam,Onion,95.0,47.5,51.5,1.13,30.0,7.0,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Sonipat,Alluvial Loam,Tomato,116.4,58.8,58.8,1.2,20.6,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Sonipat,Alluvial Loam,Groundnut,24.2,51.5,29.7,1.03,23.5,7.3,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium
+Yamunanagar,Alluvial Loam,Wheat,147.0,58.8,30.3,1.26,19.8,7.3,Normal irrigated Rabi cycle with cool vegetative and warm ripening phase,Urea + DAP + MOP + Zinc Sulphate
+Yamunanagar,Alluvial Loam,Rice,145.6,52.5,40.0,1.39,18.9,7.4,Monsoon irrigated wetland conditions with standing water,Urea + DAP + Zinc Sulphate (21% Zn)
+Yamunanagar,Alluvial Loam,Cotton,152.0,58.2,57.0,1.29,22.2,8.2,Warm semi-arid conditions with moderate humidity and canal irrigation,Urea (split) + DAP + MOP + 2% KNO3 foliar
+Yamunanagar,Alluvial Loam,Bajra,101.0,39.6,0.0,0.96,15.6,7.9,Rainfed / semi-arid warm summer conditions with good drainage,Urea + Single Super Phosphate (SSP)
+Yamunanagar,Alluvial Loam,Mustard,80.0,29.7,20.2,1.16,23.8,8.0,"Cool, dry winter conditions with bright sunshine",Urea + SSP (for P and Sulphur) + MOP
+Yamunanagar,Alluvial Loam,Sugarcane,142.5,47.5,47.5,1.54,25.4,7.6,Long duration warm tropical/subtropical with assured irrigation,Urea + DAP + MOP + FYM (25 t/ha)
+Yamunanagar,Alluvial Loam,Gram,19.6,39.2,0.0,0.94,15.3,7.7,Dry cool climate with light winter showers,DAP + Rhizobium & PSB culture
+Yamunanagar,Alluvial Loam,Maize,115.2,60.0,40.4,1.18,17.5,7.0,Warm humid conditions with well-drained loamy soil,Urea + DAP + MOP
+Yamunanagar,Alluvial Loam,Potato,156.0,81.6,99.0,1.25,24.0,6.6,Cool autumn/winter conditions with moist well-drained soil,Urea + DAP + Potassium Sulphate (SOP) + FYM
+Yamunanagar,Alluvial Loam,Barley,60.0,29.7,19.6,1.05,14.3,8.1,"Cool dry climate, highly tolerant to saline-alkaline soil",Urea + DAP + MOP
+Yamunanagar,Alluvial Loam,Jowar,76.8,39.2,20.2,0.98,15.2,7.6,Warm weather fodder/grain with drought tolerance,Urea + SSP
+Yamunanagar,Alluvial Loam,Tur,20.4,52.5,20.0,1.05,20.8,7.6,Warm rainy season with well-drained soil,DAP + Gypsum + Rhizobium
+Yamunanagar,Alluvial Loam,Onion,100.0,49.5,50.5,1.19,30.3,7.1,Mild cool season followed by warm bulb-forming stage,Urea + SSP + MOP + Sulphur WDG
+Yamunanagar,Alluvial Loam,Tomato,122.4,61.2,63.0,1.33,18.8,6.9,Moderate temperature with uniform drip irrigation,Urea + DAP + MOP + Micronutrient spray
+Yamunanagar,Alluvial Loam,Groundnut,26.2,51.5,31.5,1.04,25.5,7.3,Warm semi-arid season with light sandy loam soil,SSP + Gypsum (250 kg/ha) + MOP + Rhizobium

@@ -151,7 +151,15 @@ class DiseaseService:
                 "morbi", "narmada", "navsari", "panch mahals", "panchmahal", "patan", "porbandar",
                 "rajkot", "sabar kantha", "sabarkantha", "surat", "surendranagar", "tapi", "vadodara", "valsad"
             ]
-            if any(gd in clean_d or clean_d in gd for gd in gj_districts):
+            hr_districts = [
+                "ambala", "bhiwani", "charkhi dadri", "charki dadri", "faridabad", "fatehabad",
+                "gurugram", "gurgaon", "hisar", "hissar", "jhajjar", "jind", "kaithal", "karnal",
+                "kurukshetra", "mahendragarh", "narnaul", "mohindergarh", "nuh", "mewat", "palwal",
+                "panchkula", "panipat", "rewari", "rohtak", "sirsa", "sonipat", "sonepat", "yamunanagar"
+            ]
+            if any(hd in clean_d or clean_d in hd for hd in hr_districts):
+                inferred_state = "Haryana"
+            elif any(gd in clean_d or clean_d in gd for gd in gj_districts):
                 inferred_state = "Gujarat"
             elif any(ad in clean_d or clean_d in ad for ad in ap_districts):
                 inferred_state = "Andhra Pradesh"

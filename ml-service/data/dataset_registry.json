@@ -449,6 +449,106 @@
         "zone": "Zone"
       },
       "description": "Official historical yield and cultivation statistics (1997-98 to 2019-20) providing frequency priors and agro-climatic context for all 33 Gujarat districts."
+    },
+    {
+      "id": "haryana_soil_health",
+      "priority": 9,
+      "level": "regional_reference",
+      "name": "Haryana State Soil Health & Nutrient Reference Dataset",
+      "source": "Ministry of Agriculture & Farmers Welfare / Dataful (Dataset 24068) / CCS HAU Hisar",
+      "file": "regional_datasets/haryana_soil_health.csv",
+      "state": "Haryana",
+      "region": "Haryana State-Wide (22 Districts)",
+      "covered_districts": [
+        "Ambala",
+        "Bhiwani",
+        "Charkhi Dadri",
+        "Faridabad",
+        "Fatehabad",
+        "Gurugram",
+        "Hisar",
+        "Jhajjar",
+        "Jind",
+        "Kaithal",
+        "Karnal",
+        "Kurukshetra",
+        "Mahendragarh",
+        "Nuh",
+        "Palwal",
+        "Panchkula",
+        "Panipat",
+        "Rewari",
+        "Rohtak",
+        "Sirsa",
+        "Sonipat",
+        "Yamunanagar"
+      ],
+      "supported_services": [
+        "crop",
+        "fertilizer"
+      ],
+      "column_mapping": {
+        "district": "District",
+        "soil_type": "Soil_Type",
+        "crop": "Crop_Name",
+        "nitrogen": "N_kg_ha",
+        "phosphorus": "P2O5_kg_ha",
+        "potassium": "K2O_kg_ha",
+        "zinc": "Zn_kg_ha",
+        "sulphur": "S_kg_ha",
+        "ph": "Recommended_pH",
+        "weather": "Weather",
+        "fertilizer": "Fertilizer"
+      },
+      "description": "District-level Soil Health Card empirical nutrient baseline (N, P, K, pH, Zinc, Sulphur) and CCS Haryana Agricultural University (CCS HAU Hisar) commercial fertilizer targets across all 22 Haryana districts."
+    },
+    {
+      "id": "haryana_crop_statistics",
+      "priority": 10,
+      "level": "regional_reference",
+      "name": "Haryana District-Wise Crop Statistics Dataset",
+      "source": "Directorate of Economics & Statistics / data.gov.in (MoAFW)",
+      "file": "regional_datasets/haryana_crop_statistics.csv",
+      "state": "Haryana",
+      "region": "Haryana State-Wide (22 Districts)",
+      "covered_districts": [
+        "Ambala",
+        "Bhiwani",
+        "Charkhi Dadri",
+        "Faridabad",
+        "Fatehabad",
+        "Gurugram",
+        "Hisar",
+        "Jhajjar",
+        "Jind",
+        "Kaithal",
+        "Karnal",
+        "Kurukshetra",
+        "Mahendragarh",
+        "Nuh",
+        "Palwal",
+        "Panchkula",
+        "Panipat",
+        "Rewari",
+        "Rohtak",
+        "Sirsa",
+        "Sonipat",
+        "Yamunanagar"
+      ],
+      "supported_services": [
+        "crop"
+      ],
+      "column_mapping": {
+        "district": "District",
+        "crop": "Crop",
+        "season": "Season",
+        "area": "Area_ha",
+        "production": "Production_tonnes",
+        "crop_yield": "Yield_kg_ha",
+        "prevalence": "Prevalence_Score",
+        "zone": "Zone"
+      },
+      "description": "Official historical yield and cultivation statistics (1997-98 to 2019-20) providing frequency priors and agro-climatic context for all 22 Haryana districts."
     }
   ]
 }

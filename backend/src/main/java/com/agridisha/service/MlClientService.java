@@ -134,6 +134,10 @@ public class MlClientService {
             if (d.contains(tg) || tg.contains(d)) return "regional_reference";
         }
 
+        if (isHaryanaDistrict(d)) {
+            return "regional_reference";
+        }
+
         if (isGujaratDistrict(d)) {
             return "regional_reference";
         }
@@ -231,11 +235,14 @@ public class MlClientService {
         String datasetUsed = "AgriDisha Standard Crop Model (All-India Baseline)";
         String regionalNotes = "Prediction generated using standard agronomic model. Regional dataset not currently indexed for " + (!district.isEmpty() ? district : "this district") + ".";
 
+        boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
         boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isGujarat) {
+            if (isHaryana) {
+                state = "Haryana";
+            } else if (isGujarat) {
                 state = "Gujarat";
             } else if (isAndhra) {
                 state = "Andhra Pradesh";
@@ -248,7 +255,10 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Agricultural Dataset (Kaggle - Sanchita Gholap)";
             regionalNotes = "Empirically verified against historical Western Maharashtra field trial records for " + district + ".";
         } else if ("regional_reference".equals(level)) {
-            if (isGujarat) {
+            if (isHaryana) {
+                datasetUsed = "Haryana State Soil Health & Nutrient Reference Dataset (Dataful / CCS HAU Hisar)";
+                regionalNotes = "Referenced against Haryana State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
+            } else if (isGujarat) {
                 datasetUsed = "Gujarat State Soil Health & Nutrient Reference Dataset (Dataful / AAU, JAU, NAU, SDAU)";
                 regionalNotes = "Referenced against Gujarat State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
             } else if (isAndhra) {
@@ -643,6 +653,22 @@ public class MlClientService {
         };
         for (String tg : telanganaDistricts) {
             if (d.contains(tg) || tg.contains(d)) return true;
+        }
+        return false;
+    }
+
+    private boolean isHaryanaDistrict(String district) {
+        if (district == null || district.trim().isEmpty()) return false;
+        String d = district.toLowerCase().trim();
+        String[] haryanaDistricts = {
+            "ambala", "bhiwani", "charkhi dadri", "charki dadri", "charkidadri", "faridabad",
+            "fatehabad", "gurugram", "gurgaon", "hisar", "hissar", "jhajjar", "jind",
+            "kaithal", "karnal", "kurukshetra", "mahendragarh", "narnaul", "mohindergarh",
+            "nuh", "mewat", "palwal", "panchkula", "panipat", "rewari", "rohtak",
+            "sirsa", "sonipat", "sonepat", "yamunanagar"
+        };
+        for (String hr : haryanaDistricts) {
+            if (d.contains(hr) || hr.contains(d)) return true;
         }
         return false;
     }
