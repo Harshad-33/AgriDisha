@@ -143,7 +143,17 @@ class DiseaseService:
                 "prakasam", "nellore", "spsr", "sathya sai", "srikakulam", "tirupati",
                 "visakhapatnam", "vizianagaram", "west godavari", "kadapa", "ysr"
             ]
-            if any(ad in clean_d or clean_d in ad for ad in ap_districts):
+            gj_districts = [
+                "ahmadabad", "ahmedabad", "amreli", "anand", "aravalli", "banas kantha", "banaskantha",
+                "bharuch", "bhavnagar", "botad", "chhota udepur", "chhotaudepur", "dang", "dangs",
+                "devbhumi dwarka", "dwarka", "dohad", "dahod", "gandhinagar", "gir somnath", "somnath",
+                "jamnagar", "junagadh", "kachchh", "kutch", "kheda", "mahesana", "mehsana", "mahisagar",
+                "morbi", "narmada", "navsari", "panch mahals", "panchmahal", "patan", "porbandar",
+                "rajkot", "sabar kantha", "sabarkantha", "surat", "surendranagar", "tapi", "vadodara", "valsad"
+            ]
+            if any(gd in clean_d or clean_d in gd for gd in gj_districts):
+                inferred_state = "Gujarat"
+            elif any(ad in clean_d or clean_d in ad for ad in ap_districts):
                 inferred_state = "Andhra Pradesh"
             elif any(td in clean_d or clean_d in td for td in tg_districts):
                 inferred_state = "Telangana"

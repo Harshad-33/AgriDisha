@@ -134,6 +134,10 @@ public class MlClientService {
             if (d.contains(tg) || tg.contains(d)) return "regional_reference";
         }
 
+        if (isGujaratDistrict(d)) {
+            return "regional_reference";
+        }
+
         if (isAndhraPradeshDistrict(d)) {
             return "regional_reference";
         }
@@ -227,10 +231,13 @@ public class MlClientService {
         String datasetUsed = "AgriDisha Standard Crop Model (All-India Baseline)";
         String regionalNotes = "Prediction generated using standard agronomic model. Regional dataset not currently indexed for " + (!district.isEmpty() ? district : "this district") + ".";
 
+        boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isAndhra) {
+            if (isGujarat) {
+                state = "Gujarat";
+            } else if (isAndhra) {
                 state = "Andhra Pradesh";
             } else if (isTelangana) {
                 state = "Telangana";
@@ -241,7 +248,10 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Agricultural Dataset (Kaggle - Sanchita Gholap)";
             regionalNotes = "Empirically verified against historical Western Maharashtra field trial records for " + district + ".";
         } else if ("regional_reference".equals(level)) {
-            if (isAndhra) {
+            if (isGujarat) {
+                datasetUsed = "Gujarat State Soil Health & Nutrient Reference Dataset (Dataful / AAU, JAU, NAU, SDAU)";
+                regionalNotes = "Referenced against Gujarat State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
+            } else if (isAndhra) {
                 datasetUsed = "Andhra Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / ANGRAU)";
                 regionalNotes = "Referenced against Andhra Pradesh State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES cultivation statistics).";
             } else if (isTelangana) {
@@ -368,10 +378,13 @@ public class MlClientService {
         String datasetUsed = "Standard ICAR / MPKV Fertilizer Guidelines";
         String referenceLink = null;
 
+        boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isAndhra) {
+            if (isGujarat) {
+                state = "Gujarat";
+            } else if (isAndhra) {
                 state = "Andhra Pradesh";
             } else if (isTelangana) {
                 state = "Telangana";
@@ -382,7 +395,11 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Crop & Fertilizer Records (Kaggle - Sanchita Gholap)";
             referenceLink = "https://youtu.be/crop-fertilizer-care";
         } else if ("regional_reference".equals(level)) {
-            if (isAndhra) {
+            if (isGujarat) {
+                datasetUsed = "Gujarat State Soil Health & Nutrient Reference Dataset (Dataful / AAU, JAU, NAU, SDAU)";
+                chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - Gujarat Soil Health Reference for " + district);
+                evaluations.add("Gujarat Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under SAU guidelines.");
+            } else if (isAndhra) {
                 datasetUsed = "Andhra Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / ANGRAU)";
                 chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - ANGRAU/Dr. YSRHU Soil Health Reference for " + district);
                 evaluations.add("Andhra Pradesh Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under ANGRAU guidelines.");
@@ -626,6 +643,24 @@ public class MlClientService {
         };
         for (String tg : telanganaDistricts) {
             if (d.contains(tg) || tg.contains(d)) return true;
+        }
+        return false;
+    }
+
+    private boolean isGujaratDistrict(String district) {
+        if (district == null || district.trim().isEmpty()) return false;
+        String d = district.toLowerCase().trim();
+        String[] gujaratDistricts = {
+            "ahmadabad", "ahmedabad", "amreli", "anand", "aravalli", "banas kantha", "banaskantha",
+            "bharuch", "bhavnagar", "botad", "chhota udepur", "chhotaudepur", "dang", "dangs",
+            "the dangs", "devbhumi dwarka", "dwarka", "devbhoomi", "dohad", "dahod", "gandhinagar",
+            "gir somnath", "somnath", "jamnagar", "junagadh", "kachchh", "kutch", "kheda",
+            "mahesana", "mehsana", "mahisagar", "morbi", "narmada", "navsari", "panch mahals",
+            "panchmahal", "panchmahals", "patan", "porbandar", "rajkot", "sabar kantha",
+            "sabarkantha", "surat", "surendranagar", "tapi", "vadodara", "valsad"
+        };
+        for (String gj : gujaratDistricts) {
+            if (d.contains(gj) || gj.contains(d)) return true;
         }
         return false;
     }

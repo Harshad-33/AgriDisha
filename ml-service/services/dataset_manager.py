@@ -59,6 +59,23 @@ DISTRICT_ALIASES = {
     "alluri": "alluri sitharama raju",
     "alluri sitarama raju": "alluri sitharama raju",
     "asr district": "alluri sitharama raju",
+
+    # Gujarat administrative aliases
+    "ahmedabad": "ahmadabad",
+    "kutch": "kachchh",
+    "mehsana": "mahesana",
+    "the dangs": "dang",
+    "dangs": "dang",
+    "chhotaudepur": "chhota udepur",
+    "chhota udaipur": "chhota udepur",
+    "panchmahal": "panch mahals",
+    "panchmahals": "panch mahals",
+    "dahod": "dohad",
+    "banaskantha": "banas kantha",
+    "sabarkantha": "sabar kantha",
+    "dwarka": "devbhumi dwarka",
+    "devbhoomi dwarka": "devbhumi dwarka",
+    "somnath": "gir somnath",
 }
 
 
@@ -534,6 +551,11 @@ class DatasetManager:
                     f"Andhra Pradesh Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & ANGRAU/Dr. YSRHU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
+            elif ds_state == "Gujarat":
+                regional_notes = (
+                    f"Gujarat Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & AAU/JAU/NAU/SDAU benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
             else:
                 regional_notes = (
                     f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
@@ -746,6 +768,91 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (Scarce Rainfall Zone of Rayalaseema - ANGRAU RARS Nandyal jurisdiction): "
                         f"Under drought-prone and rainfed conditions, monitor {crop} for moisture stress, dry root rot, and foliar disease complexes. "
                         f"Consult Nandyal RARS and district KVK scientists.{chili_protocol}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # GUJARAT STATE AGRO-CLIMATIC ZONES (AAU / JAU / NAU / SDAU)
+        # -------------------------------------------------------------
+        gj_middle = [
+            "anand", "kheda", "vadodara", "panch mahals", "panchmahal", "panchmahals",
+            "dohad", "dahod", "mahisagar", "chhota udepur", "chhotaudepur"
+        ]
+        gj_saurashtra = [
+            "junagadh", "rajkot", "jamnagar", "porbandar", "amreli", "bhavnagar",
+            "surendranagar", "gir somnath", "somnath", "botad", "devbhumi dwarka", "dwarka",
+            "morbi", "ahmadabad", "ahmedabad"
+        ]
+        gj_north = [
+            "banas kantha", "banaskantha", "sabar kantha", "sabarkantha", "patan",
+            "mahesana", "mehsana", "gandhinagar", "aravalli", "kachchh", "kutch"
+        ]
+        gj_south = [
+            "navsari", "surat", "bharuch", "valsad", "dang", "the dangs", "dangs", "narmada", "tapi"
+        ]
+
+        is_gj_middle = any(d in clean_dist for d in gj_middle)
+        is_gj_saurashtra = any(d in clean_dist for d in gj_saurashtra)
+        is_gj_north = any(d in clean_dist for d in gj_north)
+        is_gj_south = any(d in clean_dist for d in gj_south)
+        is_gujarat = (clean_state in ("gujarat", "gj")) or is_gj_middle or is_gj_saurashtra or is_gj_north or is_gj_south
+
+        if is_gujarat:
+            solanaceous_or_citrus = any(sc in c_lower for sc in ["tomato", "potato", "pepper", "chili", "orange", "citrus", "corn", "maize"])
+            pv_note = ""
+            if solanaceous_or_citrus:
+                pv_note = (
+                    " [PlantVillage & SAU IPM Benchmark: For Early/Late Blight in Solanaceous crops, apply Mancozeb 75 WP @ 2.5g/L or Metalaxyl-Mancozeb @ 2g/L. "
+                    "For Bacterial Spot, apply Copper Oxychloride @ 30g + Streptocycline @ 1g/10L. "
+                    "For Citrus Greening/HLB, manage psyllid vectors with Imidacloprid 17.8 SL @ 0.5ml/L]."
+                )
+
+            if is_gj_middle:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Middle Gujarat Agro-Climatic Advisory (AAU Anand / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Middle Gujarat Agrozone - AAU Anand jurisdiction): "
+                        f"Under alluvial loam (Goradu) and black vertisol soils with Charotar irrigation, monitor {crop} for fungal blights, viral complexes, and root rots during monsoon humidity. "
+                        f"Implement Anand Agricultural University integrated crop protection advisories.{pv_note}"
+                    )
+                }
+            elif is_gj_saurashtra:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Saurashtra & Coastal Agro-Climatic Advisory (JAU Junagadh / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Saurashtra & Coastal Agrozone - JAU Junagadh jurisdiction): "
+                        f"Under medium black calcareous vertisols and coastal semi-arid climate, scout {crop} for collar rot, tikka leaf spot, and sucking pest complexes. "
+                        f"Follow Junagadh Agricultural University integrated pest management bulletins.{pv_note}"
+                    )
+                }
+            elif is_gj_north:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "North Gujarat & Arid Advisory (SDAU Sardarkrushinagar / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (North Gujarat & Semi-Arid Agrozone - SDAU jurisdiction): "
+                        f"Under sandy loam to light alluvial soils, inspect {crop} for moisture-stress disease complexes, powdery mildew, and blight. "
+                        f"Consult Sardarkrushinagar Dantiwada Agricultural University extension scientists.{pv_note}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "South Gujarat Heavy Rainfall Advisory (NAU Navsari / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (South Gujarat Heavy Rainfall Zone - NAU Navsari jurisdiction): "
+                        f"Under deep heavy black clay soils and high precipitation, prioritize drainage and preventative fungicide applications on {crop} against anthracnose and rot complexes. "
+                        f"Consult Navsari Agricultural University research stations.{pv_note}"
                     )
                 }
 

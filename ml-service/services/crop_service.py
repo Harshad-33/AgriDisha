@@ -197,6 +197,63 @@ ANDHRA_PRADESH_DISTRICT_ZONE_MAP = {
     'sathya sai': 'Scarce Rainfall Zone of Rayalaseema'
 }
 
+# District alias mapping for Gujarat Agro-Climatic Zones (AAU / JAU / NAU / SDAU)
+GUJARAT_DISTRICT_ZONE_MAP = {
+    # Middle Gujarat Zone (Anand Agricultural University - AAU, Anand)
+    'anand': 'Middle Gujarat Zone (AAU Anand)',
+    'kheda': 'Middle Gujarat Zone (AAU Anand)',
+    'vadodara': 'Middle Gujarat Zone (AAU Anand)',
+    'panch mahals': 'Middle Gujarat Zone (AAU Anand)',
+    'panchmahal': 'Middle Gujarat Zone (AAU Anand)',
+    'panchmahals': 'Middle Gujarat Zone (AAU Anand)',
+    'dohad': 'Middle Gujarat Zone (AAU Anand)',
+    'dahod': 'Middle Gujarat Zone (AAU Anand)',
+    'mahisagar': 'Middle Gujarat Zone (AAU Anand)',
+    'chhota udepur': 'Middle Gujarat Zone (AAU Anand)',
+    'chhotaudepur': 'Middle Gujarat Zone (AAU Anand)',
+
+    # Saurashtra & Coastal Zone (Junagadh Agricultural University - JAU, Junagadh)
+    'junagadh': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'rajkot': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'jamnagar': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'porbandar': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'amreli': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'bhavnagar': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'surendranagar': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'gir somnath': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'somnath': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'botad': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'devbhumi dwarka': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'dwarka': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'morbi': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'ahmadabad': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+    'ahmedabad': 'Saurashtra & Coastal Zone (JAU Junagadh)',
+
+    # North Gujarat & Arid Zone (SDAU, Sardarkrushinagar)
+    'banas kantha': 'North Gujarat & Arid Zone (SDAU)',
+    'banaskantha': 'North Gujarat & Arid Zone (SDAU)',
+    'sabar kantha': 'North Gujarat & Arid Zone (SDAU)',
+    'sabarkantha': 'North Gujarat & Arid Zone (SDAU)',
+    'patan': 'North Gujarat & Arid Zone (SDAU)',
+    'mahesana': 'North Gujarat & Arid Zone (SDAU)',
+    'mehsana': 'North Gujarat & Arid Zone (SDAU)',
+    'gandhinagar': 'North Gujarat & Arid Zone (SDAU)',
+    'aravalli': 'North Gujarat & Arid Zone (SDAU)',
+    'kachchh': 'North Gujarat & Arid Zone (SDAU)',
+    'kutch': 'North Gujarat & Arid Zone (SDAU)',
+
+    # South Gujarat Heavy Rainfall Zone (Navsari Agricultural University - NAU, Navsari)
+    'navsari': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'surat': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'bharuch': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'valsad': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'dang': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'the dangs': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'dangs': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'narmada': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)',
+    'tapi': 'South Gujarat Heavy Rainfall Zone (NAU Navsari)'
+}
+
 
 class CropService:
     def __init__(self, model_path: str = MODEL_PATH):
@@ -250,6 +307,7 @@ class CropService:
         clean_state_input = state.strip().lower() if state and state.strip() else ""
         is_telangana_state = (clean_state_input == "telangana")
         is_ap_state = (clean_state_input in ("andhra pradesh", "ap", "andhra"))
+        is_gujarat_state = (clean_state_input in ("gujarat", "gj"))
         if target_dist:
             c_key = target_dist.lower().strip()
             # Check Andhra Pradesh zones first if state is AP or key in AP map
@@ -257,6 +315,15 @@ class CropService:
                 zone_name = ANDHRA_PRADESH_DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in ANDHRA_PRADESH_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
+            # Check Gujarat zones if state is Gujarat or key in GJ map
+            if not zone_name and (is_gujarat_state or c_key in GUJARAT_DISTRICT_ZONE_MAP):
+                zone_name = GUJARAT_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in GUJARAT_DISTRICT_ZONE_MAP.items():
                         if k_map in c_key or c_key in k_map:
                             zone_name = v_map
                             break
@@ -270,8 +337,8 @@ class CropService:
                             zone_name = v_map
                             break
 
-            # Check Maharashtra zones if not found in AP or Telangana
-            if not zone_name and not is_telangana_state and not is_ap_state:
+            # Check Maharashtra zones if not found in AP, Gujarat, or Telangana
+            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -400,6 +467,62 @@ class CropService:
                         elif c in ('sorghum', 'jowar'):
                             probs[i] *= 2.0
                         elif c in ('pigeonpeas', 'pigeon peas', 'tur'):
+                            probs[i] *= 1.8
+
+                # Apply Gujarat Agro-Climatic Zone Prior Weighting (AAU / JAU / NAU / SDAU)
+                elif zone_name == 'Middle Gujarat Zone (AAU Anand)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'cotton' and n >= 70:
+                            probs[i] *= 2.2
+                        elif c == 'rice' and eff_rainfall >= 500:
+                            probs[i] *= 2.1
+                        elif c == 'maize':
+                            probs[i] *= 2.0
+                        elif c == 'banana' and k >= 80:
+                            probs[i] *= 2.0
+                        elif c == 'tomato':
+                            probs[i] *= 1.8
+                        elif c in ('pigeonpeas', 'tur'):
+                            probs[i] *= 1.7
+                elif zone_name == 'Saurashtra & Coastal Zone (JAU Junagadh)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'groundnut' and p >= 35:
+                            probs[i] *= 2.4
+                        elif c == 'cotton' and n >= 70:
+                            probs[i] *= 2.2
+                        elif c == 'wheat' and eff_rainfall < 750 and temp < 30:
+                            probs[i] *= 2.0
+                        elif c in ('chickpea', 'gram'):
+                            probs[i] *= 1.9
+                        elif c == 'pomegranate' and ph >= 7.2:
+                            probs[i] *= 1.8
+                elif zone_name == 'North Gujarat & Arid Zone (SDAU)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'bajra':
+                            probs[i] *= 2.3
+                        elif c == 'groundnut' and p >= 35:
+                            probs[i] *= 2.1
+                        elif c == 'wheat' and temp < 30:
+                            probs[i] *= 2.0
+                        elif c == 'cotton' and n >= 65:
+                            probs[i] *= 1.9
+                        elif c == 'maize':
+                            probs[i] *= 1.8
+                elif zone_name == 'South Gujarat Heavy Rainfall Zone (NAU Navsari)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'sugarcane' and n >= 120:
+                            probs[i] *= 2.4
+                        elif c == 'rice':
+                            probs[i] *= 2.2
+                        elif c == 'mango':
+                            probs[i] *= 2.1
+                        elif c == 'banana' and k >= 80:
+                            probs[i] *= 2.0
+                        elif c in ('pigeonpeas', 'tur'):
                             probs[i] *= 1.8
 
                 # Apply Telangana Agro-Climatic Zone Prior Weighting (PJTSAU)
@@ -550,7 +673,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")),
+                    'state': state or dataset_match.get("state") or ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra"))),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -644,7 +767,7 @@ class CropService:
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
             'description': f"Recommended for {'Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters')}.",
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")),
+            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra"))),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,

@@ -213,6 +213,95 @@ export class LocationService {
     'YSR Kadapa'
   ];
 
+  // Priority 5: Gujarat Regional Reference Dataset (All 33 Gujarat districts)
+  private gujaratReferenceDistricts = new Set<string>([
+    'ahmadabad',
+    'ahmedabad',
+    'amreli',
+    'anand',
+    'aravalli',
+    'banas kantha',
+    'banaskantha',
+    'bharuch',
+    'bhavnagar',
+    'botad',
+    'chhota udepur',
+    'chhotaudepur',
+    'chhota udaipur',
+    'dang',
+    'dangs',
+    'the dangs',
+    'devbhumi dwarka',
+    'devbhoomi dwarka',
+    'dwarka',
+    'dohad',
+    'dahod',
+    'gandhinagar',
+    'gir somnath',
+    'somnath',
+    'jamnagar',
+    'junagadh',
+    'kachchh',
+    'kutch',
+    'kheda',
+    'mahesana',
+    'mehsana',
+    'mahisagar',
+    'morbi',
+    'narmada',
+    'navsari',
+    'panch mahals',
+    'panchmahal',
+    'panchmahals',
+    'patan',
+    'porbandar',
+    'rajkot',
+    'sabar kantha',
+    'sabarkantha',
+    'surat',
+    'surendranagar',
+    'tapi',
+    'vadodara',
+    'valsad'
+  ]);
+
+  private gujaratDistricts: string[] = [
+    'Ahmadabad (Ahmedabad)',
+    'Amreli',
+    'Anand',
+    'Aravalli',
+    'Banas Kantha (Banaskantha)',
+    'Bharuch',
+    'Bhavnagar',
+    'Botad',
+    'Chhota Udepur',
+    'Dang (The Dangs)',
+    'Devbhumi Dwarka',
+    'Dohad (Dahod)',
+    'Gandhinagar',
+    'Gir Somnath',
+    'Jamnagar',
+    'Junagadh',
+    'Kachchh (Kutch)',
+    'Kheda',
+    'Mahesana (Mehsana)',
+    'Mahisagar',
+    'Morbi',
+    'Narmada',
+    'Navsari',
+    'Panch Mahals (Panchmahal)',
+    'Patan',
+    'Porbandar',
+    'Rajkot',
+    'Sabar Kantha (Sabarkantha)',
+    'Surat',
+    'Surendranagar',
+    'Tapi',
+    'Vadodara',
+    'Valsad'
+  ];
+
+
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
     'Akola',
@@ -290,6 +379,9 @@ export class LocationService {
     if (state === 'Andhra Pradesh') {
       return this.andhraPradeshDistricts;
     }
+    if (state === 'Gujarat') {
+      return this.gujaratDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -322,6 +414,14 @@ export class LocationService {
     if (st === 'andhra pradesh') {
       for (const ad of this.andhraReferenceDistricts) {
         if (clean === ad || clean.includes(ad) || ad.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'gujarat') {
+      for (const gd of this.gujaratReferenceDistricts) {
+        if (clean === gd || clean.includes(gd) || gd.includes(clean)) {
           return 'regional_reference';
         }
       }

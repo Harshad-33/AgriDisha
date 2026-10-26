@@ -1,0 +1,496 @@
+District,Soil_Type,Crop_Name,N_kg_ha,P2O5_kg_ha,K2O_kg_ha,Zn_kg_ha,S_kg_ha,Recommended_pH,Weather,Fertilizer
+Ahmadabad,Goradu & Medium Black,Cotton,162.0,66.6,435.8,1.18,24.2,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Ahmadabad,Goradu & Medium Black,Cotton,170.2,67.6,449.0,1.01,23.0,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Ahmadabad,Goradu & Medium Black,Cotton,142.2,69.3,469.5,1.01,23.6,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Ahmadabad,Goradu & Medium Black,Wheat,163.0,66.3,483.5,1.05,20.6,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Ahmadabad,Goradu & Medium Black,Wheat,167.8,71.5,419.3,1.21,23.7,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Ahmadabad,Goradu & Medium Black,Wheat,163.0,77.6,459.3,1.06,23.4,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Ahmadabad,Goradu & Medium Black,Rice,160.7,74.3,487.6,1.17,19.9,7.7,Semi-Arid Dry,Urea + DAP + MOP
+Ahmadabad,Goradu & Medium Black,Rice,141.2,69.2,417.2,0.97,21.5,7.6,Semi-Arid Dry,Urea + DAP + MOP
+Ahmadabad,Goradu & Medium Black,Rice,154.4,70.4,443.3,1.02,26.0,7.6,Semi-Arid Dry,Urea + DAP + MOP
+Ahmadabad,Goradu & Medium Black,Castor,151.8,72.7,424.4,0.99,22.2,7.8,Semi-Arid Dry,Urea + DAP + Gypsum
+Ahmadabad,Goradu & Medium Black,Castor,162.9,73.2,459.1,1.21,24.9,7.8,Semi-Arid Dry,Urea + DAP + Gypsum
+Ahmadabad,Goradu & Medium Black,Castor,138.2,63.7,437.4,1.0,26.1,7.6,Semi-Arid Dry,Urea + DAP + Gypsum
+Ahmadabad,Goradu & Medium Black,Gram,150.9,69.6,466.5,1.24,22.7,7.7,Semi-Arid Dry,DAP + Rhizobium
+Ahmadabad,Goradu & Medium Black,Gram,131.1,68.5,458.0,1.13,25.7,7.6,Semi-Arid Dry,DAP + Rhizobium
+Ahmadabad,Goradu & Medium Black,Gram,135.5,68.1,497.3,0.97,19.9,7.7,Semi-Arid Dry,DAP + Rhizobium
+Amreli,Medium Black Soil,Cotton,142.1,72.9,503.5,0.87,23.6,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Amreli,Medium Black Soil,Cotton,170.2,71.4,520.3,0.85,26.1,8.0,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Amreli,Medium Black Soil,Cotton,160.3,71.6,454.1,0.88,24.0,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Amreli,Medium Black Soil,Groundnut,134.3,76.3,510.3,1.0,22.1,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Amreli,Medium Black Soil,Groundnut,148.8,75.0,456.1,1.03,21.9,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Amreli,Medium Black Soil,Groundnut,144.1,70.1,501.2,0.85,23.2,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Amreli,Medium Black Soil,Wheat,134.8,77.4,511.6,0.94,21.3,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Amreli,Medium Black Soil,Wheat,162.0,77.7,437.1,0.87,26.4,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Amreli,Medium Black Soil,Wheat,158.4,65.5,473.7,0.93,27.2,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Amreli,Medium Black Soil,Sesamum,135.6,61.5,476.2,0.91,23.1,8.0,Semi-Arid Dry,Urea + SSP
+Amreli,Medium Black Soil,Sesamum,153.7,68.0,466.7,0.89,22.5,7.9,Semi-Arid Dry,Urea + SSP
+Amreli,Medium Black Soil,Sesamum,132.9,67.1,447.1,0.87,25.5,7.8,Semi-Arid Dry,Urea + SSP
+Amreli,Medium Black Soil,Bajra,135.4,74.0,507.8,0.92,25.7,7.8,Semi-Arid Dry,Urea + DAP
+Amreli,Medium Black Soil,Bajra,134.9,62.5,514.9,0.99,26.6,7.9,Semi-Arid Dry,Urea + DAP
+Amreli,Medium Black Soil,Bajra,153.7,63.4,436.1,0.98,24.3,7.9,Semi-Arid Dry,Urea + DAP
+Anand,Goradu (Alluvial Sandy Loam),Wheat,160.4,76.7,422.8,1.07,20.9,7.5,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Anand,Goradu (Alluvial Sandy Loam),Wheat,164.7,70.1,362.5,1.07,20.5,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Anand,Goradu (Alluvial Sandy Loam),Wheat,144.9,80.6,381.7,1.12,19.0,7.7,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Anand,Goradu (Alluvial Sandy Loam),Rice,166.2,77.7,420.6,1.22,19.8,7.7,Semi-Arid Dry,Urea + DAP + MOP
+Anand,Goradu (Alluvial Sandy Loam),Rice,149.5,68.0,377.5,1.06,25.2,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Anand,Goradu (Alluvial Sandy Loam),Rice,142.4,76.9,381.6,1.25,25.3,7.6,Semi-Arid Dry,Urea + DAP + MOP
+Anand,Goradu (Alluvial Sandy Loam),Tobacco,163.8,80.4,363.8,1.25,22.5,7.5,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Anand,Goradu (Alluvial Sandy Loam),Tobacco,163.4,80.9,356.3,1.1,24.3,7.6,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Anand,Goradu (Alluvial Sandy Loam),Tobacco,150.9,84.2,358.1,1.13,23.2,7.5,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Anand,Goradu (Alluvial Sandy Loam),Bajra,138.4,65.1,413.7,1.13,22.8,7.5,Semi-Arid Dry,Urea + DAP
+Anand,Goradu (Alluvial Sandy Loam),Bajra,144.4,72.3,385.7,1.0,23.4,7.7,Semi-Arid Dry,Urea + DAP
+Anand,Goradu (Alluvial Sandy Loam),Bajra,138.5,69.4,397.0,1.04,23.7,7.5,Semi-Arid Dry,Urea + DAP
+Anand,Goradu (Alluvial Sandy Loam),Banana,151.2,79.3,442.9,0.96,20.1,7.7,Semi-Arid Dry,Urea + SSP + MOP
+Anand,Goradu (Alluvial Sandy Loam),Banana,157.4,86.8,433.9,1.06,19.7,7.7,Semi-Arid Dry,Urea + SSP + MOP
+Anand,Goradu (Alluvial Sandy Loam),Banana,175.8,83.2,413.5,1.15,18.8,7.7,Semi-Arid Dry,Urea + SSP + MOP
+Aravalli,Red Loam & Sandy Alluvial,Wheat,153.6,62.3,357.1,0.8,15.5,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Aravalli,Red Loam & Sandy Alluvial,Wheat,132.1,65.7,330.5,0.96,15.9,7.4,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Aravalli,Red Loam & Sandy Alluvial,Wheat,148.1,61.8,345.2,0.99,15.4,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Aravalli,Red Loam & Sandy Alluvial,Cotton,146.2,62.0,312.2,0.94,16.3,7.5,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Aravalli,Red Loam & Sandy Alluvial,Cotton,155.8,65.7,341.1,0.79,19.5,7.3,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Aravalli,Red Loam & Sandy Alluvial,Cotton,160.7,65.6,368.8,0.8,15.5,7.4,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Aravalli,Red Loam & Sandy Alluvial,Castor,132.2,67.4,364.1,1.01,16.0,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Aravalli,Red Loam & Sandy Alluvial,Castor,130.4,56.7,363.0,0.87,18.1,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Aravalli,Red Loam & Sandy Alluvial,Castor,127.6,67.8,368.8,0.98,19.5,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Aravalli,Red Loam & Sandy Alluvial,Groundnut,115.4,66.7,333.6,0.98,19.4,7.5,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Aravalli,Red Loam & Sandy Alluvial,Groundnut,139.1,60.4,364.5,1.0,19.4,7.3,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Aravalli,Red Loam & Sandy Alluvial,Groundnut,121.4,67.8,342.3,0.98,16.1,7.3,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Aravalli,Red Loam & Sandy Alluvial,Potato,144.6,68.4,350.3,1.03,16.3,7.5,Subtropical Semi-Arid,Urea + DAP + MOP
+Aravalli,Red Loam & Sandy Alluvial,Potato,163.3,71.2,394.7,1.02,15.5,7.4,Subtropical Semi-Arid,Urea + DAP + MOP
+Aravalli,Red Loam & Sandy Alluvial,Potato,173.2,68.2,393.5,0.79,17.2,7.3,Subtropical Semi-Arid,Urea + DAP + MOP
+Banas Kantha,Light Sandy Loam,Mustard,139.9,57.2,331.8,0.77,16.4,7.6,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Banas Kantha,Light Sandy Loam,Mustard,126.1,62.1,293.1,0.81,17.1,7.7,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Banas Kantha,Light Sandy Loam,Mustard,140.3,61.6,316.3,0.84,15.2,7.5,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Banas Kantha,Light Sandy Loam,Bajra,128.6,62.3,338.1,0.75,15.6,7.5,Subtropical Semi-Arid,Urea + DAP
+Banas Kantha,Light Sandy Loam,Bajra,131.1,55.4,300.1,0.91,16.9,7.6,Subtropical Semi-Arid,Urea + DAP
+Banas Kantha,Light Sandy Loam,Bajra,145.8,59.4,311.3,0.68,15.0,7.6,Subtropical Semi-Arid,Urea + DAP
+Banas Kantha,Light Sandy Loam,Castor,131.9,59.0,333.9,0.79,14.6,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Banas Kantha,Light Sandy Loam,Castor,133.2,63.0,342.9,0.7,16.1,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Banas Kantha,Light Sandy Loam,Castor,137.9,55.9,344.4,0.84,14.7,7.7,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Banas Kantha,Light Sandy Loam,Guar seed,128.2,53.6,308.7,0.88,13.9,7.6,Subtropical Semi-Arid,Urea + DAP + MOP
+Banas Kantha,Light Sandy Loam,Guar seed,134.5,61.1,305.4,0.8,14.8,7.7,Subtropical Semi-Arid,Urea + DAP + MOP
+Banas Kantha,Light Sandy Loam,Guar seed,141.6,53.3,341.1,0.71,15.6,7.7,Subtropical Semi-Arid,Urea + DAP + MOP
+Banas Kantha,Light Sandy Loam,Wheat,130.5,66.7,327.1,0.74,17.7,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Banas Kantha,Light Sandy Loam,Wheat,138.7,64.8,336.7,0.82,18.2,7.7,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Banas Kantha,Light Sandy Loam,Wheat,151.5,62.4,340.0,0.88,16.2,7.6,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Bharuch,Deep Black Vertisol,Cotton,178.0,81.0,433.8,1.2,27.6,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Bharuch,Deep Black Vertisol,Cotton,173.6,77.3,446.9,1.14,24.8,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Bharuch,Deep Black Vertisol,Cotton,156.7,74.1,439.5,1.2,28.0,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Bharuch,Deep Black Vertisol,Arhar/Tur,152.8,68.4,424.6,1.27,24.2,7.5,Tropical Wet-and-Dry,SSP + DAP
+Bharuch,Deep Black Vertisol,Arhar/Tur,143.0,82.1,439.7,1.44,28.6,7.6,Tropical Wet-and-Dry,SSP + DAP
+Bharuch,Deep Black Vertisol,Arhar/Tur,141.7,67.4,419.8,1.44,30.1,7.6,Tropical Wet-and-Dry,SSP + DAP
+Bharuch,Deep Black Vertisol,Sugarcane,176.7,90.8,446.5,1.19,24.3,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP
+Bharuch,Deep Black Vertisol,Sugarcane,177.3,79.1,428.4,1.26,23.8,7.6,Tropical Wet-and-Dry,Urea + DAP + MOP
+Bharuch,Deep Black Vertisol,Sugarcane,178.4,80.7,453.0,1.26,27.0,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Bharuch,Deep Black Vertisol,Wheat,143.9,79.3,404.7,1.12,25.5,7.5,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Bharuch,Deep Black Vertisol,Wheat,150.2,74.2,458.5,1.4,29.1,7.5,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Bharuch,Deep Black Vertisol,Wheat,151.6,70.2,394.7,1.49,25.3,7.5,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Bharuch,Deep Black Vertisol,Jowar,159.1,78.6,447.1,1.48,24.1,7.6,Tropical Wet-and-Dry,Urea + SSP
+Bharuch,Deep Black Vertisol,Jowar,137.7,68.3,401.9,1.32,24.3,7.6,Tropical Wet-and-Dry,Urea + SSP
+Bharuch,Deep Black Vertisol,Jowar,160.8,78.4,405.4,1.4,23.4,7.5,Tropical Wet-and-Dry,Urea + SSP
+Bhavnagar,Medium Black Soil,Cotton,168.9,82.4,457.6,1.04,27.4,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Bhavnagar,Medium Black Soil,Cotton,173.5,73.4,517.1,1.16,27.0,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Bhavnagar,Medium Black Soil,Cotton,145.5,79.3,530.3,0.97,29.8,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Bhavnagar,Medium Black Soil,Groundnut,149.0,71.1,488.0,1.1,24.8,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Bhavnagar,Medium Black Soil,Groundnut,151.2,78.6,456.3,1.14,28.6,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Bhavnagar,Medium Black Soil,Groundnut,146.5,72.5,517.9,1.02,28.4,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Bhavnagar,Medium Black Soil,Bajra,149.2,71.7,487.7,1.02,28.7,7.9,Semi-Arid Dry,Urea + DAP
+Bhavnagar,Medium Black Soil,Bajra,158.8,65.5,531.4,1.09,26.9,7.7,Semi-Arid Dry,Urea + DAP
+Bhavnagar,Medium Black Soil,Bajra,144.1,64.5,528.4,1.0,28.3,7.7,Semi-Arid Dry,Urea + DAP
+Bhavnagar,Medium Black Soil,Sesamum,136.8,75.8,512.2,0.94,29.5,7.7,Semi-Arid Dry,Urea + SSP
+Bhavnagar,Medium Black Soil,Sesamum,128.5,73.2,491.4,1.16,27.1,7.9,Semi-Arid Dry,Urea + SSP
+Bhavnagar,Medium Black Soil,Sesamum,141.7,74.4,452.6,1.16,24.5,7.7,Semi-Arid Dry,Urea + SSP
+Bhavnagar,Medium Black Soil,Onion,153.7,73.1,498.0,1.18,24.7,7.8,Semi-Arid Dry,Urea + DAP + MOP + Sulphur
+Bhavnagar,Medium Black Soil,Onion,157.6,69.9,470.6,1.0,23.0,7.7,Semi-Arid Dry,Urea + DAP + MOP + Sulphur
+Bhavnagar,Medium Black Soil,Onion,152.2,77.7,464.1,1.09,27.8,7.7,Semi-Arid Dry,Urea + DAP + MOP + Sulphur
+Botad,Medium Black Soil,Cotton,169.6,73.4,446.0,0.91,22.0,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Botad,Medium Black Soil,Cotton,144.3,65.5,469.1,1.14,24.4,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Botad,Medium Black Soil,Cotton,160.8,67.3,499.9,1.11,24.5,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Botad,Medium Black Soil,Wheat,149.0,72.1,437.0,1.13,23.8,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Botad,Medium Black Soil,Wheat,160.2,71.5,426.8,0.87,21.5,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Botad,Medium Black Soil,Wheat,152.0,70.0,511.4,1.08,24.8,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Botad,Medium Black Soil,Sesamum,147.2,63.5,464.6,0.98,26.6,7.9,Semi-Arid Dry,Urea + SSP
+Botad,Medium Black Soil,Sesamum,153.5,64.8,473.6,1.07,27.2,7.9,Semi-Arid Dry,Urea + SSP
+Botad,Medium Black Soil,Sesamum,128.7,63.3,477.3,0.9,20.9,7.8,Semi-Arid Dry,Urea + SSP
+Botad,Medium Black Soil,Gram,120.0,70.7,471.1,0.92,25.5,7.8,Semi-Arid Dry,DAP + Rhizobium
+Botad,Medium Black Soil,Gram,142.2,70.8,479.7,1.09,24.9,8.0,Semi-Arid Dry,DAP + Rhizobium
+Botad,Medium Black Soil,Gram,140.9,78.2,455.6,1.04,26.9,7.9,Semi-Arid Dry,DAP + Rhizobium
+Botad,Medium Black Soil,Groundnut,146.1,64.9,434.3,1.07,24.5,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Botad,Medium Black Soil,Groundnut,129.1,65.7,482.4,1.13,24.0,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Botad,Medium Black Soil,Groundnut,135.6,65.1,422.7,0.95,22.2,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Chhota Udepur,Medium Black Soil,Cotton,136.1,71.2,347.5,0.91,20.1,7.4,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Chhota Udepur,Medium Black Soil,Cotton,153.7,61.9,296.6,0.79,18.3,7.5,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Chhota Udepur,Medium Black Soil,Cotton,161.1,60.7,331.5,0.8,15.4,7.4,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Chhota Udepur,Medium Black Soil,Arhar/Tur,125.2,61.3,333.4,0.76,18.5,7.5,Semi-Arid Dry,SSP + DAP
+Chhota Udepur,Medium Black Soil,Arhar/Tur,123.3,69.5,342.6,0.79,16.5,7.4,Semi-Arid Dry,SSP + DAP
+Chhota Udepur,Medium Black Soil,Arhar/Tur,124.4,69.8,316.4,0.92,18.3,7.4,Semi-Arid Dry,SSP + DAP
+Chhota Udepur,Medium Black Soil,Maize,142.3,62.3,305.0,0.86,18.2,7.4,Semi-Arid Dry,Urea + DAP
+Chhota Udepur,Medium Black Soil,Maize,148.9,59.5,328.2,0.79,18.5,7.5,Semi-Arid Dry,Urea + DAP
+Chhota Udepur,Medium Black Soil,Maize,129.6,69.9,332.0,0.72,17.8,7.3,Semi-Arid Dry,Urea + DAP
+Chhota Udepur,Medium Black Soil,Rice,142.6,58.0,356.5,0.79,15.5,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Chhota Udepur,Medium Black Soil,Rice,151.0,63.5,338.9,0.75,19.3,7.4,Semi-Arid Dry,Urea + DAP + MOP
+Chhota Udepur,Medium Black Soil,Rice,155.5,60.1,328.3,0.9,17.5,7.4,Semi-Arid Dry,Urea + DAP + MOP
+Chhota Udepur,Medium Black Soil,Urad,140.5,66.9,307.7,0.78,19.8,7.5,Semi-Arid Dry,DAP + Rhizobium
+Chhota Udepur,Medium Black Soil,Urad,129.2,66.3,308.1,0.82,20.1,7.3,Semi-Arid Dry,DAP + Rhizobium
+Chhota Udepur,Medium Black Soil,Urad,128.7,57.3,324.5,0.81,17.7,7.4,Semi-Arid Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Rice,141.6,55.4,305.1,1.12,16.6,6.7,Tropical Wet-and-Dry,Urea + DAP + MOP
+Dang,Lateritic & Forest Hill Soil,Rice,151.5,52.0,340.7,1.2,17.4,6.7,Tropical Wet-and-Dry,Urea + DAP + MOP
+Dang,Lateritic & Forest Hill Soil,Rice,148.0,61.3,355.8,0.95,18.0,6.6,Tropical Wet-and-Dry,Urea + DAP + MOP
+Dang,Lateritic & Forest Hill Soil,Gram,134.5,61.9,346.4,1.11,17.8,6.6,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Gram,138.6,56.4,332.4,1.09,20.5,6.5,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Gram,126.8,59.8,332.1,1.22,19.9,6.7,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Urad,127.3,53.8,336.0,1.22,15.5,6.7,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Urad,117.7,57.6,348.9,1.18,17.6,6.7,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Urad,118.7,57.6,345.8,1.16,20.2,6.6,Tropical Wet-and-Dry,DAP + Rhizobium
+Dang,Lateritic & Forest Hill Soil,Jowar,126.1,59.6,310.8,0.98,18.2,6.6,Tropical Wet-and-Dry,Urea + SSP
+Dang,Lateritic & Forest Hill Soil,Jowar,142.0,59.5,302.9,1.22,18.6,6.5,Tropical Wet-and-Dry,Urea + SSP
+Dang,Lateritic & Forest Hill Soil,Jowar,132.0,61.0,301.2,1.02,16.7,6.6,Tropical Wet-and-Dry,Urea + SSP
+Dang,Lateritic & Forest Hill Soil,Tobacco,139.9,65.7,355.7,0.99,17.7,6.7,Tropical Wet-and-Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Dang,Lateritic & Forest Hill Soil,Tobacco,150.3,63.1,338.9,1.02,19.9,6.6,Tropical Wet-and-Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Dang,Lateritic & Forest Hill Soil,Tobacco,145.8,60.6,328.9,1.12,18.4,6.5,Tropical Wet-and-Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Groundnut,142.4,56.9,454.2,0.75,19.9,8.2,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Groundnut,133.3,62.6,378.0,0.8,21.9,8.2,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Groundnut,121.4,63.2,423.8,0.83,20.2,8.2,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Cotton,151.8,63.8,429.1,0.83,21.9,8.3,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Cotton,150.9,58.6,411.1,0.86,17.1,8.2,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Cotton,140.4,64.1,389.4,0.81,22.3,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Wheat,142.9,66.2,443.1,0.88,19.4,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Wheat,151.1,64.1,402.8,0.91,17.4,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Wheat,155.9,65.5,434.4,0.91,21.3,8.3,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Sesamum,126.0,59.4,372.6,0.79,20.5,8.2,Semi-Arid Dry,Urea + SSP
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Sesamum,135.1,56.8,438.9,0.71,17.9,8.3,Semi-Arid Dry,Urea + SSP
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Sesamum,115.9,60.5,417.5,0.73,16.9,8.3,Semi-Arid Dry,Urea + SSP
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Gram,137.4,64.6,396.3,0.71,22.1,8.2,Semi-Arid Dry,DAP + Rhizobium
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Gram,121.9,59.4,379.5,0.71,19.2,8.3,Semi-Arid Dry,DAP + Rhizobium
+Devbhumi Dwarka,Coastal Alluvial & Calcareous,Gram,132.8,62.5,449.1,0.86,17.5,8.2,Semi-Arid Dry,DAP + Rhizobium
+Dohad,Red & Black Loam,Maize,137.4,56.3,314.3,0.91,14.2,7.3,Semi-Arid Dry,Urea + DAP
+Dohad,Red & Black Loam,Maize,136.1,60.8,342.9,0.7,17.4,7.4,Semi-Arid Dry,Urea + DAP
+Dohad,Red & Black Loam,Maize,141.3,67.7,306.2,0.73,14.6,7.3,Semi-Arid Dry,Urea + DAP
+Dohad,Red & Black Loam,Wheat,153.4,62.4,326.1,0.82,14.1,7.3,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Dohad,Red & Black Loam,Wheat,151.6,59.7,292.8,0.7,17.8,7.3,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Dohad,Red & Black Loam,Wheat,134.2,59.3,338.9,0.72,18.5,7.2,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Dohad,Red & Black Loam,Gram,113.8,66.1,290.5,0.74,14.9,7.2,Semi-Arid Dry,DAP + Rhizobium
+Dohad,Red & Black Loam,Gram,133.6,55.4,282.4,0.74,15.6,7.4,Semi-Arid Dry,DAP + Rhizobium
+Dohad,Red & Black Loam,Gram,119.0,55.7,327.5,0.86,16.4,7.3,Semi-Arid Dry,DAP + Rhizobium
+Dohad,Red & Black Loam,Rice,148.3,61.7,290.8,0.91,14.2,7.3,Semi-Arid Dry,Urea + DAP + MOP
+Dohad,Red & Black Loam,Rice,148.5,66.3,316.3,0.91,14.3,7.3,Semi-Arid Dry,Urea + DAP + MOP
+Dohad,Red & Black Loam,Rice,139.4,60.2,326.5,0.9,14.4,7.3,Semi-Arid Dry,Urea + DAP + MOP
+Dohad,Red & Black Loam,Arhar/Tur,116.2,62.9,285.6,0.83,16.7,7.2,Semi-Arid Dry,SSP + DAP
+Dohad,Red & Black Loam,Arhar/Tur,123.5,67.9,314.4,0.83,14.5,7.3,Semi-Arid Dry,SSP + DAP
+Dohad,Red & Black Loam,Arhar/Tur,134.8,66.1,321.9,0.85,15.1,7.4,Semi-Arid Dry,SSP + DAP
+Gandhinagar,Alluvial Goradu Loam,Wheat,150.4,68.8,373.8,1.07,18.4,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Gandhinagar,Alluvial Goradu Loam,Wheat,149.6,75.5,376.4,1.24,18.3,7.4,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Gandhinagar,Alluvial Goradu Loam,Wheat,162.7,66.8,355.3,1.2,21.4,7.6,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Gandhinagar,Alluvial Goradu Loam,Castor,148.8,70.9,371.1,1.05,22.0,7.4,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Gandhinagar,Alluvial Goradu Loam,Castor,154.0,75.7,400.8,1.13,20.1,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Gandhinagar,Alluvial Goradu Loam,Castor,148.5,65.6,395.9,0.97,23.2,7.4,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Gandhinagar,Alluvial Goradu Loam,Cotton,152.2,77.0,391.6,1.21,24.0,7.6,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Gandhinagar,Alluvial Goradu Loam,Cotton,166.7,74.7,396.8,1.24,23.1,7.4,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Gandhinagar,Alluvial Goradu Loam,Cotton,149.0,68.1,401.4,1.05,17.9,7.4,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Gandhinagar,Alluvial Goradu Loam,Banana,175.9,80.0,397.5,1.14,18.0,7.4,Subtropical Semi-Arid,Urea + SSP + MOP
+Gandhinagar,Alluvial Goradu Loam,Banana,171.9,74.6,398.9,1.06,22.4,7.5,Subtropical Semi-Arid,Urea + SSP + MOP
+Gandhinagar,Alluvial Goradu Loam,Banana,172.9,80.0,373.5,0.99,21.7,7.4,Subtropical Semi-Arid,Urea + SSP + MOP
+Gandhinagar,Alluvial Goradu Loam,Bajra,151.6,66.5,396.3,1.08,19.6,7.5,Subtropical Semi-Arid,Urea + DAP
+Gandhinagar,Alluvial Goradu Loam,Bajra,154.2,64.1,378.7,1.16,20.9,7.4,Subtropical Semi-Arid,Urea + DAP
+Gandhinagar,Alluvial Goradu Loam,Bajra,151.4,63.0,376.0,0.94,19.7,7.5,Subtropical Semi-Arid,Urea + DAP
+Gir Somnath,Coastal Alluvial & Black,Groundnut,129.4,64.1,471.0,0.85,27.4,7.6,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Groundnut,128.2,67.7,515.0,1.1,27.8,7.7,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Groundnut,124.9,74.9,450.1,1.13,28.3,7.6,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Wheat,155.5,72.1,516.5,0.88,21.8,7.7,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Gir Somnath,Coastal Alluvial & Black,Wheat,147.3,75.5,507.6,1.13,22.3,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Gir Somnath,Coastal Alluvial & Black,Wheat,164.2,67.2,504.7,0.97,24.0,7.7,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Gir Somnath,Coastal Alluvial & Black,Cotton,152.3,68.5,463.5,0.88,25.6,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Gir Somnath,Coastal Alluvial & Black,Cotton,170.7,68.8,518.3,1.09,23.5,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Gir Somnath,Coastal Alluvial & Black,Cotton,146.0,66.5,506.0,1.05,23.0,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Gir Somnath,Coastal Alluvial & Black,Gram,147.6,69.4,517.4,0.98,28.7,7.8,Semi-Arid Dry,DAP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Gram,140.8,71.5,504.7,1.04,22.8,7.8,Semi-Arid Dry,DAP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Gram,124.8,68.6,473.2,0.87,25.6,7.6,Semi-Arid Dry,DAP + Rhizobium
+Gir Somnath,Coastal Alluvial & Black,Sugarcane,166.4,80.0,459.1,0.87,28.3,7.8,Semi-Arid Dry,Urea + DAP + MOP
+Gir Somnath,Coastal Alluvial & Black,Sugarcane,184.0,82.5,503.2,1.02,27.7,7.7,Semi-Arid Dry,Urea + DAP + MOP
+Gir Somnath,Coastal Alluvial & Black,Sugarcane,185.3,80.0,532.9,0.95,25.3,7.7,Semi-Arid Dry,Urea + DAP + MOP
+Jamnagar,Medium Black Soil,Groundnut,121.0,61.2,410.1,0.86,25.0,8.1,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Jamnagar,Medium Black Soil,Groundnut,131.9,62.8,422.8,0.88,23.7,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Jamnagar,Medium Black Soil,Groundnut,121.3,65.7,425.9,0.86,24.2,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Jamnagar,Medium Black Soil,Cotton,159.4,71.1,407.8,0.95,22.0,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Jamnagar,Medium Black Soil,Cotton,157.4,71.3,481.8,0.86,24.1,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Jamnagar,Medium Black Soil,Cotton,139.5,66.8,487.2,0.87,24.2,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Jamnagar,Medium Black Soil,Wheat,159.5,66.3,435.1,0.98,24.7,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Jamnagar,Medium Black Soil,Wheat,156.1,72.4,462.3,0.94,23.0,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Jamnagar,Medium Black Soil,Wheat,141.8,67.0,417.9,1.02,23.4,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Jamnagar,Medium Black Soil,Gram,123.3,62.3,405.3,0.79,25.4,8.1,Semi-Arid Dry,DAP + Rhizobium
+Jamnagar,Medium Black Soil,Gram,142.0,73.0,401.8,0.97,20.9,8.0,Semi-Arid Dry,DAP + Rhizobium
+Jamnagar,Medium Black Soil,Gram,128.0,62.6,471.7,0.98,21.1,8.1,Semi-Arid Dry,DAP + Rhizobium
+Jamnagar,Medium Black Soil,Sesamum,132.1,62.5,458.0,0.88,22.0,7.9,Semi-Arid Dry,Urea + SSP
+Jamnagar,Medium Black Soil,Sesamum,141.6,63.0,445.5,0.98,23.3,7.9,Semi-Arid Dry,Urea + SSP
+Jamnagar,Medium Black Soil,Sesamum,144.3,61.8,481.8,0.89,22.0,8.1,Semi-Arid Dry,Urea + SSP
+Junagadh,Calcareous Medium Black,Groundnut,130.1,65.9,529.8,0.98,19.6,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Junagadh,Calcareous Medium Black,Groundnut,126.0,67.5,520.9,0.79,24.3,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Junagadh,Calcareous Medium Black,Groundnut,144.7,62.5,510.3,1.01,19.7,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Junagadh,Calcareous Medium Black,Wheat,146.0,73.2,459.3,0.86,18.9,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Junagadh,Calcareous Medium Black,Wheat,134.1,67.0,460.6,0.87,18.9,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Junagadh,Calcareous Medium Black,Wheat,161.4,71.7,500.4,0.8,20.6,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Junagadh,Calcareous Medium Black,Cotton,162.8,69.7,451.3,0.89,18.7,8.0,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Junagadh,Calcareous Medium Black,Cotton,139.4,63.6,518.2,0.96,22.2,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Junagadh,Calcareous Medium Black,Cotton,140.4,64.1,466.9,0.88,23.9,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Junagadh,Calcareous Medium Black,Gram,132.4,60.1,521.4,0.77,22.1,7.9,Semi-Arid Dry,DAP + Rhizobium
+Junagadh,Calcareous Medium Black,Gram,125.7,60.5,475.7,0.83,21.4,7.9,Semi-Arid Dry,DAP + Rhizobium
+Junagadh,Calcareous Medium Black,Gram,138.9,59.7,528.1,0.91,22.0,7.8,Semi-Arid Dry,DAP + Rhizobium
+Junagadh,Calcareous Medium Black,Tobacco,172.2,70.8,479.5,0.94,25.2,7.9,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Junagadh,Calcareous Medium Black,Tobacco,149.3,63.3,517.7,0.96,22.8,7.9,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Junagadh,Calcareous Medium Black,Tobacco,165.5,73.3,473.9,0.91,24.1,7.8,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Kachchh,Arid Desert & Saline Alluvial,Guar seed,121.0,56.6,292.9,0.73,15.3,8.3,Subtropical Semi-Arid,Urea + DAP + MOP
+Kachchh,Arid Desert & Saline Alluvial,Guar seed,117.9,56.5,292.5,0.6,12.7,8.1,Subtropical Semi-Arid,Urea + DAP + MOP
+Kachchh,Arid Desert & Saline Alluvial,Guar seed,117.4,58.3,295.9,0.71,13.0,8.3,Subtropical Semi-Arid,Urea + DAP + MOP
+Kachchh,Arid Desert & Saline Alluvial,Castor,134.0,48.6,285.7,0.78,13.3,8.3,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Kachchh,Arid Desert & Saline Alluvial,Castor,116.6,50.5,316.6,0.78,13.5,8.3,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Kachchh,Arid Desert & Saline Alluvial,Castor,140.1,52.0,293.9,0.7,15.3,8.3,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Kachchh,Arid Desert & Saline Alluvial,Cotton,143.8,50.4,301.9,0.71,13.2,8.3,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Kachchh,Arid Desert & Saline Alluvial,Cotton,125.9,56.8,284.8,0.68,14.8,8.2,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Kachchh,Arid Desert & Saline Alluvial,Cotton,133.4,49.9,317.5,0.8,13.1,8.2,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Kachchh,Arid Desert & Saline Alluvial,Moong,131.2,56.9,267.4,0.67,15.3,8.2,Subtropical Semi-Arid,DAP + Rhizobium
+Kachchh,Arid Desert & Saline Alluvial,Moong,123.0,57.0,271.3,0.76,12.0,8.2,Subtropical Semi-Arid,DAP + Rhizobium
+Kachchh,Arid Desert & Saline Alluvial,Moong,106.1,55.1,284.2,0.71,14.4,8.2,Subtropical Semi-Arid,DAP + Rhizobium
+Kachchh,Arid Desert & Saline Alluvial,Groundnut,123.7,58.5,287.6,0.72,14.1,8.3,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Kachchh,Arid Desert & Saline Alluvial,Groundnut,115.9,55.2,280.5,0.75,14.0,8.1,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Kachchh,Arid Desert & Saline Alluvial,Groundnut,115.6,54.2,281.2,0.69,16.1,8.1,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Kheda,Goradu (Alluvial Sandy Loam),Wheat,143.2,77.2,365.4,1.11,20.2,7.4,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Kheda,Goradu (Alluvial Sandy Loam),Wheat,162.6,70.2,336.3,1.1,19.4,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Kheda,Goradu (Alluvial Sandy Loam),Wheat,145.2,64.5,369.0,1.11,21.8,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Kheda,Goradu (Alluvial Sandy Loam),Rice,160.5,71.5,386.1,0.89,18.7,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Kheda,Goradu (Alluvial Sandy Loam),Rice,135.6,73.8,330.9,0.96,22.4,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Kheda,Goradu (Alluvial Sandy Loam),Rice,148.6,71.2,335.2,1.15,21.8,7.4,Semi-Arid Dry,Urea + DAP + MOP
+Kheda,Goradu (Alluvial Sandy Loam),Bajra,144.8,72.0,387.3,1.14,21.4,7.4,Semi-Arid Dry,Urea + DAP
+Kheda,Goradu (Alluvial Sandy Loam),Bajra,142.4,70.7,352.8,1.08,21.4,7.6,Semi-Arid Dry,Urea + DAP
+Kheda,Goradu (Alluvial Sandy Loam),Bajra,133.9,74.9,359.1,0.87,18.2,7.6,Semi-Arid Dry,Urea + DAP
+Kheda,Goradu (Alluvial Sandy Loam),Tobacco,148.0,69.0,357.2,0.95,23.2,7.6,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Kheda,Goradu (Alluvial Sandy Loam),Tobacco,171.5,79.1,352.0,1.02,18.2,7.5,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Kheda,Goradu (Alluvial Sandy Loam),Tobacco,152.8,74.5,370.2,1.13,18.4,7.4,Semi-Arid Dry,NPK 18:80:100 + SOP (Sulphate of Potash)
+Kheda,Goradu (Alluvial Sandy Loam),Cotton,159.5,74.3,373.6,1.02,22.5,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Kheda,Goradu (Alluvial Sandy Loam),Cotton,139.6,64.2,376.2,1.05,22.1,7.5,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Kheda,Goradu (Alluvial Sandy Loam),Cotton,151.9,73.1,365.9,0.94,23.3,7.5,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Mahesana,Light Alluvial Loam,Castor,141.5,70.4,377.3,0.87,16.5,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Mahesana,Light Alluvial Loam,Castor,140.1,65.8,342.7,0.94,20.2,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Mahesana,Light Alluvial Loam,Castor,149.3,71.2,398.2,0.96,19.4,7.5,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Mahesana,Light Alluvial Loam,Wheat,142.4,68.5,349.3,0.88,17.8,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Mahesana,Light Alluvial Loam,Wheat,144.4,70.7,347.9,0.9,18.0,7.7,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Mahesana,Light Alluvial Loam,Wheat,150.4,66.3,384.9,1.0,19.0,7.6,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Mahesana,Light Alluvial Loam,Cotton,146.5,62.1,398.1,1.14,17.4,7.6,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Mahesana,Light Alluvial Loam,Cotton,147.9,62.5,365.6,1.05,18.8,7.7,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Mahesana,Light Alluvial Loam,Cotton,153.6,74.0,361.0,1.07,20.5,7.7,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Mahesana,Light Alluvial Loam,Mustard,137.1,66.1,370.1,1.02,16.6,7.5,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Mahesana,Light Alluvial Loam,Mustard,141.4,71.3,349.1,1.05,16.8,7.7,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Mahesana,Light Alluvial Loam,Mustard,156.1,66.0,386.2,1.13,20.5,7.6,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Mahesana,Light Alluvial Loam,Bajra,132.6,66.1,364.0,0.89,18.0,7.5,Subtropical Semi-Arid,Urea + DAP
+Mahesana,Light Alluvial Loam,Bajra,141.2,65.4,371.7,0.95,19.6,7.6,Subtropical Semi-Arid,Urea + DAP
+Mahesana,Light Alluvial Loam,Bajra,131.5,73.1,381.2,0.95,20.9,7.5,Subtropical Semi-Arid,Urea + DAP
+Mahisagar,Goradu (Alluvial Sandy Loam),Wheat,149.0,72.0,322.8,0.86,20.0,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Mahisagar,Goradu (Alluvial Sandy Loam),Wheat,163.0,70.2,355.6,0.95,16.3,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Mahisagar,Goradu (Alluvial Sandy Loam),Wheat,147.2,75.7,354.7,0.92,20.3,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Mahisagar,Goradu (Alluvial Sandy Loam),Rice,147.6,62.8,343.5,0.99,17.0,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Mahisagar,Goradu (Alluvial Sandy Loam),Rice,150.6,60.8,364.6,0.77,17.9,7.4,Semi-Arid Dry,Urea + DAP + MOP
+Mahisagar,Goradu (Alluvial Sandy Loam),Rice,134.1,70.2,329.1,1.01,21.1,7.6,Semi-Arid Dry,Urea + DAP + MOP
+Mahisagar,Goradu (Alluvial Sandy Loam),Maize,152.4,61.2,311.1,0.85,19.9,7.4,Semi-Arid Dry,Urea + DAP
+Mahisagar,Goradu (Alluvial Sandy Loam),Maize,145.8,64.8,313.4,0.86,18.2,7.6,Semi-Arid Dry,Urea + DAP
+Mahisagar,Goradu (Alluvial Sandy Loam),Maize,153.5,70.7,344.5,0.93,17.2,7.6,Semi-Arid Dry,Urea + DAP
+Mahisagar,Goradu (Alluvial Sandy Loam),Cotton,144.6,69.8,317.8,0.85,17.8,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Mahisagar,Goradu (Alluvial Sandy Loam),Cotton,143.4,72.0,323.9,1.02,20.7,7.5,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Mahisagar,Goradu (Alluvial Sandy Loam),Cotton,145.4,63.6,347.7,1.03,20.8,7.5,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Mahisagar,Goradu (Alluvial Sandy Loam),Gram,147.9,71.9,318.7,0.96,18.1,7.4,Semi-Arid Dry,DAP + Rhizobium
+Mahisagar,Goradu (Alluvial Sandy Loam),Gram,132.0,64.0,331.1,0.91,21.5,7.4,Semi-Arid Dry,DAP + Rhizobium
+Mahisagar,Goradu (Alluvial Sandy Loam),Gram,139.9,62.3,340.1,0.83,20.0,7.5,Semi-Arid Dry,DAP + Rhizobium
+Morbi,Medium Black Soil,Cotton,152.5,70.0,406.6,0.96,18.9,8.0,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Morbi,Medium Black Soil,Cotton,159.9,61.0,450.4,0.87,24.3,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Morbi,Medium Black Soil,Cotton,163.2,67.7,419.6,0.85,22.4,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Morbi,Medium Black Soil,Groundnut,145.4,60.7,451.5,0.96,24.3,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Morbi,Medium Black Soil,Groundnut,145.5,61.9,478.6,1.01,24.7,7.9,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Morbi,Medium Black Soil,Groundnut,129.6,66.4,483.4,1.02,23.9,8.1,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Morbi,Medium Black Soil,Wheat,131.8,69.0,411.4,0.84,24.7,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Morbi,Medium Black Soil,Wheat,148.3,67.9,484.6,0.89,19.5,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Morbi,Medium Black Soil,Wheat,135.0,63.2,442.4,0.82,23.0,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Morbi,Medium Black Soil,Castor,150.0,66.0,466.6,1.0,24.1,7.9,Semi-Arid Dry,Urea + DAP + Gypsum
+Morbi,Medium Black Soil,Castor,151.1,65.2,407.6,0.81,19.2,8.1,Semi-Arid Dry,Urea + DAP + Gypsum
+Morbi,Medium Black Soil,Castor,135.5,61.4,422.9,0.97,24.4,7.9,Semi-Arid Dry,Urea + DAP + Gypsum
+Morbi,Medium Black Soil,Sesamum,128.9,65.9,399.5,0.95,18.7,8.0,Semi-Arid Dry,Urea + SSP
+Morbi,Medium Black Soil,Sesamum,123.2,60.0,434.2,1.01,22.8,8.0,Semi-Arid Dry,Urea + SSP
+Morbi,Medium Black Soil,Sesamum,129.1,57.3,479.1,0.93,19.7,7.9,Semi-Arid Dry,Urea + SSP
+Narmada,Medium to Deep Black,Cotton,146.5,65.8,404.8,1.17,22.3,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Narmada,Medium to Deep Black,Cotton,157.5,71.6,398.5,1.11,23.7,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Narmada,Medium to Deep Black,Cotton,170.7,64.8,382.0,1.05,22.4,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Narmada,Medium to Deep Black,Arhar/Tur,125.4,70.2,382.9,1.07,20.9,7.4,Tropical Wet-and-Dry,SSP + DAP
+Narmada,Medium to Deep Black,Arhar/Tur,140.4,63.8,360.1,1.05,22.1,7.4,Tropical Wet-and-Dry,SSP + DAP
+Narmada,Medium to Deep Black,Arhar/Tur,149.8,68.8,383.5,1.04,21.8,7.4,Tropical Wet-and-Dry,SSP + DAP
+Narmada,Medium to Deep Black,Rice,161.0,72.8,377.1,1.29,22.5,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Rice,136.2,67.2,351.8,1.36,19.2,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Rice,165.2,62.5,378.1,1.3,25.2,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Sugarcane,178.3,79.6,430.0,1.33,24.7,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Sugarcane,169.4,83.5,404.8,1.26,21.0,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Sugarcane,163.0,81.3,394.7,1.1,18.7,7.5,Tropical Wet-and-Dry,Urea + DAP + MOP
+Narmada,Medium to Deep Black,Banana,150.4,74.0,418.2,1.21,24.1,7.4,Tropical Wet-and-Dry,Urea + SSP + MOP
+Narmada,Medium to Deep Black,Banana,157.8,74.7,387.9,1.28,19.4,7.5,Tropical Wet-and-Dry,Urea + SSP + MOP
+Narmada,Medium to Deep Black,Banana,176.1,75.8,425.2,1.03,20.1,7.5,Tropical Wet-and-Dry,Urea + SSP + MOP
+Navsari,Deep Black Vertisol,Rice,146.1,69.7,433.2,1.21,30.0,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Rice,156.6,73.0,401.3,1.21,28.0,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Rice,152.7,82.8,444.4,1.44,29.4,7.1,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Sugarcane,176.3,85.4,402.5,1.28,26.3,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Sugarcane,167.2,96.3,464.4,1.45,27.4,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Sugarcane,182.3,96.7,469.6,1.52,26.5,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP
+Navsari,Deep Black Vertisol,Arhar/Tur,145.8,71.6,412.1,1.39,30.9,7.3,Tropical Wet-and-Dry,SSP + DAP
+Navsari,Deep Black Vertisol,Arhar/Tur,141.8,81.0,448.2,1.43,31.9,7.3,Tropical Wet-and-Dry,SSP + DAP
+Navsari,Deep Black Vertisol,Arhar/Tur,150.7,71.4,400.9,1.46,31.5,7.1,Tropical Wet-and-Dry,SSP + DAP
+Navsari,Deep Black Vertisol,Gram,160.8,70.7,441.4,1.3,29.5,7.1,Tropical Wet-and-Dry,DAP + Rhizobium
+Navsari,Deep Black Vertisol,Gram,152.3,83.8,396.3,1.49,28.5,7.3,Tropical Wet-and-Dry,DAP + Rhizobium
+Navsari,Deep Black Vertisol,Gram,148.0,83.7,408.5,1.2,31.7,7.3,Tropical Wet-and-Dry,DAP + Rhizobium
+Navsari,Deep Black Vertisol,Urad,164.1,69.6,464.0,1.29,28.9,7.2,Tropical Wet-and-Dry,DAP + Rhizobium
+Navsari,Deep Black Vertisol,Urad,137.7,83.0,426.4,1.35,28.3,7.3,Tropical Wet-and-Dry,DAP + Rhizobium
+Navsari,Deep Black Vertisol,Urad,143.1,72.0,423.1,1.23,32.0,7.2,Tropical Wet-and-Dry,DAP + Rhizobium
+Panch Mahals,Medium Black Soil,Maize,142.1,70.2,373.2,0.88,18.3,7.4,Semi-Arid Dry,Urea + DAP
+Panch Mahals,Medium Black Soil,Maize,134.4,60.6,328.7,0.92,17.6,7.5,Semi-Arid Dry,Urea + DAP
+Panch Mahals,Medium Black Soil,Maize,132.3,63.1,336.8,0.9,18.8,7.5,Semi-Arid Dry,Urea + DAP
+Panch Mahals,Medium Black Soil,Rice,148.7,62.1,366.9,0.94,17.9,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Panch Mahals,Medium Black Soil,Rice,132.8,69.6,322.5,0.9,20.3,7.5,Semi-Arid Dry,Urea + DAP + MOP
+Panch Mahals,Medium Black Soil,Rice,144.3,67.5,315.0,0.99,20.4,7.3,Semi-Arid Dry,Urea + DAP + MOP
+Panch Mahals,Medium Black Soil,Arhar/Tur,136.9,69.2,336.5,0.83,19.1,7.5,Semi-Arid Dry,SSP + DAP
+Panch Mahals,Medium Black Soil,Arhar/Tur,116.7,65.6,333.9,0.95,18.6,7.4,Semi-Arid Dry,SSP + DAP
+Panch Mahals,Medium Black Soil,Arhar/Tur,131.2,65.3,308.9,0.77,18.2,7.4,Semi-Arid Dry,SSP + DAP
+Panch Mahals,Medium Black Soil,Wheat,139.1,73.6,313.2,0.95,19.7,7.5,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Panch Mahals,Medium Black Soil,Wheat,158.6,61.5,318.5,0.82,18.1,7.3,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Panch Mahals,Medium Black Soil,Wheat,155.7,63.8,339.0,0.87,18.4,7.4,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Panch Mahals,Medium Black Soil,Gram,146.8,61.7,355.0,0.94,19.9,7.5,Semi-Arid Dry,DAP + Rhizobium
+Panch Mahals,Medium Black Soil,Gram,139.7,59.8,334.3,0.78,15.4,7.4,Semi-Arid Dry,DAP + Rhizobium
+Panch Mahals,Medium Black Soil,Gram,121.7,65.5,338.0,0.92,19.9,7.5,Semi-Arid Dry,DAP + Rhizobium
+Patan,Sandy Loam & Saline,Castor,120.3,56.3,285.6,0.78,16.7,7.8,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Patan,Sandy Loam & Saline,Castor,131.3,50.6,287.6,0.78,15.3,8.0,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Patan,Sandy Loam & Saline,Castor,118.5,61.1,302.5,0.72,16.1,8.0,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Patan,Sandy Loam & Saline,Cotton,148.6,57.8,289.8,0.65,16.5,7.8,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Patan,Sandy Loam & Saline,Cotton,139.3,63.8,305.6,0.62,17.2,8.0,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Patan,Sandy Loam & Saline,Cotton,149.0,59.0,345.4,0.69,16.5,7.8,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Patan,Sandy Loam & Saline,Mustard,126.7,60.7,343.2,0.76,12.9,7.9,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Patan,Sandy Loam & Saline,Mustard,124.7,63.4,314.4,0.79,14.7,7.9,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Patan,Sandy Loam & Saline,Mustard,136.4,59.4,289.3,0.76,16.0,7.9,Subtropical Semi-Arid,Urea + DAP + Sulphur
+Patan,Sandy Loam & Saline,Wheat,126.0,54.9,329.1,0.75,14.2,7.9,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Patan,Sandy Loam & Saline,Wheat,126.7,53.1,304.1,0.65,13.3,7.9,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Patan,Sandy Loam & Saline,Wheat,129.0,58.4,319.4,0.6,14.3,7.9,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Patan,Sandy Loam & Saline,Bajra,120.3,57.2,303.1,0.66,14.5,7.9,Subtropical Semi-Arid,Urea + DAP
+Patan,Sandy Loam & Saline,Bajra,120.0,60.8,339.1,0.72,13.5,8.0,Subtropical Semi-Arid,Urea + DAP
+Patan,Sandy Loam & Saline,Bajra,128.6,51.7,301.7,0.61,14.7,7.9,Subtropical Semi-Arid,Urea + DAP
+Porbandar,Coastal Alluvial & Black,Groundnut,127.4,62.3,389.5,0.74,21.8,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Groundnut,132.6,58.5,392.0,0.91,19.9,8.0,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Groundnut,133.4,66.5,410.7,0.88,23.3,8.1,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Gram,144.1,57.7,407.4,0.73,19.8,8.2,Semi-Arid Dry,DAP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Gram,143.8,68.7,405.0,0.8,21.5,8.2,Semi-Arid Dry,DAP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Gram,122.0,60.9,449.1,0.71,21.4,8.1,Semi-Arid Dry,DAP + Rhizobium
+Porbandar,Coastal Alluvial & Black,Wheat,146.8,64.6,441.3,0.91,20.8,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Porbandar,Coastal Alluvial & Black,Wheat,150.3,63.2,408.5,0.88,22.9,8.2,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Porbandar,Coastal Alluvial & Black,Wheat,141.3,64.0,437.2,0.84,22.4,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Porbandar,Coastal Alluvial & Black,Cotton,157.2,58.4,467.2,0.78,21.0,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Porbandar,Coastal Alluvial & Black,Cotton,161.2,66.5,429.7,0.77,23.5,8.2,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Porbandar,Coastal Alluvial & Black,Cotton,149.6,65.8,391.1,0.84,20.1,8.2,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Porbandar,Coastal Alluvial & Black,Jowar,142.4,55.0,464.6,0.78,22.6,8.2,Semi-Arid Dry,Urea + SSP
+Porbandar,Coastal Alluvial & Black,Jowar,152.1,60.1,382.9,0.8,21.1,8.0,Semi-Arid Dry,Urea + SSP
+Porbandar,Coastal Alluvial & Black,Jowar,140.4,62.0,419.4,0.87,21.6,8.1,Semi-Arid Dry,Urea + SSP
+Rajkot,Medium Black Soil,Cotton,156.5,70.6,422.3,0.97,28.5,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Rajkot,Medium Black Soil,Cotton,144.2,79.8,433.0,0.99,22.8,7.7,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Rajkot,Medium Black Soil,Cotton,156.0,72.6,460.3,0.95,23.5,7.9,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Rajkot,Medium Black Soil,Groundnut,147.7,65.6,497.1,1.05,22.5,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Rajkot,Medium Black Soil,Groundnut,153.3,67.6,435.0,1.02,28.4,7.7,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Rajkot,Medium Black Soil,Groundnut,129.1,70.0,436.0,0.98,21.5,7.8,Semi-Arid Dry,SSP + Gypsum + MOP + Rhizobium
+Rajkot,Medium Black Soil,Wheat,155.7,68.4,474.5,1.06,22.8,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Rajkot,Medium Black Soil,Wheat,160.1,77.7,425.8,1.11,22.7,7.7,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Rajkot,Medium Black Soil,Wheat,146.4,72.3,444.1,1.01,26.0,7.9,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Rajkot,Medium Black Soil,Sesamum,143.1,69.5,470.5,1.1,25.9,7.8,Semi-Arid Dry,Urea + SSP
+Rajkot,Medium Black Soil,Sesamum,150.1,70.9,443.9,0.88,22.3,7.8,Semi-Arid Dry,Urea + SSP
+Rajkot,Medium Black Soil,Sesamum,127.7,64.8,433.3,1.0,24.4,7.9,Semi-Arid Dry,Urea + SSP
+Rajkot,Medium Black Soil,Bajra,134.4,68.2,435.1,1.06,26.1,7.8,Semi-Arid Dry,Urea + DAP
+Rajkot,Medium Black Soil,Bajra,162.1,70.8,463.0,0.94,24.6,7.7,Semi-Arid Dry,Urea + DAP
+Rajkot,Medium Black Soil,Bajra,131.6,67.8,418.9,1.09,28.5,7.7,Semi-Arid Dry,Urea + DAP
+Sabar Kantha,Alluvial Sandy Loam,Wheat,146.2,66.9,368.9,0.99,18.4,7.5,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Sabar Kantha,Alluvial Sandy Loam,Wheat,133.2,60.5,374.3,0.84,18.7,7.4,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Sabar Kantha,Alluvial Sandy Loam,Wheat,135.8,66.4,373.0,0.91,16.4,7.6,Subtropical Semi-Arid,Urea + DAP + Zinc Sulphate
+Sabar Kantha,Alluvial Sandy Loam,Cotton,138.6,70.8,378.6,0.99,16.0,7.5,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Sabar Kantha,Alluvial Sandy Loam,Cotton,157.2,67.6,390.3,0.99,19.9,7.4,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Sabar Kantha,Alluvial Sandy Loam,Cotton,144.3,74.0,352.5,0.99,18.2,7.5,Subtropical Semi-Arid,Urea + DAP + MOP + ZnSO4
+Sabar Kantha,Alluvial Sandy Loam,Maize,158.2,69.3,336.6,0.92,17.7,7.6,Subtropical Semi-Arid,Urea + DAP
+Sabar Kantha,Alluvial Sandy Loam,Maize,149.5,67.3,331.6,0.82,16.9,7.4,Subtropical Semi-Arid,Urea + DAP
+Sabar Kantha,Alluvial Sandy Loam,Maize,129.5,63.4,339.7,0.85,19.6,7.5,Subtropical Semi-Arid,Urea + DAP
+Sabar Kantha,Alluvial Sandy Loam,Castor,133.5,60.8,379.1,0.95,16.3,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Sabar Kantha,Alluvial Sandy Loam,Castor,154.2,68.0,383.3,1.0,16.4,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Sabar Kantha,Alluvial Sandy Loam,Castor,151.2,60.5,368.8,0.97,19.5,7.6,Subtropical Semi-Arid,Urea + DAP + Gypsum
+Sabar Kantha,Alluvial Sandy Loam,Groundnut,131.4,66.6,338.8,0.89,19.2,7.5,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Sabar Kantha,Alluvial Sandy Loam,Groundnut,143.4,59.8,356.1,1.02,17.8,7.4,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Sabar Kantha,Alluvial Sandy Loam,Groundnut,145.6,63.1,320.2,0.96,19.8,7.6,Subtropical Semi-Arid,SSP + Gypsum + MOP + Rhizobium
+Surat,Deep Black Vertisol,Sugarcane,184.0,93.6,440.0,1.52,27.5,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Sugarcane,183.0,85.8,432.1,1.43,30.7,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Sugarcane,187.8,90.5,438.7,1.3,26.4,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Rice,173.1,78.8,411.9,1.47,25.5,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Rice,179.3,74.4,461.6,1.57,26.9,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Rice,178.4,75.6,458.6,1.44,33.6,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Surat,Deep Black Vertisol,Arhar/Tur,139.9,77.7,425.4,1.38,31.4,7.4,Tropical Wet-and-Dry,SSP + DAP
+Surat,Deep Black Vertisol,Arhar/Tur,159.0,70.9,440.5,1.38,31.6,7.2,Tropical Wet-and-Dry,SSP + DAP
+Surat,Deep Black Vertisol,Arhar/Tur,134.3,82.9,470.4,1.47,26.7,7.4,Tropical Wet-and-Dry,SSP + DAP
+Surat,Deep Black Vertisol,Jowar,144.8,76.0,464.3,1.42,33.4,7.2,Tropical Wet-and-Dry,Urea + SSP
+Surat,Deep Black Vertisol,Jowar,147.1,82.7,466.3,1.72,26.8,7.2,Tropical Wet-and-Dry,Urea + SSP
+Surat,Deep Black Vertisol,Jowar,161.1,69.5,457.2,1.6,31.2,7.3,Tropical Wet-and-Dry,Urea + SSP
+Surat,Deep Black Vertisol,Wheat,153.6,79.5,462.4,1.31,26.4,7.4,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Surat,Deep Black Vertisol,Wheat,175.0,82.5,435.8,1.42,26.8,7.4,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Surat,Deep Black Vertisol,Wheat,158.1,73.8,450.7,1.55,32.5,7.3,Tropical Wet-and-Dry,Urea + DAP + Zinc Sulphate
+Surendranagar,Medium Black Soil,Cotton,158.4,74.0,449.6,0.9,20.1,8.0,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Surendranagar,Medium Black Soil,Cotton,160.2,66.1,397.7,1.02,20.0,8.2,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Surendranagar,Medium Black Soil,Cotton,140.4,69.0,444.1,1.03,22.9,8.1,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Surendranagar,Medium Black Soil,Sesamum,149.5,58.5,463.5,0.86,21.1,8.1,Semi-Arid Dry,Urea + SSP
+Surendranagar,Medium Black Soil,Sesamum,144.2,70.3,455.8,0.78,18.6,8.0,Semi-Arid Dry,Urea + SSP
+Surendranagar,Medium Black Soil,Sesamum,121.6,57.4,457.4,0.93,20.0,8.1,Semi-Arid Dry,Urea + SSP
+Surendranagar,Medium Black Soil,Castor,139.4,68.9,398.1,0.93,18.7,8.1,Semi-Arid Dry,Urea + DAP + Gypsum
+Surendranagar,Medium Black Soil,Castor,136.1,66.2,408.5,0.91,19.3,8.2,Semi-Arid Dry,Urea + DAP + Gypsum
+Surendranagar,Medium Black Soil,Castor,146.2,70.8,449.6,0.95,21.4,8.0,Semi-Arid Dry,Urea + DAP + Gypsum
+Surendranagar,Medium Black Soil,Wheat,158.8,62.6,400.4,0.89,20.7,8.1,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Surendranagar,Medium Black Soil,Wheat,142.0,72.5,456.7,0.96,21.2,8.0,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Surendranagar,Medium Black Soil,Wheat,137.5,75.5,438.0,0.96,18.0,8.2,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Surendranagar,Medium Black Soil,Bajra,130.4,70.0,414.1,0.97,17.2,8.2,Semi-Arid Dry,Urea + DAP
+Surendranagar,Medium Black Soil,Bajra,151.6,62.7,396.5,0.92,17.5,8.2,Semi-Arid Dry,Urea + DAP
+Surendranagar,Medium Black Soil,Bajra,140.6,64.0,434.0,0.86,18.5,8.1,Semi-Arid Dry,Urea + DAP
+Tapi,Deep Black Vertisol,Rice,139.8,72.6,412.4,1.2,20.3,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Rice,165.0,67.6,392.8,1.07,26.5,7.3,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Rice,164.8,72.3,427.3,1.17,22.2,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Sugarcane,172.7,86.1,384.7,1.15,23.5,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Sugarcane,188.8,77.8,426.2,1.36,20.5,7.4,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Sugarcane,174.3,79.4,429.4,1.22,20.0,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP
+Tapi,Deep Black Vertisol,Arhar/Tur,131.8,72.5,377.2,1.19,24.1,7.3,Tropical Wet-and-Dry,SSP + DAP
+Tapi,Deep Black Vertisol,Arhar/Tur,141.5,75.7,368.7,1.29,21.7,7.4,Tropical Wet-and-Dry,SSP + DAP
+Tapi,Deep Black Vertisol,Arhar/Tur,125.4,70.1,371.7,1.32,26.2,7.3,Tropical Wet-and-Dry,SSP + DAP
+Tapi,Deep Black Vertisol,Jowar,164.9,62.3,406.3,1.28,20.7,7.4,Tropical Wet-and-Dry,Urea + SSP
+Tapi,Deep Black Vertisol,Jowar,151.0,66.0,393.4,1.38,25.0,7.2,Tropical Wet-and-Dry,Urea + SSP
+Tapi,Deep Black Vertisol,Jowar,136.5,76.5,425.0,1.27,22.6,7.3,Tropical Wet-and-Dry,Urea + SSP
+Tapi,Deep Black Vertisol,Cotton,176.2,66.6,364.5,1.32,20.5,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Tapi,Deep Black Vertisol,Cotton,162.7,72.0,432.2,1.11,22.2,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Tapi,Deep Black Vertisol,Cotton,170.5,76.1,414.4,1.12,20.5,7.2,Tropical Wet-and-Dry,Urea + DAP + MOP + ZnSO4
+Vadodara,Medium Black Soil,Cotton,150.7,81.6,433.1,1.08,23.8,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Vadodara,Medium Black Soil,Cotton,157.4,77.6,465.0,1.13,22.3,7.6,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Vadodara,Medium Black Soil,Cotton,147.9,71.4,441.6,1.27,20.7,7.8,Semi-Arid Dry,Urea + DAP + MOP + ZnSO4
+Vadodara,Medium Black Soil,Arhar/Tur,152.9,72.7,388.2,1.15,24.1,7.6,Semi-Arid Dry,SSP + DAP
+Vadodara,Medium Black Soil,Arhar/Tur,147.6,71.6,463.7,1.17,23.7,7.6,Semi-Arid Dry,SSP + DAP
+Vadodara,Medium Black Soil,Arhar/Tur,150.0,71.4,419.3,1.07,20.5,7.8,Semi-Arid Dry,SSP + DAP
+Vadodara,Medium Black Soil,Rice,163.9,83.4,394.0,1.15,24.9,7.8,Semi-Arid Dry,Urea + DAP + MOP
+Vadodara,Medium Black Soil,Rice,157.8,76.8,404.7,1.03,20.9,7.8,Semi-Arid Dry,Urea + DAP + MOP
+Vadodara,Medium Black Soil,Rice,166.3,74.6,393.8,1.32,22.8,7.8,Semi-Arid Dry,Urea + DAP + MOP
+Vadodara,Medium Black Soil,Maize,137.9,74.9,397.1,1.32,23.2,7.7,Semi-Arid Dry,Urea + DAP
+Vadodara,Medium Black Soil,Maize,137.4,78.5,397.5,1.09,22.4,7.6,Semi-Arid Dry,Urea + DAP
+Vadodara,Medium Black Soil,Maize,165.7,67.9,435.0,1.13,23.4,7.6,Semi-Arid Dry,Urea + DAP
+Vadodara,Medium Black Soil,Wheat,157.7,69.8,407.5,1.09,26.8,7.6,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Vadodara,Medium Black Soil,Wheat,156.9,79.1,451.4,1.38,26.0,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Vadodara,Medium Black Soil,Wheat,151.3,77.7,424.7,1.2,23.2,7.8,Semi-Arid Dry,Urea + DAP + Zinc Sulphate
+Valsad,Coastal Alluvial & Red Clay,Rice,144.2,69.7,373.1,1.41,21.7,7.0,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Rice,171.5,73.0,415.8,1.48,22.0,7.0,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Rice,160.3,68.9,419.7,1.13,28.7,7.0,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Sugarcane,168.1,89.2,425.7,1.43,27.6,6.9,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Sugarcane,166.6,85.2,426.4,1.46,21.5,7.0,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Sugarcane,184.2,90.7,407.5,1.18,28.7,6.9,Tropical Wet-and-Dry,Urea + DAP + MOP
+Valsad,Coastal Alluvial & Red Clay,Arhar/Tur,156.6,72.4,377.6,1.14,23.0,6.9,Tropical Wet-and-Dry,SSP + DAP
+Valsad,Coastal Alluvial & Red Clay,Arhar/Tur,134.3,72.9,353.6,1.18,22.2,7.0,Tropical Wet-and-Dry,SSP + DAP
+Valsad,Coastal Alluvial & Red Clay,Arhar/Tur,151.0,79.0,419.4,1.11,25.6,6.8,Tropical Wet-and-Dry,SSP + DAP
+Valsad,Coastal Alluvial & Red Clay,Urad,157.0,75.3,419.0,1.48,24.1,7.0,Tropical Wet-and-Dry,DAP + Rhizobium
+Valsad,Coastal Alluvial & Red Clay,Urad,157.8,69.4,360.9,1.16,22.4,6.8,Tropical Wet-and-Dry,DAP + Rhizobium
+Valsad,Coastal Alluvial & Red Clay,Urad,158.1,75.6,427.9,1.17,28.5,6.9,Tropical Wet-and-Dry,DAP + Rhizobium
+Valsad,Coastal Alluvial & Red Clay,Gram,150.3,79.2,414.9,1.33,22.6,6.8,Tropical Wet-and-Dry,DAP + Rhizobium
+Valsad,Coastal Alluvial & Red Clay,Gram,137.3,75.4,363.4,1.48,28.4,7.0,Tropical Wet-and-Dry,DAP + Rhizobium
+Valsad,Coastal Alluvial & Red Clay,Gram,140.1,80.2,428.8,1.34,28.2,6.8,Tropical Wet-and-Dry,DAP + Rhizobium
