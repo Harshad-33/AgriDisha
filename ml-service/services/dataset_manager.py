@@ -86,6 +86,33 @@ DISTRICT_ALIASES = {
     "charkidadri": "charkhi dadri",
     "narnaul": "mahendragarh",
     "mohindergarh": "mahendragarh",
+
+    # Karnataka administrative aliases
+    "belgaum": "belagavi",
+    "bangalore rural": "bengaluru rural",
+    "bangalore urban": "bengaluru urban",
+    "bangalore": "bengaluru urban",
+    "bengaluru": "bengaluru urban",
+    "bellary": "ballari",
+    "bijapur": "vijayapura",
+    "gulbarga": "kalaburagi",
+    "mysore": "mysuru",
+    "shimoga": "shivamogga",
+    "chikmagalur": "chikkamagaluru",
+    "chikmagalore": "chikkamagaluru",
+    "chikkamagalur": "chikkamagaluru",
+    "chikballapur": "chikkaballapura",
+    "chikkaballapur": "chikkaballapura",
+    "dakshin kannad": "dakshina kannada",
+    "south canara": "dakshina kannada",
+    "uttar kannad": "uttara kannada",
+    "north canara": "uttara kannada",
+    "tumkur": "tumakuru",
+    "chamarajanagar": "chamarajanagara",
+    "coorg": "kodagu",
+    "davangere": "davanagere",
+    "ramanagar": "ramanagara",
+    "hospet": "vijayanagara",
 }
 
 
@@ -571,6 +598,11 @@ class DatasetManager:
                     f"Haryana Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & CCS HAU Hisar benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
+            elif ds_state == "Karnataka":
+                regional_notes = (
+                    f"Karnataka Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & UAS Bangalore/Dharwad/Shivamogga benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
             else:
                 regional_notes = (
                     f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
@@ -949,6 +981,91 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (South Gujarat Heavy Rainfall Zone - NAU Navsari jurisdiction): "
                         f"Under deep heavy black clay soils and high precipitation, prioritize drainage and preventative fungicide applications on {crop} against anthracnose and rot complexes. "
                         f"Consult Navsari Agricultural University research stations.{pv_note}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # KARNATAKA STATE AGRO-CLIMATIC ZONES (UAS Bangalore, Dharwad & Shivamogga)
+        # -------------------------------------------------------------
+        ka_coastal_malnad = [
+            "dakshina kannada", "dakshin kannad", "south canara", "udupi", "uttara kannada",
+            "uttar kannad", "north canara", "chikkamagaluru", "chikmagalur", "kodagu",
+            "coorg", "shivamogga", "shimoga", "hassan"
+        ]
+        ka_southern = [
+            "bengaluru urban", "bangalore urban", "bangalore", "bengaluru rural", "bangalore rural",
+            "ramanagara", "ramanagar", "mandya", "mysuru", "mysore", "chamarajanagara",
+            "chamarajanagar", "tumakuru", "tumkur", "kolar", "chikkaballapura", "chikballapur",
+            "chitradurga", "davanagere", "davangere"
+        ]
+        ka_northern = [
+            "belagavi", "belgaum", "dharwad", "gadag", "haveri", "bagalkote", "bagalkot",
+            "vijayapura", "bijapur", "ballari", "bellary", "vijayanagara", "koppal", "raichur",
+            "kalaburagi", "gulbarga", "yadgir", "bidar"
+        ]
+
+        is_ka_coastal = any(d in clean_dist for d in ka_coastal_malnad)
+        is_ka_southern = any(d in clean_dist for d in ka_southern)
+        is_ka_northern = any(d in clean_dist for d in ka_northern)
+        is_karnataka = (clean_state in ("karnataka", "ka")) or is_ka_coastal or is_ka_southern or is_ka_northern
+
+        if is_karnataka:
+            is_arecanut_plantation = any(p in c_lower for p in ["arecanut", "betel", "coconut", "coffee", "pepper", "rubber"])
+            is_chilli_vegetable = any(ch in c_lower for ch in ["chilli", "chili", "pepper", "tomato", "potato", "brinjal", "eggplant"])
+            is_cereal_pulse = any(cp in c_lower for cp in ["ragi", "rice", "paddy", "jowar", "sorghum", "tur", "redgram", "cotton", "maize"])
+
+            ka_note = ""
+            if is_arecanut_plantation:
+                ka_note = (
+                    " [Chikkamagaluru & Malnad Arecanut Benchmark (KSNUAHS Shivamogga): For Koleroga / Fruit Rot (Phytophthora meadii), spray 1% Bordeaux mixture with resin adhesive twice (pre-monsoon & 40 days later). "
+                    "For Bud Rot, excise decayed tissue and smear 10% Bordeaux paste. For Yellow Leaf Disease, apply balanced NPK + 500g MgSO4 per palm and manage vector populations]."
+                )
+            elif is_chilli_vegetable:
+                ka_note = (
+                    " [Krishna Basin & Deccan Plateau Chilli Benchmark (UAS Dharwad): For Bacterial Leaf Spot (Xanthomonas), spray Streptocycline @ 1g/10L + Copper Oxychloride @ 30g/10L. "
+                    "For Chilli Leaf Curl Virus (CLCuV), control whitefly/thrips vectors with Diafenthiuron 50 WP @ 1.25g/L; rogue infected plants. "
+                    "For Anthracnose fruit rot, apply Azoxystrobin 23 SC @ 1ml/L or Difenoconazole @ 0.5ml/L]."
+                )
+            elif is_cereal_pulse:
+                ka_note = (
+                    " [UAS Bangalore & UAS Dharwad Crop Health Protocol: For Blast in Ragi/Paddy, apply Tricyclazole 75 WP @ 0.6g/L or Mancozeb @ 2g/L. "
+                    "For Wilt / Stem Rot in Pulses, apply Trichoderma viride seed treatment @ 10g/kg and soil drenching with Carbendazim @ 1g/L]."
+                )
+
+            if is_ka_coastal:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Coastal & Malnad Agro-Climatic Advisory (KSNUAHS Shivamogga / CPCRI)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Coastal & Malnad Heavy Rainfall Zone - KSNUAHS Shivamogga jurisdiction): "
+                        f"Under high precipitation and humid tropical plantation conditions, protect {crop} against Phytophthora rot complexes, anthracnose, and fungal foliar blights during monsoon downpours. "
+                        f"Implement KSNUAHS Shivamogga package of practices.{ka_note}"
+                    )
+                }
+            elif is_ka_southern:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Southern Dry & Transition Agro-Climatic Advisory (UAS Bangalore / GKVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Southern Dry & Transition Zone - UAS Bangalore GKVK jurisdiction): "
+                        f"Under red sandy loam soils and Cauvery basin conditions, monitor {crop} for moisture-stress foliar leaf spots, blast, and viral complexes transmitted by sucking pests. "
+                        f"Follow UAS Bangalore integrated pest and disease management bulletins.{ka_note}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Northern Dry & Transition Agro-Climatic Advisory (UAS Dharwad / UAS Raichur)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Northern Dry & Transition Zone - UAS Dharwad & UAS Raichur jurisdiction): "
+                        f"Under deep black vertisols and Krishna-Tungabhadra basin semi-arid climate, scout {crop} for wilt, rust, powdery mildew, and foliar blight complexes. "
+                        f"Consult UAS Dharwad / Raichur extension stations and district KVK.{ka_note}"
                     )
                 }
 

@@ -293,6 +293,68 @@ HARYANA_DISTRICT_ZONE_MAP = {
 }
 
 
+# District alias mapping for Karnataka Agro-Climatic Zones (UAS Bangalore, UAS Dharwad & KSNUAHS Shivamogga)
+KARNATAKA_DISTRICT_ZONE_MAP = {
+    # Coastal & Malnad Zone (KSNUAHS Shivamogga: Arecanut, Rice, Coconut, Black Pepper, Coffee)
+    'dakshina kannada': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'dakshin kannad': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'south canara': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'udupi': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'uttara kannada': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'uttar kannad': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'north canara': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'chikkamagaluru': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'chikmagalur': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'kodagu': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'coorg': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'shivamogga': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'shimoga': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+    'hassan': 'Coastal & Malnad Zone (KSNUAHS Shivamogga)',
+
+    # Southern Dry & Transition Zone (UAS Bangalore: Ragi, Maize, Sugarcane, Rice, Tomato)
+    'bengaluru urban': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'bangalore urban': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'bangalore': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'bengaluru': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'bengaluru rural': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'bangalore rural': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'ramanagara': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'ramanagar': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'mandya': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'mysuru': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'mysore': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'chamarajanagara': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'chamarajanagar': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'tumakuru': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'tumkur': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'kolar': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'chikkaballapura': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'chikballapur': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'chitradurga': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'davanagere': 'Southern Dry & Transition Zone (UAS Bangalore)',
+    'davangere': 'Southern Dry & Transition Zone (UAS Bangalore)',
+
+    # Northern Dry & Transition Zone (UAS Dharwad & UAS Raichur: Jowar, Cotton, Tur, Chickpea, Groundnut)
+    'belagavi': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'belgaum': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'dharwad': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'gadag': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'haveri': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'bagalkote': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'bagalkot': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'vijayapura': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'bijapur': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'ballari': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'bellary': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'vijayanagara': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'koppal': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'raichur': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'kalaburagi': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'gulbarga': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'yadgir': 'Northern Dry & Transition Zone (UAS Dharwad)',
+    'bidar': 'Northern Dry & Transition Zone (UAS Dharwad)'
+}
+
 class CropService:
     def __init__(self, model_path: str = MODEL_PATH):
         self.model_path = model_path
@@ -347,6 +409,7 @@ class CropService:
         is_ap_state = (clean_state_input in ("andhra pradesh", "ap", "andhra"))
         is_gujarat_state = (clean_state_input in ("gujarat", "gj"))
         is_haryana_state = (clean_state_input in ("haryana", "hr"))
+        is_karnataka_state = (clean_state_input in ("karnataka", "ka"))
         if target_dist:
             c_key = target_dist.lower().strip()
             # Check Andhra Pradesh zones first if state is AP or key in AP map
@@ -385,8 +448,17 @@ class CropService:
                             zone_name = v_map
                             break
 
-            # Check Maharashtra zones if not found in AP, Gujarat, or Telangana
-            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state:
+            # Check Karnataka zones if state is Karnataka or key in KA map
+            if not zone_name and (is_karnataka_state or c_key in KARNATAKA_DISTRICT_ZONE_MAP):
+                zone_name = KARNATAKA_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in KARNATAKA_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
+            # Check Maharashtra zones if not found in other states
+            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state and not is_karnataka_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -764,7 +836,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")))),
+                    'state': state or dataset_match.get("state") or ("Karnataka" if any(ka_kw in (zone_name or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra"))))),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -857,8 +929,8 @@ class CropService:
             ],
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
-            'description': f"Recommended for {'Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters')}.",
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")))),
+            'description': f"Recommended for {'Karnataka based on UAS Bangalore/Dharwad/Shivamogga agronomic parameters' if (state == 'Karnataka' or any(ka_kw in (zone or '') for ka_kw in ['Karnataka', 'Malnad', 'KSNUAHS', 'UAS Bangalore', 'UAS Dharwad'])) else ('Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters'))}.",
+            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Karnataka" if any(ka_kw in (zone or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra"))))),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,

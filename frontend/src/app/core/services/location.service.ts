@@ -360,6 +360,102 @@ export class LocationService {
     'Yamunanagar'
   ];
 
+  // Priority 7: Karnataka Regional Reference Dataset (All 31 Karnataka districts)
+  private karnatakaReferenceDistricts = new Set<string>([
+    'bagalkote',
+    'bagalkot',
+    'ballari',
+    'bellary',
+    'belagavi',
+    'belgaum',
+    'bengaluru rural',
+    'bangalore rural',
+    'bengaluru urban',
+    'bangalore urban',
+    'bangalore',
+    'bengaluru',
+    'bidar',
+    'chamarajanagara',
+    'chamarajanagar',
+    'chikkaballapura',
+    'chikballapur',
+    'chikkaballapur',
+    'chikkamagaluru',
+    'chikmagalur',
+    'chikmagalore',
+    'chikkamagalur',
+    'chitradurga',
+    'dakshina kannada',
+    'dakshin kannad',
+    'south canara',
+    'davanagere',
+    'davangere',
+    'dharwad',
+    'gadag',
+    'hassan',
+    'haveri',
+    'kalaburagi',
+    'gulbarga',
+    'kodagu',
+    'coorg',
+    'kolar',
+    'koppal',
+    'mandya',
+    'mysuru',
+    'mysore',
+    'raichur',
+    'ramanagara',
+    'ramanagar',
+    'shivamogga',
+    'shimoga',
+    'tumakuru',
+    'tumkur',
+    'udupi',
+    'uttara kannada',
+    'uttar kannad',
+    'north canara',
+    'vijayanagara',
+    'hospet',
+    'vijayapura',
+    'bijapur',
+    'yadgir'
+  ]);
+
+  private karnatakaDistricts: string[] = [
+    'Bagalkote',
+    'Ballari (Bellary)',
+    'Belagavi (Belgaum)',
+    'Bengaluru Rural',
+    'Bengaluru Urban',
+    'Bidar',
+    'Chamarajanagara',
+    'Chikkaballapura',
+    'Chikkamagaluru (Chikmagalur)',
+    'Chitradurga',
+    'Dakshina Kannada (Mangaluru)',
+    'Davanagere',
+    'Dharwad',
+    'Gadag',
+    'Hassan',
+    'Haveri',
+    'Kalaburagi (Gulbarga)',
+    'Kodagu (Coorg)',
+    'Kolar',
+    'Koppal',
+    'Mandya',
+    'Mysuru (Mysore)',
+    'Raichur',
+    'Ramanagara',
+    'Shivamogga (Shimoga)',
+    'Tumakuru (Tumkur)',
+    'Udupi',
+    'Uttara Kannada (Karwar)',
+    'Vijayanagara (Hospet)',
+    'Vijayapura (Bijapur)',
+    'Yadgir'
+  ];
+
+
 
 
   private maharashtraDistricts: string[] = [
@@ -445,6 +541,9 @@ export class LocationService {
     if (state === 'Haryana') {
       return this.haryanaDistricts;
     }
+    if (state === 'Karnataka') {
+      return this.karnatakaDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -493,6 +592,14 @@ export class LocationService {
     if (st === 'haryana') {
       for (const hd of this.haryanaReferenceDistricts) {
         if (clean === hd || clean.includes(hd) || hd.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'karnataka') {
+      for (const kd of this.karnatakaReferenceDistricts) {
+        if (clean === kd || clean.includes(kd) || kd.includes(clean)) {
           return 'regional_reference';
         }
       }

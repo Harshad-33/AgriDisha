@@ -1,0 +1,466 @@
+District,Soil_Type,Crop_Name,N_kg_ha,P2O5_kg_ha,K2O_kg_ha,Zn_kg_ha,S_kg_ha,Recommended_pH,Weather,Fertilizer
+Bagalkote,Deep Black Vertisol / Calcareous,Ragi,104.0,51.0,48.0,1.25,19.6,6.6,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Bagalkote,Deep Black Vertisol / Calcareous,Rice,116.4,58.8,58.8,1.56,23.3,6.2,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Bagalkote,Deep Black Vertisol / Calcareous,Cotton,148.5,73.5,73.5,1.33,26.2,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Bagalkote,Deep Black Vertisol / Calcareous,Jowar,82.4,38.8,41.2,0.94,17.3,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Bagalkote,Deep Black Vertisol / Calcareous,Tur,25.2,48.0,24.5,1.05,24.0,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Bagalkote,Deep Black Vertisol / Calcareous,Sugarcane,255.0,105.0,125.0,1.87,28.6,7.0,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Bagalkote,Deep Black Vertisol / Calcareous,Maize,151.5,78.0,40.0,1.41,19.6,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Bagalkote,Deep Black Vertisol / Calcareous,Groundnut,26.0,51.0,25.5,0.95,28.8,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Bagalkote,Deep Black Vertisol / Calcareous,Chilli,154.5,78.8,78.8,1.35,21.6,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Bagalkote,Deep Black Vertisol / Calcareous,Arecanut,101.0,41.6,147.0,1.27,19.8,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Bagalkote,Deep Black Vertisol / Calcareous,Banana,202.0,52.0,250.0,1.5,24.2,6.8,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Bagalkote,Deep Black Vertisol / Calcareous,Tomato,176.4,95.0,114.0,1.36,26.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Bagalkote,Deep Black Vertisol / Calcareous,Potato,127.5,99.0,130.0,1.27,25.2,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Bagalkote,Deep Black Vertisol / Calcareous,Coffee,145.6,91.8,138.6,1.1,19.4,5.8,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Bagalkote,Deep Black Vertisol / Calcareous,Coconut,121.2,57.6,171.0,1.12,22.7,6.4,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Ballari,Deep Black Vertisol,Ragi,99.0,48.0,47.5,1.25,20.4,6.3,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Ballari,Deep Black Vertisol,Rice,126.0,60.0,62.4,1.59,23.3,6.3,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Ballari,Deep Black Vertisol,Cotton,144.0,73.5,78.0,1.22,23.0,7.7,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Ballari,Deep Black Vertisol,Jowar,79.2,38.4,40.0,0.95,16.6,7.7,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Ballari,Deep Black Vertisol,Tur,24.8,52.0,24.2,1.02,24.0,7.6,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Ballari,Deep Black Vertisol,Sugarcane,260.0,97.0,122.5,1.78,29.4,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Ballari,Deep Black Vertisol,Maize,142.5,71.2,38.0,1.43,20.4,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Ballari,Deep Black Vertisol,Groundnut,26.0,50.0,25.2,1.06,29.7,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Ballari,Deep Black Vertisol,Chilli,151.5,78.0,75.0,1.38,22.7,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Ballari,Deep Black Vertisol,Arecanut,97.0,38.0,133.0,1.27,20.6,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Ballari,Deep Black Vertisol,Banana,196.0,52.0,262.5,1.47,25.0,6.9,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Ballari,Deep Black Vertisol,Tomato,189.0,105.0,116.4,1.29,23.8,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Ballari,Deep Black Vertisol,Potato,121.2,101.0,120.0,1.34,23.5,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Ballari,Deep Black Vertisol,Coffee,134.4,92.7,138.6,1.17,21.2,5.9,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Ballari,Deep Black Vertisol,Coconut,118.8,60.6,187.2,1.19,20.5,6.2,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Belagavi,Deep Black Vertisol / Red Loam,Ragi,95.0,50.0,48.0,1.22,20.4,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Belagavi,Deep Black Vertisol / Red Loam,Rice,120.0,60.6,62.4,1.5,21.3,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Belagavi,Deep Black Vertisol / Red Loam,Cotton,147.0,78.0,72.8,1.27,25.2,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Belagavi,Deep Black Vertisol / Red Loam,Jowar,83.2,42.0,38.8,0.92,17.1,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Belagavi,Deep Black Vertisol / Red Loam,Tur,24.2,51.5,26.2,1.17,23.8,7.7,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Belagavi,Deep Black Vertisol / Red Loam,Sugarcane,237.5,103.0,127.5,1.85,28.6,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Belagavi,Deep Black Vertisol / Red Loam,Maize,151.5,76.5,39.6,1.43,21.0,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Belagavi,Deep Black Vertisol / Red Loam,Groundnut,23.8,51.5,25.5,1.0,31.5,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Belagavi,Deep Black Vertisol / Red Loam,Chilli,156.0,78.8,75.0,1.35,22.4,7.0,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Belagavi,Deep Black Vertisol / Red Loam,Arecanut,103.0,39.6,137.2,1.21,18.8,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Belagavi,Deep Black Vertisol / Red Loam,Banana,206.0,48.5,245.0,1.46,23.3,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Belagavi,Deep Black Vertisol / Red Loam,Tomato,180.0,101.0,115.2,1.37,24.3,6.4,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Belagavi,Deep Black Vertisol / Red Loam,Potato,127.5,99.0,130.0,1.26,24.3,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Belagavi,Deep Black Vertisol / Red Loam,Coffee,142.8,94.5,135.8,1.05,20.0,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Belagavi,Deep Black Vertisol / Red Loam,Coconut,123.6,58.2,171.0,1.12,20.2,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Bengaluru Rural,Red Loam,Ragi,96.0,51.5,49.5,1.24,20.4,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Bengaluru Rural,Red Loam,Rice,118.8,62.4,61.2,1.46,22.0,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Bengaluru Rural,Red Loam,Cotton,157.5,75.0,74.2,1.31,24.5,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Bengaluru Rural,Red Loam,Jowar,76.8,38.0,38.0,1.04,18.4,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Bengaluru Rural,Red Loam,Tur,26.2,48.5,25.8,1.02,24.8,7.7,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Bengaluru Rural,Red Loam,Sugarcane,242.5,98.0,118.8,1.89,28.6,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Bengaluru Rural,Red Loam,Maize,145.5,71.2,38.0,1.39,21.0,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Bengaluru Rural,Red Loam,Groundnut,24.0,51.5,26.2,0.99,31.5,6.5,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Bengaluru Rural,Red Loam,Chilli,153.0,78.8,72.8,1.21,20.2,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Bengaluru Rural,Red Loam,Arecanut,105.0,38.8,133.0,1.19,20.2,5.9,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Bengaluru Rural,Red Loam,Banana,208.0,48.5,245.0,1.41,24.0,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Bengaluru Rural,Red Loam,Tomato,176.4,95.0,116.4,1.48,26.5,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Bengaluru Rural,Red Loam,Potato,127.5,102.0,127.5,1.35,25.5,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Bengaluru Rural,Red Loam,Coffee,144.2,91.8,134.4,1.08,19.4,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Bengaluru Rural,Red Loam,Coconut,124.8,61.2,178.2,1.21,22.2,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Bengaluru Urban,Red Sandy Loam,Ragi,101.0,52.0,51.0,1.26,19.0,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Bengaluru Urban,Red Sandy Loam,Rice,116.4,61.8,59.4,1.5,21.3,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Bengaluru Urban,Red Sandy Loam,Cotton,144.0,71.2,75.0,1.37,25.5,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Bengaluru Urban,Red Sandy Loam,Jowar,76.8,38.0,41.2,1.0,16.9,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Bengaluru Urban,Red Sandy Loam,Tur,24.0,50.0,25.2,1.16,25.5,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Bengaluru Urban,Red Sandy Loam,Sugarcane,247.5,98.0,118.8,1.71,25.8,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Bengaluru Urban,Red Sandy Loam,Maize,157.5,78.8,42.0,1.33,20.0,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Bengaluru Urban,Red Sandy Loam,Groundnut,24.5,50.5,26.0,0.94,28.8,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Bengaluru Urban,Red Sandy Loam,Chilli,142.5,71.2,75.0,1.33,21.6,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Bengaluru Urban,Red Sandy Loam,Arecanut,105.0,41.2,138.6,1.1,19.0,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Bengaluru Urban,Red Sandy Loam,Banana,196.0,50.5,255.0,1.4,23.0,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Bengaluru Urban,Red Sandy Loam,Tomato,185.4,102.0,122.4,1.39,24.3,6.5,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Bengaluru Urban,Red Sandy Loam,Potato,123.8,98.0,130.0,1.35,25.5,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Bengaluru Urban,Red Sandy Loam,Coffee,138.6,86.4,140.0,1.07,18.6,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Bengaluru Urban,Red Sandy Loam,Coconut,115.2,57.0,174.6,1.22,23.1,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Bidar,Lateritic to Deep Black Soil,Ragi,96.0,47.5,47.5,1.18,20.2,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Bidar,Lateritic to Deep Black Soil,Rice,120.0,60.6,62.4,1.41,21.1,6.3,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Bidar,Lateritic to Deep Black Soil,Cotton,151.5,78.0,75.0,1.35,23.8,8.0,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Bidar,Lateritic to Deep Black Soil,Jowar,83.2,42.0,40.0,0.95,18.7,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Bidar,Lateritic to Deep Black Soil,Tur,24.2,50.5,25.5,1.1,25.2,7.7,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Bidar,Lateritic to Deep Black Soil,Sugarcane,247.5,101.0,120.0,1.91,27.7,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Bidar,Lateritic to Deep Black Soil,Maize,142.5,77.2,42.0,1.46,20.4,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Bidar,Lateritic to Deep Black Soil,Groundnut,24.5,47.5,23.8,0.98,30.3,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Bidar,Lateritic to Deep Black Soil,Chilli,145.5,75.8,74.2,1.22,22.0,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Bidar,Lateritic to Deep Black Soil,Arecanut,99.0,41.6,135.8,1.15,18.6,5.8,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Bidar,Lateritic to Deep Black Soil,Banana,204.0,49.5,240.0,1.5,24.2,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Bidar,Lateritic to Deep Black Soil,Tomato,187.2,100.0,121.2,1.33,25.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Bidar,Lateritic to Deep Black Soil,Potato,125.0,99.0,122.5,1.22,24.0,5.8,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Bidar,Lateritic to Deep Black Soil,Coffee,142.8,89.1,145.6,1.14,20.4,5.8,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Bidar,Lateritic to Deep Black Soil,Coconut,114.0,60.0,172.8,1.13,22.0,6.2,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Chamarajanagara,Red Sandy Loam / Black Soil,Ragi,102.0,48.0,47.5,1.22,18.8,6.5,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Chamarajanagara,Red Sandy Loam / Black Soil,Rice,122.4,61.2,63.0,1.58,23.3,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Chamarajanagara,Red Sandy Loam / Black Soil,Cotton,154.5,74.2,75.8,1.2,23.8,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Chamarajanagara,Red Sandy Loam / Black Soil,Jowar,76.8,40.0,41.6,1.02,17.6,7.7,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Chamarajanagara,Red Sandy Loam / Black Soil,Tur,23.8,47.5,25.0,1.01,23.8,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Chamarajanagara,Red Sandy Loam / Black Soil,Sugarcane,242.5,103.0,121.2,1.8,28.3,7.2,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Chamarajanagara,Red Sandy Loam / Black Soil,Maize,150.0,78.0,40.0,1.32,20.0,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Chamarajanagara,Red Sandy Loam / Black Soil,Groundnut,26.0,50.0,26.0,0.98,31.2,6.6,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Chamarajanagara,Red Sandy Loam / Black Soil,Chilli,150.0,74.2,72.0,1.35,20.9,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Chamarajanagara,Red Sandy Loam / Black Soil,Arecanut,101.0,41.6,135.8,1.15,18.6,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Chamarajanagara,Red Sandy Loam / Black Soil,Banana,202.0,51.0,247.5,1.4,23.8,6.9,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Chamarajanagara,Red Sandy Loam / Black Soil,Tomato,183.6,96.0,114.0,1.36,24.3,6.5,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Chamarajanagara,Red Sandy Loam / Black Soil,Potato,120.0,100.0,126.2,1.3,24.3,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Chamarajanagara,Red Sandy Loam / Black Soil,Coffee,135.8,92.7,147.0,1.06,18.6,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Chamarajanagara,Red Sandy Loam / Black Soil,Coconut,115.2,57.0,185.4,1.22,20.7,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Chikkaballapura,Red Sandy Loam,Ragi,98.0,49.0,49.0,1.1,20.6,6.5,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Chikkaballapura,Red Sandy Loam,Rice,120.0,62.4,58.2,1.41,20.2,6.2,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Chikkaballapura,Red Sandy Loam,Cotton,151.5,74.2,75.8,1.37,23.8,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Chikkaballapura,Red Sandy Loam,Jowar,76.0,40.0,41.6,1.01,16.9,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Chikkaballapura,Red Sandy Loam,Tur,25.5,48.0,23.8,1.09,24.3,7.6,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Chikkaballapura,Red Sandy Loam,Sugarcane,262.5,103.0,121.2,1.73,26.0,7.2,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Chikkaballapura,Red Sandy Loam,Maize,145.5,75.8,38.4,1.37,19.4,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Chikkaballapura,Red Sandy Loam,Groundnut,24.0,50.0,24.0,1.02,30.6,6.5,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Chikkaballapura,Red Sandy Loam,Chilli,147.0,78.0,78.8,1.35,21.6,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Chikkaballapura,Red Sandy Loam,Arecanut,98.0,39.2,137.2,1.24,18.8,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Chikkaballapura,Red Sandy Loam,Banana,190.0,51.5,262.5,1.41,24.0,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Chikkaballapura,Red Sandy Loam,Tomato,176.4,95.0,114.0,1.32,23.0,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Chikkaballapura,Red Sandy Loam,Potato,125.0,101.0,120.0,1.31,23.5,5.8,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Chikkaballapura,Red Sandy Loam,Coffee,142.8,94.5,135.8,1.14,21.2,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Chikkaballapura,Red Sandy Loam,Coconut,123.6,63.0,189.0,1.19,22.2,6.1,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Ragi,104.0,51.0,49.5,1.21,20.2,6.3,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Rice,120.0,59.4,58.8,1.53,23.1,6.4,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Cotton,142.5,71.2,72.8,1.21,23.0,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Jowar,79.2,38.4,39.2,0.99,17.5,7.5,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Tur,26.2,50.0,26.0,1.16,25.5,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Sugarcane,260.0,100.0,123.8,1.8,28.3,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Maize,144.0,77.2,40.8,1.37,19.4,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Groundnut,24.5,47.5,24.2,1.03,30.6,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Chilli,144.0,77.2,74.2,1.25,21.1,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Arecanut,97.0,40.4,134.4,1.22,21.0,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Banana,198.0,50.5,240.0,1.58,24.5,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Tomato,176.4,95.0,114.0,1.36,26.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Potato,126.2,102.0,120.0,1.3,26.2,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Coffee,142.8,89.1,141.4,1.1,19.4,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Chikkamagaluru,Red Clay Loam / Coffee Soil,Coconut,116.4,58.8,171.0,1.24,20.7,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Chitradurga,Medium Black / Red Sandy Loam,Ragi,95.0,48.5,51.5,1.26,20.4,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Chitradurga,Medium Black / Red Sandy Loam,Rice,114.0,58.2,61.8,1.46,20.5,6.2,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Chitradurga,Medium Black / Red Sandy Loam,Cotton,150.0,78.0,75.0,1.2,23.0,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Chitradurga,Medium Black / Red Sandy Loam,Jowar,78.4,39.2,41.6,1.05,17.8,7.5,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Chitradurga,Medium Black / Red Sandy Loam,Tur,26.2,50.0,25.2,1.06,24.0,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Chitradurga,Medium Black / Red Sandy Loam,Sugarcane,252.5,96.0,118.8,1.85,27.4,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Chitradurga,Medium Black / Red Sandy Loam,Maize,148.5,75.8,39.6,1.34,18.6,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Chitradurga,Medium Black / Red Sandy Loam,Groundnut,26.2,51.5,26.2,1.02,28.2,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Chitradurga,Medium Black / Red Sandy Loam,Chilli,147.0,75.8,76.5,1.34,23.3,7.2,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Chitradurga,Medium Black / Red Sandy Loam,Arecanut,95.0,41.2,138.6,1.16,18.6,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Chitradurga,Medium Black / Red Sandy Loam,Banana,194.0,49.0,260.0,1.5,22.6,6.6,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Chitradurga,Medium Black / Red Sandy Loam,Tomato,172.8,98.0,121.2,1.34,23.2,6.4,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Chitradurga,Medium Black / Red Sandy Loam,Potato,120.0,100.0,130.0,1.34,23.5,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Chitradurga,Medium Black / Red Sandy Loam,Coffee,133.0,87.3,137.2,1.11,21.0,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Chitradurga,Medium Black / Red Sandy Loam,Coconut,118.8,58.8,187.2,1.15,22.0,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Dakshina Kannada,Coastal Laterite Soil,Ragi,105.0,48.5,51.5,1.24,20.4,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Dakshina Kannada,Coastal Laterite Soil,Rice,115.2,57.0,58.2,1.41,22.7,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Dakshina Kannada,Coastal Laterite Soil,Cotton,157.5,78.8,75.0,1.33,25.5,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Dakshina Kannada,Coastal Laterite Soil,Jowar,81.6,39.6,39.2,0.97,16.7,7.5,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Dakshina Kannada,Coastal Laterite Soil,Tur,25.8,52.5,25.0,1.17,25.8,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Dakshina Kannada,Coastal Laterite Soil,Sugarcane,247.5,96.0,122.5,1.89,27.7,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Dakshina Kannada,Coastal Laterite Soil,Maize,145.5,71.2,38.0,1.3,20.6,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Dakshina Kannada,Coastal Laterite Soil,Groundnut,24.5,49.0,23.8,1.0,29.1,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Dakshina Kannada,Coastal Laterite Soil,Chilli,142.5,77.2,74.2,1.33,23.1,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Dakshina Kannada,Coastal Laterite Soil,Arecanut,102.0,39.6,145.6,1.16,20.8,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Dakshina Kannada,Coastal Laterite Soil,Banana,210.0,48.5,252.5,1.44,24.0,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Dakshina Kannada,Coastal Laterite Soil,Tomato,187.2,100.0,121.2,1.44,25.5,6.5,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Dakshina Kannada,Coastal Laterite Soil,Potato,131.2,103.0,123.8,1.27,26.0,6.0,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Dakshina Kannada,Coastal Laterite Soil,Coffee,137.2,90.9,142.8,1.12,20.4,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Dakshina Kannada,Coastal Laterite Soil,Coconut,122.4,63.0,174.6,1.2,23.1,6.4,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Davanagere,Medium Black / Red Loam,Ragi,98.0,47.5,51.5,1.15,20.0,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Davanagere,Medium Black / Red Loam,Rice,124.8,58.2,61.8,1.38,22.7,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Davanagere,Medium Black / Red Loam,Cotton,156.0,76.5,74.2,1.2,23.8,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Davanagere,Medium Black / Red Loam,Jowar,78.4,38.0,38.0,1.0,16.9,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Davanagere,Medium Black / Red Loam,Tur,24.5,52.0,25.0,1.12,25.5,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Davanagere,Medium Black / Red Loam,Sugarcane,260.0,105.0,128.8,1.91,26.6,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Davanagere,Medium Black / Red Loam,Maize,157.5,77.2,42.0,1.47,21.2,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Davanagere,Medium Black / Red Loam,Groundnut,25.0,48.0,25.0,1.0,31.5,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Davanagere,Medium Black / Red Loam,Chilli,150.0,72.0,75.0,1.35,21.6,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Davanagere,Medium Black / Red Loam,Arecanut,105.0,41.2,147.0,1.16,19.4,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Davanagere,Medium Black / Red Loam,Banana,194.0,49.0,260.0,1.4,23.0,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Davanagere,Medium Black / Red Loam,Tomato,180.0,99.0,121.2,1.37,24.3,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Davanagere,Medium Black / Red Loam,Potato,122.5,98.0,130.0,1.35,25.5,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Davanagere,Medium Black / Red Loam,Coffee,141.4,86.4,140.0,1.12,21.0,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Davanagere,Medium Black / Red Loam,Coconut,123.6,63.0,180.0,1.22,20.7,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Dharwad,Medium-Deep Black Vertisol,Ragi,100.0,48.0,49.0,1.27,19.0,6.6,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Dharwad,Medium-Deep Black Vertisol,Rice,118.8,58.8,60.6,1.43,21.1,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Dharwad,Medium-Deep Black Vertisol,Cotton,154.5,74.2,75.8,1.25,24.0,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Dharwad,Medium-Deep Black Vertisol,Jowar,82.4,42.0,42.0,0.95,18.0,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Dharwad,Medium-Deep Black Vertisol,Tur,25.0,50.5,24.0,1.11,25.2,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Dharwad,Medium-Deep Black Vertisol,Sugarcane,237.5,95.0,121.2,1.78,28.3,7.0,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Dharwad,Medium-Deep Black Vertisol,Maize,153.0,76.5,38.4,1.39,18.6,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Dharwad,Medium-Deep Black Vertisol,Groundnut,25.5,52.5,26.2,1.04,31.8,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Dharwad,Medium-Deep Black Vertisol,Chilli,148.5,78.0,72.8,1.38,20.9,7.0,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Dharwad,Medium-Deep Black Vertisol,Arecanut,100.0,40.4,134.4,1.27,21.2,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Dharwad,Medium-Deep Black Vertisol,Banana,202.0,49.5,252.5,1.43,22.1,6.6,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Dharwad,Medium-Deep Black Vertisol,Tomato,187.2,100.0,115.2,1.43,25.5,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Dharwad,Medium-Deep Black Vertisol,Potato,123.8,104.0,131.2,1.34,25.5,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Dharwad,Medium-Deep Black Vertisol,Coffee,145.6,91.8,147.0,1.03,18.4,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Dharwad,Medium-Deep Black Vertisol,Coconut,116.4,57.0,171.0,1.25,20.9,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Gadag,Deep Black Vertisol,Ragi,95.0,50.0,48.0,1.13,20.0,6.5,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Gadag,Deep Black Vertisol,Rice,117.6,57.0,61.8,1.47,20.5,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Gadag,Deep Black Vertisol,Cotton,156.0,78.8,78.8,1.25,26.0,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Gadag,Deep Black Vertisol,Jowar,83.2,42.0,42.0,0.93,16.6,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Gadag,Deep Black Vertisol,Tur,25.5,48.0,25.0,1.01,25.8,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Gadag,Deep Black Vertisol,Sugarcane,262.5,103.0,121.2,1.69,25.8,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Gadag,Deep Black Vertisol,Maize,151.5,76.5,40.8,1.33,20.8,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Gadag,Deep Black Vertisol,Groundnut,25.5,48.0,25.8,1.0,29.1,6.5,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Gadag,Deep Black Vertisol,Chilli,148.5,73.5,78.0,1.21,22.7,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Gadag,Deep Black Vertisol,Arecanut,98.0,39.2,137.2,1.18,19.4,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Gadag,Deep Black Vertisol,Banana,208.0,52.5,257.5,1.53,24.5,6.8,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Gadag,Deep Black Vertisol,Tomato,174.6,103.0,116.4,1.41,24.5,6.3,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Gadag,Deep Black Vertisol,Potato,120.0,100.0,130.0,1.35,24.5,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Gadag,Deep Black Vertisol,Coffee,137.2,93.6,140.0,1.05,20.8,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Gadag,Deep Black Vertisol,Coconut,115.2,60.0,187.2,1.18,22.9,6.1,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Hassan,Red Sandy Loam,Ragi,105.0,48.5,51.5,1.2,21.0,6.3,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Hassan,Red Sandy Loam,Rice,115.2,57.0,61.8,1.38,21.8,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Hassan,Red Sandy Loam,Cotton,144.0,77.2,76.5,1.22,25.8,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Hassan,Red Sandy Loam,Jowar,81.6,40.8,42.0,1.05,19.1,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Hassan,Red Sandy Loam,Tur,24.0,47.5,25.8,1.07,24.3,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Hassan,Red Sandy Loam,Sugarcane,252.5,104.0,125.0,1.67,28.8,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Hassan,Red Sandy Loam,Maize,157.5,78.8,42.0,1.3,18.4,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Hassan,Red Sandy Loam,Groundnut,26.0,50.0,24.8,0.95,28.8,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Hassan,Red Sandy Loam,Chilli,147.0,78.0,76.5,1.25,22.9,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Hassan,Red Sandy Loam,Arecanut,98.0,41.6,147.0,1.14,20.0,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Hassan,Red Sandy Loam,Banana,190.0,48.5,257.5,1.5,23.3,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Hassan,Red Sandy Loam,Tomato,178.2,98.0,114.0,1.32,24.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Hassan,Red Sandy Loam,Potato,122.5,104.0,131.2,1.21,24.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Hassan,Red Sandy Loam,Coffee,147.0,90.0,138.6,1.02,19.2,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Hassan,Red Sandy Loam,Coconut,114.0,58.2,171.0,1.1,22.7,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Haveri,Medium Black / Red Loam,Ragi,100.0,49.5,49.0,1.25,19.6,6.3,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Haveri,Medium Black / Red Loam,Rice,123.6,59.4,57.6,1.56,22.4,6.4,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Haveri,Medium Black / Red Loam,Cotton,150.0,75.8,72.0,1.27,26.0,7.7,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Haveri,Medium Black / Red Loam,Jowar,84.0,42.0,40.0,0.96,18.0,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Haveri,Medium Black / Red Loam,Tur,25.0,48.0,25.8,1.17,26.5,7.6,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Haveri,Medium Black / Red Loam,Sugarcane,247.5,96.0,118.8,1.82,29.4,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Haveri,Medium Black / Red Loam,Maize,156.0,75.0,39.6,1.41,21.0,6.8,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Haveri,Medium Black / Red Loam,Groundnut,26.2,48.5,24.5,0.99,29.1,6.5,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Haveri,Medium Black / Red Loam,Chilli,156.0,75.0,75.8,1.34,20.7,7.0,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Haveri,Medium Black / Red Loam,Arecanut,101.0,40.8,147.0,1.13,20.0,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Haveri,Medium Black / Red Loam,Banana,194.0,50.5,240.0,1.44,25.0,6.8,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Haveri,Medium Black / Red Loam,Tomato,176.4,104.0,120.0,1.4,23.5,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Haveri,Medium Black / Red Loam,Potato,121.2,98.0,130.0,1.38,25.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Haveri,Medium Black / Red Loam,Coffee,138.6,93.6,142.8,1.05,20.0,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Haveri,Medium Black / Red Loam,Coconut,117.6,57.0,171.0,1.12,21.1,6.1,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Ragi,101.0,48.0,50.0,1.24,20.4,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Rice,123.6,61.2,61.2,1.38,21.8,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Cotton,148.5,73.5,73.5,1.2,23.8,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Jowar,78.4,41.6,40.0,1.02,18.4,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Tur,25.0,49.5,25.2,1.14,24.5,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Sugarcane,260.0,105.0,131.2,1.8,29.4,7.0,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Maize,145.5,73.5,39.2,1.43,19.6,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Groundnut,24.8,49.0,24.5,0.93,27.6,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Chilli,157.5,72.8,73.5,1.33,20.7,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Arecanut,101.0,39.6,134.4,1.16,19.4,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Banana,198.0,49.0,260.0,1.54,23.5,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Tomato,171.0,95.0,120.0,1.37,26.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Potato,128.8,97.0,118.8,1.21,24.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Coffee,144.2,91.8,147.0,1.06,20.0,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Kalaburagi,Deep Black Vertisol (Tur Bowl),Coconut,115.2,61.8,174.6,1.25,22.4,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Kodagu,Humid Forest / Lateritic Soil,Ragi,99.0,50.5,52.0,1.13,20.6,6.5,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Kodagu,Humid Forest / Lateritic Soil,Rice,115.2,57.0,58.2,1.54,20.7,6.3,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Kodagu,Humid Forest / Lateritic Soil,Cotton,148.5,73.5,73.5,1.27,24.3,7.7,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Kodagu,Humid Forest / Lateritic Soil,Jowar,76.0,38.8,38.0,1.04,19.1,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Kodagu,Humid Forest / Lateritic Soil,Tur,26.2,51.5,24.8,1.14,24.5,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Kodagu,Humid Forest / Lateritic Soil,Sugarcane,242.5,95.0,128.8,1.76,26.0,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Kodagu,Humid Forest / Lateritic Soil,Maize,144.0,75.0,38.4,1.39,21.0,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Kodagu,Humid Forest / Lateritic Soil,Groundnut,24.5,52.0,24.2,0.97,31.2,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Kodagu,Humid Forest / Lateritic Soil,Chilli,145.5,75.8,78.0,1.24,20.2,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Kodagu,Humid Forest / Lateritic Soil,Arecanut,96.0,41.2,135.8,1.27,19.0,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Kodagu,Humid Forest / Lateritic Soil,Banana,208.0,51.0,255.0,1.38,22.1,6.8,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Kodagu,Humid Forest / Lateritic Soil,Tomato,180.0,96.0,120.0,1.34,24.0,6.5,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Kodagu,Humid Forest / Lateritic Soil,Potato,130.0,105.0,125.0,1.37,24.8,5.8,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Kodagu,Humid Forest / Lateritic Soil,Coffee,147.0,92.7,142.8,1.1,19.4,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Kodagu,Humid Forest / Lateritic Soil,Coconut,114.0,58.2,176.4,1.22,20.7,6.2,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Kolar,Red Sandy Loam,Ragi,99.0,50.5,48.0,1.27,19.8,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Kolar,Red Sandy Loam,Rice,121.2,61.2,57.6,1.46,22.0,6.4,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Kolar,Red Sandy Loam,Cotton,147.0,78.0,75.0,1.31,24.5,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Kolar,Red Sandy Loam,Jowar,76.8,39.2,41.6,0.92,16.6,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Kolar,Red Sandy Loam,Tur,25.2,49.5,26.0,1.17,23.8,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Kolar,Red Sandy Loam,Sugarcane,257.5,105.0,125.0,1.75,29.1,7.0,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Kolar,Red Sandy Loam,Maize,154.5,78.8,38.8,1.34,20.8,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Kolar,Red Sandy Loam,Groundnut,24.5,50.5,26.0,0.96,28.8,6.5,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Kolar,Red Sandy Loam,Chilli,144.0,75.0,75.8,1.34,20.7,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Kolar,Red Sandy Loam,Arecanut,99.0,38.4,133.0,1.19,19.4,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Kolar,Red Sandy Loam,Banana,194.0,51.5,247.5,1.59,23.8,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Kolar,Red Sandy Loam,Tomato,187.2,105.0,123.6,1.32,25.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Kolar,Red Sandy Loam,Potato,123.8,96.0,122.5,1.38,23.8,6.0,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Kolar,Red Sandy Loam,Coffee,142.8,89.1,141.4,1.13,20.4,5.6,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Kolar,Red Sandy Loam,Coconut,123.6,63.0,180.0,1.2,22.2,6.4,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Koppal,Medium Black / Red Loam,Ragi,102.0,48.0,47.5,1.25,19.0,6.6,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Koppal,Medium Black / Red Loam,Rice,124.8,58.2,60.6,1.38,21.8,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Koppal,Medium Black / Red Loam,Cotton,151.5,74.2,75.8,1.2,23.8,7.7,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Koppal,Medium Black / Red Loam,Jowar,78.4,39.2,39.2,1.01,16.9,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Koppal,Medium Black / Red Loam,Tur,24.2,51.5,25.5,1.17,26.5,7.3,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Koppal,Medium Black / Red Loam,Sugarcane,255.0,102.0,127.5,1.73,26.0,7.2,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Koppal,Medium Black / Red Loam,Maize,150.0,72.0,40.0,1.29,19.0,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Koppal,Medium Black / Red Loam,Groundnut,25.0,48.0,25.0,1.02,31.5,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Koppal,Medium Black / Red Loam,Chilli,157.5,78.8,72.8,1.22,21.1,7.2,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Koppal,Medium Black / Red Loam,Arecanut,103.0,42.0,147.0,1.15,19.2,5.8,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Koppal,Medium Black / Red Loam,Banana,204.0,52.5,262.5,1.59,23.8,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Koppal,Medium Black / Red Loam,Tomato,189.0,105.0,123.6,1.34,23.2,6.3,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Koppal,Medium Black / Red Loam,Potato,125.0,101.0,120.0,1.22,25.8,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Koppal,Medium Black / Red Loam,Coffee,142.8,86.4,137.2,1.05,19.2,5.8,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Koppal,Medium Black / Red Loam,Coconut,114.0,61.8,183.6,1.27,21.8,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Mandya,Red Loam / Clay Alluvium,Ragi,105.0,48.5,47.5,1.26,19.0,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Mandya,Red Loam / Clay Alluvium,Rice,118.8,58.8,60.6,1.48,21.3,6.3,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Mandya,Red Loam / Clay Alluvium,Cotton,145.5,73.5,73.5,1.37,23.8,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Mandya,Red Loam / Clay Alluvium,Jowar,80.8,38.4,38.0,1.03,19.1,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Mandya,Red Loam / Clay Alluvium,Tur,24.0,50.0,24.8,1.08,25.2,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Mandya,Red Loam / Clay Alluvium,Sugarcane,250.0,96.0,118.8,1.76,28.3,7.3,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Mandya,Red Loam / Clay Alluvium,Maize,150.0,72.0,38.0,1.34,18.6,6.8,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Mandya,Red Loam / Clay Alluvium,Groundnut,24.8,52.0,24.2,0.98,27.9,6.6,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Mandya,Red Loam / Clay Alluvium,Chilli,145.5,77.2,74.2,1.35,23.3,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Mandya,Red Loam / Clay Alluvium,Arecanut,96.0,41.2,147.0,1.16,19.4,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Mandya,Red Loam / Clay Alluvium,Banana,198.0,50.5,247.5,1.41,24.0,6.8,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Mandya,Red Loam / Clay Alluvium,Tomato,172.8,103.0,122.4,1.46,24.5,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Mandya,Red Loam / Clay Alluvium,Potato,127.5,99.0,130.0,1.2,24.8,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Mandya,Red Loam / Clay Alluvium,Coffee,138.6,86.4,140.0,1.11,20.2,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Mandya,Red Loam / Clay Alluvium,Coconut,114.0,61.8,174.6,1.26,23.3,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Mysuru,Red Loam to Medium Black,Ragi,99.0,49.0,49.0,1.25,21.2,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Mysuru,Red Loam to Medium Black,Rice,115.2,57.0,61.8,1.38,21.8,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Mysuru,Red Loam to Medium Black,Cotton,153.0,78.8,75.0,1.37,24.8,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Mysuru,Red Loam to Medium Black,Jowar,76.0,38.0,40.0,0.95,16.6,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Mysuru,Red Loam to Medium Black,Tur,24.8,49.0,26.0,1.16,26.5,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Mysuru,Red Loam to Medium Black,Sugarcane,252.5,99.0,120.0,1.87,28.6,7.2,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Mysuru,Red Loam to Medium Black,Maize,148.5,72.0,38.0,1.48,20.6,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Mysuru,Red Loam to Medium Black,Groundnut,24.2,47.5,23.8,1.03,29.4,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Mysuru,Red Loam to Medium Black,Chilli,144.0,73.5,75.8,1.24,21.1,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Mysuru,Red Loam to Medium Black,Arecanut,98.0,39.2,137.2,1.15,19.2,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Mysuru,Red Loam to Medium Black,Banana,198.0,49.0,245.0,1.47,23.3,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Mysuru,Red Loam to Medium Black,Tomato,183.6,99.0,117.6,1.48,26.5,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Mysuru,Red Loam to Medium Black,Potato,130.0,100.0,123.8,1.37,26.5,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Mysuru,Red Loam to Medium Black,Coffee,145.6,87.3,144.2,1.07,20.0,5.6,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Mysuru,Red Loam to Medium Black,Coconut,116.4,61.8,174.6,1.26,21.8,6.2,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Raichur,Deep Black Vertisol / Alluvial,Ragi,101.0,49.5,52.0,1.18,20.2,6.6,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Raichur,Deep Black Vertisol / Alluvial,Rice,115.2,60.0,57.6,1.41,20.2,6.3,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Raichur,Deep Black Vertisol / Alluvial,Cotton,147.0,75.8,74.2,1.31,26.2,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Raichur,Deep Black Vertisol / Alluvial,Jowar,76.8,38.0,38.8,1.06,19.1,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Raichur,Deep Black Vertisol / Alluvial,Tur,26.0,50.0,26.0,1.08,24.3,7.6,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Raichur,Deep Black Vertisol / Alluvial,Sugarcane,250.0,104.0,121.2,1.73,28.0,7.3,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Raichur,Deep Black Vertisol / Alluvial,Maize,157.5,72.8,40.4,1.39,19.4,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Raichur,Deep Black Vertisol / Alluvial,Groundnut,24.0,50.0,24.0,0.93,28.8,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Raichur,Deep Black Vertisol / Alluvial,Chilli,145.5,71.2,71.2,1.31,21.6,7.2,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Raichur,Deep Black Vertisol / Alluvial,Arecanut,98.0,41.6,140.0,1.14,19.2,6.0,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Raichur,Deep Black Vertisol / Alluvial,Banana,210.0,50.0,252.5,1.56,25.4,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Raichur,Deep Black Vertisol / Alluvial,Tomato,181.8,102.0,118.8,1.4,26.2,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Raichur,Deep Black Vertisol / Alluvial,Potato,126.2,102.0,131.2,1.21,25.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Raichur,Deep Black Vertisol / Alluvial,Coffee,144.2,91.8,134.4,1.08,19.4,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Raichur,Deep Black Vertisol / Alluvial,Coconut,116.4,57.0,171.0,1.21,21.6,6.4,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Ramanagara,Red Sandy Loam,Ragi,101.0,52.0,52.5,1.13,20.6,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Ramanagara,Red Sandy Loam,Rice,115.2,60.0,60.6,1.4,20.2,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Ramanagara,Red Sandy Loam,Cotton,154.5,78.8,75.0,1.37,24.8,8.0,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Ramanagara,Red Sandy Loam,Jowar,83.2,38.8,39.2,1.0,16.9,7.8,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Ramanagara,Red Sandy Loam,Tur,25.0,48.0,24.5,1.02,25.8,7.7,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Ramanagara,Red Sandy Loam,Sugarcane,262.5,103.0,121.2,1.78,29.4,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Ramanagara,Red Sandy Loam,Maize,153.0,76.5,39.6,1.48,19.8,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Ramanagara,Red Sandy Loam,Groundnut,25.2,51.0,24.0,0.94,30.9,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Ramanagara,Red Sandy Loam,Chilli,157.5,77.2,76.5,1.21,21.8,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Ramanagara,Red Sandy Loam,Arecanut,105.0,41.2,147.0,1.18,18.6,5.8,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Ramanagara,Red Sandy Loam,Banana,198.0,52.0,242.5,1.47,22.3,6.9,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Ramanagara,Red Sandy Loam,Tomato,172.8,100.0,115.2,1.43,23.5,6.5,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Ramanagara,Red Sandy Loam,Potato,122.5,101.0,127.5,1.34,26.5,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Ramanagara,Red Sandy Loam,Coffee,140.0,90.9,142.8,1.14,20.4,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Ramanagara,Red Sandy Loam,Coconut,117.6,62.4,183.6,1.26,20.9,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Shivamogga,Laterite Loam / Red Loam,Ragi,98.0,49.0,50.5,1.12,20.6,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Shivamogga,Laterite Loam / Red Loam,Rice,114.0,61.8,59.4,1.52,22.2,6.2,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Shivamogga,Laterite Loam / Red Loam,Cotton,156.0,78.8,72.8,1.26,25.0,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Shivamogga,Laterite Loam / Red Loam,Jowar,76.0,38.8,40.4,1.01,17.6,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Shivamogga,Laterite Loam / Red Loam,Tur,25.2,52.0,25.0,1.02,25.8,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Shivamogga,Laterite Loam / Red Loam,Sugarcane,237.5,100.0,123.8,1.84,28.6,7.2,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Shivamogga,Laterite Loam / Red Loam,Maize,156.0,78.8,38.8,1.44,18.8,6.6,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Shivamogga,Laterite Loam / Red Loam,Groundnut,24.8,49.0,26.0,0.98,27.9,6.4,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Shivamogga,Laterite Loam / Red Loam,Chilli,147.0,75.8,74.2,1.25,20.5,7.0,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Shivamogga,Laterite Loam / Red Loam,Arecanut,105.0,42.0,147.0,1.14,20.0,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Shivamogga,Laterite Loam / Red Loam,Banana,202.0,48.0,257.5,1.4,22.1,6.6,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Shivamogga,Laterite Loam / Red Loam,Tomato,178.2,96.0,117.6,1.44,26.5,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Shivamogga,Laterite Loam / Red Loam,Potato,130.0,100.0,126.2,1.3,24.3,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Shivamogga,Laterite Loam / Red Loam,Coffee,141.4,93.6,147.0,1.12,19.6,5.9,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Shivamogga,Laterite Loam / Red Loam,Coconut,114.0,58.2,171.0,1.24,20.7,6.1,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Tumakuru,Red Sandy Loam,Ragi,100.0,49.5,50.5,1.21,20.2,6.5,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Tumakuru,Red Sandy Loam,Rice,114.0,58.2,57.0,1.58,20.9,6.2,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Tumakuru,Red Sandy Loam,Cotton,153.0,76.5,76.5,1.3,25.2,8.0,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Tumakuru,Red Sandy Loam,Jowar,77.6,40.4,38.4,0.96,18.7,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Tumakuru,Red Sandy Loam,Tur,24.0,51.5,26.2,1.13,24.5,7.7,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Tumakuru,Red Sandy Loam,Sugarcane,262.5,97.0,128.8,1.84,29.4,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Tumakuru,Red Sandy Loam,Maize,145.5,71.2,40.0,1.33,18.4,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Tumakuru,Red Sandy Loam,Groundnut,24.0,50.0,24.0,0.96,27.9,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Tumakuru,Red Sandy Loam,Chilli,157.5,77.2,72.8,1.35,20.9,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Tumakuru,Red Sandy Loam,Arecanut,102.0,39.6,137.2,1.14,20.0,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Tumakuru,Red Sandy Loam,Banana,200.0,50.5,255.0,1.54,25.4,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Tumakuru,Red Sandy Loam,Tomato,180.0,101.0,122.4,1.46,23.8,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Tumakuru,Red Sandy Loam,Potato,126.2,102.0,123.8,1.21,24.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Tumakuru,Red Sandy Loam,Coffee,137.2,93.6,135.8,1.17,19.0,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Tumakuru,Red Sandy Loam,Coconut,116.4,61.8,183.6,1.26,20.9,6.2,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Udupi,Coastal Laterite / Alluvial,Ragi,100.0,50.5,48.0,1.19,18.6,6.7,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Udupi,Coastal Laterite / Alluvial,Rice,121.2,61.2,61.2,1.41,20.2,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Udupi,Coastal Laterite / Alluvial,Cotton,150.0,75.8,78.0,1.34,25.5,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Udupi,Coastal Laterite / Alluvial,Jowar,84.0,42.0,41.2,1.0,18.2,7.6,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Udupi,Coastal Laterite / Alluvial,Tur,24.2,50.5,24.8,1.13,26.5,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Udupi,Coastal Laterite / Alluvial,Sugarcane,262.5,105.0,125.0,1.85,27.4,7.0,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Udupi,Coastal Laterite / Alluvial,Maize,142.5,77.2,40.8,1.41,20.2,6.9,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Udupi,Coastal Laterite / Alluvial,Groundnut,26.0,52.5,26.2,0.98,29.1,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Udupi,Coastal Laterite / Alluvial,Chilli,142.5,72.8,75.8,1.24,22.9,7.0,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Udupi,Coastal Laterite / Alluvial,Arecanut,101.0,39.6,137.2,1.22,19.6,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Udupi,Coastal Laterite / Alluvial,Banana,194.0,50.5,240.0,1.41,24.7,6.7,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Udupi,Coastal Laterite / Alluvial,Tomato,187.2,97.0,117.6,1.3,24.0,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Udupi,Coastal Laterite / Alluvial,Potato,130.0,100.0,130.0,1.22,25.8,5.9,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Udupi,Coastal Laterite / Alluvial,Coffee,135.8,90.9,134.4,1.14,21.2,5.7,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Udupi,Coastal Laterite / Alluvial,Coconut,123.6,58.2,171.0,1.24,20.7,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Uttara Kannada,Coastal Laterite / Forest Loam,Ragi,96.0,47.5,50.0,1.16,20.0,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Uttara Kannada,Coastal Laterite / Forest Loam,Rice,118.8,60.6,61.2,1.59,22.7,6.4,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Uttara Kannada,Coastal Laterite / Forest Loam,Cotton,148.5,72.0,71.2,1.33,23.5,8.0,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Uttara Kannada,Coastal Laterite / Forest Loam,Jowar,76.0,40.0,40.4,1.02,18.9,7.5,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Uttara Kannada,Coastal Laterite / Forest Loam,Tur,26.0,52.5,25.0,1.12,23.5,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Uttara Kannada,Coastal Laterite / Forest Loam,Sugarcane,237.5,97.0,118.8,1.67,27.7,7.1,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Uttara Kannada,Coastal Laterite / Forest Loam,Maize,144.0,71.2,38.0,1.29,19.8,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Uttara Kannada,Coastal Laterite / Forest Loam,Groundnut,24.2,47.5,25.0,0.98,31.2,6.3,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Uttara Kannada,Coastal Laterite / Forest Loam,Chilli,142.5,72.8,77.2,1.21,21.8,6.8,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Uttara Kannada,Coastal Laterite / Forest Loam,Arecanut,95.0,38.0,133.0,1.24,21.2,5.9,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Uttara Kannada,Coastal Laterite / Forest Loam,Banana,204.0,48.0,257.5,1.41,23.0,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Uttara Kannada,Coastal Laterite / Forest Loam,Tomato,172.8,98.0,124.8,1.44,24.5,6.6,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Uttara Kannada,Coastal Laterite / Forest Loam,Potato,122.5,98.0,126.2,1.38,25.8,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Uttara Kannada,Coastal Laterite / Forest Loam,Coffee,133.0,87.3,144.2,1.06,20.8,6.0,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Uttara Kannada,Coastal Laterite / Forest Loam,Coconut,124.8,63.0,189.0,1.27,21.8,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Vijayanagara,Medium Black / Alluvial,Ragi,99.0,49.0,52.0,1.27,19.0,6.3,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Vijayanagara,Medium Black / Alluvial,Rice,123.6,63.0,60.0,1.46,22.9,6.0,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Vijayanagara,Medium Black / Alluvial,Cotton,151.5,72.0,71.2,1.29,26.2,7.8,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Vijayanagara,Medium Black / Alluvial,Jowar,79.2,38.4,41.2,1.02,17.6,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Vijayanagara,Medium Black / Alluvial,Tur,24.5,50.5,25.5,1.07,26.0,7.4,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Vijayanagara,Medium Black / Alluvial,Sugarcane,255.0,102.0,127.5,1.85,29.7,7.3,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Vijayanagara,Medium Black / Alluvial,Maize,142.5,75.0,38.4,1.3,19.2,7.0,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Vijayanagara,Medium Black / Alluvial,Groundnut,25.0,50.5,24.0,1.04,29.4,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Vijayanagara,Medium Black / Alluvial,Chilli,148.5,78.0,75.0,1.31,21.6,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Vijayanagara,Medium Black / Alluvial,Arecanut,96.0,41.2,138.6,1.2,21.0,5.6,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Vijayanagara,Medium Black / Alluvial,Banana,196.0,52.0,262.5,1.5,25.2,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Vijayanagara,Medium Black / Alluvial,Tomato,178.2,96.0,123.6,1.46,26.5,6.4,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Vijayanagara,Medium Black / Alluvial,Potato,130.0,97.0,122.5,1.38,25.8,6.0,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Vijayanagara,Medium Black / Alluvial,Coffee,137.2,85.5,140.0,1.1,21.0,5.8,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Vijayanagara,Medium Black / Alluvial,Coconut,121.2,61.2,183.6,1.26,23.3,6.3,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Vijayapura,Deep Black Vertisol / Calcareous,Ragi,99.0,49.0,50.5,1.26,21.2,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Vijayapura,Deep Black Vertisol / Calcareous,Rice,122.4,57.6,60.0,1.59,23.3,6.4,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Vijayapura,Deep Black Vertisol / Calcareous,Cotton,151.5,74.2,72.0,1.3,25.2,7.6,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Vijayapura,Deep Black Vertisol / Calcareous,Jowar,76.0,38.0,41.2,1.04,18.4,7.4,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Vijayapura,Deep Black Vertisol / Calcareous,Tur,24.2,49.0,23.8,1.06,24.0,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Vijayapura,Deep Black Vertisol / Calcareous,Sugarcane,262.5,100.0,130.0,1.76,29.1,7.4,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Vijayapura,Deep Black Vertisol / Calcareous,Maize,153.0,74.2,39.2,1.43,21.0,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Vijayapura,Deep Black Vertisol / Calcareous,Groundnut,26.0,50.0,24.8,0.98,30.3,6.6,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Vijayapura,Deep Black Vertisol / Calcareous,Chilli,151.5,72.0,77.2,1.37,22.4,6.9,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Vijayapura,Deep Black Vertisol / Calcareous,Arecanut,104.0,40.0,145.6,1.24,18.8,5.9,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Vijayapura,Deep Black Vertisol / Calcareous,Banana,198.0,48.0,237.5,1.5,24.2,6.9,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Vijayapura,Deep Black Vertisol / Calcareous,Tomato,183.6,102.0,126.0,1.36,26.0,6.4,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Vijayapura,Deep Black Vertisol / Calcareous,Potato,126.2,104.0,121.2,1.38,25.8,6.2,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Vijayapura,Deep Black Vertisol / Calcareous,Coffee,138.6,86.4,140.0,1.03,20.6,5.6,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Vijayapura,Deep Black Vertisol / Calcareous,Coconut,121.2,62.4,189.0,1.21,22.2,6.0,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)
+Yadgir,Medium-Deep Black Vertisol,Ragi,99.0,52.0,51.0,1.19,20.2,6.4,Rainfed / irrigated red loam dry tracts with good drainage,Urea + DAP/SSP + MOP + FYM (7.5 t/ha)
+Yadgir,Medium-Deep Black Vertisol,Rice,114.0,61.8,59.4,1.48,22.2,6.1,Wetland canal / tank irrigated or heavy coastal monsoonal precipitation,Urea + DAP + MOP + Zinc Sulphate (20 kg/ha)
+Yadgir,Medium-Deep Black Vertisol,Cotton,157.5,78.8,77.2,1.26,24.3,7.9,Deep black vertisols under semi-arid conditions with moderate humidity,Urea (split) + DAP + MOP + 1% MgSO4 foliar
+Yadgir,Medium-Deep Black Vertisol,Jowar,82.4,39.6,39.2,0.95,18.0,7.5,Kharif/Rabi dryland conditions with deep vertisol water-holding capacity,Urea + SSP + MOP
+Yadgir,Medium-Deep Black Vertisol,Tur,24.2,51.5,24.2,1.1,25.2,7.5,Rainfed deep black soil tracts (Kalaburagi redgram belt),DAP + Agricultural Gypsum (200 kg/ha) + Rhizobium
+Yadgir,Medium-Deep Black Vertisol,Sugarcane,257.5,105.0,121.2,1.82,28.3,7.3,Intensive canal irrigated alluvial and red loam river valleys (Cauvery/Krishna),Urea (split) + DAP + MOP + Zinc Sulphate + FYM (25 t/ha)
+Yadgir,Medium-Deep Black Vertisol,Maize,153.0,76.5,40.8,1.39,19.4,6.7,Well-drained red and medium black soils with moderate rainfall,Urea + DAP + MOP + Zinc Sulphate
+Yadgir,Medium-Deep Black Vertisol,Groundnut,25.8,49.5,24.5,0.96,28.8,6.7,Light red sandy loam soils with adequate calcium and sulphur availability,SSP + Agricultural Gypsum (250 kg/ha) + MOP + Rhizobium
+Yadgir,Medium-Deep Black Vertisol,Chilli,148.5,78.0,76.5,1.34,20.7,7.1,Warm dry climate with rich red or medium black soils (Byadgi belt),Urea + DAP + MOP + Micronutrient foliar spray
+Yadgir,Medium-Deep Black Vertisol,Arecanut,95.0,38.8,141.4,1.18,18.6,5.7,Heavy rainfall Western Ghats / coastal humid tropical tracts with shade,Urea (220g) + SSP (250g) + MOP (235g)/palm + 1% Bordeaux mixture
+Yadgir,Medium-Deep Black Vertisol,Banana,206.0,51.0,240.0,1.54,22.6,7.0,Tropical humid valley tracts with continuous moisture supply,Urea + DAP + MOP (high potash) + FYM (20 t/ha)
+Yadgir,Medium-Deep Black Vertisol,Tomato,172.8,100.0,118.8,1.32,23.0,6.7,Moderate temperature red loam tracts with drip fertigation (Kolar belt),Urea + DAP + SOP/MOP + Calcium Ammonium Nitrate
+Yadgir,Medium-Deep Black Vertisol,Potato,126.2,99.0,126.2,1.25,24.0,6.1,"Cool kharif/rabi elevated plateau tracts (Hassan, Kolar)",Urea + DAP + Potassium Sulphate + FYM
+Yadgir,Medium-Deep Black Vertisol,Coffee,140.0,93.6,147.0,1.08,19.4,5.6,"High elevation shaded hill slopes of Western Ghats (Chikkamagaluru, Kodagu)",NPK 17:17:17 + Urea + Dolomite / Agricultural Lime (500 kg/ha)
+Yadgir,Medium-Deep Black Vertisol,Coconut,123.6,59.4,181.8,1.12,21.8,6.1,Coastal and river basin humid tracts with good water table,Urea (1.3 kg) + SSP (2 kg) + MOP (2 kg)/palm/year + MgSO4 (500g)

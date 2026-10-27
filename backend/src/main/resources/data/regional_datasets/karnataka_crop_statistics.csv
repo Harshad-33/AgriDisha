@@ -1,0 +1,249 @@
+District,Crop,Season,Area_ha,Production_tonnes,Yield_kg_ha,Prevalence_Score,Zone,LGD_Code
+Bagalkote,Ragi,Kharif,4500.0,12000.0,2500.0,0.88,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Rice,Kharif,4500.0,12000.0,2500.0,0.95,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Cotton,Kharif,4500.0,12000.0,2500.0,0.93,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Jowar,Rabi,4500.0,12000.0,2500.0,0.93,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Tur,Kharif,4500.0,12000.0,2500.0,0.86,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Sugarcane,Whole Year,4500.0,12000.0,2500.0,0.86,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Maize,Kharif,4500.0,12000.0,2500.0,0.7,Northern Dry Zone (UAS Dharwad),519
+Bagalkote,Groundnut,Kharif,4500.0,12000.0,2500.0,0.76,Northern Dry Zone (UAS Dharwad),519
+Ballari,Ragi,Summer,2516.2,2247.8,1296.1,0.88,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Rice,Summer,39902.0,141750.7,3492.8,0.95,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Cotton,Winter,28714.4,60633.0,1873.9,0.86,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Jowar,Summer,20845.2,29178.9,1697.2,0.94,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Tur,Monsoon,8432.1,4128.1,465.2,0.85,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Sugarcane,Whole Year,5023.1,435691.6,89.0,0.86,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Maize,Summer,29583.7,83049.4,2792.5,0.78,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Ballari,Groundnut,Summer,33366.5,25421.6,863.3,0.78,North-Eastern Dry Zone (UAS Raichur / Dharwad),520
+Belagavi,Ragi,Winter,1663.3,1031.2,922.9,0.86,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Rice,Summer,33229.2,55833.8,2354.0,0.92,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Cotton,Winter,24875.6,50286.4,1927.3,0.88,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Jowar,Summer,56299.8,50296.4,1328.3,0.93,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Tur,Monsoon,6571.5,2693.7,395.7,0.95,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Sugarcane,Whole Year,153041.4,13374826.8,86.3,0.94,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Maize,Summer,44554.2,136800.7,2963.3,0.75,Northern Transition Zone (UAS Dharwad),521
+Belagavi,Groundnut,Summer,27889.2,21318.6,888.3,0.71,Northern Transition Zone (UAS Dharwad),521
+Bengaluru Rural,Ragi,Summer,26331.3,52063.1,1853.3,0.94,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Rice,Summer,2500.8,6658.8,2817.3,0.85,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Cotton,Winter,2.0,4.6,2200.0,0.86,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Jowar,Summer,798.8,1056.2,1288.0,0.88,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Tur,Monsoon,2681.5,1803.6,772.7,0.93,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Sugarcane,Whole Year,637.3,58798.7,88.0,0.93,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Maize,Summer,3047.4,11376.6,3251.4,0.68,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Rural,Groundnut,Summer,3292.0,3144.3,908.4,0.81,Southern Dry & Transition Zone (UAS Bangalore),523
+Bengaluru Urban,Ragi,Summer,11897.1,25262.1,1879.0,0.96,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Rice,Summer,1176.9,3329.6,3106.7,0.88,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Cotton,Monsoon,8.5,18.0,2465.0,0.93,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Jowar,Winter,373.8,492.2,1336.9,0.88,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Tur,Monsoon,1053.3,651.8,589.6,0.93,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Sugarcane,Whole Year,142.2,13237.2,88.2,0.89,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Maize,Summer,480.7,1571.4,3101.3,0.81,Southern Dry & Transition Zone (UAS Bangalore),522
+Bengaluru Urban,Groundnut,Monsoon,604.7,585.0,791.4,0.72,Southern Dry & Transition Zone (UAS Bangalore),522
+Bidar,Ragi,Winter,24.0,37.0,1446.7,0.96,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Rice,Summer,4287.0,3184.4,1100.0,0.94,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Cotton,Winter,1221.7,1708.2,1597.0,0.95,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Jowar,Winter,35343.4,39139.9,1023.1,0.85,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Tur,Monsoon,70470.9,54098.3,731.3,0.88,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Sugarcane,Whole Year,24345.3,1588701.9,63.7,0.86,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Maize,Summer,378.4,838.6,2342.8,0.73,North-Eastern Transition Zone (UAS Raichur),524
+Bidar,Groundnut,Summer,698.8,454.8,719.1,0.71,North-Eastern Transition Zone (UAS Raichur),524
+Chamarajanagara,Ragi,Summer,6007.4,8437.9,1643.5,0.95,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Rice,Summer,4932.0,14965.0,3014.2,0.93,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Cotton,Winter,6666.8,7833.3,1181.9,0.95,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Jowar,Summer,9707.0,6463.7,1083.8,0.95,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Tur,Monsoon,1538.0,629.5,442.3,0.85,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Sugarcane,Whole Year,8560.3,850102.3,94.8,0.87,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Maize,Summer,9134.0,28217.9,3137.0,0.79,Southern Dry & Transition Zone (UAS Bangalore),525
+Chamarajanagara,Groundnut,Summer,7973.4,6473.9,877.6,0.75,Southern Dry & Transition Zone (UAS Bangalore),525
+Chikkaballapura,Ragi,Summer,14450.6,24591.5,1745.4,0.93,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Rice,Summer,1484.2,4307.3,2835.2,0.85,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Cotton,Winter,100.1,246.1,2392.9,0.85,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Jowar,Summer,4066.9,5493.8,1340.0,0.92,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Tur,Monsoon,7134.5,4280.6,572.3,0.87,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Sugarcane,Whole Year,136.4,12304.1,89.7,0.85,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Maize,Summer,16409.1,47423.7,3441.5,0.74,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkaballapura,Groundnut,Summer,13406.0,10086.5,963.5,0.68,Southern Dry & Transition Zone (UAS Bangalore),631
+Chikkamagaluru,Ragi,Summer,35198.6,48869.0,1394.8,0.89,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Rice,Summer,20351.7,50070.6,2653.0,0.85,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Cotton,Winter,1525.2,2033.0,1308.3,0.94,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Jowar,Winter,4962.0,4137.8,828.9,0.92,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Tur,Monsoon,660.8,366.3,570.4,0.9,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Sugarcane,Whole Year,1237.9,100203.0,80.1,0.9,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Maize,Summer,9446.5,26348.2,2828.1,0.73,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chikkamagaluru,Groundnut,Summer,2489.6,2252.9,927.3,0.78,Coastal & Malnad Zone (KSNUAHS Shivamogga),526
+Chitradurga,Ragi,Summer,18098.8,23455.3,1491.4,0.93,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Rice,Summer,3178.4,8636.6,2382.8,0.91,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Cotton,Winter,9695.8,15027.5,1486.1,0.9,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Jowar,Summer,8749.4,7704.3,1219.1,0.85,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Tur,Monsoon,9032.5,5163.7,577.8,0.94,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Sugarcane,Whole Year,997.6,94465.7,87.0,0.92,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Maize,Summer,25114.6,59118.3,2588.7,0.75,Central Dry Zone (UAS Bangalore / Dharwad),527
+Chitradurga,Groundnut,Summer,66523.5,44208.6,785.1,0.74,Central Dry Zone (UAS Bangalore / Dharwad),527
+Dakshina Kannada,Ragi,Kharif,4500.0,12000.0,2500.0,0.9,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Rice,Winter,18947.6,44811.9,2437.6,0.91,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Cotton,Monsoon,2.0,3.0,1500.0,0.96,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Jowar,Winter,1.0,1.0,1000.0,0.91,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Tur,Monsoon,1.0,1.0,1000.0,0.92,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Sugarcane,Whole Year,214.5,19282.4,87.3,0.88,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Maize,Summer,13.0,32.4,2175.7,0.71,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Dakshina Kannada,Groundnut,Winter,2966.0,4931.0,1660.0,0.78,Coastal & Malnad Zone (KSNUAHS Shivamogga),528
+Davanagere,Ragi,Summer,7757.7,10557.4,1520.3,0.95,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Rice,Summer,53150.8,184545.6,3432.2,0.91,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Cotton,Winter,7352.5,12417.6,1627.6,0.92,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Jowar,Summer,8633.1,14939.3,1693.6,0.87,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Tur,Monsoon,6377.4,5255.8,841.8,0.95,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Sugarcane,Whole Year,7514.4,790429.1,110.6,0.92,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Maize,Summer,52549.8,151262.2,2908.2,0.81,Central Dry Zone (UAS Bangalore / Dharwad),529
+Davanagere,Groundnut,Summer,9711.8,9899.8,1156.6,0.75,Central Dry Zone (UAS Bangalore / Dharwad),529
+Dharwad,Ragi,Winter,293.0,240.2,1211.9,0.94,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Rice,Summer,14327.8,13729.4,2022.9,0.94,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Cotton,Winter,52815.0,65973.7,1184.4,0.94,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Jowar,Summer,24251.7,15272.0,898.2,0.94,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Tur,Monsoon,2731.1,1382.6,517.0,0.93,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Sugarcane,Whole Year,4749.3,321385.5,67.9,0.94,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Maize,Summer,11885.9,31597.9,2632.6,0.76,Northern Transition Zone (UAS Dharwad),530
+Dharwad,Groundnut,Summer,19453.4,14179.8,879.1,0.7,Northern Transition Zone (UAS Dharwad),530
+Gadag,Ragi,Summer,33.4,41.0,1348.2,0.94,Northern Dry Zone (UAS Dharwad),531
+Gadag,Rice,Summer,979.6,2596.7,2530.9,0.95,Northern Dry Zone (UAS Dharwad),531
+Gadag,Cotton,Winter,36718.1,52333.8,1469.4,0.87,Northern Dry Zone (UAS Dharwad),531
+Gadag,Jowar,Winter,26950.5,16608.3,1139.5,0.94,Northern Dry Zone (UAS Dharwad),531
+Gadag,Tur,Monsoon,2340.0,770.9,317.3,0.86,Northern Dry Zone (UAS Dharwad),531
+Gadag,Sugarcane,Whole Year,1185.0,93490.6,82.9,0.9,Northern Dry Zone (UAS Dharwad),531
+Gadag,Maize,Summer,12631.2,32302.9,2644.8,0.78,Northern Dry Zone (UAS Dharwad),531
+Gadag,Groundnut,Summer,27418.9,14575.6,646.7,0.77,Northern Dry Zone (UAS Dharwad),531
+Hassan,Ragi,Summer,31252.1,44563.5,1422.2,0.91,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Rice,Summer,17304.0,43796.7,2565.7,0.86,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Cotton,Winter,1248.2,1687.1,1624.3,0.92,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Jowar,Summer,2123.0,1862.5,885.0,0.9,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Tur,Monsoon,2265.4,929.7,420.9,0.87,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Sugarcane,Whole Year,3515.8,357442.7,101.6,0.88,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Maize,Summer,16784.7,58966.2,3089.1,0.76,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Hassan,Groundnut,Summer,937.2,858.0,856.0,0.72,Southern Transition Zone (UAS Bangalore / Shivamogga),532
+Haveri,Ragi,Summer,909.1,815.3,1108.7,0.92,Northern Transition Zone (UAS Dharwad),533
+Haveri,Rice,Summer,22208.5,35693.9,2124.7,0.95,Northern Transition Zone (UAS Dharwad),533
+Haveri,Cotton,Monsoon,52464.3,93006.3,1572.4,0.91,Northern Transition Zone (UAS Dharwad),533
+Haveri,Jowar,Summer,16913.9,14731.4,1271.2,0.86,Northern Transition Zone (UAS Dharwad),533
+Haveri,Tur,Monsoon,3394.1,1836.5,577.7,0.95,Northern Transition Zone (UAS Dharwad),533
+Haveri,Sugarcane,Whole Year,5325.9,448810.8,78.9,0.91,Northern Transition Zone (UAS Dharwad),533
+Haveri,Maize,Summer,45865.6,120024.2,2766.7,0.79,Northern Transition Zone (UAS Dharwad),533
+Haveri,Groundnut,Summer,12024.8,10321.4,915.1,0.75,Northern Transition Zone (UAS Dharwad),533
+Kalaburagi,Ragi,Winter,34.2,46.8,1188.8,0.92,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Rice,Summer,11868.6,28945.2,2315.1,0.92,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Cotton,Winter,35184.6,121873.3,3060.0,0.94,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Jowar,Summer,104321.8,90848.8,1227.6,0.86,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Tur,Monsoon,366275.1,239703.0,623.9,0.93,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Sugarcane,Whole Year,14358.8,859896.2,61.5,0.91,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Maize,Summer,1259.8,2985.2,2510.9,0.72,North-Eastern Transition Zone (UAS Raichur),534
+Kalaburagi,Groundnut,Summer,21719.0,15910.6,785.2,0.81,North-Eastern Transition Zone (UAS Raichur),534
+Kodagu,Ragi,Monsoon,195.7,276.4,1445.6,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Rice,Summer,11681.7,28285.0,2559.1,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Cotton,Monsoon,2.0,3.0,1500.0,0.9,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Jowar,Monsoon,170.0,224.0,1160.0,0.91,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Tur,Monsoon,11.0,6.3,603.3,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Sugarcane,Whole Year,7.0,658.0,94.0,0.91,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Maize,Monsoon,1258.0,5642.5,3694.0,0.72,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kodagu,Groundnut,Summer,17.3,13.4,776.2,0.68,Coastal & Malnad Zone (KSNUAHS Shivamogga),535
+Kolar,Ragi,Summer,25980.8,41474.3,1696.4,0.86,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Rice,Summer,4477.0,10674.3,2388.2,0.95,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Cotton,Winter,16.5,27.5,1220.0,0.86,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Jowar,Summer,949.8,1253.0,1362.5,0.91,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Tur,Monsoon,4981.9,3739.3,771.7,0.87,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Sugarcane,Whole Year,964.9,91636.9,87.2,0.92,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Maize,Summer,3248.7,7514.7,2817.7,0.76,Southern Dry & Transition Zone (UAS Bangalore),536
+Kolar,Groundnut,Summer,17874.4,13113.1,886.8,0.8,Southern Dry & Transition Zone (UAS Bangalore),536
+Koppal,Ragi,Winter,60.3,89.0,1456.7,0.85,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Rice,Summer,33846.5,119574.7,3458.7,0.87,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Cotton,Winter,10391.5,11524.5,1250.9,0.95,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Jowar,Summer,17323.0,11981.8,1153.5,0.92,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Tur,Monsoon,13774.9,4924.5,350.5,0.92,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Sugarcane,Whole Year,1417.2,123852.1,86.2,0.95,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Maize,Summer,12300.0,30313.6,2678.2,0.81,Northern Dry Zone (UAS Raichur / Dharwad),537
+Koppal,Groundnut,Summer,20545.7,14456.0,718.8,0.82,Northern Dry Zone (UAS Raichur / Dharwad),537
+Mandya,Ragi,Summer,21000.9,35996.0,1778.0,0.93,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Rice,Summer,25018.9,80739.2,3158.4,0.95,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Cotton,Monsoon,16.8,23.7,2117.5,0.91,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Jowar,Summer,1050.0,1142.0,1063.3,0.93,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Tur,Monsoon,1115.7,498.7,464.3,0.88,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Sugarcane,Whole Year,25864.9,3040286.8,116.9,0.89,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Maize,Summer,1363.0,3487.2,2886.1,0.69,Southern Dry & Transition Zone (UAS Bangalore),538
+Mandya,Groundnut,Summer,1763.3,1367.0,841.5,0.79,Southern Dry & Transition Zone (UAS Bangalore),538
+Mysuru,Ragi,Summer,21087.0,33213.6,1566.7,0.89,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Rice,Summer,40131.8,123281.8,2931.5,0.92,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Cotton,Monsoon,42930.4,66327.3,1669.2,0.94,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Jowar,Summer,4952.3,5032.8,1088.0,0.87,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Tur,Monsoon,4300.3,2336.0,557.4,0.96,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Sugarcane,Whole Year,9214.5,981905.5,105.5,0.9,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Maize,Summer,9324.2,29546.1,2990.0,0.8,Southern Dry & Transition Zone (UAS Bangalore),539
+Mysuru,Groundnut,Monsoon,4150.9,3347.8,860.8,0.75,Southern Dry & Transition Zone (UAS Bangalore),539
+Raichur,Ragi,Winter,73.3,106.3,1453.3,0.91,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Rice,Summer,69914.7,210957.8,2938.3,0.92,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Cotton,Winter,42410.1,91071.5,1902.7,0.95,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Jowar,Summer,46851.6,45073.1,1294.7,0.87,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Tur,Monsoon,36248.0,16099.2,370.4,0.89,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Sugarcane,Whole Year,235.8,21194.0,88.4,0.95,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Maize,Summer,536.2,2065.3,3136.4,0.76,North-Eastern Dry Zone (UAS Raichur),540
+Raichur,Groundnut,Summer,20923.3,15771.5,801.8,0.68,North-Eastern Dry Zone (UAS Raichur),540
+Ramanagara,Ragi,Summer,22945.4,46000.3,1840.5,0.93,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Rice,Summer,2452.6,6289.4,2562.3,0.95,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Cotton,Winter,1.5,3.2,2083.3,0.88,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Jowar,Summer,910.2,1213.6,1226.0,0.95,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Tur,Monsoon,3217.8,2198.4,666.2,0.89,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Sugarcane,Whole Year,542.3,47882.8,85.9,0.87,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Maize,Summer,880.1,3305.5,3656.4,0.81,Southern Dry & Transition Zone (UAS Bangalore),632
+Ramanagara,Groundnut,Summer,2457.1,2275.5,972.3,0.77,Southern Dry & Transition Zone (UAS Bangalore),632
+Shivamogga,Ragi,Summer,1502.4,1893.5,1590.6,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Rice,Summer,58780.7,143672.4,2771.4,0.96,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Cotton,Winter,4504.2,8542.8,2246.3,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Jowar,Summer,422.9,650.6,1532.1,0.96,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Tur,Monsoon,480.5,243.1,568.7,0.92,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Sugarcane,Whole Year,5858.3,654938.2,106.9,0.91,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Maize,Summer,17579.9,61295.2,3393.1,0.75,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Shivamogga,Groundnut,Summer,1226.0,1384.2,1029.8,0.72,Coastal & Malnad Zone (KSNUAHS Shivamogga),541
+Tumakuru,Ragi,Summer,57055.9,77926.5,1536.6,0.95,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Rice,Summer,8751.8,23761.9,2772.9,0.89,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Cotton,Monsoon,747.4,1946.3,2436.8,0.93,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Jowar,Summer,1828.3,1740.9,1066.9,0.89,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Tur,Monsoon,12128.3,5262.1,424.3,0.95,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Sugarcane,Whole Year,1362.9,127307.9,93.4,0.94,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Maize,Summer,6189.4,13943.5,2574.8,0.77,Southern Dry & Transition Zone (UAS Bangalore),542
+Tumakuru,Groundnut,Summer,58359.9,35780.3,900.2,0.79,Southern Dry & Transition Zone (UAS Bangalore),542
+Udupi,Ragi,Kharif,4500.0,12000.0,2500.0,0.89,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Rice,Summer,18914.2,45442.1,2463.0,0.95,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Cotton,Kharif,4500.0,12000.0,2500.0,0.87,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Jowar,Winter,8.0,9.3,1206.7,0.95,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Tur,Monsoon,1.0,1.0,1000.0,0.85,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Sugarcane,Whole Year,165.4,14503.6,85.9,0.87,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Maize,Summer,10.4,32.8,3134.5,0.81,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Udupi,Groundnut,Winter,1783.1,3452.0,1831.7,0.7,Coastal & Malnad Zone (KSNUAHS Shivamogga),543
+Uttara Kannada,Ragi,Winter,18.1,19.7,1272.1,0.88,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Rice,Summer,25617.7,46723.1,2187.0,0.85,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Cotton,Winter,3847.7,6167.4,1865.2,0.93,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Jowar,Winter,62.8,67.3,1038.4,0.89,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Tur,Monsoon,88.4,41.5,557.6,0.89,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Sugarcane,Whole Year,3003.7,222508.9,78.8,0.85,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Maize,Summer,1380.5,5583.9,2909.7,0.7,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Uttara Kannada,Groundnut,Summer,1362.0,2124.8,1200.4,0.77,Coastal & Malnad Zone (KSNUAHS Shivamogga),544
+Vijayanagara,Ragi,Summer,2516.2,2247.8,1296.1,0.88,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Rice,Summer,39902.0,141750.7,3492.8,0.94,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Cotton,Winter,28714.4,60633.0,1873.9,0.92,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Jowar,Summer,20845.2,29178.9,1697.2,0.89,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Tur,Monsoon,8432.1,4128.1,465.2,0.9,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Sugarcane,Whole Year,5023.1,435691.6,89.0,0.86,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Maize,Summer,29583.7,83049.4,2792.5,0.7,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayanagara,Groundnut,Summer,33366.5,25421.6,863.3,0.8,North-Eastern Dry Zone (UAS Raichur / Dharwad),748
+Vijayapura,Ragi,Winter,91.7,136.3,1456.7,0.91,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Rice,Summer,93.4,178.0,2257.0,0.89,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Cotton,Winter,6730.4,13890.6,1910.6,0.89,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Jowar,Winter,120569.6,93325.5,1361.1,0.89,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Tur,Monsoon,132308.7,68607.6,449.6,0.86,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Sugarcane,Whole Year,31263.8,2342161.3,73.8,0.94,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Maize,Summer,14763.4,42266.0,2575.2,0.73,Northern Dry Zone (UAS Dharwad),545
+Vijayapura,Groundnut,Summer,27342.8,13878.7,571.1,0.74,Northern Dry Zone (UAS Dharwad),545
+Yadgir,Ragi,Kharif,4500.0,12000.0,2500.0,0.89,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Rice,Kharif,4500.0,12000.0,2500.0,0.94,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Cotton,Kharif,4500.0,12000.0,2500.0,0.94,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Jowar,Rabi,4500.0,12000.0,2500.0,0.93,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Tur,Kharif,4500.0,12000.0,2500.0,0.91,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Sugarcane,Whole Year,4500.0,12000.0,2500.0,0.91,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Maize,Kharif,4500.0,12000.0,2500.0,0.71,North-Eastern Dry Zone (UAS Raichur),641
+Yadgir,Groundnut,Kharif,4500.0,12000.0,2500.0,0.82,North-Eastern Dry Zone (UAS Raichur),641

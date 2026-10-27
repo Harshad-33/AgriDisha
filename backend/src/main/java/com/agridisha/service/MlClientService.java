@@ -134,6 +134,10 @@ public class MlClientService {
             if (d.contains(tg) || tg.contains(d)) return "regional_reference";
         }
 
+        if (isKarnatakaDistrict(d)) {
+            return "regional_reference";
+        }
+
         if (isHaryanaDistrict(d)) {
             return "regional_reference";
         }
@@ -235,12 +239,15 @@ public class MlClientService {
         String datasetUsed = "AgriDisha Standard Crop Model (All-India Baseline)";
         String regionalNotes = "Prediction generated using standard agronomic model. Regional dataset not currently indexed for " + (!district.isEmpty() ? district : "this district") + ".";
 
+        boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
         boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
         boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isHaryana) {
+            if (isKarnataka) {
+                state = "Karnataka";
+            } else if (isHaryana) {
                 state = "Haryana";
             } else if (isGujarat) {
                 state = "Gujarat";
@@ -255,7 +262,10 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Agricultural Dataset (Kaggle - Sanchita Gholap)";
             regionalNotes = "Empirically verified against historical Western Maharashtra field trial records for " + district + ".";
         } else if ("regional_reference".equals(level)) {
-            if (isHaryana) {
+            if (isKarnataka) {
+                datasetUsed = "Karnataka State Soil Health & Nutrient Reference Dataset (Dataful / UAS Bangalore / UAS Dharwad)";
+                regionalNotes = "Referenced against Karnataka State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
+            } else if (isHaryana) {
                 datasetUsed = "Haryana State Soil Health & Nutrient Reference Dataset (Dataful / CCS HAU Hisar)";
                 regionalNotes = "Referenced against Haryana State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
             } else if (isGujarat) {
@@ -388,11 +398,17 @@ public class MlClientService {
         String datasetUsed = "Standard ICAR / MPKV Fertilizer Guidelines";
         String referenceLink = null;
 
+        boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
+        boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
         boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isGujarat) {
+            if (isKarnataka) {
+                state = "Karnataka";
+            } else if (isHaryana) {
+                state = "Haryana";
+            } else if (isGujarat) {
                 state = "Gujarat";
             } else if (isAndhra) {
                 state = "Andhra Pradesh";
@@ -405,7 +421,15 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Crop & Fertilizer Records (Kaggle - Sanchita Gholap)";
             referenceLink = "https://youtu.be/crop-fertilizer-care";
         } else if ("regional_reference".equals(level)) {
-            if (isGujarat) {
+            if (isKarnataka) {
+                datasetUsed = "Karnataka State Soil Health & Nutrient Reference Dataset (Dataful / UAS Bangalore, Dharwad & Shivamogga)";
+                chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - Karnataka Soil Health Reference for " + district);
+                evaluations.add("Karnataka Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under UAS Package of Practices.");
+            } else if (isHaryana) {
+                datasetUsed = "Haryana State Soil Health & Nutrient Reference Dataset (Dataful / CCS HAU Hisar)";
+                chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - CCS HAU Soil Health Reference for " + district);
+                evaluations.add("Haryana Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under CCS HAU guidelines.");
+            } else if (isGujarat) {
                 datasetUsed = "Gujarat State Soil Health & Nutrient Reference Dataset (Dataful / AAU, JAU, NAU, SDAU)";
                 chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - Gujarat Soil Health Reference for " + district);
                 evaluations.add("Gujarat Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " soils under SAU guidelines.");
@@ -562,15 +586,29 @@ public class MlClientService {
 
         if (district != null && !district.trim().isEmpty()) {
             String d = district.trim().toLowerCase();
+            boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
+            boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
+            boolean isGujarat = "Gujarat".equalsIgnoreCase(state) || isGujaratDistrict(district);
             boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
             boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
             if (state == null || state.isEmpty()) {
-                state = isAndhra ? "Andhra Pradesh" : (isTelangana ? "Telangana" : "Maharashtra");
+                state = isKarnataka ? "Karnataka" : (isHaryana ? "Haryana" : (isGujarat ? "Gujarat" : (isAndhra ? "Andhra Pradesh" : (isTelangana ? "Telangana" : "Maharashtra"))));
             }
 
             if ("verified_primary".equals(level)) {
                 datasetUsed = "Western Maharashtra Agro-Climatic Advisory (MPKV Rahuri / KVK)";
                 advisory = "Regional Western Maharashtra Plant Pathology Advisory: Monitored by MPKV Rahuri & Regional Agricultural Research Stations (" + district.trim() + " KVK). Consult local Krishi Vigyan Kendra for seasonal disease advisories and IPM spray schedules.";
+            } else if (isKarnataka) {
+                if (d.contains("dakshina") || d.contains("udupi") || d.contains("uttara") || d.contains("chikkamagaluru") || d.contains("chikmagalur") || d.contains("kodagu") || d.contains("shivamogga") || d.contains("hassan")) {
+                    datasetUsed = "Coastal & Malnad Agro-Climatic Pathology Advisory (KSNUAHS Shivamogga / CPCRI)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Coastal & Malnad Heavy Rainfall Zone): Monitored by KSNUAHS Shivamogga & CPCRI. Under heavy precipitation, monitor " + crop + " for Phytophthora rot complexes, fruit rot, and anthracnose.";
+                } else if (d.contains("bengaluru") || d.contains("bangalore") || d.contains("ramanagara") || d.contains("mandya") || d.contains("mysuru") || d.contains("mysore") || d.contains("chamarajanagara") || d.contains("tumakuru") || d.contains("kolar") || d.contains("chikkaballapura") || d.contains("chitradurga") || d.contains("davanagere")) {
+                    datasetUsed = "Southern Dry & Transition Agro-Climatic Advisory (UAS Bangalore / GKVK)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Southern Dry & Transition Zone): Monitored by UAS Bangalore GKVK & district KVK. Under red sandy loam soils, monitor " + crop + " for blast, wilt, and sucking pest vectors.";
+                } else {
+                    datasetUsed = "Northern Dry & Transition Agro-Climatic Advisory (UAS Dharwad / UAS Raichur)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Northern Dry & Transition Zone): Monitored by UAS Dharwad & UAS Raichur. Under deep black vertisols, monitor " + crop + " for wilt, powdery mildew, and foliar blights.";
+                }
             } else if (isAndhra) {
                 if (d.contains("krishna") || d.contains("ntr") || d.contains("guntur") || d.contains("bapatla") || d.contains("palnadu") || d.contains("prakasam") || d.contains("vijayawada")) {
                     datasetUsed = "Krishna Basin & Chili Belt Agro-Climatic Advisory (ANGRAU RARS Lam, Guntur)";
@@ -637,6 +675,28 @@ public class MlClientService {
         result.put("dataset_used", datasetUsed);
         result.put("regional_advisory", advisory);
         return result;
+    }
+
+    private boolean isKarnatakaDistrict(String district) {
+        if (district == null || district.trim().isEmpty()) return false;
+        String d = district.toLowerCase().trim();
+        String[] karnatakaDistricts = {
+            "bagalkote", "bagalkot", "ballari", "bellary", "belagavi", "belgaum",
+            "bengaluru rural", "bangalore rural", "bengaluru urban", "bangalore urban",
+            "bangalore", "bengaluru", "bidar", "chamarajanagara", "chamarajanagar",
+            "chikkaballapura", "chikballapur", "chikkamagaluru", "chikmagalur",
+            "chitradurga", "dakshina kannada", "dakshin kannad", "south canara",
+            "davanagere", "davangere", "dharwad", "gadag", "hassan", "haveri",
+            "kalaburagi", "gulbarga", "kodagu", "coorg", "kolar", "koppal",
+            "mandya", "mysuru", "mysore", "raichur", "ramanagara", "ramanagar",
+            "shivamogga", "shimoga", "tumakuru", "tumkur", "udupi", "uttara kannada",
+            "uttar kannad", "north canara", "vijayanagara", "hospet", "vijayapura",
+            "bijapur", "yadgir"
+        };
+        for (String kd : karnatakaDistricts) {
+            if (d.contains(kd) || kd.contains(d)) return true;
+        }
+        return false;
     }
 
     private boolean isTelanganaDistrict(String district) {

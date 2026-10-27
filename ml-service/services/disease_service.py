@@ -157,7 +157,22 @@ class DiseaseService:
                 "kurukshetra", "mahendragarh", "narnaul", "mohindergarh", "nuh", "mewat", "palwal",
                 "panchkula", "panipat", "rewari", "rohtak", "sirsa", "sonipat", "sonepat", "yamunanagar"
             ]
-            if any(hd in clean_d or clean_d in hd for hd in hr_districts):
+            ka_districts = [
+                "bagalkote", "bagalkot", "ballari", "bellary", "belagavi", "belgaum",
+                "bengaluru rural", "bangalore rural", "bengaluru urban", "bangalore urban",
+                "bangalore", "bengaluru", "bidar", "chamarajanagara", "chamarajanagar",
+                "chikkaballapura", "chikballapur", "chikkamagaluru", "chikmagalur",
+                "chitradurga", "dakshina kannada", "dakshin kannad", "south canara",
+                "davanagere", "davangere", "dharwad", "gadag", "hassan", "haveri",
+                "kalaburagi", "gulbarga", "kodagu", "coorg", "kolar", "koppal",
+                "mandya", "mysuru", "mysore", "raichur", "ramanagara", "ramanagar",
+                "shivamogga", "shimoga", "tumakuru", "tumkur", "udupi", "uttara kannada",
+                "uttar kannad", "north canara", "vijayanagara", "hospet", "vijayapura",
+                "bijapur", "yadgir"
+            ]
+            if any(kd in clean_d or clean_d in kd for kd in ka_districts):
+                inferred_state = "Karnataka"
+            elif any(hd in clean_d or clean_d in hd for hd in hr_districts):
                 inferred_state = "Haryana"
             elif any(gd in clean_d or clean_d in gd for gd in gj_districts):
                 inferred_state = "Gujarat"
