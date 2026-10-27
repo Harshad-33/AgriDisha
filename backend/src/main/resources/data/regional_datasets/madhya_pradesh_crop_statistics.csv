@@ -1,0 +1,441 @@
+District,Crop,Season,Area_ha,Production_tonnes,Yield_kg_ha,Prevalence_Score,Zone,LGD_Code
+Agar Malwa,Soybean,Monsoon,141698.0,126105.8,913.3,0.96,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Wheat,Winter,61318.4,210573.3,3.3,0.94,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Gram,Winter,45795.3,51090.7,1092.9,0.9,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Mustard,Winter,5807.3,5419.7,852.9,0.88,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Cotton,Monsoon,783.6,672.6,1073.3,0.86,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Maize,Summer,13587.0,25981.8,1950.0,0.82,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Tur,Monsoon,2342.7,2029.1,838.6,0.75,Malwa Plateau Zone (RVSKVV),666
+Agar Malwa,Rice,Summer,128.7,97.7,520.4,0.75,Malwa Plateau Zone (RVSKVV),666
+Alirajpur,Soybean,Monsoon,22128.3,22348.6,907.5,0.96,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Wheat,Winter,20787.9,52171.7,2.5,0.94,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Gram,Winter,10259.8,9978.8,914.2,0.9,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Mustard,Winter,11.0,8.0,855.0,0.88,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Cotton,Monsoon,10030.2,11559.7,1065.8,0.86,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Maize,Summer,32552.6,58305.6,1.9,0.82,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Tur,Monsoon,3143.9,1941.5,595.5,0.75,Jhabua Hills Zone (RVSKVV),639
+Alirajpur,Rice,Summer,5160.0,3955.4,837.9,0.75,Jhabua Hills Zone (RVSKVV),639
+Anuppur,Soybean,Monsoon,3896.5,3126.7,644.7,0.96,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Wheat,Winter,15921.1,23061.5,1.3,0.94,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Gram,Winter,6048.2,3961.3,564.7,0.9,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Mustard,Winter,8386.9,3165.2,375.3,0.88,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Cotton,Monsoon,9.5,21.0,1675.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Maize,Summer,11013.7,14382.6,1.4,0.82,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Tur,Monsoon,5822.3,3245.2,498.2,0.75,Eastern Plateau & Tribal Zone (JNKVV),391
+Anuppur,Rice,Summer,97340.4,119160.8,1.1,0.75,Eastern Plateau & Tribal Zone (JNKVV),391
+Ashoknagar,Soybean,Monsoon,108597.6,125394.9,1125.9,0.96,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Wheat,Winter,133841.6,307499.0,2.1,0.94,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Gram,Winter,112569.1,116791.5,1061.2,0.9,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Mustard,Winter,5345.1,5425.5,1002.4,0.88,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Cotton,Monsoon,3.0,5.0,1670.0,0.86,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Maize,Summer,5823.5,9239.5,1.7,0.82,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Tur,Monsoon,638.2,508.6,624.7,0.75,Gird Northern Zone (RVSKVV Gwalior),390
+Ashoknagar,Rice,Monsoon,1773.8,3360.2,1.3,0.75,Gird Northern Zone (RVSKVV Gwalior),390
+Balaghat,Soybean,Monsoon,123.0,153.2,1.2,0.96,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Wheat,Winter,23055.6,31812.9,1.2,0.94,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Gram,Winter,15981.9,18848.1,1.0,0.9,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Mustard,Winter,5350.0,4198.6,838.7,0.88,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Cotton,Kharif,8500.0,16000.0,1900.0,0.86,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Maize,Summer,4668.6,9129.7,1.9,0.82,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Tur,Monsoon,3999.9,4622.1,1.1,0.75,Wainganga Valley Zone (JNKVV Balaghat),389
+Balaghat,Rice,Summer,234773.9,357499.9,1.6,0.75,Wainganga Valley Zone (JNKVV Balaghat),389
+Barwani,Soybean,Monsoon,37327.5,33092.8,760.9,0.96,Nimar Valley Zone (RVSKVV),393
+Barwani,Wheat,Winter,42610.4,124670.6,2.5,0.94,Nimar Valley Zone (RVSKVV),393
+Barwani,Gram,Winter,5595.5,6950.8,1.0,0.9,Nimar Valley Zone (RVSKVV),393
+Barwani,Mustard,Winter,3.6,2.3,1537.8,0.88,Nimar Valley Zone (RVSKVV),393
+Barwani,Cotton,Monsoon,58735.0,81336.0,1.3,0.86,Nimar Valley Zone (RVSKVV),393
+Barwani,Maize,Summer,37103.5,99480.0,2.5,0.82,Nimar Valley Zone (RVSKVV),393
+Barwani,Tur,Monsoon,4648.8,2626.7,599.5,0.75,Nimar Valley Zone (RVSKVV),393
+Barwani,Rice,Summer,1710.5,920.9,619.9,0.75,Nimar Valley Zone (RVSKVV),393
+Betul,Soybean,Monsoon,192505.2,189052.6,1.0,0.96,Satpura Plateau Zone (JNKVV),392
+Betul,Wheat,Winter,113850.3,223528.3,1.8,0.94,Satpura Plateau Zone (JNKVV),392
+Betul,Gram,Winter,38573.4,34311.1,808.2,0.9,Satpura Plateau Zone (JNKVV),392
+Betul,Mustard,Winter,1057.1,908.2,857.3,0.88,Satpura Plateau Zone (JNKVV),392
+Betul,Cotton,Monsoon,1077.9,755.3,736.2,0.86,Satpura Plateau Zone (JNKVV),392
+Betul,Maize,Summer,49326.8,103296.1,2.2,0.82,Satpura Plateau Zone (JNKVV),392
+Betul,Tur,Monsoon,21642.0,15693.6,728.7,0.75,Satpura Plateau Zone (JNKVV),392
+Betul,Rice,Summer,39304.0,53797.5,1.4,0.75,Satpura Plateau Zone (JNKVV),392
+Bhind,Soybean,Monsoon,682.3,630.7,1.0,0.96,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Wheat,Winter,92664.0,266657.7,2.7,0.94,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Gram,Winter,29927.7,33395.0,1.2,0.9,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Mustard,Winter,150036.4,191884.7,1.2,0.88,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Cotton,Monsoon,2.0,1.0,500.0,0.86,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Maize,Monsoon,22.5,35.5,1470.9,0.82,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Tur,Monsoon,5383.6,3704.0,743.5,0.75,Gird Northern Zone (RVSKVV Gwalior),394
+Bhind,Rice,Monsoon,7821.1,20997.9,2.6,0.75,Gird Northern Zone (RVSKVV Gwalior),394
+Bhopal,Soybean,Monsoon,96462.6,97882.7,1.0,0.96,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Wheat,Winter,76144.1,179050.7,2.3,0.94,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Gram,Winter,33470.7,35063.4,1.1,0.9,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Mustard,Winter,223.0,202.2,899.5,0.88,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Cotton,Monsoon,13.0,10.0,770.0,0.86,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Maize,Monsoon,3923.0,6184.7,1.5,0.82,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Tur,Monsoon,2056.2,2081.5,797.0,0.75,Vindhyan Plateau Zone (JNKVV),395
+Bhopal,Rice,Monsoon,3127.7,4416.9,1.0,0.75,Vindhyan Plateau Zone (JNKVV),395
+Burhanpur,Soybean,Monsoon,15484.1,13054.1,848.2,0.96,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Wheat,Winter,11816.6,31600.4,2.5,0.94,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Gram,Winter,7021.9,10671.9,1.2,0.9,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Mustard,Winter,3.0,3.2,1760.9,0.88,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Cotton,Monsoon,43549.5,51054.3,1.3,0.86,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Maize,Summer,7233.2,26529.4,3.3,0.82,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Tur,Monsoon,4777.6,5362.6,1074.1,0.75,Nimar Valley Zone (RVSKVV),396
+Burhanpur,Rice,Summer,1834.9,2110.7,1164.0,0.75,Nimar Valley Zone (RVSKVV),396
+Chhatarpur,Soybean,Monsoon,39332.4,27720.9,655.2,0.96,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Wheat,Winter,155797.9,321535.4,1.9,0.94,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Gram,Winter,79958.4,87033.8,1.1,0.9,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Mustard,Winter,14672.9,6526.2,432.6,0.88,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Cotton,Monsoon,16.0,24.0,1500.0,0.86,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Maize,Monsoon,1055.4,1114.4,0.9,0.82,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Tur,Monsoon,9176.4,4709.0,527.4,0.75,Bundelkhand Zone (JNKVV),398
+Chhatarpur,Rice,Monsoon,11054.0,7136.6,663.2,0.75,Bundelkhand Zone (JNKVV),398
+Chhindwara,Soybean,Monsoon,108651.5,139235.3,1.2,0.96,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Wheat,Winter,124633.4,362588.7,2.5,0.94,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Gram,Winter,39412.0,60712.5,1.5,0.9,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Mustard,Winter,697.3,744.5,830.9,0.88,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Cotton,Monsoon,30080.7,60727.9,2.0,0.86,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Maize,Summer,119161.8,414121.1,3.1,0.82,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Tur,Monsoon,23353.2,33363.3,1.4,0.75,Satpura Plateau Zone (JNKVV),404
+Chhindwara,Rice,Summer,20855.5,23994.1,1.2,0.75,Satpura Plateau Zone (JNKVV),404
+Damoh,Soybean,Monsoon,70614.0,66224.7,0.9,0.96,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Wheat,Winter,86091.4,166367.6,1.9,0.94,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Gram,Winter,140785.3,128415.8,899.5,0.9,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Mustard,Winter,956.1,840.9,823.2,0.88,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Cotton,Kharif,8500.0,16000.0,1900.0,0.86,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Maize,Summer,2390.4,4447.6,1.9,0.82,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Tur,Monsoon,12185.9,10245.1,783.0,0.75,Vindhyan Plateau Zone (JNKVV),399
+Damoh,Rice,Monsoon,56930.0,53928.4,0.9,0.75,Vindhyan Plateau Zone (JNKVV),399
+Datia,Soybean,Monsoon,2448.6,2139.2,775.2,0.96,Bundelkhand Zone (JNKVV),400
+Datia,Wheat,Winter,111070.7,292844.5,2.5,0.94,Bundelkhand Zone (JNKVV),400
+Datia,Gram,Winter,34009.9,43514.4,1.3,0.9,Bundelkhand Zone (JNKVV),400
+Datia,Mustard,Winter,11846.1,8607.5,693.0,0.88,Bundelkhand Zone (JNKVV),400
+Datia,Cotton,Monsoon,1.0,2.0,2000.0,0.86,Bundelkhand Zone (JNKVV),400
+Datia,Maize,Monsoon,1601.0,2070.8,1.3,0.82,Bundelkhand Zone (JNKVV),400
+Datia,Tur,Monsoon,2573.0,1524.4,573.3,0.75,Bundelkhand Zone (JNKVV),400
+Datia,Rice,Monsoon,11075.0,15870.7,1.2,0.75,Bundelkhand Zone (JNKVV),400
+Dewas,Soybean,Monsoon,303836.9,343430.8,1.1,0.96,Malwa Plateau Zone (RVSKVV),401
+Dewas,Wheat,Winter,130330.0,376117.8,2.6,0.94,Malwa Plateau Zone (RVSKVV),401
+Dewas,Gram,Winter,111701.9,141096.9,1.2,0.9,Malwa Plateau Zone (RVSKVV),401
+Dewas,Mustard,Winter,570.5,641.9,1.1,0.88,Malwa Plateau Zone (RVSKVV),401
+Dewas,Cotton,Monsoon,21659.8,21025.8,1.1,0.86,Malwa Plateau Zone (RVSKVV),401
+Dewas,Maize,Monsoon,12955.0,21797.1,1.6,0.82,Malwa Plateau Zone (RVSKVV),401
+Dewas,Tur,Monsoon,7036.8,4942.1,735.2,0.75,Malwa Plateau Zone (RVSKVV),401
+Dewas,Rice,Monsoon,481.4,300.0,721.5,0.75,Malwa Plateau Zone (RVSKVV),401
+Dhar,Soybean,Monsoon,262698.4,321434.3,1.2,0.96,Malwa Plateau Zone (RVSKVV),402
+Dhar,Wheat,Winter,172343.7,459249.5,2.5,0.94,Malwa Plateau Zone (RVSKVV),402
+Dhar,Gram,Winter,71424.4,74501.7,1.0,0.9,Malwa Plateau Zone (RVSKVV),402
+Dhar,Mustard,Winter,255.5,213.6,728.5,0.88,Malwa Plateau Zone (RVSKVV),402
+Dhar,Cotton,Monsoon,97693.6,118534.1,1.2,0.86,Malwa Plateau Zone (RVSKVV),402
+Dhar,Maize,Summer,62484.8,121059.6,2.1,0.82,Malwa Plateau Zone (RVSKVV),402
+Dhar,Tur,Monsoon,4043.9,2671.4,623.0,0.75,Malwa Plateau Zone (RVSKVV),402
+Dhar,Rice,Summer,1589.4,900.1,660.0,0.75,Malwa Plateau Zone (RVSKVV),402
+Dindori,Soybean,Monsoon,6356.6,5228.0,778.6,0.96,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Wheat,Winter,39200.1,41897.0,1.0,0.94,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Gram,Winter,10947.4,7366.9,610.0,0.9,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Mustard,Winter,16586.0,10132.9,606.8,0.88,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Cotton,Monsoon,7.0,10.0,1430.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Maize,Monsoon,19912.6,34633.9,1.7,0.82,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Tur,Monsoon,4610.4,3004.2,661.4,0.75,Eastern Plateau & Tribal Zone (JNKVV),404
+Dindori,Rice,Monsoon,81134.3,87705.9,1.0,0.75,Eastern Plateau & Tribal Zone (JNKVV),404
+Guna,Soybean,Monsoon,177241.8,165752.2,0.9,0.96,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Wheat,Winter,130607.6,301546.0,2.3,0.94,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Gram,Winter,103487.0,103308.8,1.1,0.9,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Mustard,Winter,7638.6,7239.0,0.9,0.88,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Cotton,Monsoon,867.3,526.7,853.3,0.86,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Maize,Monsoon,21104.3,32799.3,1.5,0.82,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Tur,Monsoon,1173.1,767.6,620.0,0.75,Gird Northern Zone (RVSKVV Gwalior),405
+Guna,Rice,Monsoon,1250.2,1464.9,1.1,0.75,Gird Northern Zone (RVSKVV Gwalior),405
+Gwalior,Soybean,Monsoon,6244.0,10637.2,1.6,0.96,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Wheat,Winter,101247.9,309356.6,2.9,0.94,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Gram,Winter,23194.5,29737.8,1.3,0.9,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Mustard,Winter,50306.4,48992.7,1.0,0.88,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Cotton,Kharif,8500.0,16000.0,1900.0,0.86,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Maize,Summer,809.1,1180.7,2.2,0.82,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Tur,Monsoon,1114.7,736.9,595.7,0.75,Gird Northern Zone (RVSKVV Gwalior),406
+Gwalior,Rice,Summer,32363.2,76372.6,2.3,0.75,Gird Northern Zone (RVSKVV Gwalior),406
+Harda,Soybean,Monsoon,157144.8,176391.0,1.1,0.96,Central Narmada Valley Zone (JNKVV),407
+Harda,Wheat,Winter,124251.1,405619.6,3.1,0.94,Central Narmada Valley Zone (JNKVV),407
+Harda,Gram,Winter,28845.0,40747.4,1.4,0.9,Central Narmada Valley Zone (JNKVV),407
+Harda,Mustard,Winter,248.9,193.1,847.8,0.88,Central Narmada Valley Zone (JNKVV),407
+Harda,Cotton,Monsoon,1785.2,1201.0,951.0,0.86,Central Narmada Valley Zone (JNKVV),407
+Harda,Maize,Summer,3146.1,5736.8,1.7,0.82,Central Narmada Valley Zone (JNKVV),407
+Harda,Tur,Monsoon,2479.8,2702.8,1.0,0.75,Central Narmada Valley Zone (JNKVV),407
+Harda,Rice,Monsoon,1558.7,2157.5,1.6,0.75,Central Narmada Valley Zone (JNKVV),407
+Indore,Soybean,Monsoon,222156.1,270285.5,1.2,0.96,Malwa Plateau Zone (RVSKVV),409
+Indore,Wheat,Winter,110315.5,351690.3,3.0,0.94,Malwa Plateau Zone (RVSKVV),409
+Indore,Gram,Winter,53007.4,58927.5,1.1,0.9,Malwa Plateau Zone (RVSKVV),409
+Indore,Mustard,Winter,223.2,210.3,904.7,0.88,Malwa Plateau Zone (RVSKVV),409
+Indore,Cotton,Monsoon,368.4,235.6,991.9,0.86,Malwa Plateau Zone (RVSKVV),409
+Indore,Maize,Summer,7486.8,11805.7,1.6,0.82,Malwa Plateau Zone (RVSKVV),409
+Indore,Tur,Monsoon,788.7,608.1,660.0,0.75,Malwa Plateau Zone (RVSKVV),409
+Indore,Rice,Monsoon,40.6,65.4,804.4,0.75,Malwa Plateau Zone (RVSKVV),409
+Jabalpur,Soybean,Monsoon,12489.6,9993.2,0.9,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Wheat,Winter,116262.6,298125.0,2.4,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Gram,Winter,58531.7,66254.5,1.2,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Mustard,Winter,3976.7,3339.2,843.0,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Cotton,Monsoon,1.0,1.0,1000.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Maize,Monsoon,5503.8,10084.1,1.8,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Tur,Monsoon,8845.7,8947.8,1.1,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jabalpur,Rice,Monsoon,80306.2,111940.7,1.2,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),410
+Jhabua,Soybean,Monsoon,45527.9,39483.3,812.6,0.96,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Wheat,Winter,35638.6,83600.0,2.1,0.94,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Gram,Winter,19271.6,15770.4,769.1,0.9,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Mustard,Winter,9.9,9.0,1.5,0.88,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Cotton,Monsoon,25196.2,20866.6,867.0,0.86,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Maize,Summer,77837.9,120321.0,1.7,0.82,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Tur,Monsoon,3997.0,2504.7,602.2,0.75,Jhabua Hills Zone (RVSKVV),411
+Jhabua,Rice,Summer,15725.2,9158.3,653.5,0.75,Jhabua Hills Zone (RVSKVV),411
+Katni,Soybean,Monsoon,1047.7,974.8,764.3,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Wheat,Winter,87163.2,177412.7,1.7,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Gram,Winter,26824.2,27720.2,1.0,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Mustard,Winter,2712.6,1809.0,625.5,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Cotton,Monsoon,16.0,17.0,1060.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Maize,Monsoon,3769.2,6059.9,1.6,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Tur,Monsoon,6113.6,5249.2,883.2,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Katni,Rice,Monsoon,107357.0,145029.9,1.3,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),412
+Khandwa,Soybean,Monsoon,154654.2,100203.2,672.6,0.96,Nimar Valley Zone (RVSKVV),403
+Khandwa,Wheat,Winter,87191.4,217076.6,2.2,0.94,Nimar Valley Zone (RVSKVV),403
+Khandwa,Gram,Winter,22122.2,23869.0,1.0,0.9,Nimar Valley Zone (RVSKVV),403
+Khandwa,Mustard,Winter,31.2,51.3,760.6,0.88,Nimar Valley Zone (RVSKVV),403
+Khandwa,Cotton,Monsoon,77635.3,63013.0,0.9,0.86,Nimar Valley Zone (RVSKVV),403
+Khandwa,Maize,Summer,12404.5,28411.2,2.2,0.82,Nimar Valley Zone (RVSKVV),403
+Khandwa,Tur,Monsoon,10604.1,10027.8,0.9,0.75,Nimar Valley Zone (RVSKVV),403
+Khandwa,Rice,Summer,10631.5,9355.9,0.9,0.75,Nimar Valley Zone (RVSKVV),403
+Khargone,Soybean,Monsoon,52080.8,42461.4,789.6,0.96,Nimar Valley Zone (RVSKVV),436
+Khargone,Wheat,Winter,94330.7,297779.1,2.8,0.94,Nimar Valley Zone (RVSKVV),436
+Khargone,Gram,Winter,21056.4,27409.5,877.7,0.9,Nimar Valley Zone (RVSKVV),436
+Khargone,Mustard,Winter,46.3,30.5,571.6,0.88,Nimar Valley Zone (RVSKVV),436
+Khargone,Cotton,Monsoon,197824.4,221580.5,1.1,0.86,Nimar Valley Zone (RVSKVV),436
+Khargone,Maize,Summer,31582.8,72521.4,2.2,0.82,Nimar Valley Zone (RVSKVV),436
+Khargone,Tur,Monsoon,14765.5,9481.1,636.1,0.75,Nimar Valley Zone (RVSKVV),436
+Khargone,Rice,Monsoon,3377.8,1794.2,651.0,0.75,Nimar Valley Zone (RVSKVV),436
+Maihar,Soybean,Monsoon,41311.1,25928.8,577.8,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Wheat,Winter,165908.6,335008.4,1.9,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Gram,Winter,85462.6,67232.5,791.8,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Mustard,Winter,3179.0,1986.5,471.7,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Cotton,Monsoon,8.0,3.7,460.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Maize,Summer,1726.2,2341.8,1.2,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Tur,Monsoon,23538.3,14981.2,520.4,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Maihar,Rice,Monsoon,105428.5,158630.0,1.4,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),752
+Mandla,Soybean,Monsoon,2425.0,2080.5,729.1,0.96,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Wheat,Winter,39577.5,56920.0,1.3,0.94,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Gram,Winter,9563.8,8361.4,752.7,0.9,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Mustard,Winter,15313.5,10654.9,722.2,0.88,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Cotton,Monsoon,1.0,6.0,6000.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Maize,Monsoon,18767.7,30163.9,1.6,0.82,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Tur,Monsoon,4507.7,3974.1,869.1,0.75,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandla,Rice,Monsoon,122027.3,142219.8,1.1,0.75,Eastern Plateau & Tribal Zone (JNKVV),416
+Mandsaur,Soybean,Monsoon,250543.0,252940.7,1.0,0.96,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Wheat,Winter,76142.6,278829.1,3.1,0.94,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Gram,Winter,41786.0,38428.4,874.5,0.9,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Mustard,Winter,31311.5,35320.5,1.0,0.88,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Cotton,Monsoon,534.6,416.7,698.0,0.86,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Maize,Monsoon,38832.1,69016.9,1.9,0.82,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Tur,Monsoon,1209.7,729.3,548.6,0.75,Malwa Plateau Zone (RVSKVV),417
+Mandsaur,Rice,Monsoon,52.7,98.5,1089.2,0.75,Malwa Plateau Zone (RVSKVV),417
+Mauganj,Soybean,Monsoon,28214.3,20095.7,656.1,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Wheat,Winter,177036.3,321110.3,1.7,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Gram,Winter,56217.3,57005.5,1.0,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Mustard,Winter,5437.9,3425.3,463.5,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Cotton,Monsoon,7.0,3.0,430.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Maize,Monsoon,1549.7,1775.7,1.0,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Tur,Monsoon,21390.5,11874.9,550.0,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Mauganj,Rice,Monsoon,140713.0,193715.0,1.3,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),751
+Morena,Soybean,Monsoon,2179.5,2855.0,1.3,0.96,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Wheat,Winter,91097.7,291183.1,3.1,0.94,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Gram,Winter,10287.5,13466.4,1.3,0.9,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Mustard,Winter,142958.5,197236.0,1.4,0.88,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Cotton,Monsoon,34.5,60.5,1625.0,0.86,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Maize,Monsoon,79.6,149.8,1.3,0.82,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Tur,Monsoon,9003.1,10054.1,0.9,0.75,Gird Northern Zone (RVSKVV Gwalior),418
+Morena,Rice,Monsoon,1382.6,3114.9,2.3,0.75,Gird Northern Zone (RVSKVV Gwalior),418
+Narmadapuram,Soybean,Monsoon,184980.9,167718.8,0.9,0.96,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Wheat,Winter,219906.5,743477.7,3.3,0.94,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Gram,Winter,49016.4,64641.3,1.4,0.9,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Mustard,Winter,389.0,369.1,921.0,0.88,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Cotton,Monsoon,585.5,712.1,1080.0,0.86,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Maize,Summer,7196.5,18123.6,2.1,0.82,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Tur,Monsoon,10063.1,11049.3,1.1,0.75,Central Narmada Valley Zone (JNKVV),408
+Narmadapuram,Rice,Monsoon,45924.0,109750.4,2.0,0.75,Central Narmada Valley Zone (JNKVV),408
+Narsinghpur,Soybean,Monsoon,75005.7,101149.8,1.3,0.96,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Wheat,Winter,79849.7,249955.0,3.0,0.94,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Gram,Winter,114922.2,134787.1,1.2,0.9,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Mustard,Winter,385.3,403.2,1.1,0.88,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Cotton,Monsoon,14.5,17.5,1240.0,0.86,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Maize,Summer,2976.9,6356.6,2.0,0.82,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Tur,Monsoon,32381.7,42683.8,1.3,0.75,Central Narmada Valley Zone (JNKVV),419
+Narsinghpur,Rice,Summer,19522.6,38446.7,1.5,0.75,Central Narmada Valley Zone (JNKVV),419
+Neemuch,Soybean,Monsoon,120586.6,110011.0,906.8,0.96,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Wheat,Winter,39878.5,135039.3,3.1,0.94,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Gram,Winter,24035.0,26303.1,1.1,0.9,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Mustard,Winter,17951.0,18971.5,1.1,0.88,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Cotton,Monsoon,411.5,343.4,1.6,0.86,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Maize,Summer,25225.1,52257.2,2.1,0.82,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Tur,Monsoon,511.6,261.3,484.7,0.75,Malwa Plateau Zone (RVSKVV),420
+Neemuch,Rice,Summer,73.6,60.8,617.9,0.75,Malwa Plateau Zone (RVSKVV),420
+Niwari,Soybean,Monsoon,39705.7,38767.2,0.9,0.96,Bundelkhand Zone (JNKVV),718
+Niwari,Wheat,Winter,77809.0,245332.0,3150.0,0.94,Bundelkhand Zone (JNKVV),718
+Niwari,Gram,Winter,1382.0,1788.0,1290.0,0.9,Bundelkhand Zone (JNKVV),718
+Niwari,Mustard,Winter,1367.0,1401.0,1020.0,0.88,Bundelkhand Zone (JNKVV),718
+Niwari,Cotton,Monsoon,3.0,4.0,1330.0,0.86,Bundelkhand Zone (JNKVV),718
+Niwari,Maize,Monsoon,2330.3,2379.6,1.1,0.82,Bundelkhand Zone (JNKVV),718
+Niwari,Tur,Monsoon,729.1,542.8,478.1,0.75,Bundelkhand Zone (JNKVV),718
+Niwari,Rice,Monsoon,13595.8,7529.5,530.5,0.75,Bundelkhand Zone (JNKVV),718
+Pandhurna,Soybean,Monsoon,108651.5,139235.3,1.2,0.96,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Wheat,Winter,124633.4,362588.7,2.5,0.94,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Gram,Winter,39412.0,60712.5,1.5,0.9,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Mustard,Winter,697.3,744.5,830.9,0.88,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Cotton,Monsoon,30080.7,60727.9,2.0,0.86,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Maize,Summer,119161.8,414121.1,3.1,0.82,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Tur,Monsoon,23353.2,33363.3,1.4,0.75,Satpura Plateau Zone (JNKVV),753
+Pandhurna,Rice,Summer,20855.5,23994.1,1.2,0.75,Satpura Plateau Zone (JNKVV),753
+Panna,Soybean,Monsoon,9475.7,7658.0,689.1,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Wheat,Winter,74493.3,122893.7,1.6,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Gram,Winter,84149.3,79367.4,0.9,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Mustard,Winter,4715.6,2730.8,492.6,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Cotton,Monsoon,1.0,6.0,6000.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Maize,Monsoon,2624.8,2919.5,1.1,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Tur,Monsoon,8917.6,6877.1,676.1,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Panna,Rice,Monsoon,62186.4,57686.7,898.6,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),422
+Raisen,Soybean,Monsoon,112265.2,98860.6,0.9,0.96,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Wheat,Winter,201537.1,465778.5,2.2,0.94,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Gram,Winter,128745.9,152193.0,1.2,0.9,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Mustard,Winter,300.9,292.0,1.0,0.88,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Cotton,Monsoon,25.2,12.7,538.9,0.86,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Maize,Summer,4392.7,6799.4,1.7,0.82,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Tur,Monsoon,27033.1,19295.1,697.8,0.75,Vindhyan Plateau Zone (JNKVV),423
+Raisen,Rice,Monsoon,51305.8,101051.9,1.2,0.75,Vindhyan Plateau Zone (JNKVV),423
+Rajgarh,Soybean,Monsoon,281539.0,254197.8,0.9,0.96,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Wheat,Winter,103442.1,265765.6,2.1,0.94,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Gram,Winter,79442.1,87275.9,1.0,0.9,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Mustard,Winter,3258.8,2881.0,812.6,0.88,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Cotton,Monsoon,9.8,7.4,797.3,0.86,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Maize,Summer,39851.8,57946.7,1.5,0.82,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Tur,Monsoon,3249.3,2078.8,657.3,0.75,Malwa Plateau Zone (RVSKVV),424
+Rajgarh,Rice,Monsoon,22800.4,21626.8,834.5,0.75,Malwa Plateau Zone (RVSKVV),424
+Ratlam,Soybean,Monsoon,203648.0,220308.6,1.1,0.96,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Wheat,Winter,86146.2,264216.3,3.0,0.94,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Gram,Winter,60906.3,50314.6,782.3,0.9,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Mustard,Winter,6169.6,9017.7,1.4,0.88,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Cotton,Monsoon,23785.8,28996.5,1.2,0.86,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Maize,Summer,48302.7,102385.9,2.2,0.82,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Tur,Monsoon,1142.7,1084.8,805.5,0.75,Malwa Plateau Zone (RVSKVV),425
+Ratlam,Rice,Summer,1874.8,1278.6,715.0,0.75,Malwa Plateau Zone (RVSKVV),425
+Rewa,Soybean,Monsoon,28214.3,20095.7,656.1,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Wheat,Winter,177036.3,321110.3,1.7,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Gram,Winter,56217.3,57005.5,1.0,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Mustard,Winter,5437.9,3425.3,463.5,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Cotton,Monsoon,7.0,3.0,430.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Maize,Monsoon,1549.7,1775.7,1.0,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Tur,Monsoon,21390.5,11874.9,550.0,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Rewa,Rice,Monsoon,140713.0,193715.0,1.3,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),426
+Sagar,Soybean,Monsoon,240330.4,191006.7,797.4,0.96,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Wheat,Winter,201337.5,351760.6,1.6,0.94,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Gram,Winter,171380.3,150333.7,887.7,0.9,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Mustard,Winter,1038.7,747.3,689.5,0.88,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Cotton,Monsoon,6.0,5.0,830.0,0.86,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Maize,Summer,3810.1,5336.6,1.4,0.82,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Tur,Monsoon,6523.9,5333.7,721.7,0.75,Vindhyan Plateau Zone (JNKVV),427
+Sagar,Rice,Monsoon,7329.0,4871.1,688.6,0.75,Vindhyan Plateau Zone (JNKVV),427
+Satna,Soybean,Monsoon,41311.1,25928.8,577.8,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Wheat,Winter,165908.6,335008.4,1.9,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Gram,Winter,85462.6,67232.5,791.8,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Mustard,Winter,3179.0,1986.5,471.7,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Cotton,Monsoon,8.0,3.7,460.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Maize,Summer,1726.2,2341.8,1.2,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Tur,Monsoon,23538.3,14981.2,520.4,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Satna,Rice,Monsoon,105428.5,158630.0,1.4,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),428
+Sehore,Soybean,Monsoon,260108.2,279721.4,1.1,0.96,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Wheat,Winter,192189.4,481836.5,2.4,0.94,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Gram,Winter,93267.1,101678.5,1.1,0.9,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Mustard,Winter,4386.1,5849.6,887.5,0.88,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Cotton,Monsoon,371.6,201.3,837.3,0.86,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Maize,Monsoon,14040.9,21390.3,1.6,0.82,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Tur,Monsoon,7875.8,5350.5,679.1,0.75,Vindhyan Plateau Zone (JNKVV),429
+Sehore,Rice,Monsoon,11096.4,31239.6,1.6,0.75,Vindhyan Plateau Zone (JNKVV),429
+Seoni,Soybean,Monsoon,78031.7,71574.5,0.9,0.96,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Wheat,Winter,123508.3,235336.7,1.6,0.94,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Gram,Winter,41412.5,32411.8,785.0,0.9,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Mustard,Winter,1121.1,881.0,764.1,0.88,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Cotton,Monsoon,119.6,119.8,1101.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Maize,Summer,38486.6,132281.8,2.2,0.82,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Tur,Monsoon,9086.5,9747.2,1.0,0.75,Eastern Plateau & Tribal Zone (JNKVV),430
+Seoni,Rice,Summer,118424.2,174242.7,1.4,0.75,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Soybean,Monsoon,5759.7,4388.8,677.8,0.96,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Wheat,Winter,36078.7,50779.3,1.3,0.94,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Gram,Winter,6845.7,5287.7,650.5,0.9,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Mustard,Winter,7449.4,2693.2,404.3,0.88,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Cotton,Monsoon,9.5,21.0,1675.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Maize,Summer,14251.7,17465.8,1.3,0.82,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Tur,Monsoon,10540.5,6312.3,574.5,0.75,Eastern Plateau & Tribal Zone (JNKVV),430
+Shahdol,Rice,Monsoon,127651.4,150987.0,1.3,0.75,Eastern Plateau & Tribal Zone (JNKVV),430
+Shajapur,Soybean,Monsoon,305491.3,293019.3,1.0,0.96,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Wheat,Winter,93845.3,257974.6,2.5,0.94,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Gram,Winter,98132.3,88699.4,1.0,0.9,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Mustard,Winter,2939.1,2977.4,1.0,0.88,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Cotton,Monsoon,783.6,672.6,1073.3,0.86,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Maize,Monsoon,28534.9,40766.5,1.5,0.82,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Tur,Monsoon,2705.0,1440.9,521.8,0.75,Malwa Plateau Zone (RVSKVV),431
+Shajapur,Rice,Monsoon,285.2,157.4,597.9,0.75,Malwa Plateau Zone (RVSKVV),431
+Sheopur,Soybean,Monsoon,38494.0,38917.3,1.2,0.96,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Wheat,Winter,62136.3,221338.8,3.2,0.94,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Gram,Winter,11572.3,17274.9,1.4,0.9,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Mustard,Winter,51109.7,65165.5,1.3,0.88,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Cotton,Monsoon,579.7,441.9,1205.2,0.86,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Maize,Monsoon,1427.8,2420.9,1.4,0.82,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Tur,Monsoon,2050.2,1632.8,739.1,0.75,Gird Northern Zone (RVSKVV Gwalior),432
+Sheopur,Rice,Monsoon,13232.6,40437.4,2.6,0.75,Gird Northern Zone (RVSKVV Gwalior),432
+Shivpuri,Soybean,Monsoon,112960.7,96444.2,827.4,0.96,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Wheat,Winter,146497.7,350207.0,2.2,0.94,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Gram,Winter,71724.2,79804.3,1.1,0.9,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Mustard,Winter,46534.9,33486.7,694.3,0.88,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Cotton,Monsoon,66.9,85.0,1015.7,0.86,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Maize,Monsoon,19350.2,30768.7,1.6,0.82,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Tur,Monsoon,937.1,567.6,551.9,0.75,Gird Northern Zone (RVSKVV Gwalior),433
+Shivpuri,Rice,Summer,10684.0,18385.3,1.4,0.75,Gird Northern Zone (RVSKVV Gwalior),433
+Sidhi,Soybean,Monsoon,963.7,1069.4,540.5,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Wheat,Winter,77226.7,109349.6,1.4,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Gram,Winter,30029.3,18973.5,655.5,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Mustard,Winter,6506.6,2753.8,450.0,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Cotton,Monsoon,2.9,2.7,1725.6,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Maize,Monsoon,22649.2,30209.5,1.4,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Tur,Monsoon,25568.5,14670.9,584.8,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Sidhi,Rice,Monsoon,93795.9,92801.6,1.1,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),438
+Singrauli,Soybean,Monsoon,20.7,8.0,3066.7,0.96,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Wheat,Winter,46112.2,116082.3,2.1,0.94,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Gram,Winter,18334.2,21800.0,1278.3,0.9,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Mustard,Winter,7430.6,6087.4,805.8,0.88,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Cotton,Monsoon,2.0,6.0,3000.0,0.86,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Maize,Summer,21786.5,40838.6,2.0,0.82,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Tur,Monsoon,18930.6,22683.2,1175.8,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Singrauli,Rice,Monsoon,52102.3,103252.6,1.9,0.75,Kymore Plateau & Satpura Hills (JNKVV Jabalpur),640
+Tikamgarh,Soybean,Monsoon,39705.7,38767.2,0.9,0.96,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Wheat,Winter,121233.5,266722.5,2.0,0.94,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Gram,Winter,22514.8,25379.6,1.1,0.9,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Mustard,Winter,14281.8,7218.7,526.5,0.88,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Cotton,Monsoon,3.0,4.0,1330.0,0.86,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Maize,Monsoon,2330.3,2379.6,1.1,0.82,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Tur,Monsoon,729.1,542.8,478.1,0.75,Bundelkhand Zone (JNKVV),434
+Tikamgarh,Rice,Monsoon,13595.8,7529.5,530.5,0.75,Bundelkhand Zone (JNKVV),434
+Ujjain,Soybean,Monsoon,437966.6,462670.1,1.1,0.96,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Wheat,Winter,171829.5,503473.1,2.6,0.94,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Gram,Winter,132023.5,122134.8,0.9,0.9,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Mustard,Winter,2546.3,2174.9,800.9,0.88,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Cotton,Monsoon,51.1,31.7,594.3,0.86,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Maize,Summer,7866.4,10653.1,1.4,0.82,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Tur,Monsoon,1528.7,1191.6,628.7,0.75,Malwa Plateau Zone (RVSKVV),435
+Ujjain,Rice,Summer,23.1,31.4,1066.9,0.75,Malwa Plateau Zone (RVSKVV),435
+Umaria,Soybean,Monsoon,2044.3,1352.9,495.9,0.96,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Wheat,Winter,30982.8,43471.5,1.3,0.94,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Gram,Winter,7670.7,5883.9,644.1,0.9,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Mustard,Winter,6869.6,2904.1,442.3,0.88,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Cotton,Monsoon,2.0,2.0,1000.0,0.86,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Maize,Summer,9836.5,12611.9,1.2,0.82,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Tur,Monsoon,7895.6,4587.0,538.2,0.75,Eastern Plateau & Tribal Zone (JNKVV),436
+Umaria,Rice,Summer,41123.9,44859.1,1.1,0.75,Eastern Plateau & Tribal Zone (JNKVV),436
+Vidisha,Soybean,Monsoon,206757.7,199730.1,1.0,0.96,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Wheat,Winter,239270.7,482889.0,1.9,0.94,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Gram,Winter,188349.8,205488.7,1.1,0.9,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Mustard,Winter,932.5,717.7,788.5,0.88,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Cotton,Monsoon,11.2,6.0,634.0,0.86,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Maize,Summer,5280.8,8643.6,1.7,0.82,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Tur,Monsoon,2599.7,1732.1,661.7,0.75,Vindhyan Plateau Zone (JNKVV),437
+Vidisha,Rice,Summer,3210.5,3718.5,868.6,0.75,Vindhyan Plateau Zone (JNKVV),437

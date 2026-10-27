@@ -1,0 +1,826 @@
+District,Soil_Type,Crop_Name,N_kg_ha,P2O5_kg_ha,K2O_kg_ha,Zn_kg_ha,S_kg_ha,Recommended_pH,Weather,Fertilizer
+Agar Malwa,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Agar Malwa,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Agar Malwa,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Agar Malwa,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Agar Malwa,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Agar Malwa,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Agar Malwa,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Agar Malwa,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Agar Malwa,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Agar Malwa,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Agar Malwa,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Agar Malwa,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Agar Malwa,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Agar Malwa,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Agar Malwa,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Alirajpur,Gravelly Red & Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Alirajpur,Gravelly Red & Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Alirajpur,Gravelly Red & Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Alirajpur,Gravelly Red & Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Alirajpur,Gravelly Red & Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Alirajpur,Gravelly Red & Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Alirajpur,Gravelly Red & Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Alirajpur,Gravelly Red & Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Alirajpur,Gravelly Red & Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Alirajpur,Gravelly Red & Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Anuppur,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Anuppur,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Anuppur,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Anuppur,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Anuppur,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Anuppur,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Anuppur,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Anuppur,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Anuppur,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Anuppur,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Anuppur,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Anuppur,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Anuppur,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Anuppur,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Anuppur,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Ashoknagar,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Ashoknagar,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Ashoknagar,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Ashoknagar,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Ashoknagar,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Ashoknagar,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Ashoknagar,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Ashoknagar,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Ashoknagar,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Ashoknagar,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Ashoknagar,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Ashoknagar,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Ashoknagar,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Ashoknagar,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Ashoknagar,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Balaghat,Alluvial Clay Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Balaghat,Alluvial Clay Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Balaghat,Alluvial Clay Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Balaghat,Alluvial Clay Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Balaghat,Alluvial Clay Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Balaghat,Alluvial Clay Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Balaghat,Alluvial Clay Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Balaghat,Alluvial Clay Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Balaghat,Alluvial Clay Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Balaghat,Alluvial Clay Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Balaghat,Alluvial Clay Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Balaghat,Alluvial Clay Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Balaghat,Alluvial Clay Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Balaghat,Alluvial Clay Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Balaghat,Alluvial Clay Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Barwani,Deep Black Clay Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Barwani,Deep Black Clay Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Barwani,Deep Black Clay Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Barwani,Deep Black Clay Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Barwani,Deep Black Clay Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Barwani,Deep Black Clay Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Barwani,Deep Black Clay Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Barwani,Deep Black Clay Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Barwani,Deep Black Clay Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Barwani,Deep Black Clay Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Barwani,Deep Black Clay Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Barwani,Deep Black Clay Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Barwani,Deep Black Clay Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Barwani,Deep Black Clay Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Barwani,Deep Black Clay Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Betul,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Betul,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Betul,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Betul,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Betul,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Betul,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Betul,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Betul,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Betul,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Betul,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Betul,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Betul,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Betul,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Betul,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Betul,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Bhind,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Bhind,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Bhind,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Bhind,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Bhind,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Bhind,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Bhind,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Bhind,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Bhind,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Bhind,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Bhind,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Bhind,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Bhind,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Bhind,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Bhind,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Bhopal,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Bhopal,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Bhopal,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Bhopal,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Bhopal,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Bhopal,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Bhopal,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Bhopal,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Bhopal,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Bhopal,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Bhopal,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Bhopal,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Bhopal,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Bhopal,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Bhopal,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Burhanpur,Deep Black Clay Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Burhanpur,Deep Black Clay Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Burhanpur,Deep Black Clay Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Burhanpur,Deep Black Clay Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Burhanpur,Deep Black Clay Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Burhanpur,Deep Black Clay Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Burhanpur,Deep Black Clay Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Burhanpur,Deep Black Clay Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Burhanpur,Deep Black Clay Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Burhanpur,Deep Black Clay Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Burhanpur,Deep Black Clay Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Burhanpur,Deep Black Clay Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Burhanpur,Deep Black Clay Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Burhanpur,Deep Black Clay Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Burhanpur,Deep Black Clay Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Chhatarpur,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Chhatarpur,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Chhatarpur,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Chhatarpur,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Chhatarpur,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Chhatarpur,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Chhatarpur,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Chhatarpur,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Chhatarpur,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Chhatarpur,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Chhindwara,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Chhindwara,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Chhindwara,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Chhindwara,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Chhindwara,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Chhindwara,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Chhindwara,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Chhindwara,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Chhindwara,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Chhindwara,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Chhindwara,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Chhindwara,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Chhindwara,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Chhindwara,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Chhindwara,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Damoh,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Damoh,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Damoh,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Damoh,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Damoh,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Damoh,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Damoh,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Damoh,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Damoh,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Damoh,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Damoh,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Damoh,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Damoh,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Damoh,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Damoh,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Datia,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Datia,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Datia,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Datia,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Datia,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Datia,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Datia,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Datia,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Datia,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Datia,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Datia,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Datia,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Datia,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Datia,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Datia,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Dewas,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Dewas,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Dewas,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Dewas,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Dewas,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Dewas,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Dewas,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Dewas,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Dewas,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Dewas,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Dewas,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Dewas,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Dewas,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Dewas,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Dewas,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Dhar,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Dhar,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Dhar,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Dhar,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Dhar,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Dhar,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Dhar,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Dhar,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Dhar,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Dhar,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Dhar,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Dhar,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Dhar,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Dhar,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Dhar,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Dindori,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Dindori,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Dindori,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Dindori,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Dindori,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Dindori,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Dindori,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Dindori,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Dindori,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Dindori,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Dindori,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Dindori,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Dindori,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Dindori,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Dindori,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Guna,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Guna,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Guna,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Guna,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Guna,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Guna,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Guna,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Guna,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Guna,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Guna,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Guna,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Guna,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Guna,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Guna,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Guna,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Gwalior,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Gwalior,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Gwalior,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Gwalior,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Gwalior,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Gwalior,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Gwalior,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Gwalior,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Gwalior,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Gwalior,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Gwalior,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Gwalior,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Gwalior,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Gwalior,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Gwalior,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Harda,Deep Heavy Clay Vertisol,Soybean,20.0,60.0,36.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Wheat,120.0,60.0,36.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Gram,20.0,50.0,18.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Harda,Deep Heavy Clay Vertisol,Mustard,80.0,40.0,36.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Cotton,100.0,50.0,45.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Harda,Deep Heavy Clay Vertisol,Maize,120.0,60.0,36.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Harda,Deep Heavy Clay Vertisol,Tur,25.0,50.0,22.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Harda,Deep Heavy Clay Vertisol,Rice,100.0,50.0,45.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Garlic,100.0,50.0,45.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Harda,Deep Heavy Clay Vertisol,Coriander,40.0,30.0,18.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Jowar,80.0,40.0,36.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Harda,Deep Heavy Clay Vertisol,Onion,100.0,50.0,54.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Harda,Deep Heavy Clay Vertisol,Potato,120.0,80.0,90.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Harda,Deep Heavy Clay Vertisol,Groundnut,20.0,60.0,18.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Harda,Deep Heavy Clay Vertisol,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Indore,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Indore,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Indore,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Indore,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Indore,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Indore,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Indore,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Indore,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Indore,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Indore,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Indore,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Indore,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Indore,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Indore,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Indore,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Jabalpur,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Jabalpur,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Jabalpur,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Jabalpur,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Jabalpur,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Jabalpur,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Jabalpur,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Jabalpur,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Jabalpur,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Jabalpur,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Jhabua,Gravelly Red & Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Jhabua,Gravelly Red & Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Jhabua,Gravelly Red & Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Jhabua,Gravelly Red & Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Jhabua,Gravelly Red & Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Jhabua,Gravelly Red & Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Jhabua,Gravelly Red & Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Jhabua,Gravelly Red & Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Jhabua,Gravelly Red & Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Jhabua,Gravelly Red & Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Katni,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Katni,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Katni,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Katni,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Katni,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Katni,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Katni,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Katni,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Katni,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Katni,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Katni,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Katni,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Katni,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Katni,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Katni,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Khandwa,Deep Black Clay Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Khandwa,Deep Black Clay Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Khandwa,Deep Black Clay Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Khandwa,Deep Black Clay Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Khandwa,Deep Black Clay Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Khandwa,Deep Black Clay Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Khandwa,Deep Black Clay Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Khandwa,Deep Black Clay Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Khandwa,Deep Black Clay Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Khandwa,Deep Black Clay Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Khandwa,Deep Black Clay Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Khandwa,Deep Black Clay Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Khandwa,Deep Black Clay Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Khandwa,Deep Black Clay Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Khandwa,Deep Black Clay Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Khargone,Deep Black Clay Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Khargone,Deep Black Clay Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Khargone,Deep Black Clay Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Khargone,Deep Black Clay Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Khargone,Deep Black Clay Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Khargone,Deep Black Clay Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Khargone,Deep Black Clay Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Khargone,Deep Black Clay Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Khargone,Deep Black Clay Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Khargone,Deep Black Clay Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Khargone,Deep Black Clay Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Khargone,Deep Black Clay Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Khargone,Deep Black Clay Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Khargone,Deep Black Clay Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Khargone,Deep Black Clay Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Maihar,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Maihar,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Maihar,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Maihar,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Maihar,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Maihar,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Maihar,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Maihar,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Maihar,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Maihar,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Maihar,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Maihar,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Maihar,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Maihar,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Maihar,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Mandla,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Mandla,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Mandla,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Mandla,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Mandla,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Mandla,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Mandla,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Mandla,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Mandla,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Mandla,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Mandla,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Mandla,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Mandla,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Mandla,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Mandla,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Mandsaur,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Mandsaur,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Mandsaur,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Mandsaur,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Mandsaur,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Mandsaur,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Mandsaur,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Mandsaur,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Mandsaur,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Mandsaur,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Mandsaur,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Mandsaur,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Mandsaur,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Mandsaur,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Mandsaur,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Mauganj,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Mauganj,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Mauganj,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Mauganj,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Mauganj,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Mauganj,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Mauganj,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Mauganj,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Mauganj,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Mauganj,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Mauganj,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Mauganj,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Mauganj,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Mauganj,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Mauganj,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Morena,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Morena,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Morena,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Morena,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Morena,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Morena,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Morena,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Morena,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Morena,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Morena,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Morena,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Morena,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Morena,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Morena,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Morena,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Narmadapuram,Deep Heavy Clay Vertisol,Soybean,20.0,60.0,36.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Wheat,120.0,60.0,36.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Gram,20.0,50.0,18.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Narmadapuram,Deep Heavy Clay Vertisol,Mustard,80.0,40.0,36.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Cotton,100.0,50.0,45.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Narmadapuram,Deep Heavy Clay Vertisol,Maize,120.0,60.0,36.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Narmadapuram,Deep Heavy Clay Vertisol,Tur,25.0,50.0,22.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Narmadapuram,Deep Heavy Clay Vertisol,Rice,100.0,50.0,45.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Garlic,100.0,50.0,45.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Coriander,40.0,30.0,18.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Jowar,80.0,40.0,36.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Onion,100.0,50.0,54.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Narmadapuram,Deep Heavy Clay Vertisol,Potato,120.0,80.0,90.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Narmadapuram,Deep Heavy Clay Vertisol,Groundnut,20.0,60.0,18.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Narmadapuram,Deep Heavy Clay Vertisol,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Narsinghpur,Deep Heavy Clay Vertisol,Soybean,20.0,60.0,36.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Wheat,120.0,60.0,36.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Gram,20.0,50.0,18.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Narsinghpur,Deep Heavy Clay Vertisol,Mustard,80.0,40.0,36.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Cotton,100.0,50.0,45.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Narsinghpur,Deep Heavy Clay Vertisol,Maize,120.0,60.0,36.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Narsinghpur,Deep Heavy Clay Vertisol,Tur,25.0,50.0,22.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Narsinghpur,Deep Heavy Clay Vertisol,Rice,100.0,50.0,45.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Garlic,100.0,50.0,45.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Coriander,40.0,30.0,18.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Jowar,80.0,40.0,36.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Onion,100.0,50.0,54.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Narsinghpur,Deep Heavy Clay Vertisol,Potato,120.0,80.0,90.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Narsinghpur,Deep Heavy Clay Vertisol,Groundnut,20.0,60.0,18.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Narsinghpur,Deep Heavy Clay Vertisol,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Neemuch,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Neemuch,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Neemuch,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Neemuch,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Neemuch,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Neemuch,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Neemuch,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Neemuch,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Neemuch,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Neemuch,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Neemuch,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Neemuch,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Neemuch,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Neemuch,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Neemuch,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Niwari,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Niwari,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Niwari,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Niwari,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Niwari,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Niwari,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Niwari,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Niwari,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Niwari,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Niwari,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Niwari,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Niwari,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Niwari,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Niwari,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Niwari,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Pandhurna,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Pandhurna,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Pandhurna,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Pandhurna,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Pandhurna,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Pandhurna,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Pandhurna,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Pandhurna,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Pandhurna,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Pandhurna,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Pandhurna,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Pandhurna,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Pandhurna,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Pandhurna,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Pandhurna,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Panna,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Panna,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Panna,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Panna,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Panna,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Panna,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Panna,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Panna,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Panna,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Panna,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Panna,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Panna,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Panna,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Panna,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Panna,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Raisen,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Raisen,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Raisen,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Raisen,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Raisen,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Raisen,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Raisen,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Raisen,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Raisen,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Raisen,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Raisen,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Raisen,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Raisen,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Raisen,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Raisen,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Rajgarh,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Rajgarh,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Rajgarh,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Rajgarh,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Rajgarh,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Rajgarh,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Rajgarh,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Rajgarh,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Rajgarh,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Rajgarh,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Rajgarh,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Rajgarh,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Rajgarh,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Rajgarh,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Rajgarh,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Ratlam,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Ratlam,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Ratlam,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Ratlam,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Ratlam,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Ratlam,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Ratlam,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Ratlam,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Ratlam,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Ratlam,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Ratlam,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Ratlam,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Ratlam,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Ratlam,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Ratlam,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Rewa,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Rewa,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Rewa,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Rewa,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Rewa,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Rewa,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Rewa,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Rewa,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Rewa,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Rewa,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Rewa,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Rewa,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Rewa,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Rewa,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Rewa,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Sagar,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Sagar,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Sagar,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Sagar,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Sagar,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Sagar,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Sagar,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Sagar,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Sagar,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Sagar,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Sagar,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Sagar,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Sagar,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Sagar,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Sagar,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Satna,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Satna,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Satna,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Satna,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Satna,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Satna,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Satna,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Satna,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Satna,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Satna,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Satna,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Satna,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Satna,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Satna,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Satna,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Sehore,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Sehore,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Sehore,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Sehore,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Sehore,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Sehore,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Sehore,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Sehore,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Sehore,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Sehore,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Sehore,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Sehore,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Sehore,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Sehore,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Sehore,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Seoni,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Seoni,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Seoni,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Seoni,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Seoni,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Seoni,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Seoni,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Seoni,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Seoni,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Seoni,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Seoni,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Seoni,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Seoni,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Seoni,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Seoni,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Shahdol,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Shahdol,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Shahdol,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Shahdol,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Shahdol,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Shahdol,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Shahdol,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Shahdol,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Shahdol,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Shahdol,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Shahdol,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Shahdol,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Shahdol,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Shahdol,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Shahdol,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Shajapur,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Shajapur,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Shajapur,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Shajapur,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Shajapur,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Shajapur,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Shajapur,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Shajapur,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Shajapur,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Shajapur,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Shajapur,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Shajapur,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Shajapur,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Shajapur,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Shajapur,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Sheopur,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Sheopur,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Sheopur,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Sheopur,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Sheopur,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Sheopur,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Sheopur,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Sheopur,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Sheopur,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Sheopur,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Sheopur,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Sheopur,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Sheopur,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Sheopur,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Sheopur,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Shivpuri,Alluvial Loam,Soybean,20.0,60.0,36.0,1.2,22.0,7.2,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Shivpuri,Alluvial Loam,Wheat,120.0,60.0,36.0,1.0,15.0,7.4,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Shivpuri,Alluvial Loam,Gram,20.0,50.0,18.0,0.9,18.0,7.3,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Shivpuri,Alluvial Loam,Mustard,80.0,40.0,36.0,1.1,25.0,7.2,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Shivpuri,Alluvial Loam,Cotton,100.0,50.0,45.0,1.3,20.0,7.5,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Shivpuri,Alluvial Loam,Maize,120.0,60.0,36.0,1.2,15.0,7.0,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Shivpuri,Alluvial Loam,Tur,25.0,50.0,22.5,0.8,20.0,7.2,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Shivpuri,Alluvial Loam,Rice,100.0,50.0,45.0,1.4,15.0,6.6,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Shivpuri,Alluvial Loam,Garlic,100.0,50.0,45.0,1.1,24.0,6.8,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Shivpuri,Alluvial Loam,Coriander,40.0,30.0,18.0,0.7,12.0,7.0,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Shivpuri,Alluvial Loam,Jowar,80.0,40.0,36.0,0.9,12.0,7.3,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Shivpuri,Alluvial Loam,Onion,100.0,50.0,54.0,1.1,25.0,6.8,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Shivpuri,Alluvial Loam,Potato,120.0,80.0,90.0,1.2,15.0,6.5,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Shivpuri,Alluvial Loam,Groundnut,20.0,60.0,18.0,1.0,25.0,6.8,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Shivpuri,Alluvial Loam,Sugarcane,250.0,100.0,90.0,1.5,30.0,7.2,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Sidhi,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Sidhi,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Sidhi,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Sidhi,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Sidhi,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Sidhi,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Sidhi,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Sidhi,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Sidhi,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Sidhi,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Sidhi,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Sidhi,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Sidhi,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Sidhi,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Sidhi,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Singrauli,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Singrauli,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Singrauli,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Singrauli,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Singrauli,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Singrauli,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Singrauli,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Singrauli,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Singrauli,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Singrauli,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Singrauli,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Singrauli,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Singrauli,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Singrauli,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Singrauli,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Tikamgarh,Mixed Red and Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Tikamgarh,Mixed Red and Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Tikamgarh,Mixed Red and Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Tikamgarh,Mixed Red and Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Tikamgarh,Mixed Red and Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Tikamgarh,Mixed Red and Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Tikamgarh,Mixed Red and Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Tikamgarh,Mixed Red and Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Tikamgarh,Mixed Red and Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Tikamgarh,Mixed Red and Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Ujjain,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Ujjain,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Ujjain,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Ujjain,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Ujjain,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Ujjain,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Ujjain,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Ujjain,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Ujjain,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Ujjain,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Ujjain,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Ujjain,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Ujjain,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Ujjain,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Ujjain,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Umaria,Red and Yellow Soil,Soybean,20.0,60.0,36.0,1.2,22.0,6.9,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Umaria,Red and Yellow Soil,Wheat,120.0,60.0,36.0,1.0,15.0,7.1,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Umaria,Red and Yellow Soil,Gram,20.0,50.0,18.0,0.9,18.0,7.0,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Umaria,Red and Yellow Soil,Mustard,80.0,40.0,36.0,1.1,25.0,6.9,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Umaria,Red and Yellow Soil,Cotton,100.0,50.0,45.0,1.3,20.0,7.2,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Umaria,Red and Yellow Soil,Maize,120.0,60.0,36.0,1.2,15.0,6.7,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Umaria,Red and Yellow Soil,Tur,25.0,50.0,22.5,0.8,20.0,6.9,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Umaria,Red and Yellow Soil,Rice,100.0,50.0,45.0,1.4,15.0,6.3,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Umaria,Red and Yellow Soil,Garlic,100.0,50.0,45.0,1.1,24.0,6.5,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Umaria,Red and Yellow Soil,Coriander,40.0,30.0,18.0,0.7,12.0,6.7,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Umaria,Red and Yellow Soil,Jowar,80.0,40.0,36.0,0.9,12.0,7.0,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Umaria,Red and Yellow Soil,Onion,100.0,50.0,54.0,1.1,25.0,6.5,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Umaria,Red and Yellow Soil,Potato,120.0,80.0,90.0,1.2,15.0,6.2,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Umaria,Red and Yellow Soil,Groundnut,20.0,60.0,18.0,1.0,25.0,6.5,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Umaria,Red and Yellow Soil,Sugarcane,250.0,100.0,90.0,1.5,30.0,6.9,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4
+Vidisha,Medium Black Soil,Soybean,20.0,60.0,44.0,1.2,22.0,7.4,Warm Humid / Kharif,DAP (130 kg/ha) + MOP (67 kg/ha) + Gypsum (150 kg/ha for Sulphur) + Zinc Sulphate (25 kg/ha)
+Vidisha,Medium Black Soil,Wheat,120.0,60.0,44.0,1.0,15.0,7.6,Cool Dry / Rabi,Urea (200 kg/ha split 1/2 basal + 1/4 CRI + 1/4 tillering) + DAP (130 kg/ha) + MOP (67 kg/ha)
+Vidisha,Medium Black Soil,Gram,20.0,50.0,22.0,0.9,18.0,7.5,Cool Mild / Rabi,DAP (100 kg/ha) + MOP (33 kg/ha) + Rhizobium & PSB seed inoculation
+Vidisha,Medium Black Soil,Mustard,80.0,40.0,44.0,1.1,25.0,7.4,Cold Temperate / Rabi,Urea (120 kg/ha split) + Single Super Phosphate (250 kg/ha SSP for P & S) + MOP (67 kg/ha)
+Vidisha,Medium Black Soil,Cotton,100.0,50.0,55.0,1.3,20.0,7.7,Semi-Arid Irrigated / Kharif,Urea (160 kg/ha 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + 25 kg/ha ZnSO4
+Vidisha,Medium Black Soil,Maize,120.0,60.0,44.0,1.2,15.0,7.2,Warm Tropical / Kharif,"Urea (200 kg/ha split basal, knee-high, tasseling) + DAP (130 kg/ha) + MOP (67 kg/ha)"
+Vidisha,Medium Black Soil,Tur,25.0,50.0,27.5,0.8,20.0,7.4,Semi-Arid Sub-humid / Kharif,DAP (110 kg/ha) + MOP (42 kg/ha) + Gypsum (100 kg/ha) + Trichoderma seed treatment
+Vidisha,Medium Black Soil,Rice,100.0,50.0,55.0,1.4,15.0,6.8,Humid Sub-tropical / Kharif,Urea (160 kg/ha in 3 splits) + DAP (108 kg/ha) + MOP (83 kg/ha) + Zinc Sulphate (25 kg/ha)
+Vidisha,Medium Black Soil,Garlic,100.0,50.0,55.0,1.1,24.0,7.0,Cool Mild / Rabi,Urea (150 kg/ha split) + SSP (310 kg/ha for P & S) + MOP (83 kg/ha) + FYM (20 t/ha)
+Vidisha,Medium Black Soil,Coriander,40.0,30.0,22.0,0.7,12.0,7.2,Cool Dry / Rabi,Urea (60 kg/ha split) + DAP (65 kg/ha) + MOP (33 kg/ha)
+Vidisha,Medium Black Soil,Jowar,80.0,40.0,44.0,0.9,12.0,7.5,Dry Semi-Arid / Kharif,Urea (120 kg/ha split) + DAP (87 kg/ha) + MOP (67 kg/ha)
+Vidisha,Medium Black Soil,Onion,100.0,50.0,66.0,1.1,25.0,7.0,Mild Sub-tropical / Rabi,Urea (160 kg/ha 3 splits) + SSP (310 kg/ha) + MOP (100 kg/ha) + 25 kg/ha ZnSO4
+Vidisha,Medium Black Soil,Potato,120.0,80.0,110.0,1.2,15.0,6.7,Cool Winter / Rabi,Urea (180 kg/ha split) + DAP (174 kg/ha) + MOP (167 kg/ha) + Vermicompost (5 t/ha)
+Vidisha,Medium Black Soil,Groundnut,20.0,60.0,22.0,1.0,25.0,7.0,Warm Sub-humid / Kharif,DAP (130 kg/ha) + MOP (33 kg/ha) + Gypsum (250 kg/ha at flowering/pegging)
+Vidisha,Medium Black Soil,Sugarcane,250.0,100.0,110.0,1.5,30.0,7.4,Sub-tropical Irrigated / Annual,Urea (400 kg/ha in 4 splits) + DAP (217 kg/ha) + MOP (167 kg/ha) + 25 kg/ha ZnSO4

@@ -1,0 +1,62 @@
+{
+  "boxes": [
+    {
+      "class": "Healthy Leaf",
+      "bbox": [
+        235.84,
+        279.04,
+        89.92,
+        82.88
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        238.08,
+        99.84,
+        44.48,
+        61.76
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        257.28,
+        139.52,
+        72.64,
+        46.4
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        239.68,
+        200.32,
+        84.8,
+        79.04
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        149.76,
+        139.84,
+        47.68,
+        71.68
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        214.4,
+        131.2,
+        46.08,
+        62.72
+      ]
+    }
+  ],
+  "image_size": [
+    512,
+    512
+  ]
+}

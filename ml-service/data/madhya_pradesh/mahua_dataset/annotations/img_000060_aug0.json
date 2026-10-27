@@ -1,0 +1,44 @@
+{
+  "boxes": [
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        187.56,
+        147.26,
+        55.51,
+        36.74
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        200.58,
+        239.55,
+        99.44,
+        90.81
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        239.98,
+        463.04,
+        57.99,
+        48.96
+      ]
+    },
+    {
+      "class": "Unhealthy Leaf",
+      "bbox": [
+        228.62,
+        268.11,
+        36.8,
+        35.68
+      ]
+    }
+  ],
+  "image_size": [
+    512,
+    512
+  ]
+}

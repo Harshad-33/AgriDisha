@@ -157,6 +157,17 @@ class DiseaseService:
                 "kurukshetra", "mahendragarh", "narnaul", "mohindergarh", "nuh", "mewat", "palwal",
                 "panchkula", "panipat", "rewari", "rohtak", "sirsa", "sonipat", "sonepat", "yamunanagar"
             ]
+            mp_districts = [
+                "agar malwa", "agar-malwa", "alirajpur", "anuppur", "ashoknagar", "balaghat",
+                "barwani", "betul", "bhind", "bhopal", "burhanpur", "chhatarpur", "chhindwara",
+                "damoh", "datia", "dewas", "dhar", "dindori", "guna", "gwalior", "harda",
+                "narmadapuram", "hoshangabad", "indore", "jabalpur", "jhabua", "katni",
+                "khandwa", "east nimar", "khargone", "west nimar", "maihar", "mandla",
+                "mandsaur", "mauganj", "morena", "narsinghpur", "neemuch", "niwari",
+                "pandhurna", "panna", "raisen", "rajgarh", "ratlam", "rewa", "sagar",
+                "satna", "sehore", "seoni", "shahdol", "shajapur", "sheopur", "shivpuri",
+                "sidhi", "singrauli", "tikamgarh", "ujjain", "umaria", "vidisha"
+            ]
             ka_districts = [
                 "bagalkote", "bagalkot", "ballari", "bellary", "belagavi", "belgaum",
                 "bengaluru rural", "bangalore rural", "bengaluru urban", "bangalore urban",
@@ -170,7 +181,9 @@ class DiseaseService:
                 "uttar kannad", "north canara", "vijayanagara", "hospet", "vijayapura",
                 "bijapur", "yadgir"
             ]
-            if any(kd in clean_d or clean_d in kd for kd in ka_districts):
+            if any(mp in clean_d or clean_d in mp for mp in mp_districts):
+                inferred_state = "Madhya Pradesh"
+            elif any(kd in clean_d or clean_d in kd for kd in ka_districts):
                 inferred_state = "Karnataka"
             elif any(hd in clean_d or clean_d in hd for hd in hr_districts):
                 inferred_state = "Haryana"

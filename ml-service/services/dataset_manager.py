@@ -113,6 +113,17 @@ DISTRICT_ALIASES = {
     "davangere": "davanagere",
     "ramanagar": "ramanagara",
     "hospet": "vijayanagara",
+
+    # Madhya Pradesh administrative aliases
+    "hoshangabad": "narmadapuram",
+    "east nimar": "khandwa",
+    "nimar (east)": "khandwa",
+    "nimar east": "khandwa",
+    "west nimar": "khargone",
+    "nimar (west)": "khargone",
+    "nimar west": "khargone",
+    "agar-malwa": "agar malwa",
+    "agarmalwa": "agar malwa",
 }
 
 
@@ -603,6 +614,11 @@ class DatasetManager:
                     f"Karnataka Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & UAS Bangalore/Dharwad/Shivamogga benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
+            elif ds_state == "Madhya Pradesh":
+                regional_notes = (
+                    f"Madhya Pradesh Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & JNKVV/RVSKVV benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
             else:
                 regional_notes = (
                     f"Agronomic Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} ({ds_state}). "
@@ -667,7 +683,7 @@ class DatasetManager:
         is_tg_north = any(d in clean_dist for d in telangana_north)
         is_tg_central = any(d in clean_dist for d in telangana_central)
         is_tg_south = any(d in clean_dist for d in telangana_south)
-        is_telangana = (clean_state == "telangana") or is_tg_north or is_tg_central or is_tg_south
+        is_telangana = (clean_state in ("telangana", "ts", "tg")) or (not clean_state and (is_tg_north or is_tg_central or is_tg_south))
 
         if is_telangana:
             # Check for Mendeley Rice Leaf Disease specialization
@@ -743,7 +759,7 @@ class DatasetManager:
         is_ap_krishna = any(d in clean_dist for d in ap_krishna_chili)
         is_ap_southern = any(d in clean_dist for d in ap_southern)
         is_ap_rayalaseema = any(d in clean_dist for d in ap_rayalaseema)
-        is_andhra = (clean_state in ("andhra pradesh", "ap", "andhra")) or is_ap_north or is_ap_godavari or is_ap_krishna or is_ap_southern or is_ap_rayalaseema
+        is_andhra = (clean_state in ("andhra pradesh", "ap", "andhra")) or (not clean_state and (is_ap_north or is_ap_godavari or is_ap_krishna or is_ap_southern or is_ap_rayalaseema))
 
         if is_andhra:
             is_chili = ("chili" in c_lower or "chilli" in c_lower or "mirchi" in c_lower or "pepper" in c_lower)
@@ -837,7 +853,7 @@ class DatasetManager:
         is_hr_eastern = any(d in clean_dist for d in hr_eastern)
         is_hr_western = any(d in clean_dist for d in hr_western)
         is_hr_southern = any(d in clean_dist for d in hr_southern)
-        is_haryana = (clean_state in ("haryana", "hr")) or is_hr_eastern or is_hr_western or is_hr_southern
+        is_haryana = (clean_state in ("haryana", "hr")) or (not clean_state and (is_hr_eastern or is_hr_western or is_hr_southern))
 
         if is_haryana:
             # Check for Wheat/Rice/Cotton/Mustard/Solanaceous specialization aligned with CCS HAU Hisar & PlantVillage
@@ -922,8 +938,8 @@ class DatasetManager:
         is_gj_middle = any(d in clean_dist for d in gj_middle)
         is_gj_saurashtra = any(d in clean_dist for d in gj_saurashtra)
         is_gj_north = any(d in clean_dist for d in gj_north)
-        is_gj_south = any(d in clean_dist for d in gj_south)
-        is_gujarat = (clean_state in ("gujarat", "gj")) or is_gj_middle or is_gj_saurashtra or is_gj_north or is_gj_south
+        is_gj_south = any(d == clean_dist or (d in clean_dist and clean_dist != "narmadapuram") for d in gj_south)
+        is_gujarat = (clean_state in ("gujarat", "gj")) or (not clean_state and (is_gj_middle or is_gj_saurashtra or is_gj_north or is_gj_south))
 
         if is_gujarat:
             solanaceous_or_citrus = any(sc in c_lower for sc in ["tomato", "potato", "pepper", "chili", "orange", "citrus", "corn", "maize"])
@@ -1007,7 +1023,7 @@ class DatasetManager:
         is_ka_coastal = any(d in clean_dist for d in ka_coastal_malnad)
         is_ka_southern = any(d in clean_dist for d in ka_southern)
         is_ka_northern = any(d in clean_dist for d in ka_northern)
-        is_karnataka = (clean_state in ("karnataka", "ka")) or is_ka_coastal or is_ka_southern or is_ka_northern
+        is_karnataka = (clean_state in ("karnataka", "ka")) or (not clean_state and (is_ka_coastal or is_ka_southern or is_ka_northern))
 
         if is_karnataka:
             is_arecanut_plantation = any(p in c_lower for p in ["arecanut", "betel", "coconut", "coffee", "pepper", "rubber"])
@@ -1066,6 +1082,185 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (Northern Dry & Transition Zone - UAS Dharwad & UAS Raichur jurisdiction): "
                         f"Under deep black vertisols and Krishna-Tungabhadra basin semi-arid climate, scout {crop} for wilt, rust, powdery mildew, and foliar blight complexes. "
                         f"Consult UAS Dharwad / Raichur extension stations and district KVK.{ka_note}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # MADHYA PRADESH STATE AGRO-CLIMATIC ZONES (JNKVV Jabalpur & RVSKVV Gwalior)
+        # -------------------------------------------------------------
+        mp_malwa = [
+            "indore", "ujjain", "dewas", "dhar", "shajapur", "agar malwa", "agar-malwa",
+            "ratlam", "mandsaur", "neemuch", "rajgarh"
+        ]
+        mp_nimar = [
+            "khargone", "west nimar", "khandwa", "east nimar", "barwani", "burhanpur"
+        ]
+        mp_gird = [
+            "gwalior", "bhind", "morena", "sheopur", "shivpuri", "guna", "ashoknagar"
+        ]
+        mp_narmada = [
+            "narmadapuram", "hoshangabad", "harda", "narsinghpur"
+        ]
+        mp_bundelkhand = [
+            "tikamgarh", "niwari", "chhatarpur", "datia"
+        ]
+        mp_vindhyan = [
+            "bhopal", "sehore", "raisen", "vidisha", "sagar", "damoh"
+        ]
+        mp_kymore = [
+            "jabalpur", "katni", "rewa", "satna", "panna", "sidhi", "singrauli", "mauganj", "maihar"
+        ]
+        mp_satpura = [
+            "chhindwara", "pandhurna", "betul"
+        ]
+        mp_jhabua = [
+            "jhabua", "alirajpur"
+        ]
+        mp_eastern = [
+            "shahdol", "umaria", "anuppur", "dindori", "mandla", "seoni", "balaghat"
+        ]
+
+        is_mp_malwa = any(d in clean_dist for d in mp_malwa)
+        is_mp_nimar = any(d in clean_dist for d in mp_nimar)
+        is_mp_gird = any(d in clean_dist for d in mp_gird)
+        is_mp_narmada = any(d in clean_dist for d in mp_narmada)
+        is_mp_bundelkhand = any(d in clean_dist for d in mp_bundelkhand)
+        is_mp_vindhyan = any(d in clean_dist for d in mp_vindhyan)
+        is_mp_kymore = any(d in clean_dist for d in mp_kymore)
+        is_mp_satpura = any(d in clean_dist for d in mp_satpura)
+        is_mp_jhabua = any(d in clean_dist for d in mp_jhabua)
+        is_mp_eastern = any(d in clean_dist for d in mp_eastern)
+
+        is_mp = (clean_state in ("madhya pradesh", "mp")) or (not clean_state and (is_mp_malwa or is_mp_nimar or is_mp_gird or is_mp_narmada or is_mp_bundelkhand or is_mp_vindhyan or is_mp_kymore or is_mp_satpura or is_mp_jhabua or is_mp_eastern))
+
+        if is_mp:
+            is_mahua = any(m in c_lower for m in ["mahua", "madhuca"])
+            is_soybean = any(s in c_lower for s in ["soybean", "soya"])
+            is_wheat_mustard = any(wm in c_lower for wm in ["wheat", "mustard", "raya", "sarson", "gram", "chickpea"])
+
+            mp_note = ""
+            if is_mahua:
+                mp_note = (
+                    " [MPCST & VIT Bhopal Mahua Pathology Benchmark: For Unhealthy Leaf (Foliar spot / Leaf Blight on Madhuca longifolia), "
+                    "apply protective Copper Oxychloride 50 WP @ 30g/10L or Mancozeb 75 WP @ 2.5g/L; prune and destroy severely infected twigs]."
+                )
+            elif is_soybean:
+                mp_note = (
+                    " [JNKVV / RVSKVV Soybean Disease Management: For Asian Soybean Rust (Phakopsora pachyrhizi), spray Hexaconazole 5% EC @ 1ml/L or Propiconazole 25% EC @ 1ml/L. "
+                    "For Anthracnose / Pod Blight, apply Tebuconazole 25.9% EC @ 1ml/L at early pod formation]."
+                )
+            elif is_wheat_mustard:
+                mp_note = (
+                    " [RVSKVV & JNKVV Cereal/Oilseed Health: For Rusts in Wheat, spray Propiconazole 25 EC @ 1ml/L immediately at yellow/brown rust appearance. "
+                    "For White Rust and Alternaria blight in Mustard, spray Mancozeb 75 WP @ 2g/L at 45 DAS]."
+                )
+
+            if is_mp_malwa:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Malwa Plateau Agro-Climatic Advisory (RVSKVV Indore / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Malwa Plateau Zone - RVSKVV jurisdiction): "
+                        f"Under medium black vertisols and sub-humid Malwa conditions, monitor {crop} fields regularly for foliar fungal blights, viral vectors, and root complexes. "
+                        f"Follow Rajmata Vijayaraje Scindia Krishi Vishwavidyalaya integrated disease management advisories.{mp_note}"
+                    )
+                }
+            elif is_mp_nimar:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Nimar Valley Agro-Climatic Advisory (RVSKVV ZARS Khargone / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Nimar Valley Warm Arid Zone - RVSKVV Khargone jurisdiction): "
+                        f"Under deep black vertisols and warm Nimar temperatures, scout {crop} for sucking pest complexes, virus transmission, and fruit/boll rot. "
+                        f"Implement RVSKVV Khargone package of practices.{mp_note}"
+                    )
+                }
+            elif is_mp_gird:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Gird Northern Agro-Climatic Advisory (RVSKVV Main Campus Gwalior / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Gird Northern Alluvial Zone - RVSKVV Gwalior jurisdiction): "
+                        f"Under alluvial loam and Chambal basin semi-arid conditions, inspect {crop} for moisture-stress disease complexes, rust, and white rust. "
+                        f"Consult RVSKVV Gwalior Directorate of Extension and district KVK.{mp_note}"
+                    )
+                }
+            elif is_mp_narmada:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Central Narmada Valley Advisory (JNKVV CoA Powarkheda / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Central Narmada Valley Heavy Vertisol Zone - JNKVV jurisdiction): "
+                        f"Under deep heavy clay soils and canal irrigation, monitor {crop} for soil-borne root rot, damping off, and foliar blights during humid intervals. "
+                        f"Follow Jawaharlal Nehru Krishi Vishwa Vidyalaya (JNKVV) crop health bulletins.{mp_note}"
+                    )
+                }
+            elif is_mp_bundelkhand:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Bundelkhand Agro-Climatic Advisory (JNKVV CoA Tikamgarh / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Bundelkhand Zone - JNKVV Tikamgarh jurisdiction): "
+                        f"Under mixed red and black soils, monitor {crop} for wilt, collar rot, and foliar leaf spots. "
+                        f"Consult College of Agriculture Tikamgarh extension scientists.{mp_note}"
+                    )
+                }
+            elif is_mp_vindhyan:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Vindhyan Plateau Agro-Climatic Advisory (JNKVV CoA Sehore / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Vindhyan Plateau Zone - JNKVV Sehore jurisdiction): "
+                        f"Under black soil rainfed and tubewell tracts, scout {crop} for rust, anthracnose, and viral vector transmission. "
+                        f"Implement JNKVV Sehore disease management advisories.{mp_note}"
+                    )
+                }
+            elif is_mp_satpura:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Satpura Plateau Corn & Citrus Advisory (JNKVV ZARS Chhindwara / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Satpura Plateau Zone - JNKVV Chhindwara jurisdiction): "
+                        f"Under undulating plateau terrain and subtropical climate, monitor {crop} for turcicum leaf blight, stalk rot, and fruit rot complexes. "
+                        f"Follow ZARS Chhindwara integrated pest and disease advisories.{mp_note}"
+                    )
+                }
+            elif is_mp_kymore:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Kymore Plateau & Satpura Hills Advisory (JNKVV Main Campus Jabalpur / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Kymore Plateau & Satpura Hills - JNKVV Jabalpur jurisdiction): "
+                        f"Under mixed red and black soils, protect {crop} against blast, bacterial blight, and wilt complexes. "
+                        f"Consult JNKVV Jabalpur Department of Plant Pathology.{mp_note}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Eastern Plateau & Tribal Agrozone Advisory (JNKVV ZARS Dindori / Balaghat)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Eastern Plateau & Tribal Zone - JNKVV jurisdiction): "
+                        f"Under red-yellow soils and forested sub-humid climate, inspect {crop} and plantation trees (including Mahua) for foliar spots, rusts, and blights. "
+                        f"Follow JNKVV and local Krishi Vigyan Kendra advisories.{mp_note}"
                     )
                 }
 

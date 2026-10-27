@@ -458,6 +458,131 @@ export class LocationService {
 
 
 
+  // Priority 8: Madhya Pradesh Regional Reference Dataset (All 55 Madhya Pradesh districts)
+  private madhyaPradeshReferenceDistricts = new Set<string>([
+    'agar malwa',
+    'agar-malwa',
+    'agar',
+    'alirajpur',
+    'anuppur',
+    'ashoknagar',
+    'ashok nagar',
+    'balaghat',
+    'barwani',
+    'betul',
+    'bhind',
+    'bhopal',
+    'burhanpur',
+    'chhatarpur',
+    'chhindwara',
+    'damoh',
+    'datia',
+    'dewas',
+    'dhar',
+    'dindori',
+    'guna',
+    'gwalior',
+    'harda',
+    'hoshangabad',
+    'narmadapuram',
+    'indore',
+    'jabalpur',
+    'jhabua',
+    'katni',
+    'khandwa',
+    'east nimar',
+    'khargone',
+    'west nimar',
+    'maihar',
+    'mandla',
+    'mandsaur',
+    'mauganj',
+    'morena',
+    'narsinghpur',
+    'narsimhapur',
+    'neemuch',
+    'niwari',
+    'pandhurna',
+    'panna',
+    'raisen',
+    'rajgarh',
+    'ratlam',
+    'rewa',
+    'sagar',
+    'satna',
+    'sehore',
+    'seoni',
+    'shahdol',
+    'shajapur',
+    'sheopur',
+    'shivpuri',
+    'sidhi',
+    'singrauli',
+    'singroli',
+    'tikamgarh',
+    'ujjain',
+    'umaria',
+    'vidisha'
+  ]);
+
+  private madhyaPradeshDistricts: string[] = [
+    'Agar Malwa',
+    'Alirajpur',
+    'Anuppur',
+    'Ashoknagar',
+    'Balaghat',
+    'Barwani',
+    'Betul',
+    'Bhind',
+    'Bhopal',
+    'Burhanpur',
+    'Chhatarpur',
+    'Chhindwara',
+    'Damoh',
+    'Datia',
+    'Dewas',
+    'Dhar',
+    'Dindori',
+    'Guna',
+    'Gwalior',
+    'Harda',
+    'Indore',
+    'Jabalpur',
+    'Jhabua',
+    'Katni',
+    'Khandwa (East Nimar)',
+    'Khargone (West Nimar)',
+    'Maihar',
+    'Mandla',
+    'Mandsaur',
+    'Mauganj',
+    'Morena',
+    'Narmadapuram (Hoshangabad)',
+    'Narsinghpur',
+    'Neemuch',
+    'Niwari',
+    'Pandhurna',
+    'Panna',
+    'Raisen',
+    'Rajgarh',
+    'Ratlam',
+    'Rewa',
+    'Sagar',
+    'Satna',
+    'Sehore',
+    'Seoni',
+    'Shahdol',
+    'Shajapur',
+    'Sheopur',
+    'Shivpuri',
+    'Sidhi',
+    'Singrauli',
+    'Tikamgarh',
+    'Ujjain',
+    'Umaria',
+    'Vidisha'
+  ];
+
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
     'Akola',
@@ -544,6 +669,9 @@ export class LocationService {
     if (state === 'Karnataka') {
       return this.karnatakaDistricts;
     }
+    if (state === 'Madhya Pradesh') {
+      return this.madhyaPradeshDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -600,6 +728,14 @@ export class LocationService {
     if (st === 'karnataka') {
       for (const kd of this.karnatakaReferenceDistricts) {
         if (clean === kd || clean.includes(kd) || kd.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'madhya pradesh') {
+      for (const md of this.madhyaPradeshReferenceDistricts) {
+        if (clean === md || clean.includes(md) || md.includes(clean)) {
           return 'regional_reference';
         }
       }

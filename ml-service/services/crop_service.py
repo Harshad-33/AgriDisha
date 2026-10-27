@@ -355,6 +355,88 @@ KARNATAKA_DISTRICT_ZONE_MAP = {
     'bidar': 'Northern Dry & Transition Zone (UAS Dharwad)'
 }
 
+# District alias mapping for Madhya Pradesh Agro-Climatic Zones (JNKVV Jabalpur & RVSKVV Gwalior)
+MADHYA_PRADESH_DISTRICT_ZONE_MAP = {
+    # Malwa Plateau Zone (RVSKVV Gwalior / Indore: Soybean, Wheat, Gram, Garlic, Onion)
+    'agar malwa': 'Malwa Plateau Zone (RVSKVV)',
+    'agar-malwa': 'Malwa Plateau Zone (RVSKVV)',
+    'dewas': 'Malwa Plateau Zone (RVSKVV)',
+    'dhar': 'Malwa Plateau Zone (RVSKVV)',
+    'indore': 'Malwa Plateau Zone (RVSKVV)',
+    'mandsaur': 'Malwa Plateau Zone (RVSKVV)',
+    'neemuch': 'Malwa Plateau Zone (RVSKVV)',
+    'rajgarh': 'Malwa Plateau Zone (RVSKVV)',
+    'ratlam': 'Malwa Plateau Zone (RVSKVV)',
+    'shajapur': 'Malwa Plateau Zone (RVSKVV)',
+    'ujjain': 'Malwa Plateau Zone (RVSKVV)',
+
+    # Nimar Valley Zone (RVSKVV / Khargone: Cotton, Chilli, Banana, Soybean, Jowar)
+    'barwani': 'Nimar Valley Zone (RVSKVV)',
+    'burhanpur': 'Nimar Valley Zone (RVSKVV)',
+    'khandwa': 'Nimar Valley Zone (RVSKVV)',
+    'east nimar': 'Nimar Valley Zone (RVSKVV)',
+    'khargone': 'Nimar Valley Zone (RVSKVV)',
+    'west nimar': 'Nimar Valley Zone (RVSKVV)',
+
+    # Gird Northern Zone (RVSKVV Gwalior: Mustard, Wheat, Bajra, Gram)
+    'ashoknagar': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'bhind': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'guna': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'gwalior': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'morena': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'sheopur': 'Gird Northern Zone (RVSKVV Gwalior)',
+    'shivpuri': 'Gird Northern Zone (RVSKVV Gwalior)',
+
+    # Bundelkhand Zone (JNKVV Tikamgarh: Wheat, Gram, Mustard, Sesame)
+    'chhatarpur': 'Bundelkhand Zone (JNKVV)',
+    'datia': 'Bundelkhand Zone (JNKVV)',
+    'niwari': 'Bundelkhand Zone (JNKVV)',
+    'tikamgarh': 'Bundelkhand Zone (JNKVV)',
+
+    # Central Narmada Valley (JNKVV Powarkheda: Wheat, Soybean, Sugarcane, Gram)
+    'harda': 'Central Narmada Valley Zone (JNKVV)',
+    'narmadapuram': 'Central Narmada Valley Zone (JNKVV)',
+    'hoshangabad': 'Central Narmada Valley Zone (JNKVV)',
+    'narsinghpur': 'Central Narmada Valley Zone (JNKVV)',
+
+    # Vindhyan Plateau Zone (JNKVV Sehore: Wheat, Gram, Soybean, Lentil)
+    'bhopal': 'Vindhyan Plateau Zone (JNKVV)',
+    'damoh': 'Vindhyan Plateau Zone (JNKVV)',
+    'raisen': 'Vindhyan Plateau Zone (JNKVV)',
+    'sagar': 'Vindhyan Plateau Zone (JNKVV)',
+    'sehore': 'Vindhyan Plateau Zone (JNKVV)',
+    'vidisha': 'Vindhyan Plateau Zone (JNKVV)',
+
+    # Kymore Plateau & Satpura Hills (JNKVV Jabalpur: Rice, Wheat, Gram, Tur)
+    'jabalpur': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'katni': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'maihar': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'mauganj': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'panna': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'rewa': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'satna': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'sidhi': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+    'singrauli': 'Kymore Plateau & Satpura Hills (JNKVV Jabalpur)',
+
+    # Satpura Plateau Zone (JNKVV Chhindwara: Maize, Soybean, Cotton, Orange)
+    'betul': 'Satpura Plateau Zone (JNKVV)',
+    'chhindwara': 'Satpura Plateau Zone (JNKVV)',
+    'pandhurna': 'Satpura Plateau Zone (JNKVV)',
+
+    # Jhabua Hills Zone (RVSKVV Jhabua: Maize, Cotton, Soybean, Millets)
+    'alirajpur': 'Jhabua Hills Zone (RVSKVV)',
+    'jhabua': 'Jhabua Hills Zone (RVSKVV)',
+
+    # Eastern Plateau & Tribal Zone (JNKVV Shahdol / Balaghat: Rice, Millets, Niger)
+    'anuppur': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'dindori': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'mandla': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'seoni': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'shahdol': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'umaria': 'Eastern Plateau & Tribal Zone (JNKVV)',
+    'balaghat': 'Wainganga Valley Zone (JNKVV Balaghat)'
+}
+
 class CropService:
     def __init__(self, model_path: str = MODEL_PATH):
         self.model_path = model_path
@@ -410,6 +492,7 @@ class CropService:
         is_gujarat_state = (clean_state_input in ("gujarat", "gj"))
         is_haryana_state = (clean_state_input in ("haryana", "hr"))
         is_karnataka_state = (clean_state_input in ("karnataka", "ka"))
+        is_madhya_pradesh_state = (clean_state_input in ("madhya pradesh", "mp"))
         if target_dist:
             c_key = target_dist.lower().strip()
             # Check Andhra Pradesh zones first if state is AP or key in AP map
@@ -448,6 +531,15 @@ class CropService:
                             zone_name = v_map
                             break
 
+            # Check Madhya Pradesh zones if state is MP or key in MP map
+            if not zone_name and (is_madhya_pradesh_state or c_key in MADHYA_PRADESH_DISTRICT_ZONE_MAP):
+                zone_name = MADHYA_PRADESH_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in MADHYA_PRADESH_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
             # Check Karnataka zones if state is Karnataka or key in KA map
             if not zone_name and (is_karnataka_state or c_key in KARNATAKA_DISTRICT_ZONE_MAP):
                 zone_name = KARNATAKA_DISTRICT_ZONE_MAP.get(c_key)
@@ -458,7 +550,7 @@ class CropService:
                             break
 
             # Check Maharashtra zones if not found in other states
-            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state and not is_karnataka_state:
+            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state and not is_karnataka_state and not is_madhya_pradesh_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -836,7 +928,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Karnataka" if any(ka_kw in (zone_name or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra"))))),
+                    'state': state or dataset_match.get("state") or ("Madhya Pradesh" if any(mp_kw in (zone_name or "") for mp_kw in ["Madhya Pradesh", "Malwa", "Nimar", "Gird", "Narmada Valley", "Bundelkhand", "Vindhyan", "Kymore", "Satpura", "RVSKVV", "JNKVV"]) else ("Karnataka" if any(ka_kw in (zone_name or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")))))),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -929,8 +1021,14 @@ class CropService:
             ],
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
-            'description': f"Recommended for {'Karnataka based on UAS Bangalore/Dharwad/Shivamogga agronomic parameters' if (state == 'Karnataka' or any(ka_kw in (zone or '') for ka_kw in ['Karnataka', 'Malnad', 'KSNUAHS', 'UAS Bangalore', 'UAS Dharwad'])) else ('Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters' if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna'])) else ('Telangana based on PJTSAU agronomic parameters' if (state == 'Telangana' or 'Telangana' in (zone or '')) else 'Maharashtra based on state agricultural university parameters'))}.",
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Karnataka" if any(ka_kw in (zone or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra"))))),
+            'description': (
+                "Recommended for Madhya Pradesh based on JNKVV/RVSKVV agronomic parameters." if (state == 'Madhya Pradesh' or any(mp_kw in (zone or '') for mp_kw in ['Madhya Pradesh', 'Malwa', 'Nimar', 'Gird', 'Narmada', 'Bundelkhand', 'Vindhyan', 'JNKVV', 'RVSKVV']))
+                else "Recommended for Karnataka based on UAS Bangalore/Dharwad/Shivamogga agronomic parameters." if (state == 'Karnataka' or any(ka_kw in (zone or '') for ka_kw in ['Karnataka', 'Malnad', 'KSNUAHS', 'UAS Bangalore', 'UAS Dharwad']))
+                else "Recommended for Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters." if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna']))
+                else "Recommended for Telangana based on PJTSAU agronomic parameters." if (state == 'Telangana' or 'Telangana' in (zone or ''))
+                else "Recommended for Maharashtra based on state agricultural university parameters."
+            ),
+            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Madhya Pradesh" if any(mp_kw in (zone or "") for mp_kw in ["Madhya Pradesh", "Malwa", "Nimar", "Gird", "Narmada Valley", "Bundelkhand", "Vindhyan", "Kymore", "Satpura", "RVSKVV", "JNKVV"]) else ("Karnataka" if any(ka_kw in (zone or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")))))),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,
