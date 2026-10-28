@@ -583,6 +583,72 @@ export class LocationService {
     'Vidisha'
   ];
 
+  // Priority 9: Punjab Regional Reference Dataset (All 23 Punjab districts)
+  private punjabReferenceDistricts = new Set<string>([
+    'amritsar',
+    'barnala',
+    'bathinda',
+    'bhatinda',
+    'faridkot',
+    'fatehgarh sahib',
+    'fatehgarh',
+    'fazilka',
+    'firozpur',
+    'firozepur',
+    'ferozepur',
+    'gurdaspur',
+    'hoshiarpur',
+    'jalandhar',
+    'kapurthala',
+    'ludhiana',
+    'malerkotla',
+    'mansa',
+    'moga',
+    'muktsar',
+    'sri muktsar sahib',
+    'pathankot',
+    'patiala',
+    'rupnagar',
+    'ropar',
+    'sahibzada ajit singh nagar',
+    'sas nagar',
+    's.a.s. nagar',
+    'mohali',
+    'shahid bhagat singh nagar',
+    'sbs nagar',
+    's.b.s. nagar',
+    'nawanshahr',
+    'nawashahr',
+    'sangrur',
+    'tarn taran'
+  ]);
+
+  private punjabDistricts: string[] = [
+    'Amritsar',
+    'Barnala',
+    'Bathinda',
+    'Faridkot',
+    'Fatehgarh Sahib',
+    'Fazilka',
+    'Firozpur (Ferozepur)',
+    'Gurdaspur',
+    'Hoshiarpur',
+    'Jalandhar',
+    'Kapurthala',
+    'Ludhiana',
+    'Malerkotla',
+    'Mansa',
+    'Moga',
+    'Pathankot',
+    'Patiala',
+    'Rupnagar (Ropar)',
+    'Sahibzada Ajit Singh Nagar (Mohali)',
+    'Sangrur',
+    'Shahid Bhagat Singh Nagar (Nawanshahr)',
+    'Sri Muktsar Sahib',
+    'Tarn Taran'
+  ];
+
   private maharashtraDistricts: string[] = [
     'Ahmednagar',
     'Akola',
@@ -672,6 +738,9 @@ export class LocationService {
     if (state === 'Madhya Pradesh') {
       return this.madhyaPradeshDistricts;
     }
+    if (state === 'Punjab') {
+      return this.punjabDistricts;
+    }
     return ['Central District', 'North District', 'South District', 'East District', 'West District'];
   }
 
@@ -736,6 +805,14 @@ export class LocationService {
     if (st === 'madhya pradesh') {
       for (const md of this.madhyaPradeshReferenceDistricts) {
         if (clean === md || clean.includes(md) || md.includes(clean)) {
+          return 'regional_reference';
+        }
+      }
+    }
+
+    if (st === 'punjab') {
+      for (const pd of this.punjabReferenceDistricts) {
+        if (clean === pd || clean.includes(pd) || pd.includes(clean)) {
           return 'regional_reference';
         }
       }

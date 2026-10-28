@@ -437,7 +437,73 @@ MADHYA_PRADESH_DISTRICT_ZONE_MAP = {
     'balaghat': 'Wainganga Valley Zone (JNKVV Balaghat)'
 }
 
+# District alias mapping for Punjab Agro-Climatic Zones (PAU Ludhiana)
+PUNJAB_DISTRICT_ZONE_MAP = {
+    # Central Plain Zone (Rice-Wheat Intensive: PAU Ludhiana Main Campus)
+    'amritsar': 'Central Plain Zone (Rice-Wheat)',
+    'barnala': 'Central Plain Zone (Rice-Wheat)',
+    'fatehgarh sahib': 'Central Plain Zone (Rice-Wheat)',
+    'jalandhar': 'Central Plain Zone (Rice-Wheat)',
+    'kapurthala': 'Central Plain Zone (Rice-Wheat)',
+    'ludhiana': 'Central Plain Zone (Rice-Wheat)',
+    'malerkotla': 'Central Plain Zone (Rice-Wheat)',
+    'patiala': 'Central Plain Zone (Rice-Wheat)',
+    'sangrur': 'Central Plain Zone (Rice-Wheat)',
+    'tarn taran': 'Central Plain Zone (Rice-Wheat)',
+
+    # South-Western Semi-Arid Zone (Cotton-Wheat Belt: PAU RRS Bathinda / Faridkot)
+    'bathinda': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'bhatinda': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'faridkot': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'fazilka': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'firozpur': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'firozepur': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'ferozepur': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'mansa': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'moga': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'muktsar': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+    'sri muktsar sahib': 'South-Western Semi-Arid Zone (Cotton-Wheat)',
+
+    # Sub-Mountain Undulating Zone (Kandi Zone: PAU RRS Ballowal Saunkhri / Gurdaspur)
+    'gurdaspur': 'Sub-Mountain Undulating Zone (Kandi)',
+    'hoshiarpur': 'Sub-Mountain Undulating Zone (Kandi)',
+    'pathankot': 'Sub-Mountain Undulating Zone (Kandi)',
+    'rupnagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'ropar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'sahibzada ajit singh nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'sas nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    's.a.s. nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'mohali': 'Sub-Mountain Undulating Zone (Kandi)',
+    'shahid bhagat singh nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'sbs nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    's.b.s. nagar': 'Sub-Mountain Undulating Zone (Kandi)',
+    'nawanshahr': 'Sub-Mountain Undulating Zone (Kandi)',
+    'nawashahr': 'Sub-Mountain Undulating Zone (Kandi)'
+}
+
 class CropService:
+    def _resolve_state(self, state, dataset_state, zone_name):
+        if state and str(state).strip():
+            return str(state).strip()
+        if dataset_state and str(dataset_state).strip():
+            return str(dataset_state).strip()
+        z = zone_name or ""
+        if any(kw in z for kw in ["Punjab", "Central Plain", "South-Western Semi-Arid", "Kandi", "PAU"]):
+            return "Punjab"
+        if any(kw in z for kw in ["Madhya Pradesh", "Malwa", "Nimar", "Gird", "Narmada Valley", "Bundelkhand", "Vindhyan", "Kymore", "Satpura", "RVSKVV", "JNKVV"]):
+            return "Madhya Pradesh"
+        if any(kw in z for kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]):
+            return "Karnataka"
+        if any(kw in z for kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]):
+            return "Haryana"
+        if any(kw in z for kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]):
+            return "Gujarat"
+        if any(kw in z for kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]):
+            return "Andhra Pradesh"
+        if "Telangana" in z:
+            return "Telangana"
+        return "Maharashtra"
+
     def __init__(self, model_path: str = MODEL_PATH):
         self.model_path = model_path
         self.model_payload: Optional[Dict[str, Any]] = None
@@ -493,6 +559,7 @@ class CropService:
         is_haryana_state = (clean_state_input in ("haryana", "hr"))
         is_karnataka_state = (clean_state_input in ("karnataka", "ka"))
         is_madhya_pradesh_state = (clean_state_input in ("madhya pradesh", "mp"))
+        is_punjab_state = (clean_state_input in ("punjab", "pb"))
         if target_dist:
             c_key = target_dist.lower().strip()
             # Check Andhra Pradesh zones first if state is AP or key in AP map
@@ -540,6 +607,15 @@ class CropService:
                             zone_name = v_map
                             break
 
+            # Check Punjab zones if state is Punjab or key in PB map
+            if not zone_name and (is_punjab_state or c_key in PUNJAB_DISTRICT_ZONE_MAP):
+                zone_name = PUNJAB_DISTRICT_ZONE_MAP.get(c_key)
+                if not zone_name:
+                    for k_map, v_map in PUNJAB_DISTRICT_ZONE_MAP.items():
+                        if k_map in c_key or c_key in k_map:
+                            zone_name = v_map
+                            break
+
             # Check Karnataka zones if state is Karnataka or key in KA map
             if not zone_name and (is_karnataka_state or c_key in KARNATAKA_DISTRICT_ZONE_MAP):
                 zone_name = KARNATAKA_DISTRICT_ZONE_MAP.get(c_key)
@@ -550,7 +626,7 @@ class CropService:
                             break
 
             # Check Maharashtra zones if not found in other states
-            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state and not is_karnataka_state and not is_madhya_pradesh_state:
+            if not zone_name and not is_telangana_state and not is_ap_state and not is_gujarat_state and not is_haryana_state and not is_karnataka_state and not is_madhya_pradesh_state and not is_punjab_state:
                 zone_name = DISTRICT_ZONE_MAP.get(c_key)
                 if not zone_name:
                     for k_map, v_map in DISTRICT_ZONE_MAP.items():
@@ -819,6 +895,45 @@ class CropService:
                         elif c in ('sorghum', 'jowar'):
                             probs[i] *= 1.8
 
+                # Apply Punjab Agro-Climatic Zone Prior Weighting (PAU Ludhiana)
+                elif zone_name == 'Central Plain Zone (Rice-Wheat)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'wheat' and temp < 30:
+                            probs[i] *= 2.5
+                        elif c == 'rice' and eff_rainfall >= 450:
+                            probs[i] *= 2.4
+                        elif c == 'maize':
+                            probs[i] *= 1.9
+                        elif c == 'potato':
+                            probs[i] *= 1.8
+                        elif c == 'sugarcane' and n >= 130:
+                            probs[i] *= 1.7
+                elif zone_name == 'South-Western Semi-Arid Zone (Cotton-Wheat)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'cotton' and n >= 70:
+                            probs[i] *= 2.5
+                        elif c == 'wheat' and temp < 30:
+                            probs[i] *= 2.2
+                        elif c == 'mustard':
+                            probs[i] *= 2.0
+                        elif c in ('chickpea', 'gram'):
+                            probs[i] *= 1.9
+                        elif c == 'bajra':
+                            probs[i] *= 1.8
+                elif zone_name == 'Sub-Mountain Undulating Zone (Kandi)':
+                    for i, cls in enumerate(classes):
+                        c = cls.lower()
+                        if c == 'maize':
+                            probs[i] *= 2.4
+                        elif c == 'wheat' and temp < 30:
+                            probs[i] *= 2.2
+                        elif c == 'sugarcane' and n >= 120:
+                            probs[i] *= 1.8
+                        elif c == 'mustard':
+                            probs[i] *= 1.7
+
                 # Apply Maharashtra Agro-Climatic Zone Prior Weighting
                 elif zone_name == 'Central Vidarbha Zone':
                     # Yavatmal, Wardha, Nagpur, Akola, Amravati, Buldhana, Washim
@@ -928,7 +1043,7 @@ class CropService:
                     'model_used': f"RandomForestClassifier + {dataset_used}" if is_verified else 'RandomForestClassifier (Maharashtra Agricultural Benchmark)',
                     'agro_climatic_zone': zone_name or 'Maharashtra State Agrozones',
                     'description': desc,
-                    'state': state or dataset_match.get("state") or ("Madhya Pradesh" if any(mp_kw in (zone_name or "") for mp_kw in ["Madhya Pradesh", "Malwa", "Nimar", "Gird", "Narmada Valley", "Bundelkhand", "Vindhyan", "Kymore", "Satpura", "RVSKVV", "JNKVV"]) else ("Karnataka" if any(ka_kw in (zone_name or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone_name or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone_name or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone_name or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone_name or "") else "Maharashtra")))))),
+                    'state': self._resolve_state(state, dataset_match.get('state'), zone_name),
                     'district': target_dist.strip().title() if target_dist else None,
                     'dataset_used': dataset_used,
                     'dataset_level': dataset_level,
@@ -1022,13 +1137,14 @@ class CropService:
             'model_used': f"AgronomicRuleEngine + {dataset_used}" if is_verified else 'AgronomicRuleEngine (Maharashtra Fallback)',
             'agro_climatic_zone': zone or 'Maharashtra Agrozone',
             'description': (
-                "Recommended for Madhya Pradesh based on JNKVV/RVSKVV agronomic parameters." if (state == 'Madhya Pradesh' or any(mp_kw in (zone or '') for mp_kw in ['Madhya Pradesh', 'Malwa', 'Nimar', 'Gird', 'Narmada', 'Bundelkhand', 'Vindhyan', 'JNKVV', 'RVSKVV']))
+                "Recommended for Punjab based on PAU Ludhiana agronomic parameters." if (state == 'Punjab' or any(pb_kw in (zone or '') for pb_kw in ['Punjab', 'Central Plain', 'South-Western', 'Kandi', 'PAU']))
+                else "Recommended for Madhya Pradesh based on JNKVV/RVSKVV agronomic parameters." if (state == 'Madhya Pradesh' or any(mp_kw in (zone or '') for mp_kw in ['Madhya Pradesh', 'Malwa', 'Nimar', 'Gird', 'Narmada', 'Bundelkhand', 'Vindhyan', 'JNKVV', 'RVSKVV']))
                 else "Recommended for Karnataka based on UAS Bangalore/Dharwad/Shivamogga agronomic parameters." if (state == 'Karnataka' or any(ka_kw in (zone or '') for ka_kw in ['Karnataka', 'Malnad', 'KSNUAHS', 'UAS Bangalore', 'UAS Dharwad']))
                 else "Recommended for Andhra Pradesh based on ANGRAU/Dr. YSRHU agronomic parameters." if (state == 'Andhra Pradesh' or any(ap_kw in (zone or '') for ap_kw in ['Andhra', 'Rayalaseema', 'Godavari', 'Krishna']))
                 else "Recommended for Telangana based on PJTSAU agronomic parameters." if (state == 'Telangana' or 'Telangana' in (zone or ''))
                 else "Recommended for Maharashtra based on state agricultural university parameters."
             ),
-            'state': state or (dataset_match.get("state") if dataset_match else None) or ("Madhya Pradesh" if any(mp_kw in (zone or "") for mp_kw in ["Madhya Pradesh", "Malwa", "Nimar", "Gird", "Narmada Valley", "Bundelkhand", "Vindhyan", "Kymore", "Satpura", "RVSKVV", "JNKVV"]) else ("Karnataka" if any(ka_kw in (zone or "") for ka_kw in ["Karnataka", "Malnad", "KSNUAHS", "UAS Bangalore", "UAS Dharwad"]) else ("Haryana" if any(hr_kw in (zone or "") for hr_kw in ["Haryana", "Yamuna Basin", "CCS HAU", "Hisar", "Bawal"]) else ("Gujarat" if any(gj_kw in (zone or "") for gj_kw in ["Gujarat", "Saurashtra", "AAU", "JAU", "NAU", "SDAU"]) else ("Andhra Pradesh" if any(ap_kw in (zone or "") for ap_kw in ["Andhra", "Rayalaseema", "Godavari", "Krishna"]) else ("Telangana" if "Telangana" in (zone or "") else "Maharashtra")))))),
+            'state': self._resolve_state(state, dataset_match.get('state') if dataset_match else None, zone),
             'district': target_dist.strip().title() if target_dist else None,
             'dataset_used': dataset_used or 'General Agricultural Benchmark',
             'dataset_level': dataset_level,

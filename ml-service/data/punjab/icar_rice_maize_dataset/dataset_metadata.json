@@ -1,0 +1,41 @@
+{
+  "dataset_name": "ICAR Crop Disease and Insect-pest Image Dataset for Rice and Maize",
+  "platform": "AIKosh - IndiaAI National Data Platform",
+  "url": "https://aikosh.indiaai.gov.in/home/datasets/details/crop_disease_and_insect_pest_image_dataset_for_rice_and_maize.html",
+  "dataset_id": "2448fb9b-d9c5-4f68-a3e2-dea280d6a73d",
+  "version_id": "69c6bc41-8850-4459-a38c-8a8c9089cbc3",
+  "organization": "DARE/ICAR",
+  "lead_institution": "ICAR - Indian Agricultural Statistics Research Institute (IASRI), New Delhi",
+  "lead_author": "Dr. Rajender Parsad",
+  "license": "ICAR Data Use License",
+  "citation": "ICAR-IASRI (2025). Crop Disease-Pest Identification Image Data Set. Indian Council of Agricultural Research, New Delhi.",
+  "archive_filename": "Rice_and_Maize_Dataset.zip",
+  "archive_size_bytes": 970886204,
+  "archive_size_mb": 925.91,
+  "file_type": "application/zip",
+  "geographical_coverage": "India",
+  "geographical_transparency_note": "The dataset metadata documents geographical coverage as 'India' with field imagery acquired across major rice- and maize-producing agro-ecological zones. In AgriDisha, it serves as the ICAR national benchmark for Rice and Maize biotic stresses, cross-referenced with Punjab Agricultural University (PAU Ludhiana) field advisories.",
+  "access_status": "Published on AIKosh IndiaAI portal. Direct bulk downloading via API requires authenticated IndiaAI user session tokens (DigiLocker / MeriPehchaan SSO).",
+  "classes": {
+    "rice": [
+      "Bacterial Leaf Blight (Xanthomonas oryzae pv. oryzae)",
+      "Brown Spot (Bipolaris oryzae)",
+      "False Smut (Ustilaginoidea virens)",
+      "Leaf Sheath Blight (Rhizoctonia solani)",
+      "Leaf Folder (Cnaphalocrocis medinalis)",
+      "Rice Skipper (Pelopidas mathias)",
+      "White Stem Borer (Scirpophaga innotata)",
+      "Yellow Stem Borer (Scirpophaga incertulas)",
+      "Rice Healthy"
+    ],
+    "maize": [
+      "Maydis Leaf Blight (Bipolaris maydis)",
+      "Turcicum Leaf Blight (Exserohilum turcicum)",
+      "Curvularia Leaf Spot (Curvularia lunata)",
+      "Sorghum Downy Mildew (Peronosclerospora sorghi)",
+      "Fall Armyworm (Spodoptera frugiperda)",
+      "Aphid Infestation (Rhopalosiphum maidis)",
+      "Maize Healthy"
+    ]
+  }
+}

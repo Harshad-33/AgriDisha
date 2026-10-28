@@ -134,6 +134,10 @@ public class MlClientService {
             if (d.contains(tg) || tg.contains(d)) return "regional_reference";
         }
 
+        if (isPunjabDistrict(d)) {
+            return "regional_reference";
+        }
+
         if (isMadhyaPradeshDistrict(d)) {
             return "regional_reference";
         }
@@ -243,6 +247,7 @@ public class MlClientService {
         String datasetUsed = "AgriDisha Standard Crop Model (All-India Baseline)";
         String regionalNotes = "Prediction generated using standard agronomic model. Regional dataset not currently indexed for " + (!district.isEmpty() ? district : "this district") + ".";
 
+        boolean isPunjab = "Punjab".equalsIgnoreCase(state) || isPunjabDistrict(district);
         boolean isMadhyaPradesh = "Madhya Pradesh".equalsIgnoreCase(state) || isMadhyaPradeshDistrict(district);
         boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
         boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
@@ -250,7 +255,9 @@ public class MlClientService {
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isMadhyaPradesh) {
+            if (isPunjab) {
+                state = "Punjab";
+            } else if (isMadhyaPradesh) {
                 state = "Madhya Pradesh";
             } else if (isKarnataka) {
                 state = "Karnataka";
@@ -269,7 +276,10 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Agricultural Dataset (Kaggle - Sanchita Gholap)";
             regionalNotes = "Empirically verified against historical Western Maharashtra field trial records for " + district + ".";
         } else if ("regional_reference".equals(level)) {
-            if (isMadhyaPradesh) {
+            if (isPunjab) {
+                datasetUsed = "Punjab State Soil Health & Nutrient Reference Dataset (Dataful / PAU Ludhiana / ICAR)";
+                regionalNotes = "Referenced against Punjab State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
+            } else if (isMadhyaPradesh) {
                 datasetUsed = "Madhya Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / JNKVV / RVSKVV)";
                 regionalNotes = "Referenced against Madhya Pradesh State agricultural dataset for " + district + " (including Soil Health Card nutrients and DES historical cultivation statistics).";
             } else if (isKarnataka) {
@@ -408,6 +418,7 @@ public class MlClientService {
         String datasetUsed = "Standard ICAR / MPKV Fertilizer Guidelines";
         String referenceLink = null;
 
+        boolean isPunjab = "Punjab".equalsIgnoreCase(state) || isPunjabDistrict(district);
         boolean isMadhyaPradesh = "Madhya Pradesh".equalsIgnoreCase(state) || isMadhyaPradeshDistrict(district);
         boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
         boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
@@ -415,7 +426,9 @@ public class MlClientService {
         boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
         boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
         if (state.isEmpty()) {
-            if (isMadhyaPradesh) {
+            if (isPunjab) {
+                state = "Punjab";
+            } else if (isMadhyaPradesh) {
                 state = "Madhya Pradesh";
             } else if (isKarnataka) {
                 state = "Karnataka";
@@ -434,7 +447,11 @@ public class MlClientService {
             datasetUsed = "Western Maharashtra Crop & Fertilizer Records (Kaggle - Sanchita Gholap)";
             referenceLink = "https://youtu.be/crop-fertilizer-care";
         } else if ("regional_reference".equals(level)) {
-            if (isMadhyaPradesh) {
+            if (isPunjab) {
+                datasetUsed = "Punjab State Soil Health & Nutrient Reference Dataset (Dataful / PAU Ludhiana / ICAR)";
+                chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 heptahydrate 21% @ 62.5 kg/ha or monohydrate 33% @ 40 kg/ha) & Gypsum (150-250 kg/ha) - PAU Ludhiana Package of Practices for " + district);
+                evaluations.add("Punjab Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " alluvial soils under PAU Ludhiana Package of Practices.");
+            } else if (isMadhyaPradesh) {
                 datasetUsed = "Madhya Pradesh State Soil Health & Nutrient Reference Dataset (Dataful / JNKVV / RVSKVV)";
                 chemicalFertilizers.add(0, "Zinc Sulphate (ZnSO4 at 20-25 kg/ha) & Agricultural Gypsum (15-20 kg/ha S) - JNKVV/RVSKVV Soil Health Reference for " + district);
                 evaluations.add("Madhya Pradesh Regional Micronutrient Benchmark: Maintain recommended Zinc (Zn) and Sulphur (S) levels typical of " + district + " vertisols under JNKVV/RVSKVV Package of Practices.");
@@ -603,6 +620,7 @@ public class MlClientService {
 
         if (district != null && !district.trim().isEmpty()) {
             String d = district.trim().toLowerCase();
+            boolean isPunjab = "Punjab".equalsIgnoreCase(state) || isPunjabDistrict(district);
             boolean isMadhyaPradesh = "Madhya Pradesh".equalsIgnoreCase(state) || isMadhyaPradeshDistrict(district);
             boolean isKarnataka = "Karnataka".equalsIgnoreCase(state) || isKarnatakaDistrict(district);
             boolean isHaryana = "Haryana".equalsIgnoreCase(state) || isHaryanaDistrict(district);
@@ -610,12 +628,23 @@ public class MlClientService {
             boolean isTelangana = "Telangana".equalsIgnoreCase(state) || isTelanganaDistrict(district);
             boolean isAndhra = "Andhra Pradesh".equalsIgnoreCase(state) || isAndhraPradeshDistrict(district);
             if (state == null || state.isEmpty()) {
-                state = isMadhyaPradesh ? "Madhya Pradesh" : (isKarnataka ? "Karnataka" : (isHaryana ? "Haryana" : (isGujarat ? "Gujarat" : (isAndhra ? "Andhra Pradesh" : (isTelangana ? "Telangana" : "Maharashtra")))));
+                state = isPunjab ? "Punjab" : (isMadhyaPradesh ? "Madhya Pradesh" : (isKarnataka ? "Karnataka" : (isHaryana ? "Haryana" : (isGujarat ? "Gujarat" : (isAndhra ? "Andhra Pradesh" : (isTelangana ? "Telangana" : "Maharashtra"))))));
             }
 
             if ("verified_primary".equals(level)) {
                 datasetUsed = "Western Maharashtra Agro-Climatic Advisory (MPKV Rahuri / KVK)";
                 advisory = "Regional Western Maharashtra Plant Pathology Advisory: Monitored by MPKV Rahuri & Regional Agricultural Research Stations (" + district.trim() + " KVK). Consult local Krishi Vigyan Kendra for seasonal disease advisories and IPM spray schedules.";
+            } else if (isPunjab) {
+                if (d.contains("pathankot") || d.contains("gurdaspur") || d.contains("hoshiarpur") || d.contains("rupnagar") || d.contains("ropar") || d.contains("sas nagar") || d.contains("mohali") || d.contains("sbs nagar") || d.contains("nawanshahr")) {
+                    datasetUsed = "Sub-Mountain Undulating Kandi Zone Agro-Climatic Advisory (PAU RRS Ballowal Saunkhri / Gurdaspur)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Sub-Mountain Kandi Zone): Monitored by PAU RRS Ballowal Saunkhri & Gurdaspur. Under rainfed undulating soils, scout " + crop + " for maize banded leaf & sheath blight, fall armyworm, and wheat yellow rust.";
+                } else if (d.contains("bathinda") || d.contains("mansa") || d.contains("firozpur") || d.contains("ferozepur") || d.contains("fazilka") || d.contains("muktsar") || d.contains("faridkot") || d.contains("moga")) {
+                    datasetUsed = "South-Western Semi-Arid Zone Agro-Climatic Advisory (PAU RRS Bathinda / Faridkot)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - South-Western Semi-Arid Cotton Belt): Monitored by PAU Regional Research Station Bathinda & Faridkot. In semi-arid canal tracts, monitor " + crop + " for cotton leaf curl virus (CLCuD), pink bollworm, and wheat stripe rust.";
+                } else {
+                    datasetUsed = "Central Alluvial Plain Agro-Climatic Advisory (PAU Ludhiana Main Campus / KVK)";
+                    advisory = "Regional Agro-Climatic Pathology Advisory (" + district.trim() + " - Central Plain Intensive Rice-Wheat Zone): Monitored by PAU Ludhiana & district KVK. Under intensive irrigated alluvial soils, scout " + crop + " for rice bacterial leaf blight, sheath blight, and wheat yellow rust.";
+                }
             } else if (isMadhyaPradesh) {
                 if (d.contains("indore") || d.contains("ujjain") || d.contains("dewas") || d.contains("dhar") || d.contains("shajapur") || d.contains("agar") || d.contains("ratlam") || d.contains("mandsaur") || d.contains("neemuch") || d.contains("rajgarh")) {
                     datasetUsed = "Malwa Plateau Agro-Climatic Advisory (RVSKVV College of Agriculture, Indore)";
@@ -713,6 +742,24 @@ public class MlClientService {
         result.put("dataset_used", datasetUsed);
         result.put("regional_advisory", advisory);
         return result;
+    }
+
+    private boolean isPunjabDistrict(String district) {
+        if (district == null || district.trim().isEmpty()) return false;
+        String d = district.toLowerCase().trim();
+        String[] pbDistricts = {
+            "amritsar", "barnala", "bathinda", "bhatinda", "faridkot", "fatehgarh sahib",
+            "fatehgarh", "fazilka", "firozpur", "firozepur", "ferozepur", "gurdaspur",
+            "hoshiarpur", "jalandhar", "kapurthala", "ludhiana", "malerkotla", "mansa",
+            "moga", "muktsar", "sri muktsar sahib", "pathankot", "patiala", "rupnagar",
+            "ropar", "sahibzada ajit singh nagar", "sas nagar", "s.a.s. nagar", "mohali",
+            "shahid bhagat singh nagar", "sbs nagar", "s.b.s. nagar", "nawanshahr",
+            "nawashahr", "sangrur", "tarn taran"
+        };
+        for (String pb : pbDistricts) {
+            if (d.contains(pb) || pb.contains(d)) return true;
+        }
+        return false;
     }
 
     private boolean isMadhyaPradeshDistrict(String district) {

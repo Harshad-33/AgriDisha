@@ -833,6 +833,109 @@
         "zone": "Zone"
       },
       "description": "Official historical yield and cultivation statistics (1997-98 to 2024-25, 29,906 raw DES records) providing frequency priors and agro-climatic context for all 55 Madhya Pradesh districts across 11 agro-climatic zones."
+    },
+    {
+      "id": "punjab_soil_health",
+      "priority": 15,
+      "level": "regional_reference",
+      "name": "Punjab Soil Health & Empirical Nutrient Reference Dataset",
+      "source": "Ministry of Agriculture & Farmers Welfare / Soil Health Card (SHC) Portal / Dataful #24083 Reference & Punjab Agricultural University (PAU Ludhiana) Package of Practices",
+      "file": "regional_datasets/punjab_soil_health.csv",
+      "state": "Punjab",
+      "region": "Punjab State-Wide (23 Districts)",
+      "covered_districts": [
+        "Amritsar",
+        "Barnala",
+        "Bathinda",
+        "Faridkot",
+        "Fatehgarh Sahib",
+        "Fazilka",
+        "Firozpur",
+        "Gurdaspur",
+        "Hoshiarpur",
+        "Jalandhar",
+        "Kapurthala",
+        "Ludhiana",
+        "Malerkotla",
+        "Mansa",
+        "Moga",
+        "Muktsar",
+        "Pathankot",
+        "Patiala",
+        "Rupnagar",
+        "Sahibzada Ajit Singh Nagar",
+        "Shahid Bhagat Singh Nagar",
+        "Sangrur",
+        "Tarn Taran"
+      ],
+      "supported_services": [
+        "crop",
+        "fertilizer"
+      ],
+      "column_mapping": {
+        "district": "District",
+        "soil_type": "Soil_Type",
+        "crop": "Crop_Name",
+        "nitrogen": "N_kg_ha",
+        "phosphorus": "P2O5_kg_ha",
+        "potassium": "K2O_kg_ha",
+        "zinc": "Zn_kg_ha",
+        "sulphur": "S_kg_ha",
+        "ph": "Recommended_pH",
+        "weather": "Weather",
+        "fertilizer": "Fertilizer"
+      },
+      "description": "District-wise soil health and agronomic nutrient targets for 23 Punjab districts across Central Alluvial Plain, South-Western Semi-Arid, and Sub-Mountain Kandi zones, incorporating PAU Ludhiana micronutrient standards for Zinc Sulphate (62.5 kg/ha 21% or 40 kg/ha 33%), Gypsum, and Ferrous Sulphate foliar spray."
+    },
+    {
+      "id": "punjab_crop_statistics",
+      "priority": 16,
+      "level": "regional_reference",
+      "name": "Punjab District Season Crop Area Production Yield Statistics",
+      "source": "Directorate of Economics and Statistics (DES), Ministry of Agriculture & Farmers Welfare, GoI / data.gov.in / Dataful #5613 Reference",
+      "file": "regional_datasets/punjab_crop_statistics.csv",
+      "state": "Punjab",
+      "region": "Punjab State-Wide (23 Districts)",
+      "covered_districts": [
+        "Amritsar",
+        "Barnala",
+        "Bathinda",
+        "Faridkot",
+        "Fatehgarh Sahib",
+        "Fazilka",
+        "Firozpur",
+        "Gurdaspur",
+        "Hoshiarpur",
+        "Jalandhar",
+        "Kapurthala",
+        "Ludhiana",
+        "Malerkotla",
+        "Mansa",
+        "Moga",
+        "Muktsar",
+        "Pathankot",
+        "Patiala",
+        "Rupnagar",
+        "Sahibzada Ajit Singh Nagar",
+        "Shahid Bhagat Singh Nagar",
+        "Sangrur",
+        "Tarn Taran"
+      ],
+      "supported_services": [
+        "crop"
+      ],
+      "column_mapping": {
+        "district": "District",
+        "crop": "Crop",
+        "season": "Season",
+        "area": "Area_ha",
+        "production": "Production_tonnes",
+        "crop_yield": "Yield_kg_ha",
+        "prevalence": "Prevalence_Score",
+        "zone": "Zone"
+      },
+      "description": "Official historical yield and cultivation statistics (1997-98 to 2024-25, 4,142 raw DES records) providing frequency priors and agro-climatic context for all 23 Punjab districts across 3 agro-climatic zones."
     }
-  ]
+  ],
+  "total_datasets": 16
 }

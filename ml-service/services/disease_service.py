@@ -181,7 +181,18 @@ class DiseaseService:
                 "uttar kannad", "north canara", "vijayanagara", "hospet", "vijayapura",
                 "bijapur", "yadgir"
             ]
-            if any(mp in clean_d or clean_d in mp for mp in mp_districts):
+            pb_districts = [
+                "amritsar", "barnala", "bathinda", "bhatinda", "faridkot", "fatehgarh sahib",
+                "fazilka", "firozpur", "firozepur", "ferozepur", "gurdaspur", "hoshiarpur",
+                "jalandhar", "kapurthala", "ludhiana", "malerkotla", "mansa", "moga",
+                "muktsar", "sri muktsar sahib", "pathankot", "patiala", "rupnagar", "ropar",
+                "sahibzada ajit singh nagar", "sas nagar", "s.a.s. nagar", "mohali",
+                "shahid bhagat singh nagar", "sbs nagar", "s.b.s. nagar", "nawanshahr",
+                "sangrur", "tarn taran"
+            ]
+            if any(pb in clean_d or clean_d in pb for pb in pb_districts):
+                inferred_state = "Punjab"
+            elif any(mp in clean_d or clean_d in mp for mp in mp_districts):
                 inferred_state = "Madhya Pradesh"
             elif any(kd in clean_d or clean_d in kd for kd in ka_districts):
                 inferred_state = "Karnataka"

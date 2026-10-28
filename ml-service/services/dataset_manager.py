@@ -124,6 +124,18 @@ DISTRICT_ALIASES = {
     "nimar west": "khargone",
     "agar-malwa": "agar malwa",
     "agarmalwa": "agar malwa",
+    "firozepur": "firozpur",
+    "ferozepur": "firozpur",
+    "muktsar": "sri muktsar sahib",
+    "ropar": "rupnagar",
+    "nawanshahr": "shahid bhagat singh nagar",
+    "nawashahr": "shahid bhagat singh nagar",
+    "mohali": "sahibzada ajit singh nagar",
+    "s.a.s. nagar": "sahibzada ajit singh nagar",
+    "sas nagar": "sahibzada ajit singh nagar",
+    "s.b.s. nagar": "shahid bhagat singh nagar",
+    "sbs nagar": "shahid bhagat singh nagar",
+    "bhatinda": "bathinda",
 }
 
 
@@ -618,6 +630,11 @@ class DatasetManager:
                 regional_notes = (
                     f"Madhya Pradesh Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
                     f"(Soil Health Card & JNKVV/RVSKVV benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
+                )
+            elif ds_state == "Punjab":
+                regional_notes = (
+                    f"Punjab Soil Health Reference: {len(matched_rows)} records for {crop_name.title()} in {canonical_district} "
+                    f"(Soil Health Card & PAU Ludhiana benchmark). Prevalent fertilizer: {primary_fert}.{micronutrient_txt}"
                 )
             else:
                 regional_notes = (
@@ -1261,6 +1278,97 @@ class DatasetManager:
                         f"Regional Agro-Climatic Advisory for {canonical} District (Eastern Plateau & Tribal Zone - JNKVV jurisdiction): "
                         f"Under red-yellow soils and forested sub-humid climate, inspect {crop} and plantation trees (including Mahua) for foliar spots, rusts, and blights. "
                         f"Follow JNKVV and local Krishi Vigyan Kendra advisories.{mp_note}"
+                    )
+                }
+
+        # -------------------------------------------------------------
+        # PUNJAB STATE AGRO-CLIMATIC ZONES (PAU Ludhiana Jurisdiction)
+        # -------------------------------------------------------------
+        pb_central = [
+            "amritsar", "tarn taran", "kapurthala", "jalandhar", "ludhiana",
+            "fatehgarh sahib", "patiala", "sangrur", "malerkotla", "barnala"
+        ]
+        pb_southwestern = [
+            "bathinda", "bhatinda", "mansa", "firozpur", "firozepur", "ferozepur",
+            "fazilka", "muktsar", "sri muktsar sahib", "faridkot", "moga"
+        ]
+        pb_kandi = [
+            "pathankot", "gurdaspur", "hoshiarpur", "shahid bhagat singh nagar",
+            "sbs nagar", "s.b.s. nagar", "nawanshahr", "nawashahr", "rupnagar",
+            "ropar", "sahibzada ajit singh nagar", "sas nagar", "s.a.s. nagar", "mohali"
+        ]
+
+        is_pb_central = any(d in clean_dist for d in pb_central)
+        is_pb_southwestern = any(d in clean_dist for d in pb_southwestern)
+        is_pb_kandi = any(d in clean_dist for d in pb_kandi)
+
+        is_punjab = (clean_state in ("punjab", "pb")) or (not clean_state and (is_pb_central or is_pb_southwestern or is_pb_kandi))
+
+        if is_punjab:
+            is_rice_cereal = any(r in c_lower for r in ["rice", "paddy", "bhat"])
+            is_wheat_cereal = any(w in c_lower for w in ["wheat", "gehun", "kanak"])
+            is_maize_cereal = any(m in c_lower for m in ["maize", "makki", "corn"])
+            is_cotton_cash = any(c in c_lower for c in ["cotton", "kapas", "narma"])
+
+            pb_note = ""
+            if is_rice_cereal:
+                pb_note = (
+                    " [ICAR AIKosh & PAU Ludhiana Rice Pathology Protocol: For Bacterial Leaf Blight (Xanthomonas oryzae), "
+                    "spray Streptocycline @ 1g/10L + Copper Oxychloride @ 30g/10L; drain standing water temporarily. "
+                    "For Sheath Blight, apply Amistar Top (Azoxystrobin + Difenoconazole) @ 200 ml/acre or Tilt 25 EC @ 200 ml/acre. "
+                    "For False Smut, apply Kocide 46 DF @ 500 g/acre at boot leaf stage]."
+                )
+            elif is_wheat_cereal:
+                pb_note = (
+                    " [PAU Ludhiana & ICAR-IIWBR Wheat Disease Protocol: For Yellow / Stripe Rust (Puccinia striiformis), "
+                    "inspect fields regularly from January; spray Tilt 25 EC / Opera @ 200 ml/acre in 200L water immediately on yellow pustule detection. "
+                    "For Loose Smut, practice seed treatment with Raxil 2 DS @ 1g/kg or Vitavax @ 2g/kg]."
+                )
+            elif is_maize_cereal:
+                pb_note = (
+                    " [ICAR AIKosh & PAU Maize Protection: For Turcicum and Maydis Leaf Blight, spray Mancozeb 75 WP @ 2.5 g/L. "
+                    "For Fall Armyworm (Spodoptera frugiperda), apply Coragen 18.5 SC @ 0.4 ml/L into the central leaf whorl]."
+                )
+            elif is_cotton_cash:
+                pb_note = (
+                    " [PAU South-Western Cotton Belt Advisory: For Cotton Leaf Curl Virus (CLCuD), control whitefly vectors with Sefina @ 400 ml/acre "
+                    "or Osheen 20 SG @ 60 g/acre; rogue initial infected plants. For Bacterial Blight, spray COC @ 3g/L + Streptocycline @ 100 mg/L]."
+                )
+
+            if is_pb_central:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Central Alluvial Plain Agro-Climatic Advisory (PAU Ludhiana Main Campus / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Central Plain Intensive Rice-Wheat Zone - PAU Ludhiana jurisdiction): "
+                        f"Under high-intensity canal and tubewell irrigated alluvial soils, scout {crop} for moisture-induced sheath blights, rusts, and bacterial blights. "
+                        f"Implement Punjab Agricultural University integrated pest management bulletins.{pb_note}"
+                    )
+                }
+            elif is_pb_southwestern:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "South-Western Semi-Arid Advisory (PAU RRS Bathinda / Faridkot / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (South-Western Semi-Arid Cotton-Wheat Belt - PAU RRS Bathinda jurisdiction): "
+                        f"Under light calcareous soils and warm semi-arid conditions, monitor {crop} for whitefly/thrips vector complexes, leaf curl virus, and boll rots. "
+                        f"Follow PAU Regional Research Station Bathinda crop health advisories.{pb_note}"
+                    )
+                }
+            else:
+                return {
+                    "is_district_verified": True,
+                    "dataset_level": "regional_reference",
+                    "dataset_used": "Sub-Mountain Kandi Zone Advisory (PAU RRS Ballowal Saunkhri / Gurdaspur / KVK)",
+                    "district": canonical,
+                    "advisory": (
+                        f"Regional Agro-Climatic Advisory for {canonical} District (Sub-Mountain Undulating Kandi Zone - PAU Ballowal Saunkhri jurisdiction): "
+                        f"Under undulating topography and variable monsoon precipitation, monitor {crop} for foliar blights, maize stalk rots, and fruit drops. "
+                        f"Consult PAU Regional Research Station Ballowal Saunkhri and district KVK.{pb_note}"
                     )
                 }
 
