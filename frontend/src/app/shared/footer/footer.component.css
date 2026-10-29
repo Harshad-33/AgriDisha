@@ -2,3 +2,14 @@
   color: #ffffff !important;
   transition: color 0.2s ease;
 }
+
+.developer-link {
+  color: #22c55e;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.developer-link:hover {
+  color: #4ade80;
+  text-decoration: underline !important;
+}
