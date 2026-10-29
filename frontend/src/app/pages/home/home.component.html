@@ -91,52 +91,61 @@
     <div class="row g-4">
       <!-- Card 1: Crop Recommendation -->
       <div class="col-lg-4 col-md-6">
-        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
-          <div class="feature-card-icon bg-success-subtle text-success mb-4 rounded-4 d-flex align-items-center justify-content-center">
-            <i class="bi bi-tree fs-1"></i>
+        <div class="card card-harvest service-card service-card-crop h-100 p-4 d-flex flex-column border-0">
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content d-flex flex-column h-100">
+            <div class="feature-card-icon service-icon-crop mb-4 rounded-4 d-flex align-items-center justify-content-center">
+              <i class="bi bi-tree fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-2 card-service-title">1. Crop Recommendation</h4>
+            <p class="card-service-desc mb-4 flex-grow-1">
+              Input soil nutrients (Nitrogen, Phosphorous, Potassium, pH, Rainfall) and your city. The system fetches live weather metrics to predict the most profitable and high-yielding crop.
+            </p>
+            <a routerLink="/crop-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+              <span>Recommend Crop</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <h4 class="fw-bold mb-2">1. Crop Recommendation</h4>
-          <p class="text-muted mb-4 flex-grow-1">
-            Input soil nutrients (Nitrogen, Phosphorous, Potassium, pH, Rainfall) and your city. The system fetches live weather metrics to predict the most profitable and high-yielding crop.
-          </p>
-          <a routerLink="/crop-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
-            <span>Explore Crop ML</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
 
       <!-- Card 2: Fertilizer Recommendation -->
       <div class="col-lg-4 col-md-6">
-        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
-          <div class="feature-card-icon bg-primary-subtle text-primary mb-4 rounded-4 d-flex align-items-center justify-content-center">
-            <i class="bi bi-droplet-half fs-1"></i>
+        <div class="card card-harvest service-card service-card-fertilizer h-100 p-4 d-flex flex-column border-0">
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content d-flex flex-column h-100">
+            <div class="feature-card-icon service-icon-fertilizer mb-4 rounded-4 d-flex align-items-center justify-content-center">
+              <i class="bi bi-droplet-half fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-2 card-service-title">2. Fertilizer Recommendation</h4>
+            <p class="card-service-desc mb-4 flex-grow-1">
+              Analyze soil nutrient deficiencies or excesses (Low/High N, P, or K) tailored specifically to your chosen crop, receiving chemical dosages and organic manure alternatives.
+            </p>
+            <a routerLink="/fertilizer-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+              <span>Get Fertilizer Advice</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <h4 class="fw-bold mb-2">2. Fertilizer Recommendation</h4>
-          <p class="text-muted mb-4 flex-grow-1">
-            Analyze soil nutrient deficiencies or excesses (Low/High N, P, or K) tailored specifically to your chosen crop, receiving chemical dosages and organic manure alternatives.
-          </p>
-          <a routerLink="/fertilizer-recommendation" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
-            <span>Get Fertilizer Advice</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
 
       <!-- Card 3: Plant Disease Detection -->
       <div class="col-lg-4 col-md-6">
-        <div class="card card-harvest h-100 p-4 d-flex flex-column border-0">
-          <div class="feature-card-icon bg-danger-subtle text-danger mb-4 rounded-4 d-flex align-items-center justify-content-center">
-            <i class="bi bi-virus fs-1"></i>
+        <div class="card card-harvest service-card service-card-disease h-100 p-4 d-flex flex-column border-0">
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content d-flex flex-column h-100">
+            <div class="feature-card-icon service-icon-disease mb-4 rounded-4 d-flex align-items-center justify-content-center">
+              <i class="bi bi-virus fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-2 card-service-title">3. Plant Disease Detection</h4>
+            <p class="card-service-desc mb-4 flex-grow-1">
+              Upload an image of an affected leaf. The system identifies plant diseases across 38 categories with immediate treatment steps and prevention tips.
+            </p>
+            <a routerLink="/disease-detection" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
+              <span>Detect Plant Disease</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <h4 class="fw-bold mb-2">3. Plant Disease Detection</h4>
-          <p class="text-muted mb-4 flex-grow-1">
-            Upload an image of an affected leaf. The PyTorch ResNet9 neural network identifies plant diseases across 38 categories with immediate treatment steps and prevention tips.
-          </p>
-          <a routerLink="/disease-detection" class="btn btn-harvest-primary w-100 d-flex align-items-center justify-content-center gap-2">
-            <span>Detect Plant Disease</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
     </div>

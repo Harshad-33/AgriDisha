@@ -261,3 +261,106 @@
 .max-w-700 {
   max-width: 700px;
 }
+
+/* ====================================================
+   AgriDisha - Three Service Cards with Photographic
+   Backgrounds (Natural, Neutral Scrim, Zero Green Tint)
+   ==================================================== */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25), 0 8px 10px -6px rgba(15, 23, 42, 0.15);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.4), 0 10px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* 1. Crop Recommendation: plant_2.jpg */
+.service-card-crop {
+  background-image: url('/Images/HomePage2/plant_2.jpg');
+}
+
+/* 2. Fertilizer Recommendation: fertilizer_image2.jpg */
+.service-card-fertilizer {
+  background-image: url('/Images/HomePage2/fertilizer_image2.jpg');
+}
+
+/* 3. Plant Disease Detection: WhatsApp Image 2026-09-02 at 9.41.26 PM.jpeg */
+.service-card-disease {
+  background-image: url('/Images/HomePage2/WhatsApp%20Image%202026-09-02%20at%209.41.26%20PM.jpeg');
+}
+
+/* Subtle, neutral dark overlay for text readability - ZERO green tint or green gradient */
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.68) 0%,
+    rgba(15, 23, 42, 0.84) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.service-card:hover .service-card-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.56) 0%,
+    rgba(15, 23, 42, 0.76) 100%
+  );
+}
+
+/* Content container layered cleanly above overlay */
+.service-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Service Card High-Contrast Typography */
+.card-service-title {
+  color: #ffffff !important;
+  font-size: 1.35rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.card-service-desc {
+  color: #f1f5f9 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Semi-transparent frosted glass icon badges */
+.service-icon-crop {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.service-icon-fertilizer {
+  background: rgba(14, 165, 233, 0.25);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.service-icon-disease {
+  background: rgba(239, 68, 68, 0.25);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  backdrop-filter: blur(8px);
+}
+
