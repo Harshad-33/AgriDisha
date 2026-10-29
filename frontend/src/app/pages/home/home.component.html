@@ -1,6 +1,31 @@
-<!-- Hero Section -->
-<section class="hero-gradient py-5 text-white">
-  <div class="container py-4">
+<!-- Hero Section with Automatic Agricultural Image Slider -->
+<section 
+  class="hero-slider-section position-relative overflow-hidden text-white py-5"
+  (mouseenter)="pauseSlider()"
+  (mouseleave)="resumeSlider()"
+  aria-roledescription="carousel"
+  aria-label="Agricultural Image Showcase Slider">
+
+  <!-- Background Photographic Image Slider (5 Curated Agricultural Images) -->
+  <div class="hero-slider-track" aria-live="polite">
+    <div 
+      *ngFor="let img of sliderImages; let i = index" 
+      class="hero-slide" 
+      [class.active]="i === currentSlide"
+      [attr.aria-hidden]="i !== currentSlide">
+      <img 
+        [src]="img.src" 
+        [alt]="img.alt" 
+        class="hero-slide-img" 
+        [loading]="i === 0 ? 'eager' : 'lazy'" />
+    </div>
+  </div>
+
+  <!-- Signature Emerald Agricultural Gradient Overlay for Brand Identity & Contrast -->
+  <div class="hero-slider-overlay" aria-hidden="true"></div>
+
+  <!-- Hero Content (Preserving 100% Existing Text, Buttons, Badges and Layout) -->
+  <div class="container py-4 position-relative z-2">
     <div class="row align-items-center g-5">
       <div class="col-lg-7">
         <span class="badge bg-emerald-subtle text-emerald-badge mb-3 px-3 py-2 rounded-pill fw-semibold">
@@ -22,7 +47,7 @@
         </div>
       </div>
       <div class="col-lg-5">
-        <div class="card bg-white text-dark rounded-4 shadow-lg p-4 border-0">
+        <div class="card bg-white text-dark rounded-4 shadow-lg p-4 border-0 hero-feature-card">
           <div class="d-flex align-items-center gap-3 mb-3 border-bottom pb-3">
             <div class="feature-icon bg-success-subtle text-success p-3 rounded-circle fs-3">
               <i class="bi bi-shield-check"></i>
@@ -49,6 +74,35 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Previous / Next Navigation Arrows -->
+  <button 
+    type="button" 
+    class="slider-arrow slider-arrow-prev z-3" 
+    (click)="onUserPrev()" 
+    aria-label="Previous Slide">
+    <i class="bi bi-chevron-left"></i>
+  </button>
+  <button 
+    type="button" 
+    class="slider-arrow slider-arrow-next z-3" 
+    (click)="onUserNext()" 
+    aria-label="Next Slide">
+    <i class="bi bi-chevron-right"></i>
+  </button>
+
+  <!-- Slide Indicator Dots -->
+  <div class="slider-indicators-container z-3" role="tablist" aria-label="Slider Indicators">
+    <button 
+      *ngFor="let img of sliderImages; let i = index" 
+      type="button" 
+      class="slider-dot" 
+      [class.active]="i === currentSlide" 
+      (click)="goToSlide(i)" 
+      [attr.aria-label]="'Go to slide ' + (i + 1)"
+      [attr.aria-selected]="i === currentSlide">
+    </button>
   </div>
 </section>
 

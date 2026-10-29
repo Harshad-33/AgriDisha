@@ -1,3 +1,226 @@
+/* ====================================================
+   AgriDisha - Realistic Homepage Hero Slider
+   ==================================================== */
+
+/* Hero Slider Section Container */
+.hero-slider-section {
+  position: relative;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  background-color: #064e3b; /* Fallback brand emerald background */
+}
+
+/* Background Slider Track & Slides */
+.hero-slider-track {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Realistic Image Sizing & Cropping (Never stretched or distorted) */
+.hero-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Signature Emerald Agricultural Gradient Overlay (Vivid Photography + High Contrast) */
+.hero-slider-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 78, 59, 0.88) 0%,
+    rgba(6, 95, 70, 0.74) 45%,
+    rgba(4, 120, 87, 0.52) 80%,
+    rgba(4, 120, 87, 0.40) 100%
+  );
+  pointer-events: none;
+}
+
+/* Feature Card Enhancement over Photography */
+.hero-feature-card {
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.97) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 35px -10px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Previous / Next Navigation Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(6, 78, 59, 0.65);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.slider-arrow:hover {
+  background: rgba(16, 185, 129, 0.95);
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.slider-arrow:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+}
+
+.slider-arrow-prev {
+  left: 20px;
+}
+
+.slider-arrow-next {
+  right: 20px;
+}
+
+/* Slide Indicator Dots */
+.slider-indicators-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  background: rgba(6, 78, 59, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider-dot:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: scale(1.25);
+}
+
+.slider-dot.active {
+  width: 28px;
+  border-radius: 6px;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.7);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991.98px) {
+  .hero-slider-section {
+    min-height: auto;
+    padding-top: 3.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    background: rgba(6, 78, 59, 0.75);
+  }
+
+  .slider-arrow-prev {
+    left: 10px;
+  }
+
+  .slider-arrow-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-slider-section {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .slider-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+    background: rgba(6, 78, 59, 0.8);
+  }
+
+  .slider-arrow-prev {
+    left: 6px;
+  }
+
+  .slider-arrow-next {
+    right: 6px;
+  }
+
+  .slider-indicators-container {
+    bottom: 12px;
+    gap: 8px;
+    padding: 4px 12px;
+  }
+
+  .slider-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .slider-dot.active {
+    width: 22px;
+  }
+}
+
+/* Existing Custom Color Utilities & Badges */
 .bg-emerald-subtle {
   background-color: rgba(52, 211, 153, 0.2);
 }
