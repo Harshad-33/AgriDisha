@@ -6,7 +6,7 @@
   aria-roledescription="carousel"
   aria-label="Agricultural Image Showcase Slider">
 
-  <!-- Background Photographic Image Slider (5 Curated Agricultural Images) -->
+  <!-- Background Photographic Image Slider (5 Curated Agricultural Images in Original Natural Appearance) -->
   <div class="hero-slider-track" aria-live="polite">
     <div 
       *ngFor="let img of sliderImages; let i = index" 
@@ -21,20 +21,20 @@
     </div>
   </div>
 
-  <!-- Signature Emerald Agricultural Gradient Overlay for Brand Identity & Contrast -->
+  <!-- Neutral Left Scrim: Zero green tint, leaving agricultural images 100% natural & original -->
   <div class="hero-slider-overlay" aria-hidden="true"></div>
 
-  <!-- Hero Content (Preserving 100% Existing Text, Buttons, Badges and Layout) -->
+  <!-- Hero Content (Preserving 100% Existing Text, Buttons, Badges; White Info Box Completely Removed) -->
   <div class="container py-4 position-relative z-2">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-7">
+    <div class="row align-items-center">
+      <div class="col-lg-7 col-xl-6 hero-text-content">
         <span class="badge bg-emerald-subtle text-emerald-badge mb-3 px-3 py-2 rounded-pill fw-semibold">
           <i class="bi bi-stars me-1"></i> AI-Powered Agricultural Advisory
         </span>
-        <h1 class="display-4 fw-extrabold mb-3 lh-sm">
+        <h1 class="display-4 fw-extrabold mb-3 lh-sm hero-title">
           AgriDisha: Smart Agriculture Recommendation System
         </h1>
-        <p class="lead text-emerald-light mb-4 fs-5">
+        <p class="lead text-emerald-light mb-4 fs-5 hero-description">
           Empowering farmers and agronomists with precision data. Predict optimal crops, diagnose plant leaf diseases using deep learning, and optimize soil fertility using intelligent rule engines.
         </p>
         <div class="d-flex flex-wrap gap-3">
@@ -44,33 +44,6 @@
           <a routerLink="/disease-detection" class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold">
             <i class="bi bi-virus me-2"></i> Detect Disease
           </a>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="card bg-white text-dark rounded-4 shadow-lg p-4 border-0 hero-feature-card">
-          <div class="d-flex align-items-center gap-3 mb-3 border-bottom pb-3">
-            <div class="feature-icon bg-success-subtle text-success p-3 rounded-circle fs-3">
-              <i class="bi bi-shield-check"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-0">High-Accuracy Decision Support</h5>
-              <small class="text-muted">Trained on agronomic & PlantVillage datasets</small>
-            </div>
-          </div>
-          <div class="d-flex flex-column gap-3">
-            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
-              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Crop Recommendation</span>
-              <span class="badge bg-success">Random Forest / XGB</span>
-            </div>
-            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
-              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Fertilizer Advisory</span>
-              <span class="badge bg-primary">NPK Ratio Engine</span>
-            </div>
-            <div class="d-flex align-items-center justify-content-between p-2 rounded bg-light">
-              <span class="fw-semibold"><i class="bi bi-check-circle-fill text-success me-2"></i>Disease Detection</span>
-              <span class="badge bg-danger">PyTorch ResNet-9</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
