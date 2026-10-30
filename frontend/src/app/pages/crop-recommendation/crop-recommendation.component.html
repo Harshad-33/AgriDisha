@@ -131,7 +131,7 @@
                   id="nitrogen"
                   type="number"
                   class="form-control"
-                  placeholder="e.g. 110"
+                  placeholder="e.g., 45"
                   formControlName="nitrogen"
                   [class.is-invalid]="cropForm.get('nitrogen')?.touched && cropForm.get('nitrogen')?.invalid">
                 <div *ngIf="cropForm.get('nitrogen')?.touched && cropForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
@@ -145,7 +145,7 @@
                   id="phosphorous"
                   type="number"
                   class="form-control"
-                  placeholder="e.g. 45"
+                  placeholder="e.g., 30"
                   formControlName="phosphorous"
                   [class.is-invalid]="cropForm.get('phosphorous')?.touched && cropForm.get('phosphorous')?.invalid">
                 <div *ngIf="cropForm.get('phosphorous')?.touched && cropForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
@@ -159,7 +159,7 @@
                   id="potassium"
                   type="number"
                   class="form-control"
-                  placeholder="e.g. 25"
+                  placeholder="e.g., 40"
                   formControlName="potassium"
                   [class.is-invalid]="cropForm.get('potassium')?.touched && cropForm.get('potassium')?.invalid">
                 <div *ngIf="cropForm.get('potassium')?.touched && cropForm.get('potassium')?.invalid" class="text-danger small mt-1">
@@ -180,7 +180,7 @@
                   type="number"
                   step="0.1"
                   class="form-control"
-                  placeholder="e.g. 7.2"
+                  placeholder="e.g., 6.5"
                   formControlName="ph"
                   [class.is-invalid]="cropForm.get('ph')?.touched && cropForm.get('ph')?.invalid">
                 <div *ngIf="cropForm.get('ph')?.touched && cropForm.get('ph')?.invalid" class="text-danger small mt-1">
@@ -195,7 +195,7 @@
                   type="number"
                   step="0.1"
                   class="form-control"
-                  placeholder="e.g. 850"
+                  placeholder="e.g., 400"
                   formControlName="rainfall"
                   [class.is-invalid]="cropForm.get('rainfall')?.touched && cropForm.get('rainfall')?.invalid">
                 <div *ngIf="cropForm.get('rainfall')?.touched && cropForm.get('rainfall')?.invalid" class="text-danger small mt-1">
@@ -206,7 +206,7 @@
 
             <!-- Location & Weather Auto-Fetch -->
             <h6 class="fw-bold text-success border-bottom pb-2 mb-3">
-              <i class="bi bi-geo-alt me-1"></i> 3. State & District (Regional Dataset System)
+              <i class="bi bi-geo-alt me-1"></i> 3. State & District
             </h6>
             <div class="row g-3 mb-4">
               <div class="col-md-6">
@@ -215,9 +215,14 @@
                   id="state"
                   class="form-select"
                   formControlName="state"
-                  (change)="onStateChange()">
+                  (change)="onStateChange()"
+                  [class.is-invalid]="cropForm.get('state')?.touched && cropForm.get('state')?.invalid">
+                  <option value="" disabled selected>Select State</option>
                   <option *ngFor="let s of states" [value]="s">{{ s }}</option>
                 </select>
+                <div *ngIf="cropForm.get('state')?.touched && cropForm.get('state')?.invalid" class="text-danger small mt-1">
+                  Please select a state.
+                </div>
               </div>
 
               <div class="col-md-6">
@@ -226,25 +231,17 @@
                   id="district"
                   class="form-select"
                   formControlName="district"
-                  (change)="onDistrictChange()">
-                  <option *ngFor="let d of districts" [value]="d">
-                    {{ d }} {{ locationService.getDistrictBadgeLabel(cropForm.get('state')?.value, d) }}
-                  </option>
+                  (change)="onDistrictChange()"
+                  [class.is-invalid]="cropForm.get('district')?.touched && cropForm.get('district')?.invalid">
+                  <option value="" disabled selected>Select District</option>
+                  <option *ngFor="let d of districts" [value]="d">{{ d }}</option>
                 </select>
+                <div *ngIf="cropForm.get('district')?.touched && cropForm.get('district')?.invalid" class="text-danger small mt-1">
+                  Please select a district.
+                </div>
               </div>
 
               <div class="col-md-12">
-                <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
-                  <span *ngIf="locationService.isPrimaryVerified(cropForm.get('state')?.value, cropForm.get('district')?.value)" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
-                    <i class="bi bi-shield-check me-1"></i> Western Maharashtra Regional Dataset Available
-                  </span>
-                  <span *ngIf="locationService.isRegionalReference(cropForm.get('state')?.value, cropForm.get('district')?.value)" class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">
-                    <i class="bi bi-journal-bookmark-fill me-1"></i> Maharashtra Regional Reference Dataset Available
-                  </span>
-                  <span *ngIf="locationService.getDistrictDatasetStatus(cropForm.get('state')?.value, cropForm.get('district')?.value) === 'fallback'" class="badge bg-light text-secondary border px-2 py-1">
-                    <i class="bi bi-layers me-1"></i> Standard Agricultural Model (All-India Baseline)
-                  </span>
-                </div>
                 <label class="form-label" for="city">Weather Location (City / Station) *</label>
                 <div class="input-group">
                   <span class="input-group-text bg-light"><i class="bi bi-geo-alt"></i></span>
@@ -252,7 +249,7 @@
                     id="city"
                     type="text"
                     class="form-control"
-                    placeholder="e.g. Solapur, Pune, Nagpur"
+                    placeholder="Enter your city or weather station"
                     formControlName="city"
                     [class.is-invalid]="cropForm.get('city')?.touched && cropForm.get('city')?.invalid">
                   <button
@@ -267,6 +264,9 @@
                 </div>
                 <div *ngIf="weatherMessage" class="small text-muted mt-1">
                   <i class="bi bi-info-circle me-1"></i> {{ weatherMessage }}
+                </div>
+                <div *ngIf="cropForm.get('city')?.touched && cropForm.get('city')?.invalid" class="text-danger small mt-1">
+                  Please enter a weather city or station.
                 </div>
               </div>
 
@@ -359,7 +359,7 @@
             <i class="bi bi-patch-check-fill fs-2 text-success"></i>
             <div>
               <div class="fw-bold fs-6">🟢 Verified Regional District Recommendation</div>
-              <div class="small mb-1">{{ result.regionalNotes || 'Empirically verified against Western Maharashtra regional field trial records.' }}</div>
+              <div class="small mb-1">{{ result.regionalNotes || 'Empirically verified against regional field trial records.' }}</div>
               <div class="small text-muted"><i class="bi bi-database me-1"></i> Regional Source: <strong>{{ result.datasetUsed }}</strong></div>
             </div>
           </div>
@@ -367,8 +367,8 @@
           <div *ngIf="result.isDistrictVerified && (result.datasetUsed?.includes('Expanded') || result.datasetUsed?.includes('Reference'))" class="alert alert-primary d-flex align-items-center gap-3 p-3 rounded-4 mb-4 border-2 border-primary shadow-sm">
             <i class="bi bi-bookmark-check-fill fs-2 text-primary"></i>
             <div>
-              <div class="fw-bold fs-6">🔵 Maharashtra Regional Reference Recommendation</div>
-              <div class="small mb-1">{{ result.regionalNotes || 'Referenced against Maharashtra State expanded agricultural dataset.' }}</div>
+              <div class="fw-bold fs-6">🔵 Regional Reference Recommendation</div>
+              <div class="small mb-1">{{ result.regionalNotes || 'Referenced against expanded regional agricultural dataset.' }}</div>
               <div class="small text-muted"><i class="bi bi-database me-1"></i> Reference Source: <strong>{{ result.datasetUsed }}</strong></div>
             </div>
           </div>

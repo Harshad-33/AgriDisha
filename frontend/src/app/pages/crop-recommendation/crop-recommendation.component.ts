@@ -51,19 +51,19 @@ export class CropRecommendationComponent implements OnInit, OnDestroy {
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
     this.states = this.locationService.getStates();
-    this.districts = this.locationService.getDistricts('Maharashtra');
+    this.districts = [];
 
     this.cropForm = this.fb.group({
-      state: ['Maharashtra', [Validators.required]],
-      district: ['Solapur', [Validators.required]],
-      nitrogen: [80, [Validators.required, Validators.min(0), Validators.max(300)]],
-      phosphorous: [40, [Validators.required, Validators.min(0), Validators.max(300)]],
-      potassium: [40, [Validators.required, Validators.min(0), Validators.max(300)]],
-      ph: [7.2, [Validators.required, Validators.min(3), Validators.max(10)]],
-      rainfall: [600, [Validators.required, Validators.min(0), Validators.max(3000)]],
-      city: ['Solapur', [Validators.required]],
-      temperature: [29.0],
-      humidity: [55.0]
+      state: ['', [Validators.required]],
+      district: ['', [Validators.required]],
+      nitrogen: [null, [Validators.required, Validators.min(0), Validators.max(300)]],
+      phosphorous: [null, [Validators.required, Validators.min(0), Validators.max(300)]],
+      potassium: [null, [Validators.required, Validators.min(0), Validators.max(300)]],
+      ph: [null, [Validators.required, Validators.min(3), Validators.max(10)]],
+      rainfall: [null, [Validators.required, Validators.min(0), Validators.max(3000)]],
+      city: ['', [Validators.required]],
+      temperature: [null],
+      humidity: [null]
     });
   }
 
@@ -125,12 +125,19 @@ export class CropRecommendationComponent implements OnInit, OnDestroy {
 
   onStateChange(): void {
     const state = this.cropForm.get('state')?.value;
-    this.districts = this.locationService.getDistricts(state);
-    const defaultDistrict = this.districts.length > 0 ? this.districts[0] : '';
-    this.cropForm.patchValue({
-      district: defaultDistrict,
-      city: defaultDistrict
-    });
+    if (state) {
+      this.districts = this.locationService.getDistricts(state);
+      this.cropForm.patchValue({
+        district: '',
+        city: ''
+      });
+    } else {
+      this.districts = [];
+      this.cropForm.patchValue({
+        district: '',
+        city: ''
+      });
+    }
   }
 
   onDistrictChange(): void {
@@ -284,5 +291,19 @@ export class CropRecommendationComponent implements OnInit, OnDestroy {
   reset(): void {
     this.result = null;
     this.errorMessage = '';
+    this.weatherMessage = '';
+    this.cropForm.reset({
+      state: '',
+      district: '',
+      nitrogen: null,
+      phosphorous: null,
+      potassium: null,
+      ph: null,
+      rainfall: null,
+      city: '',
+      temperature: null,
+      humidity: null
+    });
+    this.districts = [];
   }
 }
