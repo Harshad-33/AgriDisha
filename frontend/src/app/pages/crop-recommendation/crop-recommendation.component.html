@@ -1,30 +1,77 @@
-<div class="container-fluid px-xl-5 px-lg-4 px-3 py-5" style="max-width: 1540px;">
-  <!-- Page Header (Positioned slightly upward, partially overlapping the top portion of the crop image) -->
-  <div class="crop-page-header text-center max-w-700 mx-auto">
-    <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold mb-2">Module 1</span>
-    <h1 class="display-6 fw-bold">Smart Crop Recommendation</h1>
-    <p class="text-muted mb-0">
-      Discover the most suitable crop to cultivate on your farmland based on soil macronutrients (N, P, K), soil pH, annual rainfall, and live local meteorological conditions.
-    </p>
-  </div>
+<div class="container-fluid px-xl-5 px-lg-4 px-3 py-4" style="max-width: 1540px;">
+  <!-- Hero Section with Automatic Agricultural Image Slider -->
+  <section 
+    class="crop-hero-slider-section position-relative overflow-hidden text-white mb-4 rounded-4 shadow-sm"
+    (mouseenter)="pauseSlider()"
+    (mouseleave)="resumeSlider()"
+    aria-roledescription="carousel"
+    aria-label="Smart Crop Recommendation Showcase Slider">
 
-  <!-- Main View: Parameters Entry with Surrounding Agricultural Imagery -->
-  <div *ngIf="!result">
-    <!-- Top Agricultural Panorama Banner (crop_1.jpg) -->
-    <div class="crop-hero-banner card border-0 shadow-sm overflow-hidden mb-4">
-      <div class="crop-hero-banner-img-container">
+    <!-- Background Photographic Image Slider (crop_1.jpg and plant_2.jpg) -->
+    <div class="crop-slider-track" aria-live="polite">
+      <div 
+        *ngFor="let img of sliderImages; let i = index" 
+        class="crop-slide" 
+        [class.active]="i === currentSlide"
+        [attr.aria-hidden]="i !== currentSlide">
         <img 
-          src="Images/CropRecommendPage/crop_1.jpg" 
-          alt="AgriDisha Farmland Panorama - Sustainable Precision Cultivation" 
-          class="crop-hero-banner-img">
-        <div class="crop-hero-banner-badge">
-          <span class="badge bg-white text-dark shadow-sm px-3 py-2 rounded-pill fw-semibold small">
-            <i class="bi bi-geo-alt-fill text-success me-1"></i> Precision Agricultural Advisory • Sustainable Farming
-          </span>
-        </div>
+          [src]="img.src" 
+          [alt]="img.alt" 
+          class="crop-slide-img" 
+          [loading]="i === 0 ? 'eager' : 'lazy'" />
       </div>
     </div>
 
+    <!-- Subtle Neutral Scrim for text readability (Zero green tint / color wash) -->
+    <div class="crop-slider-overlay" aria-hidden="true"></div>
+
+    <!-- Slider Content (Centered, 100% White text, Exact Wording) -->
+    <div class="container py-5 position-relative z-2">
+      <div class="text-center max-w-750 mx-auto crop-hero-text-content">
+        <span class="badge border border-white border-opacity-50 text-white bg-dark bg-opacity-35 mb-3 px-3 py-1.5 rounded-pill fw-semibold">
+          <i class="bi bi-seedling me-1 text-success"></i> Module 1
+        </span>
+        <h1 class="display-6 fw-bold text-white mb-3 crop-hero-title">
+          Smart Crop Recommendation
+        </h1>
+        <p class="text-white text-opacity-95 fs-6 mb-0 crop-hero-description">
+          Discover the most suitable crop to cultivate on your farmland based on soil macronutrients (N, P, K), soil pH, annual rainfall, and live local meteorological conditions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Previous / Next Navigation Arrows -->
+    <button 
+      type="button" 
+      class="slider-arrow slider-arrow-prev z-3" 
+      (click)="onUserPrev()" 
+      aria-label="Previous Slide">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button 
+      type="button" 
+      class="slider-arrow slider-arrow-next z-3" 
+      (click)="onUserNext()" 
+      aria-label="Next Slide">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <!-- Slide Indicator Dots -->
+    <div class="slider-indicators-container z-3" role="tablist" aria-label="Slider Indicators">
+      <button 
+        *ngFor="let img of sliderImages; let i = index" 
+        type="button" 
+        class="slider-dot" 
+        [class.active]="i === currentSlide" 
+        (click)="goToSlide(i)" 
+        [attr.aria-label]="'Go to slide ' + (i + 1)"
+        [attr.aria-selected]="i === currentSlide">
+      </button>
+    </div>
+  </section>
+
+  <!-- Main View: Parameters Entry with Surrounding Agricultural Imagery -->
+  <div *ngIf="!result">
     <!-- Form and Flanking Side Agricultural Cards -->
     <div class="row g-4 align-items-start">
       <!-- Left Agricultural Showcase Card (plant_2.jpg) -->

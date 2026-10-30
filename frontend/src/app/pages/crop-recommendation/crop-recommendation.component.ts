@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CropService } from '../../core/services/crop.service';
 import { WeatherService } from '../../core/services/weather.service';
 import { LocationService } from '../../core/services/location.service';
 import { CropRecommendationResponse, WeatherResponse } from '../../core/models/models';
+
+export interface CropSliderImage {
+  src: string;
+  alt: string;
+}
 
 @Component({
   selector: 'app-crop-recommendation',
@@ -14,7 +19,7 @@ import { CropRecommendationResponse, WeatherResponse } from '../../core/models/m
   templateUrl: './crop-recommendation.component.html',
   styleUrls: ['./crop-recommendation.component.css']
 })
-export class CropRecommendationComponent {
+export class CropRecommendationComponent implements OnInit, OnDestroy {
   cropForm: FormGroup;
   isLoading = false;
   isWeatherLoading = false;
@@ -26,12 +31,25 @@ export class CropRecommendationComponent {
   states: string[] = [];
   districts: string[] = [];
 
+  // Hero Background Image Slider (crop_1.jpg and plant_2.jpg)
+  currentSlide = 0;
+  private autoSlideTimer: any = null;
+  readonly slideIntervalMs = 4500; // 4.5s auto-transition
+  private isBrowser: boolean;
+
+  readonly sliderImages: CropSliderImage[] = [
+    { src: 'Images/CropRecommendPage/crop_1.jpg', alt: 'AgriDisha Sustainable Farmland - Precision Crop Cultivation' },
+    { src: 'Images/CropRecommendPage/plant_2.jpg', alt: 'AgriDisha Soil Health - Vibrant Green Crop Seedlings' }
+  ];
+
   constructor(
     private fb: FormBuilder,
     private cropService: CropService,
     private weatherService: WeatherService,
-    public locationService: LocationService
+    public locationService: LocationService,
+    @Inject(PLATFORM_ID) platformId: object
   ) {
+    this.isBrowser = isPlatformBrowser(platformId);
     this.states = this.locationService.getStates();
     this.districts = this.locationService.getDistricts('Maharashtra');
 
@@ -47,6 +65,62 @@ export class CropRecommendationComponent {
       temperature: [29.0],
       humidity: [55.0]
     });
+  }
+
+  ngOnInit(): void {
+    if (this.isBrowser) {
+      this.startAutoSlide();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.stopAutoSlide();
+  }
+
+  startAutoSlide(): void {
+    this.stopAutoSlide();
+    if (!this.isBrowser) return;
+    this.autoSlideTimer = setInterval(() => {
+      this.nextSlide();
+    }, this.slideIntervalMs);
+  }
+
+  stopAutoSlide(): void {
+    if (this.autoSlideTimer) {
+      clearInterval(this.autoSlideTimer);
+      this.autoSlideTimer = null;
+    }
+  }
+
+  nextSlide(): void {
+    this.currentSlide = (this.currentSlide + 1) % this.sliderImages.length;
+  }
+
+  prevSlide(): void {
+    this.currentSlide = (this.currentSlide - 1 + this.sliderImages.length) % this.sliderImages.length;
+  }
+
+  onUserNext(): void {
+    this.nextSlide();
+    this.startAutoSlide();
+  }
+
+  onUserPrev(): void {
+    this.prevSlide();
+    this.startAutoSlide();
+  }
+
+  goToSlide(index: number): void {
+    this.currentSlide = index;
+    this.startAutoSlide();
+  }
+
+  pauseSlider(): void {
+    this.stopAutoSlide();
+  }
+
+  resumeSlider(): void {
+    this.startAutoSlide();
   }
 
   onStateChange(): void {

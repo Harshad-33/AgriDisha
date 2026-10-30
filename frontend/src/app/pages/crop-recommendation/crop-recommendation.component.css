@@ -2,59 +2,164 @@
   max-width: 700px;
 }
 
+.max-w-750 {
+  max-width: 750px;
+}
+
 /* ====================================================
-   AgriDisha - Realistic Agricultural Images & Side Panels
-   (Zero Green Tint, 100% Natural Photo Quality)
+   AgriDisha - Crop Recommendation Hero Image Slider
+   (Original Photographic Appearance & Zero Green Tint)
    ==================================================== */
 
-/* Page Header - Positioned slightly upward and partially overlapping the top of the crop image */
-.crop-page-header {
+.crop-hero-slider-section {
   position: relative;
-  z-index: 5;
-  margin-top: -1.25rem;
-  margin-bottom: -3.5rem;
-  padding: 1.75rem 2.25rem 1.5rem;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 1.25rem;
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
-}
-
-.crop-result-row {
-  margin-top: 2rem !important;
-}
-
-/* Top Panoramic Hero Banner (crop_1.jpg) */
-.crop-hero-banner {
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a; /* Neutral dark fallback */
   border-radius: 1rem;
-  background-color: #ffffff;
-  border: 1px solid var(--border-color, #e2e8f0);
 }
 
-.crop-hero-banner-img-container {
-  position: relative;
+.crop-slider-track {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 220px;
+  height: 100%;
+  z-index: 0;
   overflow: hidden;
   border-radius: 1rem;
-  background-color: #f1f5f9;
 }
 
-.crop-hero-banner-img {
+.crop-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.crop-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.crop-slide-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center;
   display: block;
 }
 
-.crop-hero-banner-badge {
+/* Neutral Scrim - Zero green tint or green gradient over images */
+.crop-slider-overlay {
   position: absolute;
-  bottom: 1rem;
-  left: 1.25rem;
-  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.42); /* Subtle neutral dark scrim for crisp white text contrast */
+  pointer-events: none;
+  border-radius: 1rem;
+}
+
+/* White text legibility enhancements over natural photography */
+.crop-hero-title {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.crop-hero-description {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+}
+
+/* Navigation Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slider-arrow:hover {
+  background: rgba(16, 185, 129, 0.95);
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.slider-arrow:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+}
+
+.slider-arrow-prev {
+  left: 20px;
+}
+
+.slider-arrow-next {
+  right: 20px;
+}
+
+/* Slide Indicator Dots */
+.slider-indicators-container {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider-dot:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: scale(1.25);
+}
+
+.slider-dot.active {
+  width: 26px;
+  border-radius: 6px;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.7);
 }
 
 /* Flanking Side Agricultural Cards (plant_2.jpg & wheat_tree.jpg) */
@@ -102,22 +207,52 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .slider-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+  .slider-arrow-prev {
+    left: 12px;
+  }
+  .slider-arrow-next {
+    right: 12px;
+  }
+}
+
 @media (max-width: 767.98px) {
-  .crop-page-header {
-    margin-top: -0.75rem;
-    margin-bottom: -2.25rem;
-    padding: 1.25rem 1rem 1rem;
-    border-radius: 1rem;
+  .crop-hero-slider-section {
+    min-height: 240px;
+    padding-top: 2rem !important;
+    padding-bottom: 2.75rem !important;
   }
-  .crop-hero-banner-img-container {
-    height: 140px;
+  .slider-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
   }
-  .crop-hero-banner-badge {
-    bottom: 0.65rem;
-    left: 0.75rem;
+  .slider-arrow-prev {
+    left: 6px;
+  }
+  .slider-arrow-next {
+    right: 6px;
+  }
+  .slider-indicators-container {
+    bottom: 10px;
+    padding: 4px 10px;
+    gap: 6px;
+  }
+  .slider-dot {
+    width: 7px;
+    height: 7px;
+  }
+  .slider-dot.active {
+    width: 20px;
   }
   .side-agri-img-wrapper {
     height: 180px;
   }
 }
+
 
