@@ -1,9 +1,9 @@
 <div class="container-fluid px-xl-5 px-lg-4 px-3 py-5" style="max-width: 1540px;">
-  <!-- Page Header -->
-  <div class="text-center max-w-700 mx-auto mb-5">
+  <!-- Page Header (Positioned slightly upward, partially overlapping the top portion of the crop image) -->
+  <div class="crop-page-header text-center max-w-700 mx-auto">
     <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold mb-2">Module 1</span>
     <h1 class="display-6 fw-bold">Smart Crop Recommendation</h1>
-    <p class="text-muted">
+    <p class="text-muted mb-0">
       Discover the most suitable crop to cultivate on your farmland based on soil macronutrients (N, P, K), soil pH, annual rainfall, and live local meteorological conditions.
     </p>
   </div>
@@ -295,7 +295,7 @@
   </div>
 
   <!-- Recommendation Result Card -->
-  <div class="row justify-content-center g-4" *ngIf="result">
+  <div class="crop-result-row row justify-content-center g-4" *ngIf="result">
     <div class="col-xl-8 col-lg-10">
       <div class="card card-harvest border-0 p-0 overflow-hidden fade-in shadow-lg">
         <div class="card-header-harvest p-4 text-center">

@@ -7,6 +7,25 @@
    (Zero Green Tint, 100% Natural Photo Quality)
    ==================================================== */
 
+/* Page Header - Positioned slightly upward and partially overlapping the top of the crop image */
+.crop-page-header {
+  position: relative;
+  z-index: 5;
+  margin-top: -1.25rem;
+  margin-bottom: -3.5rem;
+  padding: 1.75rem 2.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+}
+
+.crop-result-row {
+  margin-top: 2rem !important;
+}
+
 /* Top Panoramic Hero Banner (crop_1.jpg) */
 .crop-hero-banner {
   border-radius: 1rem;
@@ -84,6 +103,12 @@
 }
 
 @media (max-width: 767.98px) {
+  .crop-page-header {
+    margin-top: -0.75rem;
+    margin-bottom: -2.25rem;
+    padding: 1.25rem 1rem 1rem;
+    border-radius: 1rem;
+  }
   .crop-hero-banner-img-container {
     height: 140px;
   }
