@@ -428,13 +428,9 @@
                   <span class="text-muted">Humidity:</span>
                   <span class="fw-semibold">{{ result.humidity }} %</span>
                 </div>
-                <div class="d-flex justify-content-between py-1 border-bottom small">
+                <div class="d-flex justify-content-between py-1 small">
                   <span class="text-muted">Model Confidence:</span>
                   <span class="fw-semibold text-success">{{ (result.confidence * 100).toFixed(1) }}%</span>
-                </div>
-                <div class="d-flex justify-content-between py-1 small">
-                  <span class="text-muted">Inference Model:</span>
-                  <span class="badge bg-secondary-subtle text-secondary">{{ result.modelUsed }}</span>
                 </div>
               </div>
             </div>
