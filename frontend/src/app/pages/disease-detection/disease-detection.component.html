@@ -1,20 +1,35 @@
 <div class="container-fluid px-xl-5 px-lg-4 px-3 py-4" style="max-width: 1540px;">
-  <!-- Page Header -->
-  <div class="text-center max-w-700 mx-auto mb-4">
-    <span class="badge bg-danger-subtle text-danger px-3 py-1 rounded-pill fw-semibold mb-2">Module 3</span>
-    <h1 class="display-6 fw-bold">Plant Leaf Disease Detection</h1>
-    <p class="text-muted">
-      Upload or drag & drop a high-resolution photo of a suspected leaf. Our PyTorch ResNet9 neural network diagnoses diseases across 38 crop categories and provides treatment and prevention protocols.
-    </p>
-  </div>
+  <!-- Hero Section with Agricultural Image Banner & Integrated Heading Overlay -->
+  <section 
+    class="disease-hero-banner-section position-relative overflow-hidden text-white mb-5 rounded-4 shadow-sm"
+    aria-label="Plant Leaf Disease Detection Showcase Banner">
 
-  <!-- Wide Agricultural Banner (plantdisease_3.jpg) in Original Natural Appearance -->
-  <div class="disease-banner-wrapper mb-5 rounded-4 overflow-hidden shadow-sm">
-    <img 
-      src="Images/PlantDisease/plantdisease_3.jpg" 
-      alt="AgriDisha Plant Disease Detection - Agricultural Foliage Banner" 
-      class="disease-banner-img" />
-  </div>
+    <!-- Background Photographic Image (plantdisease_3.jpg in original natural appearance) -->
+    <div class="disease-banner-track">
+      <img 
+        src="Images/PlantDisease/plantdisease_3.jpg" 
+        alt="AgriDisha Plant Disease Detection - Agricultural Foliage Banner" 
+        class="disease-banner-img" />
+    </div>
+
+    <!-- Subtle Neutral Scrim for text readability (Zero green tint / color wash) -->
+    <div class="disease-banner-overlay" aria-hidden="true"></div>
+
+    <!-- Banner Content (Centered, 100% White text, Exact Wording directly over image) -->
+    <div class="container py-5 position-relative z-2">
+      <div class="text-center max-w-750 mx-auto disease-hero-text-content">
+        <span class="badge border border-white border-opacity-50 text-white bg-dark bg-opacity-35 mb-3 px-3 py-1.5 rounded-pill fw-semibold">
+          <i class="bi bi-shield-shaded me-1 text-danger"></i> Module 3
+        </span>
+        <h1 class="display-6 fw-bold text-white mb-3 disease-hero-title">
+          Plant Leaf Disease Detection
+        </h1>
+        <p class="text-white text-opacity-95 fs-6 mb-0 disease-hero-description">
+          Upload or drag & drop a high-resolution photo of a suspected leaf. Our PyTorch ResNet9 neural network diagnoses diseases across 38 crop categories and provides treatment and prevention protocols.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- Main View: Upload Form and Flanking Side Agricultural Images -->
   <div *ngIf="!result">
