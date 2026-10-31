@@ -6,3 +6,89 @@
   max-height: 220px;
   object-fit: cover;
 }
+
+/* ====================================================
+   AgriDisha - Plant Disease Wide Photographic Banner
+   (plantdisease_3.jpg in original natural appearance)
+   ==================================================== */
+
+.disease-banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 320px;
+  background-color: #0f172a;
+}
+
+.disease-banner-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ====================================================
+   Flanking Side Agricultural Cards
+   (plantdisease_1.jpg & plantdisease_2.jpg)
+   ==================================================== */
+
+.side-disease-card {
+  position: sticky;
+  top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.side-disease-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.1), 0 4px 6px -4px rgba(220, 38, 38, 0.05);
+}
+
+.side-disease-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.side-disease-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.side-disease-card:hover .side-disease-img {
+  transform: scale(1.03);
+}
+
+/* ====================================================
+   Dataset Information Card
+   ==================================================== */
+
+.dataset-info-card {
+  border: 1px solid var(--border-color, #e2e8f0);
+}
+
+/* ====================================================
+   Responsive Breakpoints
+   ==================================================== */
+
+@media (max-width: 1199.98px) {
+  .side-disease-card {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .disease-banner-img {
+    height: 180px;
+  }
+}
