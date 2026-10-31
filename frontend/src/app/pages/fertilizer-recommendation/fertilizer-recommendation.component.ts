@@ -21,7 +21,15 @@ export class FertilizerRecommendationComponent {
 
   states: string[] = [];
   districts: string[] = [];
-  soilColors: string[] = [];
+  soilColors = [
+    'Black Soil',
+    'Red Soil',
+    'Alluvial Soil',
+    'Laterite Soil',
+    'Sandy Soil',
+    'Loamy Soil',
+    'Clayey Soil'
+  ];
 
   availableCrops = [
     'Rice', 'Maize', 'Chickpea', 'Kidney Beans', 'Pigeon Peas',
@@ -37,46 +45,54 @@ export class FertilizerRecommendationComponent {
     public locationService: LocationService
   ) {
     this.states = this.locationService.getStates();
-    this.districts = this.locationService.getDistricts('Maharashtra');
-    this.soilColors = this.locationService.getSoilColors();
+    this.districts = [];
 
     this.fertilizerForm = this.fb.group({
-      cropName: ['Cotton', [Validators.required]],
-      state: ['Maharashtra', [Validators.required]],
-      district: ['Solapur', [Validators.required]],
-      soilColor: ['Black Soil (Regur)', [Validators.required]],
-      nitrogen: [80, [Validators.required, Validators.min(0)]],
-      phosphorous: [40, [Validators.required, Validators.min(0)]],
-      potassium: [40, [Validators.required, Validators.min(0)]]
+      cropName: ['', [Validators.required]],
+      state: ['', [Validators.required]],
+      district: [{ value: '', disabled: true }, [Validators.required]],
+      soilColor: ['', [Validators.required]],
+      nitrogen: [null, [Validators.required, Validators.min(0)]],
+      phosphorous: [null, [Validators.required, Validators.min(0)]],
+      potassium: [null, [Validators.required, Validators.min(0)]]
     });
   }
 
   onStateChange(): void {
     const state = this.fertilizerForm.get('state')?.value;
-    this.districts = this.locationService.getDistricts(state);
-    const defaultDistrict = this.districts.length > 0 ? this.districts[0] : '';
+    if (state) {
+      this.districts = this.locationService.getDistricts(state);
+      this.fertilizerForm.get('district')?.enable();
+    } else {
+      this.districts = [];
+      this.fertilizerForm.get('district')?.disable();
+    }
     this.fertilizerForm.patchValue({
-      district: defaultDistrict
+      district: ''
     });
   }
 
   loadSample(deficiency: 'N' | 'P' | 'K' | 'Balanced' | 'Solapur' | 'Nagpur'): void {
     if (deficiency === 'Solapur') {
+      this.districts = this.locationService.getDistricts('Maharashtra');
+      this.fertilizerForm.get('district')?.enable();
       this.fertilizerForm.patchValue({
         cropName: 'Sugarcane',
         state: 'Maharashtra',
         district: 'Solapur',
-        soilColor: 'Black Soil (Regur)',
+        soilColor: 'Black Soil',
         nitrogen: 150,
         phosphorous: 60,
         potassium: 80
       });
     } else if (deficiency === 'Nagpur') {
+      this.districts = this.locationService.getDistricts('Maharashtra');
+      this.fertilizerForm.get('district')?.enable();
       this.fertilizerForm.patchValue({
         cropName: 'Cotton',
         state: 'Maharashtra',
         district: 'Nagpur',
-        soilColor: 'Black Soil (Regur)',
+        soilColor: 'Black Soil',
         nitrogen: 60,
         phosphorous: 30,
         potassium: 25
@@ -95,13 +111,14 @@ export class FertilizerRecommendationComponent {
   onSubmit(): void {
     if (this.fertilizerForm.invalid) {
       this.fertilizerForm.markAllAsTouched();
+      this.errorMessage = 'Please complete all required fields before requesting fertilizer recommendations.';
       return;
     }
 
     this.isLoading = true;
     this.errorMessage = '';
 
-    const formValues = this.fertilizerForm.value;
+    const formValues = this.fertilizerForm.getRawValue();
     const requestData = {
       cropName: formValues.cropName,
       nitrogen: Number(formValues.nitrogen),
@@ -127,5 +144,16 @@ export class FertilizerRecommendationComponent {
   reset(): void {
     this.result = null;
     this.errorMessage = '';
+    this.fertilizerForm.reset({
+      cropName: '',
+      state: '',
+      district: '',
+      soilColor: '',
+      nitrogen: null,
+      phosphorous: null,
+      potassium: null
+    });
+    this.districts = [];
+    this.fertilizerForm.get('district')?.disable();
   }
 }

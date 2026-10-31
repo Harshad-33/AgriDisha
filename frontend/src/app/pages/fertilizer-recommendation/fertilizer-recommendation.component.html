@@ -27,6 +27,7 @@
               class="form-select"
               formControlName="cropName"
               [class.is-invalid]="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid">
+              <option value="" disabled selected>Select Crop</option>
               <option *ngFor="let crop of availableCrops" [value]="crop">{{ crop }}</option>
             </select>
             <div *ngIf="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid" class="text-danger small mt-1">
@@ -34,9 +35,9 @@
             </div>
           </div>
 
-          <!-- Regional & Soil Parameters -->
+          <!-- Location & Soil Parameters -->
           <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
-            <i class="bi bi-geo-alt me-1"></i> Regional Location & Soil Type
+            <i class="bi bi-geo-alt me-1"></i> Location & Soil Type
           </h6>
           <div class="row g-3 mb-4">
             <div class="col-md-4">
@@ -45,9 +46,14 @@
                 id="state"
                 class="form-select"
                 formControlName="state"
-                (change)="onStateChange()">
+                (change)="onStateChange()"
+                [class.is-invalid]="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid">
+                <option value="" disabled selected>Select State</option>
                 <option *ngFor="let s of states" [value]="s">{{ s }}</option>
               </select>
+              <div *ngIf="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid" class="text-danger small mt-1">
+                Please select a state.
+              </div>
             </div>
 
             <div class="col-md-4">
@@ -55,11 +61,14 @@
               <select
                 id="district"
                 class="form-select"
-                formControlName="district">
-                <option *ngFor="let d of districts" [value]="d">
-                  {{ d }} {{ locationService.getDistrictBadgeLabel(fertilizerForm.get('state')?.value, d) }}
-                </option>
+                formControlName="district"
+                [class.is-invalid]="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid">
+                <option value="" disabled selected>Select District</option>
+                <option *ngFor="let d of districts" [value]="d">{{ d }}</option>
               </select>
+              <div *ngIf="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid" class="text-danger small mt-1">
+                Please select a district.
+              </div>
             </div>
 
             <div class="col-md-4">
@@ -67,22 +76,13 @@
               <select
                 id="soilColor"
                 class="form-select"
-                formControlName="soilColor">
+                formControlName="soilColor"
+                [class.is-invalid]="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid">
+                <option value="" disabled selected>Select Soil Type</option>
                 <option *ngFor="let color of soilColors" [value]="color">{{ color }}</option>
               </select>
-            </div>
-
-            <div class="col-12">
-              <div class="d-flex align-items-center gap-2 flex-wrap">
-                <span *ngIf="locationService.isPrimaryVerified(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
-                  <i class="bi bi-shield-check me-1"></i> Western Maharashtra Regional Dataset Indexed
-                </span>
-                <span *ngIf="locationService.isRegionalReference(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value)" class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">
-                  <i class="bi bi-journal-bookmark-fill me-1"></i> Maharashtra Regional Reference Dataset (with Zn & S Micronutrients)
-                </span>
-                <span *ngIf="locationService.getDistrictDatasetStatus(fertilizerForm.get('state')?.value, fertilizerForm.get('district')?.value) === 'fallback'" class="badge bg-light text-secondary border px-2 py-1">
-                  <i class="bi bi-layers me-1"></i> Standard ICAR / MPKV Fertilizer Guidelines
-                </span>
+              <div *ngIf="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid" class="text-danger small mt-1">
+                Please select a soil type.
               </div>
             </div>
           </div>
@@ -97,11 +97,11 @@
                 id="fert-n"
                 type="number"
                 class="form-control"
-                placeholder="e.g. 40"
+                placeholder="Ex. 80"
                 formControlName="nitrogen"
                 [class.is-invalid]="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid">
               <div *ngIf="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
-                Enter N value.
+                Please enter Nitrogen (N) value.
               </div>
             </div>
 
@@ -111,11 +111,11 @@
                 id="fert-p"
                 type="number"
                 class="form-control"
-                placeholder="e.g. 60"
+                placeholder="Ex. 40"
                 formControlName="phosphorous"
                 [class.is-invalid]="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid">
               <div *ngIf="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
-                Enter P value.
+                Please enter Phosphorous (P) value.
               </div>
             </div>
 
@@ -125,11 +125,11 @@
                 id="fert-k"
                 type="number"
                 class="form-control"
-                placeholder="e.g. 30"
+                placeholder="Ex. 40"
                 formControlName="potassium"
                 [class.is-invalid]="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid">
               <div *ngIf="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid" class="text-danger small mt-1">
-                Enter K value.
+                Please enter Potassium (K) value.
               </div>
             </div>
           </div>
