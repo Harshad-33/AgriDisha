@@ -20,9 +20,10 @@ export class DiseaseDetectionComponent {
   isLoading = false;
   result: DiseasePredictionResponse | null = null;
   errorMessage = '';
+  hasSubmitted = false;
 
-  selectedState = 'Maharashtra';
-  selectedDistrict = 'Solapur';
+  selectedState = '';
+  selectedDistrict = '';
   states: string[] = [];
   districts: string[] = [];
 
@@ -31,13 +32,15 @@ export class DiseaseDetectionComponent {
     public locationService: LocationService
   ) {
     this.states = this.locationService.getStates();
-    this.districts = this.locationService.getDistricts('Maharashtra');
+    this.districts = [];
   }
 
   onStateChange(): void {
-    this.districts = this.locationService.getDistricts(this.selectedState);
-    if (this.districts.length > 0) {
-      this.selectedDistrict = this.districts[0];
+    this.selectedDistrict = '';
+    if (this.selectedState) {
+      this.districts = this.locationService.getDistricts(this.selectedState);
+    } else {
+      this.districts = [];
     }
   }
 
@@ -93,6 +96,18 @@ export class DiseaseDetectionComponent {
   }
 
   onSubmit(): void {
+    this.hasSubmitted = true;
+
+    if (!this.selectedState) {
+      this.errorMessage = 'Please select a State before diagnosing the leaf.';
+      return;
+    }
+
+    if (!this.selectedDistrict) {
+      this.errorMessage = 'Please select a District before diagnosing the leaf.';
+      return;
+    }
+
     if (!this.selectedFile) {
       this.errorMessage = 'Please select or drop a plant leaf image first.';
       return;
@@ -123,5 +138,9 @@ export class DiseaseDetectionComponent {
     this.imagePreview = null;
     this.result = null;
     this.errorMessage = '';
+    this.hasSubmitted = false;
+    this.selectedState = '';
+    this.selectedDistrict = '';
+    this.districts = [];
   }
 }
