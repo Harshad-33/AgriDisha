@@ -25,7 +25,7 @@
           Plant Leaf Disease Detection
         </h1>
         <p class="text-white text-opacity-95 fs-6 mb-0 disease-hero-description">
-          Upload or drag & drop a high-resolution photo of a suspected leaf. Our PyTorch ResNet9 neural network diagnoses diseases across 38 crop categories and provides treatment and prevention protocols.
+          Upload or drag & drop a high-resolution photo of a suspected leaf. Our Platform will diagnoses diseases across 38 crop categories and provides treatment and prevention protocols.
         </p>
       </div>
     </div>
@@ -137,78 +137,6 @@
             <span>{{ isLoading ? 'Diagnosing Leaf Image...' : 'Detect Plant Disease' }}</span>
           </button>
         </div>
-
-        <!-- Disease Dataset Information Section (Visible before user clicks Detect) -->
-        <div class="card border-0 bg-white shadow-sm rounded-4 p-4 mb-4 dataset-info-card">
-          <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3 pb-2 border-bottom">
-            <div class="d-flex align-items-center gap-2">
-              <i class="bi bi-database-check fs-4 text-success"></i>
-              <h5 class="fw-bold text-dark mb-0">Disease Dataset Information</h5>
-            </div>
-            <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1 rounded-pill small fw-semibold">
-              <i class="bi bi-geo-alt me-1"></i> {{ selectedState }} Reference
-            </span>
-          </div>
-
-          <div class="row g-3 small">
-            <div class="col-12">
-              <div class="p-2.5 rounded-3 bg-light">
-                <span class="text-muted d-block small mb-1">Primary Reference Dataset:</span>
-                <strong class="text-dark">{{ currentDatasetInfo.datasetName }}</strong>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Dataset Source & Organization:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.sourceOrg }}</span>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Geographical Coverage:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.geoCoverage }}</span>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Supported Crop Categories:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.cropsCovered }}</span>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Disease Classes Covered:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.classesCount }}</span>
-              </div>
-            </div>
-
-            <div class="col-md-6" *ngIf="currentDatasetInfo.imageRecords">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Actual Records / Verified Images:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.imageRecords }}</span>
-              </div>
-            </div>
-
-            <div class="col-md-6" *ngIf="currentDatasetInfo.licenceAttribution">
-              <div class="p-2.5 rounded-3 bg-light h-100">
-                <span class="text-muted d-block small mb-1">Dataset Licence / Attribution:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.licenceAttribution }}</span>
-              </div>
-            </div>
-
-            <div class="col-12" *ngIf="currentDatasetInfo.regionalFocus">
-              <div class="p-2.5 rounded-3 bg-light">
-                <span class="text-muted d-block small mb-1">Regional Pathology Focus:</span>
-                <span class="text-dark fw-medium">{{ currentDatasetInfo.regionalFocus }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Right Agricultural Showcase Card (plantdisease_2.jpg) -->
       <div class="col-xl-3 col-md-6 order-3 order-xl-3">
