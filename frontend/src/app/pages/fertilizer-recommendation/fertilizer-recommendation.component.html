@@ -1,152 +1,250 @@
-<div class="container py-5">
-  <!-- Page Header -->
-  <div class="text-center max-w-700 mx-auto mb-5">
-    <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Module 2</span>
-    <h1 class="display-6 fw-bold">Fertilizer Recommendation & Soil Advisory</h1>
-    <p class="text-muted">
-      Identify soil nutrient imbalances (Nitrogen, Phosphorous, Potassium) for your chosen crop and receive precise chemical dosages, micronutrient guidance (Zinc & Sulphur), organic amendments, and cultural soil management practices.
-    </p>
-  </div>
+<div class="container-fluid px-xl-5 px-lg-4 px-3 py-4" style="max-width: 1540px;">
+  <!-- Hero Section with Background Agricultural Image Banner (Module 2) -->
+  <section 
+    class="fert-hero-banner-section position-relative overflow-hidden text-white mb-5 rounded-4 shadow-sm"
+    aria-label="Fertilizer Recommendation & Soil Advisory Showcase Banner">
 
-  <div class="row justify-content-center g-4">
-    <!-- Form Card -->
-    <div class="col-lg-7" *ngIf="!result">
-      <div class="card card-harvest border-0 p-4 p-md-5">
-        <h4 class="fw-bold mb-4">Crop & Soil Nutrients</h4>
-
-        <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
-          <i class="bi bi-exclamation-triangle-fill"></i>
-          <div>{{ errorMessage }}</div>
-        </div>
-
-        <form [formGroup]="fertilizerForm" (ngSubmit)="onSubmit()" novalidate>
-          <div class="mb-4">
-            <label class="form-label" for="cropName">Select Target Crop *</label>
-            <select
-              id="cropName"
-              class="form-select"
-              formControlName="cropName"
-              [class.is-invalid]="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid">
-              <option value="" disabled selected>Select Crop</option>
-              <option *ngFor="let crop of availableCrops" [value]="crop">{{ crop }}</option>
-            </select>
-            <div *ngIf="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid" class="text-danger small mt-1">
-              Please select a crop.
-            </div>
-          </div>
-
-          <!-- Location & Soil Parameters -->
-          <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
-            <i class="bi bi-geo-alt me-1"></i> Location & Soil Type
-          </h6>
-          <div class="row g-3 mb-4">
-            <div class="col-md-4">
-              <label class="form-label" for="state">State *</label>
-              <select
-                id="state"
-                class="form-select"
-                formControlName="state"
-                (change)="onStateChange()"
-                [class.is-invalid]="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid">
-                <option value="" disabled selected>Select State</option>
-                <option *ngFor="let s of states" [value]="s">{{ s }}</option>
-              </select>
-              <div *ngIf="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid" class="text-danger small mt-1">
-                Please select a state.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label" for="district">District *</label>
-              <select
-                id="district"
-                class="form-select"
-                formControlName="district"
-                [class.is-invalid]="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid">
-                <option value="" disabled selected>Select District</option>
-                <option *ngFor="let d of districts" [value]="d">{{ d }}</option>
-              </select>
-              <div *ngIf="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid" class="text-danger small mt-1">
-                Please select a district.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label" for="soilColor">Soil Type / Color *</label>
-              <select
-                id="soilColor"
-                class="form-select"
-                formControlName="soilColor"
-                [class.is-invalid]="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid">
-                <option value="" disabled selected>Select Soil Type</option>
-                <option *ngFor="let color of soilColors" [value]="color">{{ color }}</option>
-              </select>
-              <div *ngIf="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid" class="text-danger small mt-1">
-                Please select a soil type.
-              </div>
-            </div>
-          </div>
-
-          <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
-            <i class="bi bi-speedometer2 me-1"></i> Current Soil Nutrient Values (mg/kg or ratio)
-          </h6>
-          <div class="row g-3 mb-4">
-            <div class="col-md-4">
-              <label class="form-label" for="fert-n">Nitrogen (N) *</label>
-              <input
-                id="fert-n"
-                type="number"
-                class="form-control"
-                placeholder="Ex. 80"
-                formControlName="nitrogen"
-                [class.is-invalid]="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid">
-              <div *ngIf="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
-                Please enter Nitrogen (N) value.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label" for="fert-p">Phosphorous (P) *</label>
-              <input
-                id="fert-p"
-                type="number"
-                class="form-control"
-                placeholder="Ex. 40"
-                formControlName="phosphorous"
-                [class.is-invalid]="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid">
-              <div *ngIf="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
-                Please enter Phosphorous (P) value.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label" for="fert-k">Potassium (K) *</label>
-              <input
-                id="fert-k"
-                type="number"
-                class="form-control"
-                placeholder="Ex. 40"
-                formControlName="potassium"
-                [class.is-invalid]="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid">
-              <div *ngIf="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid" class="text-danger small mt-1">
-                Please enter Potassium (K) value.
-              </div>
-            </div>
-          </div>
-
-          <button
-            type="submit"
-            [disabled]="isLoading"
-            class="btn btn-harvest-primary w-100 py-3 fw-bold fs-5 shadow-sm d-flex align-items-center justify-content-center gap-2">
-            <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
-            <span>{{ isLoading ? 'Evaluating Nutrient Needs...' : 'Get Fertilizer Recommendation' }}</span>
-          </button>
-        </form>
-      </div>
+    <!-- Background Photographic Image (fertilizer_1.jpg) -->
+    <div class="fert-banner-track">
+      <img 
+        src="/Images/FertilizerImage/fertilizer_1.jpg" 
+        alt="AgriDisha Precision Fertilizer Application & Soil Advisory" 
+        class="fert-banner-img" />
     </div>
 
-    <!-- Fertilizer Result Card -->
-    <div class="col-lg-8" *ngIf="result">
+    <!-- Subtle Neutral Scrim for text readability (Zero green tint / color wash) -->
+    <div class="fert-banner-overlay" aria-hidden="true"></div>
+
+    <!-- Banner Content (Centered, 100% White text directly over image) -->
+    <div class="container py-5 position-relative z-2">
+      <div class="text-center max-w-750 mx-auto">
+        <span class="badge border border-white border-opacity-50 text-white bg-dark bg-opacity-35 mb-3 px-3 py-1.5 rounded-pill fw-semibold">
+          <i class="bi bi-capsule me-1 text-primary"></i> Module 2
+        </span>
+        <h1 class="display-6 fw-bold text-white mb-3 fert-hero-title">
+          Fertilizer Recommendation & Soil Advisory
+        </h1>
+        <p class="text-white text-opacity-95 fs-6 mb-0 fert-hero-description">
+          Identify soil nutrient imbalances (Nitrogen, Phosphorous, Potassium) for your chosen crop and receive precise chemical dosages, micronutrient guidance (Zinc & Sulphur), organic amendments, and cultural soil management practices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main View: Parameters Entry and Flanking Side Agricultural Images (Matches Module 3 Structure) -->
+  <div *ngIf="!result">
+    <div class="row g-4 align-items-start">
+      <!-- Left Agricultural Showcase Card (Fertilizer_3.png) -->
+      <div class="col-xl-3 col-md-6 order-2 order-xl-1">
+        <div class="side-fert-card h-100">
+          <div class="side-fert-img-wrapper">
+            <img 
+              src="/Images/FertilizerImage/Fertilizer_3.png" 
+              alt="AgriDisha Sustainable Fertilization - Organic Amendments and Soil Health" 
+              class="side-fert-img">
+          </div>
+          <div class="p-4">
+            <span class="badge bg-success-subtle text-success px-2.5 py-1 rounded-pill small fw-semibold mb-2">
+              <i class="bi bi-shield-check me-1"></i> Soil Health
+            </span>
+            <h5 class="fw-bold text-dark mb-2">Integrated Nutrition</h5>
+            <p class="text-muted small mb-3">
+              Combining targeted chemical fertilizers with organic manures and essential micronutrients enhances soil structure and long-term fertility.
+            </p>
+            <div class="d-flex flex-column gap-2 small">
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-patch-check-fill text-success fs-6"></i>
+                <span><strong>Micronutrients:</strong> Zinc & Sulphur targets</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-recycle text-primary fs-6"></i>
+                <span><strong>Organic Matter:</strong> FYM & vermicompost buffer pH</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-calendar2-check text-warning fs-6"></i>
+                <span><strong>Split Application:</strong> Basal & top-dressing stages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center: Main Crop & Soil Nutrients Form -->
+      <div class="col-xl-6 col-md-12 order-1 order-xl-2">
+        <div class="card card-harvest border-0 p-4 p-md-5">
+          <h4 class="fw-bold mb-4">Crop & Soil Nutrients</h4>
+
+          <div *ngIf="errorMessage" class="alert alert-danger d-flex align-items-center gap-2 py-2 small mb-4" role="alert">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div>{{ errorMessage }}</div>
+          </div>
+
+          <form [formGroup]="fertilizerForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="mb-4">
+              <label class="form-label" for="cropName">Select Target Crop *</label>
+              <select
+                id="cropName"
+                class="form-select"
+                formControlName="cropName"
+                [class.is-invalid]="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid">
+                <option value="" disabled selected>Select Crop</option>
+                <option *ngFor="let crop of availableCrops" [value]="crop">{{ crop }}</option>
+              </select>
+              <div *ngIf="fertilizerForm.get('cropName')?.touched && fertilizerForm.get('cropName')?.invalid" class="text-danger small mt-1">
+                Please select a crop.
+              </div>
+            </div>
+
+            <!-- Location & Soil Parameters -->
+            <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
+              <i class="bi bi-geo-alt me-1"></i> Location & Soil Type
+            </h6>
+            <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <label class="form-label" for="state">State *</label>
+                <select
+                  id="state"
+                  class="form-select"
+                  formControlName="state"
+                  (change)="onStateChange()"
+                  [class.is-invalid]="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid">
+                  <option value="" disabled selected>Select State</option>
+                  <option *ngFor="let s of states" [value]="s">{{ s }}</option>
+                </select>
+                <div *ngIf="fertilizerForm.get('state')?.touched && fertilizerForm.get('state')?.invalid" class="text-danger small mt-1">
+                  Please select a state.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label" for="district">District *</label>
+                <select
+                  id="district"
+                  class="form-select"
+                  formControlName="district"
+                  [class.is-invalid]="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid">
+                  <option value="" disabled selected>Select District</option>
+                  <option *ngFor="let d of districts" [value]="d">{{ d }}</option>
+                </select>
+                <div *ngIf="fertilizerForm.get('district')?.touched && fertilizerForm.get('district')?.invalid" class="text-danger small mt-1">
+                  Please select a district.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label" for="soilColor">Soil Type / Color *</label>
+                <select
+                  id="soilColor"
+                  class="form-select"
+                  formControlName="soilColor"
+                  [class.is-invalid]="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid">
+                  <option value="" disabled selected>Select Soil Type</option>
+                  <option *ngFor="let color of soilColors" [value]="color">{{ color }}</option>
+                </select>
+                <div *ngIf="fertilizerForm.get('soilColor')?.touched && fertilizerForm.get('soilColor')?.invalid" class="text-danger small mt-1">
+                  Please select a soil type.
+                </div>
+              </div>
+            </div>
+
+            <h6 class="fw-bold text-primary border-bottom pb-2 mb-3">
+              <i class="bi bi-speedometer2 me-1"></i> Current Soil Nutrient Values (mg/kg or ratio)
+            </h6>
+            <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <label class="form-label" for="fert-n">Nitrogen (N) *</label>
+                <input
+                  id="fert-n"
+                  type="number"
+                  class="form-control"
+                  placeholder="Ex. 80"
+                  formControlName="nitrogen"
+                  [class.is-invalid]="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid">
+                <div *ngIf="fertilizerForm.get('nitrogen')?.touched && fertilizerForm.get('nitrogen')?.invalid" class="text-danger small mt-1">
+                  Please enter Nitrogen (N) value.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label" for="fert-p">Phosphorous (P) *</label>
+                <input
+                  id="fert-p"
+                  type="number"
+                  class="form-control"
+                  placeholder="Ex. 40"
+                  formControlName="phosphorous"
+                  [class.is-invalid]="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid">
+                <div *ngIf="fertilizerForm.get('phosphorous')?.touched && fertilizerForm.get('phosphorous')?.invalid" class="text-danger small mt-1">
+                  Please enter Phosphorous (P) value.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label" for="fert-k">Potassium (K) *</label>
+                <input
+                  id="fert-k"
+                  type="number"
+                  class="form-control"
+                  placeholder="Ex. 40"
+                  formControlName="potassium"
+                  [class.is-invalid]="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid">
+                <div *ngIf="fertilizerForm.get('potassium')?.touched && fertilizerForm.get('potassium')?.invalid" class="text-danger small mt-1">
+                  Please enter Potassium (K) value.
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              [disabled]="isLoading"
+              class="btn btn-harvest-primary w-100 py-3 fw-bold fs-5 shadow-sm d-flex align-items-center justify-content-center gap-2">
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"></span>
+              <span>{{ isLoading ? 'Evaluating Nutrient Needs...' : 'Get Fertilizer Recommendation' }}</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Agricultural Showcase Card (fertilizer_image2.jpg) -->
+      <div class="col-xl-3 col-md-6 order-3 order-xl-3">
+        <div class="side-fert-card h-100">
+          <div class="side-fert-img-wrapper">
+            <img 
+              src="/Images/FertilizerImage/fertilizer_image2.jpg" 
+              alt="AgriDisha Soil Nutrient Balance - Precision Fertilizer Granules and Field Soil" 
+              class="side-fert-img">
+          </div>
+          <div class="p-4">
+            <span class="badge bg-primary-subtle text-primary px-2.5 py-1 rounded-pill small fw-semibold mb-2">
+              <i class="bi bi-droplet-half me-1"></i> Soil Balance
+            </span>
+            <h5 class="fw-bold text-dark mb-2">Macronutrient Synergy</h5>
+            <p class="text-muted small mb-3">
+              Balancing N, P, and K to specific crop uptake stages prevents nutrient leaching and optimizes vegetative and reproductive growth.
+            </p>
+            <div class="d-flex flex-column gap-2 small">
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <span class="badge bg-success text-white rounded-circle p-1 d-flex align-items-center justify-content-center" style="width: 22px; height: 22px; font-size: 0.7rem;">N</span>
+                <span><strong>Nitrogen:</strong> Canopy expansion & chlorophyll</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <span class="badge bg-primary text-white rounded-circle p-1 d-flex align-items-center justify-content-center" style="width: 22px; height: 22px; font-size: 0.7rem;">P</span>
+                <span><strong>Phosphorous:</strong> Root proliferation & energy transfer</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 text-secondary">
+                <span class="badge bg-warning text-dark rounded-circle p-1 d-flex align-items-center justify-content-center" style="width: 22px; height: 22px; font-size: 0.7rem;">K</span>
+                <span><strong>Potassium:</strong> Water regulation & stress resistance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fertilizer Result Card -->
+  <div class="row justify-content-center g-4" *ngIf="result">
+    <div class="col-lg-8">
       <div class="card card-harvest border-0 p-0 overflow-hidden fade-in shadow-lg">
         <div class="card-header-harvest p-4">
           <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">

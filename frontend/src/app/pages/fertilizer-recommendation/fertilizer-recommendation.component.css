@@ -1,3 +1,131 @@
 .max-w-700 {
   max-width: 700px;
 }
+
+.max-w-750 {
+  max-width: 750px;
+}
+
+/* ====================================================
+   AgriDisha - Fertilizer Recommendation Hero Banner
+   (Visual parity with Module 3 Disease Detection banner)
+   ==================================================== */
+
+.fert-hero-banner-section {
+  position: relative;
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a; /* Neutral dark fallback */
+  border-radius: 1rem;
+}
+
+.fert-banner-track {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.fert-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Neutral Scrim - Zero green tint or green gradient over image */
+.fert-banner-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.42); /* Subtle neutral dark scrim for crisp white text contrast */
+  pointer-events: none;
+  border-radius: 1rem;
+}
+
+/* White text legibility enhancements over natural photography */
+.fert-hero-title {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.fert-hero-description {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+  line-height: 1.6;
+}
+
+/* ====================================================
+   Flanking Side Agricultural Cards
+   (Fertilizer_3.png & fertilizer_image2.jpg)
+   Matching Disease Detection layout and dimensions
+   ==================================================== */
+
+.side-fert-card {
+  position: sticky;
+  top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.side-fert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(16, 124, 65, 0.1), 0 4px 6px -4px rgba(16, 124, 65, 0.05);
+}
+
+.side-fert-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.side-fert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.side-fert-card:hover .side-fert-img {
+  transform: scale(1.03);
+}
+
+/* ====================================================
+   Responsive Breakpoints
+   ==================================================== */
+
+@media (max-width: 1199.98px) {
+  .side-fert-card {
+    position: static;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fert-hero-banner-section {
+    min-height: 240px;
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .fert-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .side-fert-img-wrapper {
+    height: 180px;
+  }
+}

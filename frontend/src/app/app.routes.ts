@@ -29,6 +29,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/crop-recommendation/crop-recommendation.component').then(m => m.CropRecommendationComponent)
   },
   {
+    path: 'fertilizer',
+    loadComponent: () => import('./pages/fertilizer-recommendation/fertilizer-recommendation.component').then(m => m.FertilizerRecommendationComponent)
+  },
+  {
     path: 'fertilizer-recommendation',
     loadComponent: () => import('./pages/fertilizer-recommendation/fertilizer-recommendation.component').then(m => m.FertilizerRecommendationComponent)
   },
